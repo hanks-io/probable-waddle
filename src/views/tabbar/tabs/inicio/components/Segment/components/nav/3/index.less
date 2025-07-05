@@ -1,0 +1,78 @@
+html {
+  #tabbar-tabs-inicio-components-Segment-components-nav-3-index.layout();
+}
+
+
+
+
+
+
+#tabbar-tabs-inicio-components-Segment-components-nav-3-index {
+  .layout(
+    @bg1: var(--ep-color-background-fill-surface-raised-L2);
+    @text-color1: var(--ep-color-text-default);
+  ) {
+    .ios {
+
+      ion-segment-button {
+
+        &.init-segment {
+          --padding-start: 0;
+          --padding-end: 0;
+          --padding-top: 0;
+          --padding-bottom: 0;
+          height: min-content;
+          min-width: min-content;
+          margin: 0;
+          --indicator-transition: none;
+          --background: transparent;
+          --indicator-color: transparent;
+        }
+
+        
+
+        .btn-wall {
+          width: 4rem;
+          height: 4.5rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-end;
+          background: url('@/assets/img/inicio/tab-bg1.png') no-repeat center center / 100% 100%;
+          
+          .type-img {
+            width: 3.125rem;
+            height: 3.125rem;
+          }
+
+          .hot-img {
+            width: 0;
+            height: 0;
+
+            &.good-img {
+              width: 2.5rem;
+              height: 2.75rem;
+            }
+          }
+
+          .type-img {
+            display: block;
+            background-size: 800% 400%;
+          }
+
+          .label {
+            width: 80%;
+            margin-bottom: 0.0625rem;
+            font-size: var(--ep-font-size-xs);
+            font-weight: var(--ep-font-weight-regular, 400);
+            color: @text-color1;
+          }
+        }
+
+        &.segment-button-checked {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

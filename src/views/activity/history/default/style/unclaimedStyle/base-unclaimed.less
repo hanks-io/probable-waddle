@@ -1,0 +1,67 @@
+ion-button {
+  --border-radius: 5px;
+  --color: white;
+  width: 10.9375rem;
+  min-height: 2.5rem;
+}
+
+ion-infinite-scroll { /* 设置触底加载更多样式 */
+  min-height: 70px;
+}
+
+ion-infinite-scroll-content { /* 设置触底加载更多样式 */
+  min-height: 10px;
+}
+
+ion-modal#receiveHint {
+  --width: 19.375rem;
+  --height: 10rem;
+  --background: rgba(9,15,31,1);
+  --border-radius: 15px;
+}
+
+#receiveHint ion-button {
+  --color: #FFF;
+  --border-radius: 5px;
+  min-height: 35px;
+}
+
+.shiny {
+  position: relative;
+  overflow: hidden;
+}
+
+.shiny::before {
+  content: '';
+  animation: shiny 8s ease-in-out infinite;
+  background: white;
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: -180px;
+  width: 10px;
+  z-index: 100
+}
+
+@keyframes shiny {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(45deg);
+  }
+
+  80% {
+    opacity: 0.5;
+    transform: scale(1) rotate(45deg);
+  }
+
+  81% {
+    opacity: 1;
+    transform: scale(3) rotate(45deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(50) rotate(45deg);
+  }
+}

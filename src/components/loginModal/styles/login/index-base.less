@@ -1,0 +1,79 @@
+// 登录
+.header {
+	padding-top: 2.8rem;
+	padding-bottom: 2.37rem;
+}
+
+.title {
+	font-size: 1.875rem;
+	line-height: 1.2;
+}
+
+.register-hint {
+	font-size: 0.875rem;
+	padding-right: 0.75rem;
+}
+
+.register-text {
+	font-size: 0.875rem;
+}
+
+.exception-text {
+	font-size: var(--ep-font-size-s, 0.75rem);
+	font-weight: var(--ep-font-weight-regular, 400);
+	color: #E64021;
+	line-height: 1.5;
+}
+
+.new-skin-symbol{
+	.title {
+		font-size: var(--ep-font-size-xxl);
+	}
+	.register-hint {
+		font-size: var(--ep-font-size-m);
+	}
+	.register-text {
+		font-size: var(--ep-font-size-m);
+	}
+}
+
+.form-wrapper {
+	flex: auto;
+	overflow: auto;
+	display: flex;
+  flex-flow: column;
+	padding-top: 0.5rem;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+}
+
+.footer {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: 1.38rem;
+}
+
+.item-height {
+	height: 4.375rem;
+}
+
+.btn-login {
+	margin-bottom: 1rem;
+}
+
+.remember-account {
+	margin-bottom: 1.875rem;
+	font-size: 0.625rem;
+	.flex-center();
+	.text-warpper {
+		.flex-between();
+		flex: 1 1 0%;
+		padding: 0 0.25rem;
+		font-size: var(--ep-font-size-s,0.75rem);
+		line-height: 1.625rem;
+	}
+}

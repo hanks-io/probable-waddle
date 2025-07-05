@@ -1,0 +1,55 @@
+#tabbar-tabs-perfil-default-AvatarModal {
+    //局部作用域
+  
+    .style(
+      @AvatarModal01: --color-bg-200,
+      @AvatarModal02: --theme-color-600,
+      @AvatarModal03: --theme-color-700,
+      @AvatarModal04: --color-line,
+      @AvatarModal05: --color-text-gray-300,
+      @AvatarModal06: --theme-color-600,
+      @AvatarModal07: --color-bg-200,
+      @AvatarModal08: --theme-color-gradient-100,
+      @AvatarModal09: --color-text-white-100,
+      @AvatarModal10: --theme-color-gradient-900,
+      @AvatarModal11: --theme-color-gradient-900,
+      @AvatarModal12: --theme-color-gradient-900,
+      @AvatarModal13: --color-bg-50,
+    ) {
+      ion-modal#avatar div.content {
+        background: var(@AvatarModal01);
+        ion-row.sex {
+          ion-col.selected {
+            border-color: var(@AvatarModal02);
+            color: var(@AvatarModal03);
+          }
+          ion-col.gender-default {
+            border-color: var(@AvatarModal04);
+            color: var(@AvatarModal05);
+          }
+        }
+        .img {
+          img.selected {
+            border-color: var(@AvatarModal06);
+          }
+        }
+      }
+      
+      ion-toolbar {
+        --background: var(@AvatarModal07);
+      }
+      
+      
+      ion-button.submit {
+        --background: var(@AvatarModal08);
+        --color: var(@AvatarModal09);
+        --background-hover: var(@AvatarModal10);
+        --background-activated: var(@AvatarModal11);
+        --background-focused: var(@AvatarModal12);
+      }
+      
+      ion-icon.close {
+        background: var(@AvatarModal13);
+      }
+    }
+  }

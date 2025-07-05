@@ -1,0 +1,94 @@
+.vipLevelList {
+  height: calc(100% - 5rem);
+}
+
+table {
+  border-collapse: collapse; /* 合并边框 */
+  background-color: transparent;
+}
+
+table.table th, table.table td {
+  line-height: 1.5625rem;
+  width: 12.5%;
+}
+
+.unZhTable thead tr th {
+  height: 2.6rem;
+  line-height: 0.9rem;
+}
+
+table th:first-child, table td:first-child {
+  border-left: none;
+}
+
+table th:last-child, table td:last-child {
+  border-right: none;
+}
+
+table thead tr:first-child th, table thead tr:first-child td {
+  border-top: none;
+}
+
+table tr:last-child th, table tr:last-child td {
+  border-bottom: none;
+}
+
+ion-list {
+  padding-top: 0;
+}
+
+ion-toolbar {
+  --min-height: 3.125rem;
+}
+
+.content-base {
+  padding: 2px;
+  line-height: 13px;
+}
+
+.share-vip {
+  padding: 0 2rem;
+}
+.current-level {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+
+.shiny {
+  position: relative;
+  overflow: hidden;
+}
+
+.shiny::before {
+  content: '';
+  animation: shiny 6s ease-in-out infinite;
+  background: white;
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: -180px;
+  width: 30px
+}
+
+@keyframes shiny {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(45deg);
+  }
+  80% {
+    opacity: 0.5;
+    transform: scale(0) rotate(45deg);
+  }
+  81% {
+    opacity: 1;
+    transform: scale(4) rotate(45deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(50) rotate(45deg);
+  }
+}

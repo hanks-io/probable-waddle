@@ -1,0 +1,60 @@
+#components-RechargeBankSelect-index {
+  .style(@components-RechargeBankSelect-index-01: --color-bg-100;
+    @components-RechargeBankSelect-index-02: --color-text-40;
+    @components-RechargeBankSelect-index-03: --color-text-100;
+    @components-RechargeBankSelect-index-04: --color-text-40;
+    @components-RechargeBankSelect-index-05: --color-bg-100;
+    @components-RechargeBankSelect-index-06: --color-bg-200;
+    @components-RechargeBankSelect-index-07: --color-line;
+    @components-RechargeBankSelect-index-08: --line-color;
+    @components-RechargeBankSelect-index-09: --mlm-subdetail-box-bgc;
+    @components-RechargeBankSelect-index-10: --line-color;
+    @components-RechargeBankSelect-index-11: --color-text-40;
+
+    @placeholderColor: --color-text-40) {
+    .recharge-bank-select {
+      background: var(@components-RechargeBankSelect-index-01);
+
+      ion-icon {
+        color: var(@components-RechargeBankSelect-index-02);
+      }
+
+      .placeholder {
+        color: var(@placeholderColor);
+
+      }
+    }
+
+    .bank-select-info {
+      .bank-type {
+        color: var(@components-RechargeBankSelect-index-03);
+      }
+
+      .bank-name {
+        color: var(@components-RechargeBankSelect-index-04);
+      }
+    }
+
+    .select-bank-list {
+      background: var(@components-RechargeBankSelect-index-05);
+    }
+
+    .select-bank-item {
+      background: var(@components-RechargeBankSelect-index-06);
+      border: .0625rem solid var(@components-RechargeBankSelect-index-07);
+    }
+
+    ion-input.bank-search-input {
+      --border-color: var(@components-RechargeBankSelect-index-08);
+      --background: var(@components-RechargeBankSelect-index-09);
+
+      &.has-focus {
+        --border-color: var(@components-RechargeBankSelect-index-10);
+      }
+    }
+
+    ion-icon.search-icon {
+      color: var(@components-RechargeBankSelect-index-11);
+    }
+  }
+}

@@ -1,0 +1,39 @@
+html {
+  #tabbar-tabs-inicio-components-PartView-components-paymentPartner-2-index();
+}
+
+
+
+
+
+
+
+#tabbar-tabs-inicio-components-PartView-components-paymentPartner-2-index {
+  .layout1(
+    @bg1: linear-gradient(to right, var(--ep-color-background-fill-body-default) 0%, transparent 40%, transparent 60%, var(--ep-color-background-fill-body-default) 100%);
+  ) {
+    .layout1.image-wrapper {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        background: @bg1;
+      }
+
+      .payment-img {
+        display: block;
+        width: 8.125rem;
+        height: 3.375rem;
+      }
+    }
+  }
+
+
+  .layout1();
+}

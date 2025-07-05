@@ -1,0 +1,47 @@
+html {
+  #tabbar-tabs-inicio-components-FooterContent-index();
+}
+
+
+
+
+#tabbar-tabs-inicio-components-FooterContent-index {
+  .layout1(
+    @bg: var(--ep-color-background-fill-surface-raised-L1);
+    @line-color: var(--ep-color-border-default);
+  ) {
+    .layout1.footer-container {
+      border-top: 0.0625rem solid @line-color;
+      background: @bg;
+    }
+  }
+
+  .layout2(
+    @bg: var(--ep-color-background-fill-surface-raised-L1);
+    @line-color: var(--ep-color-border-default);
+  ) {
+    .layout2.footer-container {
+      width: 100%;
+      background: @bg;
+      border-top: 0.0625rem solid @line-color;
+      position: relative;
+      z-index: 1;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        max-height: 21.4375rem;
+        z-index: -2;
+        background: url('@/assets/img/inicio/footer-bg.png') top right / cover no-repeat;
+        mix-blend-mode: overlay;
+      }
+    }
+  }
+
+  .layout1();
+  .layout2();
+}

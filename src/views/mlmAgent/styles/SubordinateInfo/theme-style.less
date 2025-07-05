@@ -1,0 +1,162 @@
+#mlmAgent-components-subordinateInfo-index {
+  .style(
+    @mlmAgent-components-subordinateInfo-index-01: --mlm-color-text-basic;
+    @mlmAgent-components-subordinateInfo-index-02: --mlm-agent-date-bg-color;
+    @mlmAgent-components-subordinateInfo-index-03: --mlm-selected-text-color;
+    @mlmAgent-components-subordinateInfo-index-04: --mlm-select-icon-text-color;
+    @mlmAgent-components-subordinateInfo-index-05: --mlm-agent-date-bg-color;
+    @mlmAgent-components-subordinateInfo-index-06: --mlm-subdetail-item-name-color;
+    @mlmAgent-components-subordinateInfo-index-07: --mlm-select-icon-text-color;
+    @mlmAgent-components-subordinateInfo-index-08: --color-bg-commission-fourth;
+    @mlmAgent-components-subordinateInfo-index-09: --color-line-default;
+    @mlmAgent-components-subordinateInfo-index-10: --mlm-searchbar-icon-color;
+    @mlmAgent-components-subordinateInfo-index-11: --mlm-subdetail-box-bgc;
+    @mlmAgent-components-subordinateInfo-index-12: --mlm-subdetail-box-border-color;
+    @mlmAgent-components-subordinateInfo-index-13: --mlm-subdetail-top-bgc;
+    @mlmAgent-components-subordinateInfo-index-14: --mlm-subdetail-border-color;
+    @mlmAgent-components-subordinateInfo-index-15: --mlm-subordinate-id-text-color;
+    @mlmAgent-components-subordinateInfo-index-16: --mlm-subdetail-item-name-color;
+    @mlmAgent-components-subordinateInfo-index-17: --color-text-100;
+    @mlmAgent-components-subordinateInfo-index-18: --color-line-default;
+    @mlmAgent-components-subordinateInfo-index-19: --mlm-subdetail-item-name-color;
+    @mlmAgent-components-subordinateInfo-index-20: --color-line-default;
+    @mlmAgent-components-subordinateInfo-index-21: --mlm-toolbar-bg-color;
+    @mlmAgent-components-subordinateInfo-index-22: --color-bg-commission-third;
+    @mlmAgent-components-subordinateInfo-index-23: --color-primary-800;
+    @mlmAgent-components-subordinateInfo-index-24: --agent-btn-color;
+    @mlmAgent-components-subordinateInfo-index-25: --mlm-searchbar-placeholder-color;
+    @mlmAgent-components-subordinateInfo-index-26: --activity-record-selected-item-bg;
+    @mlmAgent-components-subordinateInfo-index-27: --mlm-selected-text-color;
+    @mlmAgent-components-subordinateInfo-index-28: --activity-record-select-item-bg;
+    @mlmAgent-components-subordinateInfo-index-29: --activity-record-select-item-color;
+    @mlmAgent-components-subordinateInfo-index-30: --color-bg-commission-second;
+    @mlmAgent-components-subordinateInfo-index-31: --color-bg-commission-third;
+    @mlmAgent-components-subordinateInfo-index-32: --mlm-subdetail-item-name-color;
+    @mlmAgent-components-subordinateInfo-index-33: --color-text-basic;
+    @mlmAgent-components-subordinateInfo-index-34: --mlm-subordinate-money-text-color;
+    @mlmAgent-components-subordinateInfo-index-35: --color-text-40;
+    @mlmAgent-components-subordinateInfo-index-36: --mlm-searchbar-enter-color;
+  ) {
+    .subordinateInfo{
+      .subordinate-info-time{
+        color: var(@mlmAgent-components-subordinateInfo-index-01);
+        .level {
+          background-color: var(@mlmAgent-components-subordinateInfo-index-02);
+          .type{
+            color: var(@mlmAgent-components-subordinateInfo-index-03);
+          }
+          ion-icon {
+            color: var(@mlmAgent-components-subordinateInfo-index-04);
+          }
+        }
+        .date{
+          background-color: var(@mlmAgent-components-subordinateInfo-index-05);
+          span {
+            color: var(@mlmAgent-components-subordinateInfo-index-06);
+          }
+          .timeChoose{
+            ion-icon {
+              color: var(@mlmAgent-components-subordinateInfo-index-07);
+            }
+          }
+        }
+      }
+      .filter {
+        background-color: var(@mlmAgent-components-subordinateInfo-index-08);
+        border: 0.0625rem solid var(@mlmAgent-components-subordinateInfo-index-09);
+        ion-icon {
+          color: var(@mlmAgent-components-subordinateInfo-index-10);
+        }
+      }
+      .perMes {
+        .perCard {
+          background-color: var(@mlmAgent-components-subordinateInfo-index-11);
+          border: 0.0625rem solid var(@mlmAgent-components-subordinateInfo-index-12);
+          .line {
+            box-shadow: 0 0.1875rem 0 0 var(@mlmAgent-components-subordinateInfo-index-13) inset;
+          }
+          .perImg {
+            border-right: 0.0625rem solid var(@mlmAgent-components-subordinateInfo-index-14);
+            .idMes {
+              .idNum {
+                color: var(@mlmAgent-components-subordinateInfo-index-15);
+              }
+              ion-icon {
+                color: var(@mlmAgent-components-subordinateInfo-index-16);
+              }
+            }
+          }
+          .mes {
+            .top {
+              color: var(@mlmAgent-components-subordinateInfo-index-17);
+              .right {
+                border-left: 0.0625rem solid var(@mlmAgent-components-subordinateInfo-index-18);
+              }
+            }
+            .bottom {
+              color: var(@mlmAgent-components-subordinateInfo-index-19);
+              .right {
+                border-left: 0.0625rem solid var(@mlmAgent-components-subordinateInfo-index-20);
+              }
+            }
+          }
+        }
+      }
+    }
+    ion-toolbar {
+      --background: var(@mlmAgent-components-subordinateInfo-index-21);
+    }
+    
+    ion-datetime {
+      --background: var(@mlmAgent-components-subordinateInfo-index-22);
+      --wheel-highlight-background: var(@mlmAgent-components-subordinateInfo-index-23);
+    }
+    
+    ion-datetime::part(calendar-day active) {
+      color: var(@mlmAgent-components-subordinateInfo-index-24);
+      background: var(@mlmAgent-components-subordinateInfo-index-23);
+    }
+    
+    ion-datetime::part(month-year-button) {
+      color: var(@mlmAgent-components-subordinateInfo-index-23);
+    }
+    
+    ion-searchbar#search-agency {
+      --placeholder-color: var(@mlmAgent-components-subordinateInfo-index-25);
+      color: var(@mlmAgent-components-subordinateInfo-index-36);
+    }
+    
+    ion-popover.level-popover {
+      ion-row {
+        p.selected {
+          background: var(@mlmAgent-components-subordinateInfo-index-26);
+          color: var(@mlmAgent-components-subordinateInfo-index-27);
+        }
+        p.unSelected {
+          background: var(@mlmAgent-components-subordinateInfo-index-28);
+          color: var(@mlmAgent-components-subordinateInfo-index-29);
+        }
+      }
+    }
+    
+    .subordinate-info {
+      background-color: var(@mlmAgent-components-subordinateInfo-index-30);
+      .subordinate-item {
+        background: var(@mlmAgent-components-subordinateInfo-index-31);
+        color: var(@mlmAgent-components-subordinateInfo-index-32);
+        .sub-item-value {
+          color: var(@mlmAgent-components-subordinateInfo-index-33);
+        }
+        .icon{
+          ion-icon {
+            color: var(@mlmAgent-components-subordinateInfo-index-34);
+          }
+        }
+      }
+    }
+    
+    ion-infinite-scroll-content {
+      color: var(@mlmAgent-components-subordinateInfo-index-35);
+    }
+  }
+}

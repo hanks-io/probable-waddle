@@ -1,0 +1,18 @@
+#activity-rechargeReward-default-index {
+  .style(
+    @rechargeReward-default-index-01: --theme-color-gradient-100,
+    @rechargeReward-default-index-02: --color-text-white-100,
+    @rechargeReward-default-index-03: --line-color,
+  ) {
+    .apply {
+      --background: var(@rechargeReward-default-index-01);
+    }
+    
+    .rechargeReward-text-basic {
+      color: var(@rechargeReward-default-index-02);
+      :deep(table), :deep(th), :deep(td) {
+        border: 1px solid var(@rechargeReward-default-index-03);
+      }
+    }
+  }
+}

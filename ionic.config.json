@@ -1,0 +1,8 @@
+{
+  "name": "ionic-star",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite",
+  "id": "12f7e7b5"
+}

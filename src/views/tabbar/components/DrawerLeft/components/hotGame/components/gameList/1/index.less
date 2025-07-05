@@ -1,0 +1,102 @@
+html {
+  #tabbar-components-DrawerLeft-components-hotGame-components-gameList-1-index();
+}
+
+
+
+
+
+
+#tabbar-components-DrawerLeft-components-hotGame-components-gameList-1-index {
+  .layout1() {
+    .layout1.hot-game-list-box {
+      margin-block-start: 1.125rem;
+      width: 100%;
+      overflow: auto;
+      border-radius: var(--ep-border-radius-surface-default, 0.875rem);
+
+      // 隐藏滚动条,兼容浏览器
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      
+
+      .hot-game-list {
+        display: flex;
+        gap: .375rem;
+
+        .card {
+          flex-shrink: 0;
+          border-radius: var(--ep-border-radius-surface-default, 0.875rem);
+          overflow: hidden;
+
+          &.style1, &.style2 {
+            width: 3.1481rem;
+            height: 4.25rem;
+          }
+
+          &.style3 {
+            width: 3.1481rem;
+          }
+
+          .img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .layout2() {
+    .layout2.hot-game-list-box {
+      margin-block-start: 1.125rem;
+      width: 100%;
+      overflow: auto;
+      border-radius: var(--ep-border-radius-surface-default, 0.875rem);
+
+      // 隐藏滚动条,兼容浏览器
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      
+
+      .hot-game-list {
+        display: flex;
+        gap: 1rem;
+
+        .card {
+          flex-shrink: 0;
+          border-radius: var(--ep-border-radius-surface-default, 0.875rem);
+          overflow: hidden;
+
+          &.style1, &.style2 {
+            width: 3.425rem;
+            height: 4.75rem;
+          }
+
+          &.style3 {
+            width: 3.425rem;
+          }
+
+          .img {
+            width: 0;
+            height: 0;
+
+            &.good-img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .layout1();
+  .layout2();
+}

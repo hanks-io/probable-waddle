@@ -1,0 +1,44 @@
+ion-select::part(icon) {
+  color: transparent;
+}
+
+.select-item {
+  border-radius: 0.625rem 0.625rem 0 0;
+}
+
+ion-item::part(native) {
+  padding: 0 0 0 0.625rem !important;
+}
+
+ion-button#popover-trigger {
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+ion-content { /* 滚动内容 */
+  --background: transperent;
+}
+
+ion-grid {
+  --ion-grid-padding: 0;
+}
+
+ion-col {
+  --ion-grid-column-padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+ion-modal {
+  --height: auto;
+  --border-radius: 16px;
+  padding: 0 1.5625rem;
+  height: auto;
+}
+
+ion-searchbar#search-agency {
+  --box-shadow: none;
+  overflow: hidden;
+}

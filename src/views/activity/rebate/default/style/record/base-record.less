@@ -1,0 +1,46 @@
+ion-item::part(native) {
+  /* 插槽slot内容样式 */
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  --ion-safe-area-right: 0;
+}
+
+ion-popover ion-button {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ion-popover ion-button::part(native) {
+  --padding-start: .375rem;
+  --padding-end: .375rem;
+  --padding-top: 0;
+  --padding-bottom: 0;
+}
+
+ion-icon {
+  transition: transform .1s linear;
+}
+
+ion-icon.on {
+  transform: rotate(180deg);
+}
+
+ion-col.select-col {
+  line-height: 0.75rem;
+  padding: 0 0.3125rem 0.3125rem 0; 
+}
+
+ion-col.select-col:nth-child(4),
+ion-col.select-col:nth-child(4n) {
+  padding: 0 0 0.3125rem 0;
+}
+
+.platform-name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+ion-col.lang-col {
+  font-size: 0.5rem;
+}

@@ -1,0 +1,39 @@
+ion-toolbar.top {
+    --border-width: 0;
+  }
+  .bottom {
+    display: flex;
+    height: 100%;
+  }
+  ion-toolbar ion-segment.md {
+    /* 设置导航标签布局方式 */
+    display: flex;
+    justify-content: left;
+  }
+  
+  ion-toolbar ion-segment-button.md::part(native) {
+    /* 设置导航标签的宽度 */
+    padding: 0;
+  }
+  
+  ion-toolbar ion-segment-button.md::part(indicator) {
+    /* 设置指示器宽度 */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  ion-toolbar ion-segment-button.md::part(indicator-background) {
+    height: 0.125rem;
+  }
+  
+  ion-toolbar ion-segment-button.md ion-label {
+    /* 取消导航标签的标签与指示器之间的边距 */
+    font-size: 0.78rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: none;
+  }
+  
+  ion-toolbar ion-segment-button.btn-center {
+    padding: 0 0.5rem;
+  }

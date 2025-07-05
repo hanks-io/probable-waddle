@@ -1,0 +1,46 @@
+.green-default {
+  #tabbar-tabs-inicio-components-GameWrapper-Head-Head5-index.style();
+}
+
+.forest-green {
+  #tabbar-tabs-inicio-components-GameWrapper-Head-Head5-index.style(
+    @text-color1: #fff;
+    @text-color2: rgba(255, 255, 255, 0.8);
+  );
+}
+
+#tabbar-tabs-inicio-components-GameWrapper-Head-Head5-index {
+
+  .style(
+    @text-color1: #afc69f;
+    @text-color2: #afc69f;
+  ) {
+    .game-head {
+      display: flex;
+      align-items: center;
+      margin-block-start: 0.9375rem;
+      margin-block-end: 0.75rem;
+    
+      .logo-c {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+    
+        .logo {
+          width: 1.875rem;
+          height: 1.875rem;
+          margin-inline-end: 0.4375rem;
+        }
+
+        ion-label {
+          color: @text-color1;
+        }
+      }
+    
+      .todo {
+        color: @text-color2;
+        margin-inline-start: auto;
+      }
+    }
+  }
+}

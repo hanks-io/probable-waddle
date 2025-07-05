@@ -1,0 +1,50 @@
+html {
+  #tabbar-components-DrawerLeft-components-language-1-index.layout();
+}
+
+
+
+
+#tabbar-components-DrawerLeft-components-language-1-index {
+  .layout(
+    @language-bg: var(--ep-color-background-fill-surface-raised-L2);
+    @arrow-bg: var(--ep-color-icon-brand-primary);
+    @icon-color1: var(--ep-color-icon-inverse);
+    @text-color1: var(--ep-color-text-default);
+  ) {
+
+    .language {
+      padding: .75rem .875rem;
+      border-radius: var(--ep-border-radius-surface-default, 0.875rem);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: @language-bg;
+  
+      .language-inner {
+        display: flex;
+        align-items: center;
+
+        .language-logo {
+          font-size: var(--ep-font-size-m, 0.875rem);
+          border-radius: 50%;
+        }
+  
+        .language-text {
+          margin-inline-start: .4125rem;
+          font-size: var(--ep-font-size-m, 0.875rem);
+          font-weight: var(--ep-font-weight-medium, 600);
+          color: @text-color1;
+        }
+      }
+  
+      .arrow-icon {
+        padding: .3125rem;
+        font-size: var(--ep-font-size-m, 0.875rem);
+        border-radius: var(--ep-border-radius-xl, 0.625rem);
+        background: @arrow-bg;
+        color: @icon-color1;
+      }
+    }
+  }
+}

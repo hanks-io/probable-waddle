@@ -1,0 +1,316 @@
+/* 轮播图指示器激活样式 */
+.swiper-pagination-bullet-active {
+  background: white !important;
+}
+
+/* 头部工具栏样式 */
+ion-header ion-toolbar {
+  --min-height: 3.125rem;
+  --background: var(--color-bar-bg);
+  --border-color: var(--line-color);
+  --padding-bottom: 0;
+  --padding-top: 0;
+}
+
+/* 标题字体大小 */
+ion-title {
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+
+/* 输入错误提示文本 */
+.error-text {
+  font-size: 10px;
+}
+
+ion-content::part(scroll) {
+  scrollbar-width: none;
+}
+
+ion-content::part(scroll)::-webkit-scrollbar {
+  display: none;
+}
+
+/* 轻提示弹框样式 */
+ion-toast {
+  --background: var(--color-bg-toast);
+  --min-width: 10rem;
+  --max-width: 18rem;
+  --border-radius: .5rem;
+  --white-space: normal;
+  --start: none;
+  --end: none;
+  display: flex;
+  justify-content: center;
+}
+
+/* 轻提示弹框文本样式 */
+ion-toast.warning::part(message) {
+  text-align: start;
+}
+
+ion-toast::part(icon) {
+  font-size: 1.75rem;
+  color: var(--ion-color-warning);
+}
+
+ion-toast.success::part(icon) {
+  color: var(--ion-color-success);
+}
+
+ion-toast::part(message) {
+  text-align: center;
+  color: var(--ion-color-light);
+}
+
+ion-toast.success::part(message) {
+  text-align: start;
+}
+
+ion-toast.warning::part(message) {
+  text-align: start;
+}
+
+/* 常用搜索栏 */
+ion-searchbar#searchbar {
+  --border-radius: .3125rem;
+  --background: var(--color-bar-bg);
+  padding-bottom: 0;
+}
+
+ion-searchbar#searchbar .searchbar-input-container .searchbar-input {
+  padding-inline-start: .75rem;
+  padding-inline-end: 2.25rem;
+  padding-top: .375rem;
+  padding-bottom: .375rem;
+  font-size: .825rem;
+  line-height: 0%;
+  min-height: 2.5rem;
+}
+
+ion-searchbar#searchbar .searchbar-input-container .searchbar-search-icon {
+  display: none;
+}
+
+/* 代理页面搜索栏 */
+ion-searchbar#search-agency {
+  --border-radius: .375rem;
+  --background: #090F1F;
+  padding-inline-end: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: auto;
+  min-height: 0;
+}
+
+ion-searchbar#search-agency .searchbar-input-container {
+  min-height: 0;
+}
+
+ion-searchbar#search-agency .searchbar-input-container .searchbar-input {
+  min-width: 5.25rem;
+  padding-inline-start: 5px;
+  padding-inline-end: .75rem;
+  padding-top: .375rem;
+  padding-bottom: .375rem;
+  font-size: .75rem;
+  line-height: 0%;
+}
+
+ion-searchbar#search-agency .searchbar-input-container .searchbar-search-icon {
+  display: none;
+}
+
+/* 加载提示框样式 */
+.loading-wrapper.ion-overlay-wrapper {
+  background: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* 收藏点击动画 */
+.animate-star {
+  animation: scale 500ms 1 ease-in-out;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.15);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* 弹窗样式 */
+ion-modal {
+  --background: transparent;
+  background: rgba(0,0,0,0.6);
+  --backdrop-opacity: 0;
+}
+
+/* 强制安装弹窗样式 */
+ion-modal#pwa-compulsory-modal,
+ion-modal#ios-pwa-guide {
+  --height: 100%;
+}
+
+/* 气泡式弹框样式 */
+ion-popover .popover-viewport ion-item {
+  --inner-padding-end: 0;
+}
+
+/* 多选选择框样式 */
+ion-checkbox {
+  --size: 16px;
+  --border-width: 0px;
+  --border-color-checked: #6815ec;
+  --checkbox-background-checked: var(--color-checkbox-bg);
+  --checkbox-background: #EAEDF6;
+  --border-color: #EAEDF6;
+  --checkmark-color: #fff;
+  --checkmark-width: 4px;
+  --border-radius: 4px;
+
+  margin-inline-end: 0;
+}
+
+ion-checkbox::part(container) {
+  padding: 0.125rem;
+  border-radius: 4px;
+  border: 1px solid var(--color-checkbox-border);
+}
+
+/* 分享转盘抽奖弹窗遮罩 */
+.share-wheel-modal {
+  --height: 100%;
+  --max-height: 100%;
+  --background: rgba(0, 0, 0, 0.5);
+}
+
+/* 上拉加载更多样式 */
+ion-infinite-scroll-content div.infinite-loading {
+  margin-bottom: 0;
+}
+
+/* 隐藏火狐浏览器的滚动条 */
+ion-segment {
+  scrollbar-width: none;
+}
+
+/* 隐藏segment滚动条 */
+ion-segment::-webkit-scrollbar {
+  display: none;
+}
+
+/* 取消ion-button按钮默认外边距, 去除ion-item包裹后的间隙 */
+ion-item.submit ion-button {
+  margin: 0;
+}
+
+ion-button {
+  text-transform: none;
+  letter-spacing: unset;
+}
+
+ion-button ion-spinner {
+  --color: #fff;
+}
+
+ion-segment-button {
+  letter-spacing: unset;
+  font-weight: normal;
+}
+
+/* 自定义对框框样式 */
+.alert-controller .alert-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+/* 自定义对框框样式 */
+body.backdrop-no-scroll.progressier-blurring>div.progressier-backdrop.no-blurring {
+  --progressierBackdrop: rgba(0, 0, 0, 0.5);
+}
+
+ion-img.cover::part(image) {
+  object-fit: cover;
+}
+
+ion-img.contain::part(image) {
+  object-fit: contain;
+}
+
+/* 常用 ion-content */
+.common-ion-content {
+  --padding-top: 0.75rem;
+  --padding-bottom: 0.75rem;
+  --padding-start: 0.75rem;
+  --padding-end: 0.75rem;
+  --background: var(--color-bg-300);
+}
+
+ion-modal {
+  font-family: var(--ion-font-family);
+  --box-shadow: 0 0 0 rgba(0, 0, 0, 0.4) !important;
+}
+
+.animate-refresh {
+  animation: rotation 500ms infinite linear;
+}
+
+/* 安装pwa进度条根据主题色样式 */
+.pwa-progress-bar ion-progress-bar {
+  --background: var(--color-bg-200);
+  --progress-background: var(--theme-color-900);
+}
+
+.pwa-progress-bar.amber-purple ion-progress-bar {
+  --background: var(--color-bg-100);
+
+}
+
+
+.pwa-progress-bar .progress-text {
+  color: var(--color-text-100) !important;
+}
+
+.pwa-progress-bar.purple-light .progress-text {
+  color: var(--text-color-white-100) !important;
+}
+
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.keep-space {
+  white-space: pre-wrap;
+}
+
+

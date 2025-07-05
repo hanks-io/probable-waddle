@@ -1,0 +1,45 @@
+#spread-default-components-registerSubordinates {
+  .style(
+    @default-components-registerSubordinates-01: --color-bg-200,
+    @default-components-registerSubordinates-02: --color-text-white-100,
+    @default-components-registerSubordinates-03: --color-bg-300,
+    @default-components-registerSubordinates-04: --color-text-gray-100,
+    @default-components-registerSubordinates-05: --color-text-gray-200,
+    @default-components-registerSubordinates-06: --color-text-white-100,
+    @default-components-registerSubordinates-07: --color-text-gray-100,
+    @default-components-registerSubordinates-08: --theme-color-gradient-100,
+    @default-components-registerSubordinates-09: --color-text-white-100,
+  ) {
+    form {
+      background: var(@default-components-registerSubordinates-01);
+    }
+
+    .illustrate {
+      color: var(@default-components-registerSubordinates-02);
+    }
+
+    ion-input {
+      /* 输入框样式 */
+      --background: var(@default-components-registerSubordinates-03);
+      --placeholder-color: var(@default-components-registerSubordinates-04);
+    }
+
+    .confirm-eye-color {
+      color: var(@default-components-registerSubordinates-05);
+    }
+    
+    .register-tips {
+      border-left: .125rem solid var(@default-components-registerSubordinates-06);
+      color: var(@default-components-registerSubordinates-07);
+    }
+    
+    ion-item.submit::part(native) {
+      --background: var(@default-components-registerSubordinates-08);
+    }
+    ion-item {
+      ion-button {
+        color: var( @default-components-registerSubordinates-09);
+      }
+    }
+  }
+}

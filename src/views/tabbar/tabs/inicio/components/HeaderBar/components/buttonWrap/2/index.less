@@ -1,0 +1,47 @@
+html {
+  #tabbar-tabs-inicio-components-HeaderBar-components-buttonWrap-2-index();
+}
+
+
+
+
+
+
+
+
+#tabbar-tabs-inicio-components-HeaderBar-components-buttonWrap-2-index {
+  .layout1(
+    @line-color: var(--color-border-default, #1E2D67);
+    @deposit-color: var(--ep-color-text-success, #53C154);
+    @deposit-shadow: 0 0 0.725rem 0 var(--color-background-fill-tips, #0A77DA) inset;
+    @deposit-bg: var(--ep-dynamic-secondary, linear-gradient(90deg, var(--ep-color-background-fill-gradients-secondary-a, #1D2A55) 0%, var(--ep-color-background-fill-gradients-secondary-a, #1D2A55) 118.75%));
+  ) {
+    .layout1.button-box {
+      display: flex;
+      align-items: center;
+
+      .deposit {
+        flex: 1;
+        border-radius: var(--ep-border-radius-m, 0.375rem);
+        border: 0.0625rem solid @line-color;
+        box-shadow: @deposit-shadow;
+        background: @deposit-bg;
+
+        &::part(native) {
+          font-size: var(--ep-font-size-s, 0.75rem);
+          font-weight: var(--ep-font-weight-medium, 600);
+          color: @deposit-color;
+        }
+      }
+    }
+  }
+
+  .layout2(
+
+  ) {
+
+  }
+
+  .layout1();
+  .layout2();
+}

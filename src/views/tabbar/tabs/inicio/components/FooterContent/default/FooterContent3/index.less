@@ -1,0 +1,58 @@
+.green-default {
+  #tabbar-tabs-inicio-components-FooterContent-default-FooterContent3-index.style(
+    @bg1: #183009;
+    @text-color1: #7E9071;
+    @text-color2: #AFC69F;
+    @text-color3: #7E9071;
+  );
+}
+
+.forest-green {
+  #tabbar-tabs-inicio-components-FooterContent-default-FooterContent3-index.style(
+    @bg1: #006849;
+    @text-color1: #50B388;
+    @text-color2: #50B388;
+    @text-color3: rgba(255, 255, 255, 0.4);
+  );
+}
+
+.amber-purple {
+  #tabbar-tabs-inicio-components-FooterContent-default-FooterContent3-index.style();
+}
+
+.blue-default {
+  #tabbar-tabs-inicio-components-FooterContent-default-FooterContent3-index.style(
+    @bg1: linear-gradient(90deg, #101629 0%, #101629 50%, rgba(0, 255, 208, 0.06) 100%);
+  );
+}
+
+#tabbar-tabs-inicio-components-FooterContent-default-FooterContent3-index {
+  .style(
+    @bg1: var(--color-bg-200);
+    @text-color1: var(--text-color2);
+    @text-color2: var(--text-color1);
+    @text-color3: #7E9071;
+  ) {
+    .footer-container {
+      background: @bg1;
+      color: @text-color1;
+      border-radius: 0 0 0.625rem 0.625rem;
+
+      .content {
+        .text {
+          color: @text-color1;
+        }
+      }
+
+      .intro {
+        .text {
+          color: @text-color2;
+        }
+
+        .version{
+          color: @text-color3;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+#spread-default-components-performance {
+  .style(
+    @default-components-performance-01: --color-bg-800,
+    @default-components-performance-02: --color-bg-1100,
+    @default-components-performance-03: --agent-performance-detail-item-bgc,
+    @default-components-performance-04: --color-bg-300,
+    @default-components-performance-05: --color-bg-100,
+    @default-components-performance-06: --theme-color-600,
+    @default-components-performance-07: --color-bg-300,
+    @default-components-performance-08: --agent-performance-detail-toolbar-bgc,
+    @default-components-performance-09: --color-border-600,
+    @default-components-performance-10: --color-bg-200,
+    @default-components-performance-11: --color-text-white-100,
+    @default-components-performance-12: --agent-datetime-select-text-color,
+    @default-components-performance-13: --agent-ion-datetime-calendar-day-bgc,
+    @default-components-performance-14: --agent-ion-color-primary,
+    @default-components-performance-15: --color-bg-300,
+    @default-components-performance-16: --color-text-gray-300,
+    @default-components-performance-17: --color-text-gray-300,
+    @default-components-performance-18: --color-text-white-100,
+    @default-components-performance-19: --color-bg-300,
+    @default-components-performance-20: --color-text-gray-300,
+    @default-components-performance-21: --color-text-gray-300,
+    @default-components-performance-22: --color-bg-1200,
+    @default-components-performance-23: --color-text-white-100,
+    @default-components-performance-24: --color-text-gray-200,
+    @default-components-performance-25: --color-text-white-100,
+    @default-components-performance-26: --theme-color-800,
+  ) {
+    .agent-performance {
+      background: var(@default-components-performance-01);
+    }
+
+    .select-item {
+      background: var(@default-components-performance-02);
+    }
+
+    ion-item {
+      --background: var(@default-components-performance-03);
+    }
+
+    ion-item.commission-list:nth-child(odd) {
+      --background: var(@default-components-performance-04);
+    }
+
+    ion-item.commission-list:nth-child(even) {
+      --background: var(@default-components-performance-05);
+    }
+
+    #popover-trigger p.on {
+      border-bottom: 1px solid var(@default-components-performance-06);
+    }
+
+    ion-modal {
+      --background: var(@default-components-performance-07);
+    }
+
+    ion-modal ion-toolbar.detail-toolbar {
+      --background: var(@default-components-performance-08);
+      border-bottom: 1px solid var(@default-components-performance-09);
+    }
+
+    ion-datetime {
+      --background: var(@default-components-performance-10);
+      color: var(@default-components-performance-11);
+    }
+    
+    ion-datetime::part(calendar-day active) {
+      color: var(@default-components-performance-12);
+      background: var(@default-components-performance-13);
+      box-shadow: none;
+    }
+    ion-datetime::part(month-year-button) {
+      color: var(@default-components-performance-26);
+    }
+    .ion-color-primary {
+      --ion-color-base: var(@default-components-performance-14) !important;
+    }
+    
+    .select-date {
+      background: var(@default-components-performance-15);
+      color: var(@default-components-performance-16);
+      .text-base {
+        color: var(@default-components-performance-17);
+      }
+    }
+    
+    ion-searchbar#search-agency {
+      --color: var(@default-components-performance-18);
+      --background: var(@default-components-performance-19);
+      --placeholder-color: var(@default-components-performance-20);
+      .search-icon {
+        color: var(@default-components-performance-21);
+      }
+    }
+    
+    .performance-item-title {
+      --background: var(@default-components-performance-22);
+      color: var(@default-components-performance-23);
+    }
+    
+    .table-content-text-color {
+      color: var(@default-components-performance-24);
+    }
+
+    ion-datetime::part(wheel-item active) {
+      color: var(@default-components-performance-25);
+    }
+  }
+}

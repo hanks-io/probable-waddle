@@ -1,0 +1,49 @@
+#activity-sign-components-default-modal-unmetReceiveModal {
+  .style(
+    @sign-components-default-modal-unmetReceiveModal-01: --color-primary-btn-text-disable;
+    @sign-components-default-modal-unmetReceiveModal-02: --color-bg-200;
+    @sign-components-default-modal-unmetReceiveModal-03: --text-color-white-100;
+    @sign-components-default-modal-unmetReceiveModal-04: --text-color-white-40;
+    @sign-components-default-modal-unmetReceiveModal-05: --accent-color-green;
+    @sign-components-default-modal-unmetReceiveModal-06: --theme-color-800;
+    @sign-components-default-modal-unmetReceiveModal-07: --color-text-black-100;
+    @sign-components-default-modal-unmetReceiveModal-08: --button-right-bg-color-shade;
+    @sign-components-default-modal-unmetReceiveModal-09: --button-right-bg-color-tint;
+    @sign-components-default-modal-unmetReceiveModal-10: --button-right-bg-color-shade;
+  ) {
+    ion-modal {
+      --background: var(@sign-components-default-modal-unmetReceiveModal-01);
+    }
+    
+    .unmet-receive {
+      border-radius: .625rem;
+      background: var(@sign-components-default-modal-unmetReceiveModal-02);
+    }
+    
+    .unmet-tips {
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: var(@sign-components-default-modal-unmetReceiveModal-03);
+    }
+    .unmet-message {
+      font-size: .75rem;
+      color: var(@sign-components-default-modal-unmetReceiveModal-04);
+    }
+    
+    .text-money {
+      color: var(@sign-components-default-modal-unmetReceiveModal-05);
+    }
+
+    ion-button.default-unmet-receive-btn {
+      font-size: .875rem;
+      font-weight: bold;
+      --border-radius: .25rem;
+      --background: var(@sign-components-default-modal-unmetReceiveModal-06);
+      --color: var(@sign-components-default-modal-unmetReceiveModal-07);
+      --background-focused: var(@sign-components-default-modal-unmetReceiveModal-08);
+      --background-hover: var(@sign-components-default-modal-unmetReceiveModal-09);
+      --background-activated: var(@sign-components-default-modal-unmetReceiveModal-10);
+    }
+  }
+}
+

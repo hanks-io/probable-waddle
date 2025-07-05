@@ -1,0 +1,81 @@
+.blue-default {
+  #tabbar-tabs-inicio-components-AppInstall-default-index.style();
+}
+
+.green-default {
+  #tabbar-tabs-inicio-components-AppInstall-default-index.style(
+    #34571d,
+    #34571d,
+    #afc69f,
+    #7e9071,
+  );
+}
+
+.amber-purple {
+  #tabbar-tabs-inicio-components-AppInstall-default-index.style(
+    #5f588c,
+    #5f588c,
+    #BDB8E1,
+    #686299,
+  );
+}
+
+#tabbar-tabs-inicio-components-AppInstall-default-index {
+
+
+
+  .style(
+    @color1: #1a233e,
+    @color2: #31343D,
+    @color3: #fff,
+    @color4: #86888D,
+  ) {
+    .tabbar-tabs-inicio-components-AppInstall-default-index {
+      .divider {
+        width: 22.5rem;
+        height: 1px;
+        margin-left: 0.9375rem;
+        margin-block: 0.9375rem;
+        background-color: @color1;
+      }
+      
+      .install-container {
+        padding-inline: 0.5625rem;
+        margin-block: 0.625rem;
+        font-size: 0.625rem;
+      
+        .row {
+          height: 2.625rem;
+        }
+        .col {
+          padding-inline-start: .375rem;
+          padding-inline-end: .375rem;
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+        .install-btn {
+          border-width: 0.0625rem;
+          border-style: solid;
+          height: 100%;
+          border-radius: 0.625rem;
+          display: flex;
+          align-items: center;
+          padding-left: 1.25rem;
+          border-color: @color2;
+  
+          .icon {
+            font-size: 1.875rem;
+            margin-right: 0.3125rem;
+          }
+          .text {
+            color: @color3;
+          }
+          .text-sub {
+            font-size: 0.5rem;
+            color: @color4;
+          }
+        }
+      }
+    }
+  }
+}

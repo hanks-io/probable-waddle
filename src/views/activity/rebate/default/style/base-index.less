@@ -1,0 +1,63 @@
+ion-segment-button.segment {
+  min-height: 3.75rem;
+}
+
+ion-segment-button.ios {
+  --padding-start: 0;
+  --padding-end: 0;
+  --padding-top: 2px;
+  --padding-bottom: 2px;
+  margin-top: 0;
+  margin-bottom: 0.625rem;
+  text-transform: capitalize;
+  min-width: 0;
+}
+
+ion-segment-button.ios.claim.shiny {
+  position: relative;
+  overflow: hidden;
+}
+
+ion-segment-button.ios.claim.shiny::before {
+  content: '';
+  animation: shiny 6s ease-in-out infinite;
+  background: white;
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: -180px;
+  width: 30px
+}
+
+@keyframes shiny {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(45deg);
+  }
+  80% {
+    opacity: 0.5;
+    transform: scale(0) rotate(45deg);
+  }
+  81% {
+    opacity: 1;
+    transform: scale(4) rotate(45deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(50) rotate(45deg);
+  }
+}
+
+.main-left,
+.main-right {
+  height: calc(100% - 33.2px);
+}
+
+.main-content {
+  margin-top: 3.125rem;
+}
+
+.un-zh-left {
+  height: calc(100% - 50px);
+}

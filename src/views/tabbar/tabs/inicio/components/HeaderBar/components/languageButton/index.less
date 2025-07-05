@@ -1,0 +1,63 @@
+html {
+  #tabbar-tabs-inicio-components-HeaderBar-components-languageButton-index.layout();
+}
+
+
+
+#tabbar-tabs-inicio-components-HeaderBar-components-languageButton-index {
+  .layout(
+    @bg2: var(--ep-color-background-fill-surface-raised-L1);
+    @text-color1: var(--ep-color-text-default);
+    @icon-color1: var(--ep-color-icon-default);
+    @btn-bg1: transparent;
+    @btn-bg2: var(--ep-color-background-fill-surface-raised-L2);
+  ) {
+
+    .language-btn {
+      flex-shrink: 0;
+      margin-left: 0.5rem;
+      --background: transparent;
+
+      .language-icon {
+        font-size: 1.125rem;
+        color: @icon-color1;
+      }
+    }
+
+    #language {
+      --background: @bg2;
+      
+      &::part(content) {
+        margin-top: 1.5rem;
+        margin-left: 0.125rem;
+        border-radius: 0.375rem;
+        width: max-content;
+      }
+    
+      .language-list {
+
+        .language-item {
+          display: flex;
+          align-items: center;
+          height: 3.25rem;
+          padding-inline: 0.875rem;
+          font-size: var(--ep-font-size-s, 0.75rem);
+          font-weight: var(--ep-font-weight-medium, 600);
+          cursor: pointer;
+          color: @text-color1;
+          background: @btn-bg1;
+
+          &.active {
+            background: @btn-bg2;
+          }
+
+          .flag {
+            border-radius: 0.75rem;
+            font-size: 1rem;
+            margin-right: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+html {
+  #tabbar-components-DrawerLeft-components-depositAndWithdrawal-1-index.layout();
+}
+
+
+
+#tabbar-components-DrawerLeft-components-depositAndWithdrawal-1-index {
+  .layout(
+    @bg1: transparent;
+    @bg2: red;
+    @icon-color: rgba(254, 184, 5, 1);
+    @text-color: rgba(254, 184, 5, 1);
+    @line-color: #2E2D2C;
+  ) {
+    .deposit-withdrawal-wrapper {
+      display: flex;
+      gap: .75rem;
+      background: @bg1;
+
+      .deposit-wrapper, .withdraw-wrapper {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: .375rem;
+        padding: .4375rem 0;
+        border: 0.0625rem solid @line-color;
+        background: @bg2;
+
+        .icon {
+          font-size: 1.875rem;
+          color: @icon-color;
+        }
+
+        .label {
+          font-size: .875rem;
+          font-weight: 500;
+          color: @text-color;
+        }
+      }
+    }
+  }
+}

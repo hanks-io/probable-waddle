@@ -1,0 +1,65 @@
+.blue-default {
+  #tabbar-tabs-inicio-components-ToTopButton-Button2-index.style();
+}
+
+.amber-purple {
+  #tabbar-tabs-inicio-components-ToTopButton-Button2-index.style(
+    @toTop-bg: #7041F3;
+  );
+}
+
+.forest-green, .green-default {
+  #tabbar-tabs-inicio-components-ToTopButton-Button2-index.style(
+    @text-color1: #fff;
+    @icon-color1: #fff;
+    @toTop-bg: #4da341;
+    @toTop-icon-bg: linear-gradient(180deg, #13c96a 0%, #1d9554 100%);
+  );
+}
+
+#tabbar-tabs-inicio-components-ToTopButton-Button2-index {
+
+  .style(
+    @text-color1: #fff;
+    @icon-color1: #fff;
+    @toTop-bg: #4da341;
+    @toTop-icon-bg: linear-gradient(0deg, #0167ca 0%, #38a8fa 100%);
+  ) {
+    .to-top-box {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      font-size: 0.625rem;
+      position: fixed;
+      z-index: 50;
+      right: 1.25rem;
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-end;
+      align-items: center;
+      background: @toTop-bg;
+
+      .icon-wall {
+        width: 1.375rem;
+        height: 1.375rem;
+        font-size: 1.375rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+        
+        .icon {
+          color: @icon-color1;
+        }
+      }
+  
+      .to-top-text {
+        color: @text-color1;
+        font-size: 0.75rem;
+        font-weight: 500;
+        margin-bottom: 0.125rem;
+      }
+    }
+  }
+}

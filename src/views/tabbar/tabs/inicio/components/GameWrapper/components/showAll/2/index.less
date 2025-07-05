@@ -1,0 +1,47 @@
+html {
+  #tabbar-tabs-inicio-components-GameWrapper-components-showAll-2-index();
+}
+
+
+
+#tabbar-tabs-inicio-components-GameWrapper-components-showAll-2-index {
+  .layout1(
+    @text-color1: var(--ep-color-text-default);
+    @icon-color1: var(--ep-color-icon-brand-secondary);
+    @line-color1: var(--ep-color-border-default);
+  ) {
+    .layout1.more {
+      padding: 0.6875rem 0 0.75rem;
+      display: flex;
+      justify-content: center;
+      border-top: 0.0625rem solid @line-color1;
+
+      .btn {
+        display: flex;
+        align-items: center;
+        gap: .375rem;
+
+        .btn-label {
+          text-align: center;
+          font-size: var(--ep-font-size-s);
+          text-transform: capitalize;
+          font-weight: var(--ep-font-weight-medium);
+          color: @text-color1;
+        }
+
+        .btn-icon {
+          font-size: var(--ep-font-size-s);
+          transform: rotateX(0deg);
+          transition: transform 0.3s ease;
+          color: @icon-color1;
+        }
+        
+        .active {
+          transform: rotateX(180deg);
+        }
+      }
+    }
+  }
+
+  .layout1();
+}

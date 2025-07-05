@@ -1,0 +1,60 @@
+html {
+  #tabbar-components-DrawerLeft-components-hotGame-1-index();
+}
+
+
+
+
+
+#tabbar-components-DrawerLeft-components-hotGame-1-index {
+  .layout1(
+    @bg1: var(--ep-color-background-fill-surface-raised-L1),
+    @line-color1: var(--ep-color-border-default),
+    @text-color1: var(--ep-color-text-default),
+    @text-color2: var(--ep-color-text-weaker),
+  ) {
+    .layout1.hot-game-box {
+      padding: 0.9375rem;
+      border-radius: var(--ep-border-radius-surface-default, 0.875rem);
+      overflow: hidden;
+      position: relative;
+      z-index: 0;
+      border: 0.0625rem solid @line-color1;
+      background: @bg1;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 6rem;
+        height: 10rem;
+        transform: rotate(-39.331deg);
+        background: var(--ep-color-background-fill-glow-secondary-opacity-40);
+        filter: blur(4.375rem);
+      }
+    }
+  }
+
+  .layout2(
+    @bg1: var(--ep-color-background-fill-surface-raised-L1),
+    @line-color1: var(--ep-color-border-default),
+    @text-color1: var(--ep-color-text-default),
+    @text-color2: var(--ep-color-text-weaker),
+  ) {
+    .layout2.hot-game-box {
+      padding: 0.9375rem;
+      border-radius: var(--ep-border-radius-surface-default, 0.875rem);
+      overflow: hidden;
+      position: relative;
+      z-index: 0;
+      border: 0.0625rem solid @line-color1;
+      background: @bg1;
+      
+    }
+  }
+
+  .layout1();
+  .layout2();
+}

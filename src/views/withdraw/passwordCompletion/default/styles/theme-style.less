@@ -1,0 +1,29 @@
+#withdraw-passwordCompletion-default-index {
+    //局部作用域
+  
+    .style(
+      @index01: --color-text-white-100,
+      @index02: --theme-color-gradient-100,
+      @index03: --theme-color-gradient-100,
+      @index04: --color-border,
+      @homeBtnColor:--color-text-white-100,
+      @withdrawBtnColor:--color-text-white-100,
+      @withdrawBtnBgColor:--color-bg-300
+    ) {
+        .btnBase {
+            --color: var(@index01);
+          }
+        
+          .btnGoHomePage {
+            --background: var(@index02);
+            --background-activated: var(@index03);
+            --color: var(@homeBtnColor);
+          }
+          
+          .btnContinueWithdraw {
+            --border-color: var(@index04);
+            --color: var(@withdrawBtnColor);
+            --background: var(@withdrawBtnBgColor);
+          }
+    }
+  }

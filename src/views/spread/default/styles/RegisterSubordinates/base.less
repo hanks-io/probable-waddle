@@ -1,0 +1,67 @@
+form {
+  width: 22.5rem;
+  margin: 0 auto;
+  border-radius: .625rem;
+}
+
+form ion-content {
+  --background: transparent;
+}
+
+.illustrate{
+  font-size: .75rem;
+  line-height: .875rem;
+  width: 21.25rem;
+  margin: 1.25rem auto ;
+  padding: 0 0.4rem;
+}
+
+ion-item {
+  --background: transparent;
+  --padding-bottom: 0px;
+  --padding-end: 0;
+  --padding-start: 0;
+  --padding-top: 0;
+  --inner-padding-end: 0;
+  --inner-border-width: 0px;
+}
+
+ion-input {
+  --placeholder-opacity: 1;
+  --padding-bottom: 0px;
+  --padding-start: 10px;
+  --padding-top: 0px;
+  --border-width: 0px;
+  --border-radius: 10px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+/* :global(#register-subordinates ion-input .input-wrapper.sc-ion-input-ios) {
+  border: 1px solid rgb(55 65 81);
+} */
+:global(#register-subordinates .input-bottom.sc-ion-input-ios .error-text.sc-ion-input-ios){
+  color: #FF0000;
+
+}
+
+.sc-ion-input-ios-h:not(.legacy-input) {
+  min-height: 40px;
+  /* ion-input最小高度 */
+}
+
+ion-item.sc-ion-input-ios-h:not(.item-label):not(.item-has-modern-input),
+ion-item:not(.item-label):not(.item-has-modern-input) .sc-ion-input-ios-h {
+  --padding-start: 10px;
+  /* ion-input左内边距(ion-item内ion-input默认取消左内边距) */
+}
+
+ion-item.submit {
+  --min-height: 40px;
+  --background: linear-gradient(0deg, #0167CA 0%, #38A8FA 100%);
+  --border-radius: 10px;
+}
+
+ion-button {
+  text-transform: none;
+}

@@ -1,0 +1,73 @@
+ion-modal#avatar {
+  --height: 100%;
+}
+
+ion-modal#avatar div.content {
+  position: absolute;
+  bottom: 0;
+  max-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  ion-title {
+    font-size: 1rem ;
+    line-height: 1.5rem ;
+  }
+  ion-row.sex {
+    font-size: 0.875rem ;
+    line-height: 1.25rem ;
+    ion-col {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom-width: 0.0625rem ;
+      ion-icon {
+        font-size: 1.375rem;
+      }
+    }
+    ion-col.selected {
+      border-bottom-width: 0.125rem;
+    }
+  }
+  .img {
+    flex: 1; 
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    overflow-y: auto;
+    img {
+      border-radius: .625rem ;
+    }
+    img.selected {
+      border-width: 0.125rem;
+    }
+  }
+}
+
+
+/* 隐藏滚动条 */
+div.overflow-y-auto {
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+div.overflow-y-auto::-webkit-scrollbar {
+  display: none;
+}
+
+ion-button.submit {
+  --border-radius: 0.625rem;
+  text-transform: none; /* 取消按钮文本自动大写 */
+  margin-left: 3rem;
+  margin-right: 3rem;
+  min-height: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+ion-icon.close {
+  font-size: 1rem;
+  border-radius: 0.3125rem;
+}

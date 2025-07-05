@@ -1,0 +1,32 @@
+
+html {
+  #tabbar-components-tabBar-components-colorWrap-index.layout();
+}
+
+
+
+
+#tabbar-components-tabBar-components-colorWrap-index {
+  .layout(
+    @bg1: linear-gradient(to bottom, transparent var(--tab-bar-height), var(--ep-color-background-fill-surface-raised-L2) var(--tab-bar-height));
+    @bg2: var(--ep-color-background-fill-surface-raised-L2);
+
+  ) {
+    .tab-bar {
+      --tab-bar-height: 3.5rem;
+      width: 100%;
+      height: var(--tab-bar-height);
+      position: absolute;
+      bottom: -0.0625rem;
+      z-index: 10;
+      --background: @bg1;
+
+      .inner-wrap {
+        width: 100%;
+        height: var(--tab-bar-height);
+        display: flex;
+        background: @bg2;
+      }
+    }
+  }
+}

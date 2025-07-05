@@ -1,0 +1,151 @@
+
+html {
+  #tabbar-tabs-inicio-components-GameWrapper-index.layout(
+    @text-color1: var(--text-color1);
+    @text-color2: var(--theme-color-800);
+  );
+}
+
+.blue-default {
+  .home-type-Platform:not(.v02) {
+    #tabbar-tabs-inicio-components-GameWrapper-index.home-type-Platform.style();
+  }
+  .home-type-Platform.v02 {
+    #tabbar-tabs-inicio-components-GameWrapper-index.style(
+      @text-color1: var(--text-color1);
+      @text-color2: var(--theme-color-800);
+    );
+  }
+}
+
+.forest-green {
+  #tabbar-tabs-inicio-components-GameWrapper-index.style(
+    @text-color1: rgba(255, 255, 255, 0.4);
+    @text-color2: var(--theme-color-800);
+  );
+}
+
+.auroral-yellow {
+  #tabbar-tabs-inicio-components-GameWrapper-index.style(
+    @text-color1: var(--text-color2);
+    @text-color2: var(--theme-color-800);
+  );
+  .tabbar-tabs-inicio-components-GameWrapper-index {
+    padding-inline: 0;
+    margin-bottom: 0;
+    
+
+    .card-container {
+      background: #24221F;
+      padding: 1.375rem 1.0625rem 0;
+      border-radius: 0.625rem 0.625rem 0 0;
+
+      &.onMore {
+        padding-block-end: 0.75rem;
+        border-radius: 0.625rem;
+      }
+    }
+
+    .more {
+      background: #24221F;
+      padding-block: 1.25rem .75rem;
+      border-radius: 0 0 0.625rem 0.625rem;
+    }
+  }
+}
+
+#tabbar-tabs-inicio-components-GameWrapper-index {
+
+  .home-type-Platform {
+    .style() {
+      .tabbar-tabs-inicio-components-GameWrapper-index {
+        background: #1A223A;
+        border-radius: 0.625rem;
+        margin-bottom: 0.625rem;
+        padding-inline: 0.5625rem;
+
+        .card-container {
+          padding-block-end: 0.625rem;
+        }
+      }
+    }
+  }
+
+  .layout(
+    @text-color1: #566488;
+    @text-color2: #1680DC;
+  ) {
+    .tabbar-tabs-inicio-components-GameWrapper-index {
+      padding-inline: 0.9375rem;
+      margin-bottom: .5rem;
+
+      .aspect-ratio-card {
+        width: 100%;
+        aspect-ratio: 100 / 32.786;
+        border-radius: var(--ep-border-radius-surface-default, 0.875rem);
+        overflow: hidden;
+      }
+      &:has(.aspect-ratio-card) {
+        padding-bottom: 0.3125rem;
+      }
+
+      .card-container {
+        display: flex;
+        flex-flow: wrap;
+        gap: 0.75rem;
+
+        &.onMore {
+          
+        }
+      }
+  
+      .more {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-block-start: 0.9375rem;
+        padding-block-end: 1.625rem;
+        text-transform: capitalize;
+        font-size: 0.75rem;
+        line-height: 1.5;
+        .label {
+          color: @text-color1;
+          font-weight: 400;
+        }
+        .btn {
+          color: @text-color2;
+          .btn-label {
+            font-weight: 600;
+          }
+          .btn-icon {
+            margin-inline-start: 0.1875rem;
+            vertical-align: middle;
+            transform: rotateX(0deg);
+            transition: transform 0.3s ease;
+          }
+          .active {
+            transform: rotateX(180deg);
+          }
+        }
+      }
+    }
+  }
+
+  .style(
+    @text-color1: #566488;
+    @text-color2: #1680DC;
+  ) {
+    .tabbar-tabs-inicio-components-GameWrapper-index {
+  
+      .more {
+
+        .label {
+          color: @text-color1;
+        }
+        .btn {
+          color: @text-color2;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,117 @@
+html {
+  #tabbar-tabs-inicio-components-Segment-components-nav-5-index.layout();
+}
+
+
+
+
+
+
+#tabbar-tabs-inicio-components-Segment-components-nav-5-index {
+  .layout(
+    @text-color1: var(--ep-color-text-default);
+  ) {
+
+    .btn-wall {
+      width: 6.25rem;
+      height: 2.625rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .btn-bg {
+        width: 5.625rem;
+        height: 100%;
+        overflow: hidden;
+        transform: skew(-18deg);
+        border-radius: var(--ep-border-radius-m);
+        position: absolute;
+        z-index: 1;
+
+        &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          left: -0.3125rem;
+          z-index: -1;
+          width: 6.25rem;
+          height: 100%;
+          transform: skew(18deg);
+          background: url('@/assets/img/inicio/tab-bg3.png') no-repeat center center / 100% 100%;
+          opacity: 0.4;
+          mix-blend-mode: color-burn;
+        }
+      }
+
+      .label {
+        flex: 1;
+        position: relative;
+        z-index: 10;
+        margin-left: 1rem;
+        text-align: left;
+        white-space: wrap;
+        text-wrap: wrap;
+        line-height: 1;
+        font-size: var(--ep-font-size-m, 0.875rem);
+        font-weight: var(--ep-font-weight-bold, 700);
+        justify-self: flex-start;
+        color: @text-color1;
+      }
+
+      .type-img {
+        position: absolute;
+        right: 0;
+        z-index: 10;
+        display: block;
+        background-size: 700% 100%;
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+
+    ion-segment-button, .swiper-slide {
+      &:first-child {
+        .btn-wall {
+          background: url('@/assets/img/inicio/tab-bg-3.png') no-repeat left center / 100% 100%;
+  
+          .btn-bg {
+            background: transparent;
+  
+            &::after {
+              display: none;
+            }
+          }
+  
+          .label {
+            margin-left: 0.5rem;
+          }
+        }
+      }
+  
+      &:nth-child(4n+1) {
+        .btn-bg {
+          background: linear-gradient(102deg, #DC544C 0%, #9F242D 89.4%);
+        }
+      }
+  
+      &:nth-child(4n+2) {
+        .btn-bg {
+          background: linear-gradient(111deg, #EEB635 26.94%, #DD7029 91.27%);
+        }
+      }
+  
+      &:nth-child(4n+3) {
+        .btn-bg {
+          background: linear-gradient(111deg, #7BB631 26.94%, #41842C 91.27%);
+        }
+      }
+  
+      &:nth-child(4n+4) {
+        .btn-bg {
+          background: linear-gradient(111deg, #186EC9 26.94%, #183FC9 91.27%);
+        }
+      }
+    }
+  }
+}

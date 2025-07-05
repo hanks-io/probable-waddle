@@ -1,0 +1,73 @@
+:global(ion-modal#receiveModal::part(content)) {
+  --height: 100%;
+  --max-width: 486px;
+}
+
+.check-success {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.875rem;
+  background: linear-gradient(90deg, #4692FE 3.6%, #0FB97A 100%);
+}
+
+.get-prize {
+  font-size: 1rem;
+  line-height: 1.875rem;
+  font-weight: 500;
+  color: rgba(255,255,255,1)
+}
+
+.receive-money {
+  height: 4.125rem;
+  background: radial-gradient(37.1% 219.24% at 50% 50%, rgba(51, 151, 156, 0.2) 0%, rgba(51, 151, 156, 0) 100%);
+}
+
+.sign-reward {
+  font-size: 2rem;
+  line-height: 1.65rem;
+  font-weight: 900;
+  background: linear-gradient(180deg, #FDE714 -9.75%, #D25757 93.46%);
+}
+
+.receive-plus {
+  font-weight: 500;
+}
+
+.extra-reward {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.21rem;
+  background: #53C154;
+}
+
+.hidden-reward {
+  visibility: hidden; /* 初始隐藏 */
+}
+
+.show-reward {
+  animation: fadeIn 1s forwards; /* 1秒动画，结束后保持最后状态 */
+  visibility: visible; /* 确保在动画前可见 */
+}
+
+ion-button.receive-btn {
+  min-height: 2.5rem;
+  --border-radius: .625rem;
+  --color: #854A08;
+  font-weight: 900;
+  --background: linear-gradient(0deg, #EEAC00 -40760%, #F4C200 -37160.32%, #F8DB00 -32323.25%, #F0B200 -29511%);
+  --box-shadow: 0 .25rem 0 #965A17; /* 添加底部阴影 */
+  --background-focused: none;
+  --background-hover: none;
+  --background-activated: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

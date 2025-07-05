@@ -1,0 +1,167 @@
+ion-toolbar.toolbar-search {
+    --border-width: 0;
+    ion-img {
+      width: 2.25rem ;
+    }
+    ion-label {
+      font-size: 0.75rem;
+      line-height: 1rem;
+    }
+  }
+  
+  ion-toolbar.toolbar-search > ion-segment {
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+    margin-top: 1rem;
+  }
+  
+  ion-content#content {
+    .line {
+      margin-left: 0.625rem;
+      margin-right: 0.625rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      border-width: 0.0625rem;
+    }
+    .bottom {
+      display: flex;
+      height: 100%;
+      ion-content.side {
+        ion-segment {
+          display: flex;
+          flex-direction: column;
+          ion-icon {
+            font-size: 2.375rem;
+          }
+          .text {
+            width: 100%;
+            padding-left: 0.25rem;
+            padding-right: 0.25rem;
+            ion-label {
+              font-size: 0.875rem;
+              line-height: 1.25rem ;
+              text-wrap: wrap;
+            }
+          }
+        }
+      }
+     ion-content#main {
+       .game {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         ion-img {
+           width: 7.5rem;
+           margin-top: 9rem;
+         }
+       }
+       .item {
+         width: 100%;
+         height: 7.5rem;
+         border-radius: 0.375rem;
+         overflow: hidden;
+       }
+       .gameItem {
+        padding-top: 0;
+        padding-bottom: 0.625rem;
+       }
+     }
+    }
+  }
+  ion-content.side {
+    --padding-start: 0.625rem;
+    --padding-end: 0.625rem;
+    --padding-top: 0;
+    min-width: 0;
+    max-width: 5.3125rem;
+  }
+  
+  ion-content div ion-segment {
+    --background: transparent;
+  }
+  
+  ion-content div .side ion-segment-button.ios {
+    --border-radius: 0.75rem;
+    --padding-start: 0;
+    --padding-end: 0;
+    --padding-top: 0.25rem;
+    --padding-bottom: 0.25rem;
+    text-transform: capitalize;
+    min-width: 0;
+    min-height: 3.5rem;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+  
+  ion-content div .side ion-segment-button.ios ion-icon {
+    filter: grayscale(1);
+    opacity: 0.4;
+  }
+  
+  ion-content div .side ion-segment-button.ios ion-icon.active {
+    filter: grayscale(0);
+    opacity: 1;
+  }
+  
+  ion-toolbar ion-segment-button {
+    --background: transparent;
+  }
+  
+  .side ion-segment-button.segment-button-checked.ios {
+    border: none;
+  }
+  
+  .side ion-segment-button.ios::part(indicator-background) {
+    border: none;
+  }
+  
+  .side ion-segment-button.ios::part(indicator) {
+    padding-inline: 0;
+  }
+  
+  .side ion-segment-button.ios ion-label {
+    text-transform: none;
+  }
+  
+  ion-content.side {
+    --padding-start: 10px;
+    --padding-top: 0;
+    --padding-bottom: 2.625rem;
+  }
+  
+  ion-content#main {
+    --padding-top: 2px;
+  }
+  
+  ion-list {
+    background: transparent;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  ion-grid {
+    padding-bottom: 0;
+  }
+  
+  .grid-card {
+    /* 设置网格卡片样式 */
+    aspect-ratio: 0.76;
+    width: 100%;
+    background-size: 100% 100% !important;
+  }
+  
+  ion-infinite-scroll {
+    /* 设置触底加载更多样式 */
+    min-height: 70px;
+  }
+  
+  ion-infinite-scroll-content {
+    /* 设置触底加载更多样式 */
+    min-height: 10px;
+  }
+  
+  ion-grid {
+    padding-top: 0;
+  }
+  

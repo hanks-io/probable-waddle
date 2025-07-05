@@ -1,0 +1,35 @@
+html {
+  #tabbar-components-DrawerLeft-components-gameList-platform-1-index.layout();
+}
+
+
+
+
+
+#tabbar-components-DrawerLeft-components-gameList-platform-1-index {
+  .layout(
+    @text-color: var(--ep-color-text-weaker);
+    @icon-color: var(--ep-color-icon-danger);
+  ) {
+    .platform-item {
+      padding: 0.75rem 0.875rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      .platform-item-icon {
+        width: 1.75rem;
+        height: 1.75rem;
+        font-size: 1.75rem;
+        background-size: 800% 400%;
+        color: @icon-color;
+      }
+
+      .platform-item-label {
+        font-size: var(--ep-font-size-s, 0.75rem);
+        font-weight: var(--ep-font-weight-regular, 400);
+        color: @text-color;
+      }
+    }
+  }
+}

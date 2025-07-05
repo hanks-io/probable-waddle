@@ -1,0 +1,128 @@
+#spread-default-components-commission {
+  .style(
+    @default-components-commission-01: --color-bg-800,
+    @default-components-commission-02: --theme-color-600,
+    @default-components-commission-03: --color-bg-1100,
+    @default-components-commission-04: --color-bg-300,
+    @default-components-commission-05: --color-text-gray-300,
+    @default-components-commission-06: --color-text-gray-300,
+    @default-components-commission-07: --color-bg-300,
+    @default-components-commission-08: --color-bg-100,
+    @default-components-commission-09: --color-bg-300,
+    @default-components-commission-10: --color-text-white-100,
+    @default-components-commission-11: --color-text-gray-100,
+    @default-components-commission-12: --color-bg-900,
+    @default-components-commission-13: --color-bg-800,
+    @default-components-commission-14: --color-text-gray-200,
+    @default-components-commission-15: --color-text-white-100,
+    @default-components-commission-16: --agent-commission-detail-segment-bottom-border-color,
+    @default-components-commission-17: --color-bg-100,
+    @default-components-commission-18: --color-text-white-100,
+    @default-components-commission-19: --color-bg-100,
+    @default-components-commission-20: --color-bg-300,
+    @default-components-commission-21: --color-bg-200,
+    @default-components-commission-22: --color-text-white-100,
+    @default-components-commission-23: --agent-datetime-select-text-color,
+    @default-components-commission-24: --agent-ion-datetime-calendar-day-bgc,
+    @default-components-commission-25: --agent-ion-color-primary,
+    @default-components-commission-26: --color-bg-1200,
+    @default-components-commission-27: --color-text-white-100,
+    @default-components-commission-28: --color-text-gray-200,
+    @default-components-commission-29: --text-color-light-purple-1-100,
+    @default-components-commission-30: --theme-color-800,
+  ) {
+    .agent-commission,
+    .model-detail-main {
+      background: var(@default-components-commission-01);
+    }
+
+    #popover-trigger p.on {
+      border-bottom: 1px solid var(@default-components-commission-02);
+    }
+    
+    .select-item {
+      background: var(@default-components-commission-03);
+    }
+
+    .select-date {
+      background: var(@default-components-commission-04);
+      color: var(@default-components-commission-05);
+      .text-base {
+        color: var(@default-components-commission-06);
+      }
+    }
+
+    ion-item.commission-list:nth-child(odd) {
+      --background: var(@default-components-commission-07);
+    }
+
+    ion-item.commission-list:nth-child(even) {
+      --background: var(@default-components-commission-08);
+    }
+
+    ion-select {
+      --background: var(@default-components-commission-09);		/* 背景颜色 */
+      color: var(@default-components-commission-10);
+      --placeholder-color: var(@default-components-commission-11);	/* 占位字符颜色 */
+    }
+
+    ion-toolbar.detail-title {
+      --background: var(@default-components-commission-12);
+    }
+
+    .tab-box,
+    ion-segment.detail-type {
+      background: var(@default-components-commission-13);
+    }
+
+    ion-segment-button {
+      text-transform: none;
+      --color: var(@default-components-commission-14);
+      --color-checked: var(@default-components-commission-15);
+      --indicator-color: var(@default-components-commission-16);
+    }
+
+    ion-item.detail-list-title {
+      --background: var(@default-components-commission-17);
+      color: var(@default-components-commission-18);
+    }
+
+    ion-item.detail-list:nth-child(even) {
+      --background: var(@default-components-commission-19);
+    }
+
+    ion-item.detail-list:nth-child(odd) {
+      --background: var(@default-components-commission-20);
+    }
+
+    ion-datetime {
+      --background: var(@default-components-commission-21);
+      color: var(@default-components-commission-22);
+    }
+    
+    ion-datetime::part(calendar-day active) {
+      color: var(@default-components-commission-23);
+      background: var(@default-components-commission-24);
+      box-shadow: none;
+    }
+    ion-datetime::part(month-year-button) {
+      color: var(@default-components-commission-30);
+    }
+    ion-datetime::part(wheel-item active) {
+      color: var(@default-components-commission-29);
+    }
+
+    .ion-color-primary {
+      --ion-color-base: var(@default-components-commission-25) !important;
+    }
+    
+    .commission-item-title {
+      --background: var(@default-components-commission-26);
+      color: var(@default-components-commission-27);
+    }
+    
+    .table-content-text-color {
+      color: var(@default-components-commission-28);
+    }
+  }
+}

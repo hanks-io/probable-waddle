@@ -1,0 +1,188 @@
+.spread-commission-info {
+  background: var(--color-bg-300);  
+}
+
+#popover-trigger p.on {
+  border-bottom: 1px solid var(--color-primary-800);
+}
+
+ion-content#main { /* 滚动内容 */
+  --background: transperent;
+}
+
+.spread-select-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--font-size-12);
+  line-height: 1.125rem;
+  color: var(--color-text-100);
+  border-radius: var(--rounded-middle) var(--rounded-middle) 0 0;
+  background: var(--spread-commission-select-box-bg);
+}
+
+.spread-date-select {
+  display: flex;
+  align-items: center;
+  border-radius: var(--rounded-small);
+  background: var(--spread-commission-select-bg);
+  height: 1.758rem;
+  ion-icon {
+    font-size: .875rem;
+    color: var(--text-color-white-100);
+  }
+}
+
+ion-item::part(native) {
+  padding: 0 0 0 0.625rem !important;
+}
+
+ion-grid {
+  --ion-grid-padding: 0;
+}
+
+ion-col {
+  --ion-grid-column-padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+ion-item.table-title-bg {
+  --background: var(--color-bg-100);
+  border-radius: var(--rounded-middle) var(--rounded-middle) 0 0;
+}
+
+ion-item.table-item-bg:nth-child(odd) {
+  --background: transparent;
+}
+ion-item.table-item-bg:nth-child(even) {
+  --background: var(--color-bg-400);
+}
+ion-item ion-grid ion-row.spread-table-item {
+  font-size: var(--font-size-12);
+  line-height: 1.125rem;
+  color: var(--color-text-80) !important;
+}
+
+ion-select {
+  flex: 1;
+  min-height: 0;	/* 更改最小高度 */
+  --background: var(--spread-commission-select-bg);		/* 背景颜色 */
+  --border-radius: var(--rounded-small);	/* 圆角 */
+  --padding-top: 0px;
+  --padding-bottom: 0px;
+  --padding-start: .25rem;		/* 内容左内边距(含label) */
+  --padding-end: 0px;			/* 内容又内边距(含后置图标) */
+  color: var(--color-text-100);
+  font-size: var(--font-size-12);
+  height: 1.758rem;
+  margin-left: 5px;
+  overflow: hidden;
+}
+
+ion-datetime {
+  --background: var(--color-bg-200);
+  color: var(--color-text-100);
+  --wheel-highlight-background: var(--color-primary-800);
+}
+
+ion-datetime::part(calendar-day active) {
+  color: var(--agent-btn-color);
+  background: var(--color-primary-800);
+  box-shadow: none;
+}
+
+ion-datetime::part(month-year-button) {
+  --color: var(--color-text-100);
+}
+
+// -----------------佣金明细--------------
+
+ion-header ion-toolbar.commission-modal-toolbar {
+  --background: var(--skin-ion-toolbar-bg);
+  ion-icon.commission-modal-back {
+    color: var(--text-color-white-100);
+  }
+}
+
+.commission-modal-detail-conten {
+  background: var(--color-bg-300);
+}
+
+.commission-modal-detail-segment {
+  color: var(--color-bg-400);
+}
+
+ion-button#popover-trigger {
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+/* 设置导航标签布局方式 */
+ion-segment.md { 
+  display: flex;
+  justify-content: left;
+}
+
+ion-segment-button.md::part(indicator) {  /* 设置指示器宽度 */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ion-segment-button.md::part(indicator-background) { /* 设置导航标签指示器的宽度 */
+  background: var(--color-primary-800);
+  height: 1px;
+}
+
+ion-segment-button.md {
+  --padding-start: 0;
+  --padding-end: 0;
+  --padding-top: 2px;
+  --padding-bottom: 2px;
+  text-transform: capitalize;
+  margin-right: 0.8rem;
+}
+
+ion-segment-button.md ion-button {  /* 取消导航标签的标签与指示器之间的边距 */
+  text-transform: none;             /* 取消自动字母大写 */
+  height: 2.625rem;
+  margin: 0;
+  --padding-top: 0px;
+  --padding-bottom: 5px;
+  --padding-start: 0;
+  --padding-end: 0;
+  min-width: 0;
+}
+
+ion-button.base-style {
+  --color: var(--color-text-40);
+  font-size: var(--font-1size-14);
+}
+
+ion-button.select-style {
+  font-weight: bold;
+  --color: var(--color-primary-800);
+}
+
+.sparead-table-title {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-12);
+  line-height: 1.125rem;
+  color: var(--my-card-detail-color) !important;
+}
+
+.spread-commission-amount {
+  color: var(--color-currency);
+}
+
+.spread-table-item-search {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  color: var(--color-text-100);
+}
+
+.spread-table-item-light {
+  color: var(--color-text-80);
+}

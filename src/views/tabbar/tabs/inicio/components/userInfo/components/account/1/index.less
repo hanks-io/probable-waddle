@@ -1,0 +1,50 @@
+html {
+  #tabbar-tabs-inicio-components-userInfo-components-account-1-index();
+}
+
+
+
+
+
+#tabbar-tabs-inicio-components-userInfo-components-account-1-index {
+  .layout1(
+    @text-color1: var(--ep-color-text-default);
+    @text-color2: var(--ep-color-text-weaker);
+    @bg1: var(--ep-color-icon-info);
+  ) {
+    .layout1.account {
+      .log-out-box {
+        position: relative;
+        height: 2.5rem;
+
+        .account-icon {
+          width: 0;
+          height: 0;
+          position: relative;
+          z-index: 5;
+
+          &.good-img {
+            width: 6.5rem;
+            height: 2.325rem;
+          }
+        }
+
+        .label {
+          padding: 0.0625rem 0.25rem;
+          line-height: 1;
+          white-space: nowrap;
+          position: absolute;
+          bottom: 0.5rem;
+          left: 2.25rem;
+          z-index: 0;
+          font-size: var(--ep-font-size-xs, 0.625rem);
+          font-weight: var(--ep-font-weight-medium, 600);
+          background: @bg1;
+          color: @text-color1;
+        }
+      }
+    }
+  }
+
+  .layout1();
+}

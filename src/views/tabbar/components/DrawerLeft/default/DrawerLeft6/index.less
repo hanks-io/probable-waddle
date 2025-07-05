@@ -1,0 +1,410 @@
+
+
+html {
+  #tabbar-components-DrawerLeft-default-DrawerLeft6-index.layout();
+}
+
+#tabbar-components-DrawerLeft-default-DrawerLeft6-index {
+  .layout(
+    @bg1: #131313;
+    @bg2: #24221F;
+    @bg4: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.06) 100%);
+    @text-color1: var(--text-color1);
+    @text-color2: var(--text-color2);
+    @text-color3: #fff;
+    @line-color1: #4C4943;
+    @line-color2: #38342E;
+    @currency-color: #fff;
+    @number-color: #fff;
+    @login-color: #23DB8C;
+    @login-bg: linear-gradient(180deg, #38342E 4.76%, #24221F 100%);
+    @register-color: #F7FB43;
+    @register-bg: linear-gradient(180deg, #38342E 4.76%, #24221F 100%);
+    @deposit-color: #F7FB43;
+    @deposit-bg: linear-gradient(180deg, #252320 0%, #36322C 100%);
+    @ios-bg: linear-gradient(180deg, #38342E 4.76%, #24221F 100%);
+    @android-bg: linear-gradient(180deg, #38342E 4.76%, #24221F 100%);
+    @shadow1: 0 0 0.625rem #FFB200;
+  ) {
+    ion-menu {
+      --width: 80%;
+
+      &::part(container) {
+        border-radius: 0 1.25rem 1.25rem 0;
+      }
+
+      &::part(backdrop) {
+        opacity: 0.7 !important;
+      }
+
+      .menu-header {
+        
+        ion-toolbar {
+          --background: @bg1;
+          --padding-start: .75rem;
+          --padding-end: .75rem;
+          --padding-top: 1.25rem;
+          --padding-bottom: 1.75rem;
+          --border-width: 0;
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0.8125rem;
+            display: block;
+            width: calc(100% - 1.5rem);
+            height: 0.0625rem;
+            background: @line-color2;
+          }
+        }
+      }
+
+      .logo-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-block-end: 1.625rem;
+
+        .close-btn {
+          flex-shrink: 0;
+          width: 2rem;
+          height: 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #38342E;
+          border-radius: .375rem;
+
+          .close-img {
+            font-size: 1.25rem;
+            color: #fff;
+          }
+        }
+
+        .app-logo {
+          width: auto;
+          height: 2rem;
+          object-position: right;
+        }
+      }
+
+      .assets-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .assets-box-inner {
+          display: flex;
+          align-items: center;
+
+          .assets-img {
+            width: 0;
+
+            &.good-img {
+              width: 2.375rem;
+              height: 2.375rem;
+              margin-inline: 0.4375rem 0.25rem;
+            }
+          }
+
+          .assets-box-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-shadow: @shadow1;
+
+            .assets-box-info-inner {
+              display: flex;
+              align-items: center;
+              font-size: 0.875rem;
+              font-weight: 700;
+              font-style: italic;
+
+              .currency {
+                margin-right: 0.125rem;
+                color: @currency-color;
+              }
+
+              .assets-box-number {
+                color: @number-color;
+              }
+            }
+
+            .assets-box-intro {
+              line-height: 1;
+              font-size: 0.625rem;
+              font-weight: 400;
+              background: linear-gradient(90deg, #F7FB43 0%, #E38100 100%);
+              background-clip: text;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          }
+        }
+      
+        .deposit {
+          margin-left: .375rem;
+          border-radius: .375rem;
+          background: @deposit-bg;
+          box-shadow: 0 -0.0625rem 0 0 #F7FB43 inset;
+
+          &::part(native) {
+            font-size: 0.6875rem;
+            font-weight: 600;
+            color: @deposit-color;
+          }
+        }
+      }
+      
+      .primaryBtn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.625rem;
+      
+        .login {
+          --padding-top: .6875rem;
+          --padding-bottom: .6875rem;
+          flex: 1;
+
+          &::part(native) {
+            background: @login-bg;
+            color: @login-color;
+            border: 0.0625rem solid @line-color1;
+          }
+        }
+      
+        .register {
+          --padding-top: .6875rem;
+          --padding-bottom: .6875rem;
+          
+          &::part(native) {
+            background: @register-bg;
+            color: @register-color;
+            border: 0.0625rem solid @line-color1;
+          }
+        }
+
+        .register-btn-warpper {
+          flex: 1;
+          position: relative;
+          
+          .register {
+            width: 100%;
+            vertical-align: top;
+          }
+
+          .rewardTag {
+            position: absolute;
+            top: -0.5rem;
+            right: -0.5rem;
+          }
+        }
+      }
+      
+      ion-button {
+      
+        &.init-btn {
+          --box-shadow: none;
+          --padding-top: .375rem;
+          --padding-bottom: .375rem;
+          --padding-start: .625rem;
+          --padding-end: .625rem;
+          margin-top: 0;
+          margin-bottom: 0;
+          margin-inline-start: 0;
+          margin-inline-end: 0;
+          font-feature-settings: 'cpsp' on;
+          font-size: 0.75rem;
+          font-weight: 700;
+          line-height: 1;
+          min-height: min-content;
+          --border-radius: 0.375rem;
+        }
+      }
+    
+      .menu-content {
+        position: relative;
+        --padding-start: 0.875rem;
+        --padding-end: 0.8125rem;
+        --padding-bottom: 1.0625rem;
+        --background: @bg1;
+    
+        .card-container {
+          position: relative;
+          display: flex;
+          flex-flow: column;
+          gap: 0.75rem;
+          padding-block-start: 0.5rem;
+          padding-block-end: 0.5rem;
+    
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 0.0625rem;
+            background: @line-color2;
+          }
+    
+          .card {
+            display: flex;
+            align-items: center;
+    
+            .type-icon, .type-img {
+              width: 1.75rem;
+              height: 1.75rem;
+              margin-inline: 0.625rem;
+            }
+        
+            .type-img {
+              display: block;
+              background-size: 800% 400%;
+            }
+
+            .label {
+              font-size: 0.75rem;
+              font-weight: 400;
+              color: @text-color2;
+            }
+          }
+        }
+
+        .bonus-pool {
+          margin-inline-start: .3125rem;
+          margin-block-start: 1.0625rem;
+        }
+
+        .hot-game-box {
+          margin-block-start: 0.8125rem;
+          margin-block-end: 1.625rem;
+          padding: 0.9375rem;
+          background: @bg2;
+          border-radius: .375rem;
+          border: 0.0625rem solid @line-color1;
+
+          .hot-game-title {
+            display: flex;
+            flex-direction: column;
+            
+            .hot-game-icon-box {
+              display: flex;
+              align-items: center;
+              gap: .375rem;
+
+              .hot-game-icon {
+                width: 1.875rem;
+                height: 1.875rem;
+                margin-inline-start: -0.375rem;
+              }
+
+              .label {
+                font-size: 0.875rem;
+                font-weight: 400;
+                color: @text-color3;
+              }
+            }
+
+            // 介绍
+            .hot-game-intro {
+              font-size: 0.625rem;
+              font-weight: 400;
+              color: @text-color2;
+            }
+          }
+
+          .hot-game-list-box {
+            margin-block-start: 1.125rem;
+            width: 100%;
+            overflow: auto;
+            border-radius: .375rem;
+
+            // 隐藏滚动条,兼容浏览器
+            &::-webkit-scrollbar {
+              display: none;
+            }
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            
+
+            .hot-game-list {
+              display: flex;
+              gap: .375rem;
+  
+              .card {
+                flex-shrink: 0;
+                border-radius: 0.2838rem;
+                overflow: hidden;
+
+                &.style1, &.style2 {
+                  width: 3.1481rem;
+                  height: 4.25rem;
+                }
+
+                &.style3 {
+                  width: 3.1481rem;
+                }
+  
+                .img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+            }
+          }
+        }
+    
+        .btn-container {
+          margin-block-end: 1.625rem;
+          margin-inline: 1rem;
+          display: flex;
+          gap: 1rem;
+
+          .ios-btn, .android-btn {
+            flex: 1;
+            min-height: 2.625rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6.1875rem;
+            border: 0.0625rem solid @line-color1;
+            background: @ios-bg;
+    
+            &:active {
+              transform: scale(0.95);
+            }
+
+            .logo {
+              font-size: 1.25rem;
+              margin-inline-end: .375rem;
+            }
+
+            .text {
+              font-size: 0.625rem;
+              font-weight: 700;
+              color: @text-color3;
+            }
+          }
+        }
+
+        .social-content {
+          margin-block: 1.25rem;
+        }
+
+        .language-selection-box {
+          margin-block-start: 1.625rem;
+        }
+      }
+
+      .line {
+        width: 100%;
+        height: 0.0625rem;
+        background: @line-color2;
+      }
+    }
+  }
+}

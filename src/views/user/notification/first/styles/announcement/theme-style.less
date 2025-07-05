@@ -1,0 +1,56 @@
+.small-text-white {
+  color: var(--ep-color-text-weaker);
+  font-size: var(--ep-font-size-s);
+  line-height: 1.125rem;
+}
+
+.middle-text-white {
+  font-size: var(--ep-font-size-m);
+  color: var(--ep-color-text-default);
+  line-height: 1.3125rem;
+}
+
+.font-weight-medium {
+  font-weight: var(--ep-font-weight-medium);
+}
+
+ion-content.notification-content {
+  --padding-top: 0.75rem;
+  --padding-bottom: 0.75rem;
+  --padding-start: 0.75rem;
+  --padding-end: 0.75rem;
+  --background: var(--ep-color-background-fill-body-default);
+}
+
+.announcement-msg {
+  font-size: var(--ep-font-size-xs);
+  border-radius: var(--ep-border-radius-m);
+  color: var(--ep-color-text-weak);
+  background: var(--ep-color-background-fill-surface-raised-L1);
+}
+
+ion-button.read-all-btn {
+  --border-radius: var(--ep-values-infinity);
+  font-weight: var(--ep-font-weight-medium);
+  font-size: var(--ep-font-size-s);
+  --background: var(--ep-color-background-fill-surface-raised-L2);
+  --color: var(--ep-color-text-default);
+  --background-focused-opacity: 0.6;
+  --background-hover-opacity: 0.8;
+  --background-activated-opacity: 0.6;
+  --background-focused: var(--ep-color-background-fill-surface-raised-L2);
+  --background-hover: var(--ep-color-background-fill-surface-raised-L2);
+  --background-activated: var(--ep-color-background-fill-surface-raised-L2);
+}
+
+.message-content {
+  color: var(--ep-color-text-weak);
+}
+
+ion-button.read-all-btn::part(native) {
+  border: 1px solid var(--ep-color-border-default);
+}
+
+.announcement-title {
+  color: var(--ep-color-text-default);
+}

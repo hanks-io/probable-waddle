@@ -1,0 +1,67 @@
+ion-header {
+  box-shadow: none;
+}
+.tab-box {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  ion-segment-button {
+    min-height: 0rem;
+    p {
+      position: absolute;
+      width: 0.75rem;
+      height: 0.75rem;
+      color: #FFF;
+      background-color: #FF0000;
+      font-size: 0.5rem;
+      top: 0.625rem;
+      right: -0.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+  }
+}
+
+ion-segment.md { /* 设置导航标签布局方式 */
+  display: flex;
+  justify-content: left;
+}
+
+ion-button.base-tab,
+ion-button.selected-tab {
+  height: 1.875rem;
+  font-size: .875rem;
+  line-height: 1.375rem;
+}
+
+ion-segment-button.md {
+  --indicator-color: #1C2334;
+  --padding-start: 1.25rem;
+  --padding-end: 1.25rem;
+  --padding-top: 0.125rem;
+  --padding-bottom: 0.125rem;
+  text-transform: capitalize;
+  min-width: 0;
+}
+
+ion-segment-button.md::part(indicator) {  /* 设置指示器宽度 */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ion-segment-button.md::part(indicator-background) { /* 设置导航标签指示器的宽度 */
+  height: 0.125rem;
+}
+
+ion-segment-button.md ion-button {  /* 取消导航标签的标签与指示器之间的边距 */
+  text-transform: none;             /* 取消自动字母大写 */
+  min-height: 0;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  --padding-top: 0rem;
+  --padding-bottom: 0.3125rem;
+  --padding-start: 0;
+  --padding-end: 0;
+  min-width: 0;
+}

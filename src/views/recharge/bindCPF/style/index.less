@@ -1,0 +1,79 @@
+#recharge-main-default-bindCPF-index {
+  .style(@tipColor: --color-text-40, @labelColor: --color-text-100, @inputBg: var(--color-bg-400), @bg: --color-bg-300) {
+
+    ion-content.bind-CPF-content {
+      --background: var(@bg);
+      --padding-start: .75rem;
+      --padding-end: .75rem;
+
+
+      .tip-text {
+        font-size: var(--ep-font-size-s, 0.75rem);
+        color: var(@tipColor);
+        line-height: 1.125rem;
+        margin: 1.25rem auto;
+      }
+
+      .form-wrap {
+        margin-bottom: 4.375rem;
+
+        .item {
+          margin-top: 1.9rem;
+
+        }
+
+        .label {
+          font-size: var(--ep-font-size-s, 0.75rem);
+          line-height: 1.125rem;
+          margin: .375rem 0;
+          color: var(@labelColor);
+          font-weight: var(--ep-font-weight-bold, 700);
+        }
+
+        .input-area {
+          width: 22.8125rem;
+          height: 2.875rem;
+          line-height: 2.875rem;
+          background: @inputBg;
+
+        }
+      }
+    }
+
+
+  }
+
+}
+
+#recharge-main-default-bindCPF-index.style(@tipColor :--color-text-gray-200, @inputBg: #070B18);
+
+.blue-default {
+  #recharge-main-default-bindCPF-index.style(@tipColor :--color-text-gray-200, @inputBg: #070B18)
+}
+
+.green-default, .green-v01, .green-v02{
+  #recharge-main-default-bindCPF-index.style(@tipColor :--color-text-gray-200, @labelColor: --color-text-gray-100)
+}
+
+.yellow-dark,
+.green-dark {
+  #recharge-main-default-bindCPF-index.style()
+}
+
+.purple-light {
+  #recharge-main-default-bindCPF-index.style(@tipColor: --color-text-80)
+}
+
+.amber-purple {
+  #recharge-main-default-bindCPF-index.style(@tipColor: --text-color-light-purple-2-100, @labelColor: --text-color-light-purple-1-100)
+}
+.auroral-yellow {
+  #recharge-main-default-bindCPF-index.style( @inputBg: var(--color-bg-300), @tipColor: --color-text-gray-200)
+}
+
+
+
+
+.new-skin-symbol {
+  #recharge-main-default-bindCPF-index.style(@bg: --ep-color-background-fill-body-default, @tipColor: --ep-color-text-weaker, @labelColor: --ep-color-text-default,  @inputBg: var(--ep-color-background-fill-surface-lowered));
+}

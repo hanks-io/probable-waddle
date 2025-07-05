@@ -1,0 +1,112 @@
+html {
+  #BonusPool-2-index();
+}
+
+
+
+#BonusPool-2-index {
+  .layout1(
+    @text-color1: linear-gradient(90deg, #24d097 0%, #239bc4 100%);
+    @shadow1: 0 0 0.625rem #00d4ff;
+  ) {
+    .layout1.bonus {
+      display: flex;
+      align-items: center;
+
+      .bonus-img {
+        width: 2.375rem;
+        height: 2.375rem;
+        font-size: 2.375rem;
+        margin-inline-end: 0.375rem;
+      }
+
+      .bonus-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-shadow: @shadow1;
+
+        .bonus-content-inner {
+          font-style: italic;
+          line-height: 1;
+
+          .bonus-money,
+          .bonus-currency {
+            font-size: 0.875rem;
+            font-weight: 700;
+            color: #fff;
+          }
+
+          .bonus-currency {
+            margin-inline-end: 0.3125rem;
+          }
+        }
+
+        .bonus-title {
+          font-size: 0.625rem;
+          font-weight: 700;
+          font-style: italic;
+          background: @text-color1;
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+  }
+
+  .layout2(
+    @text-color1: linear-gradient(90deg, #24d097 0%, #239bc4 100%);
+    @shadow1: 0 0 0.625rem #00d4ff;
+  ) {
+    .layout2.bonus {
+      display: flex;
+      align-items: center;
+
+      .bonus-img {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 3.5rem;
+        margin-inline-end: 0.375rem;
+      }
+
+      .bonus-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+        text-shadow: @shadow1;
+
+        .bonus-content-inner {
+          font-style: italic;
+          line-height: 1;
+
+          .bonus-money,
+          .bonus-currency {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: #fff;
+          }
+
+          .bonus-currency {
+            margin-inline-end: 0.3125rem;
+          }
+        }
+
+        .bonus-title {
+          line-height: 1;
+          font-size: 0.625rem;
+          font-weight: 700;
+          font-style: italic;
+          background: @text-color1;
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+  }
+
+  .layout1();
+  .layout2();
+}

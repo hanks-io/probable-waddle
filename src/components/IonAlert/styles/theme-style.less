@@ -1,0 +1,43 @@
+#components-IonAlert-index {
+  .style(
+    @components-IonAlert-index-01: --color-bg-700,
+    @components-IonAlert-index-02: --color-text-100,
+    @components-IonAlert-index-03: --color-text-40,
+    @components-IonAlert-index-04: --color-text-100,
+    @components-IonAlert-index-05: --theme-color-gradient-100,
+    @components-IonAlert-index-06: --color-text-100,
+    @components-IonAlert-index-07: --color-bg-700,
+    @components-IonAlert-index-08: --theme-color-gradient-100,
+    @components-IonAlert-index-09: --theme-color-900,
+  ) {
+    .logout-modal {
+      background: var(@components-IonAlert-index-01);
+    }
+    
+    .logout-modal-title {
+      color: var(@components-IonAlert-index-02);
+    }
+    
+    .logout-modal-message {
+      color: var(@components-IonAlert-index-03);
+    }
+    
+    ion-button.logout-modal-btn-left {
+      --color: var(@components-IonAlert-index-04);
+      --background: var(@components-IonAlert-index-05);
+    }
+    
+    ion-button.logout-modal-btn-right {
+      --color: var(@components-IonAlert-index-06);
+      --background: var(@components-IonAlert-index-07);
+    }
+    
+    ion-button.logout-modal-btn-left::part(native) {
+      border: 1px solid var(@components-IonAlert-index-08);
+    }
+    
+    ion-button.logout-modal-btn-right::part(native) {
+      border: 1px solid var(@components-IonAlert-index-09);
+    }
+  }
+}

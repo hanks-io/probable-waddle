@@ -1,0 +1,42 @@
+#mlmAgent-components-invitationLink-index {
+  .style(
+    @mlmAgent-components-invitationLink-index-01: --mlm-toolbar-bg-color;
+    @mlmAgent-components-invitationLink-index-02: --mlm-invitation-qr-code-bg;
+    @mlmAgent-components-invitationLink-index-03: --mlm-invitation-footer-bg-color;
+    @mlmAgent-components-invitationLink-index-04: --color-text-third;
+    @mlmAgent-components-invitationLink-index-05: --color-bg-yellow-btn-emphasis;
+    @mlmAgent-components-invitationLink-index-06: --color-text-yellowBtn-active;
+    @mlmAgent-components-invitationLink-index-07: --color-bg-commission-first;
+    @mlmAgent-components-invitationLink-index-08: --mlm-invitation-cust-btn-text-color;
+    @mlmAgent-components-invitationLink-index-09: --mlm-invitation-csut-color;
+  ) {
+    ion-toolbar {
+      --background: var(@mlmAgent-components-invitationLink-index-01);
+    }
+
+    .link .swiperBg .item .qrCode {
+      background-color: var(@mlmAgent-components-invitationLink-index-02);
+    }
+    
+    .link .btn {
+      background-color: var(@mlmAgent-components-invitationLink-index-03);
+    }
+
+    .link .btn .top {
+      color: var(@mlmAgent-components-invitationLink-index-04);
+    }
+
+    .invitation-copy-btn {
+      background: var(@mlmAgent-components-invitationLink-index-05);
+      color: var(@mlmAgent-components-invitationLink-index-06);
+    }
+    
+    .invitation-cust-btn {
+      background: var(@mlmAgent-components-invitationLink-index-07);
+      color: var(@mlmAgent-components-invitationLink-index-08);
+      ion-icon {
+        color: var(@mlmAgent-components-invitationLink-index-09);
+      }
+    }
+  }
+}

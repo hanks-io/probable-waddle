@@ -1,0 +1,89 @@
+#mlmAgent-components-commissionRate-index {
+  .style(
+    @mlmAgent-components-commissionRate-index-01: --mlm-toolbar-bg-color;
+    @mlmAgent-components-commissionRate-index-02:--color-bg-300 ;
+    @mlmAgent-components-commissionRate-index-03: --mlm-rate-level-agent-segment-select-color;
+    @mlmAgent-components-commissionRate-index-04: --mlm-level-agent-selected-text-color;
+    @mlmAgent-components-commissionRate-index-05: --color-bg-300;
+    @mlmAgent-components-commissionRate-index-06: --mlm-agent-rate-info-bgc;
+    @mlmAgent-components-commissionRate-index-07: --mlm-agent-my-agency-textc;
+    @mlmAgent-components-commissionRate-index-08: --color-text-40;
+    @mlmAgent-components-commissionRate-index-09: --color-bg-300;
+    @mlmAgent-components-commissionRate-index-10: --color-line;
+    @mlmAgent-components-commissionRate-index-11: --mlm-agent-my-agency-textc;
+    @mlmAgent-components-commissionRate-index-12: --mlm-rate-item-right-text-color;
+    @mlmAgent-components-commissionRate-index-13: --mlm-agent-report-icon-color;
+    @mlmAgent-components-commissionRate-index-14: --mlm-commission-rate-game-type-bg;
+    @mlmAgent-components-commissionRate-index-15: --mlm-agent-report-icon-color;
+    @mlmAgent-components-commissionRate-index-16: --mlm-segment-select-text-color;
+    @mlmAgent-components-commissionRate-index-17: --mlm-segment-selected-text-color;
+    @mlmAgent-components-commissionRate-index-18: --mlm-segment-indicator-bg-color;
+  ) {
+    ion-toolbar {
+      --background: var(@mlmAgent-components-commissionRate-index-01);
+    }
+    
+    ion-segment.level-agent-se {
+      background: var(@mlmAgent-components-commissionRate-index-02);
+    }
+    
+    ion-segment-button.level-agent {
+      --color: var(@mlmAgent-components-commissionRate-index-03);
+      --color-checked: var(@mlmAgent-components-commissionRate-index-04);
+    }
+    
+    ion-segment-button.level-agent::part(native) {
+      background: var(@mlmAgent-components-commissionRate-index-05);
+    }
+    
+    .rate-info {
+      background: var(@mlmAgent-components-commissionRate-index-06);
+      .icon {
+        span {
+          color: var(@mlmAgent-components-commissionRate-index-07);
+        }
+      }
+      .rate-box {
+        .rate-item {
+          color: var(@mlmAgent-components-commissionRate-index-08);
+        }
+      }
+    }
+    
+    .rate-box {
+      background: var(@mlmAgent-components-commissionRate-index-09);
+      .rate-item {
+        border-bottom: 0.0625rem solid var(@mlmAgent-components-commissionRate-index-10);
+        .rate-item-left {
+          color: var(@mlmAgent-components-commissionRate-index-11);
+        }
+        .rate-item-right {
+          color:  var(@mlmAgent-components-commissionRate-index-12);
+        }
+      }
+    }
+    
+    .rate-title {
+      color: var(@mlmAgent-components-commissionRate-index-13);
+    }
+    
+    .game-type {
+      background: var(@mlmAgent-components-commissionRate-index-14);
+    }
+    
+    .rate-footer-tips {
+      color: var(@mlmAgent-components-commissionRate-index-15);
+    }
+    
+    ion-button.base-style {
+      --color: var(@mlmAgent-components-commissionRate-index-16);
+    }
+    ion-button.select-style {
+      --color: var(@mlmAgent-components-commissionRate-index-17);
+    }
+    
+    ion-segment-button.game-type-btn.md::part(indicator-background) { /* 设置导航标签指示器的宽度 */
+      background: var(@mlmAgent-components-commissionRate-index-18);
+    }
+  }
+}

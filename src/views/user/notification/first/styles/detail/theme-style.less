@@ -1,0 +1,40 @@
+.small-text-white {
+  color: var(--ep-color-text-weaker);
+  font-size: var(--ep-font-size-s);
+  line-height: 1.125rem;
+}
+
+.middle-text-white {
+  font-size: var(--ep-font-size-m);
+  color: var(--ep-color-text-default);
+  line-height: 1.3125rem;
+}
+
+.font-weight-medium {
+  font-weight: var(--ep-font-weight-medium);
+}
+
+ion-content {
+  --background: var(--ep-color-background-fill-body-default);
+}
+
+.message-content {
+  color: var(--ep-color-text-weak);
+}
+
+.notification-detail-title {
+  color: var(--ep-color-text-default);
+}
+
+/* 解决v-html显示富文本表格边框不显示 */
+:deep(table) {
+  border: 1px solid var(--ep-color-border-default);
+  th, td {
+    border: 1px solid var(--ep-color-border-default);
+  }
+}
+
+.not-signature {
+  font-size: var(--ep-font-size-m);
+  line-height: 1.25rem;
+}

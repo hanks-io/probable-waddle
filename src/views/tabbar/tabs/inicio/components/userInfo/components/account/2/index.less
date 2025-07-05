@@ -1,0 +1,52 @@
+html {
+  #tabbar-tabs-inicio-components-userInfo-components-account-2-index();
+}
+
+
+
+
+
+
+#tabbar-tabs-inicio-components-userInfo-components-account-2-index {
+  .layout1(
+    @text-color1: var(--ep-color-text-default);
+    @text-color2: var(--ep-color-text-weaker);
+  ) {
+    .layout1.log-in-box {
+      display: flex;
+      align-items: center;
+      gap: 0.875rem;
+
+      .account-icon {
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        overflow: hidden;
+
+        &.good-img {
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+      }
+
+      .account-info {
+        display: flex;
+        flex-direction: column;
+
+        .label {
+          font-size: var(--ep-font-size-m, 0.875rem);
+          font-weight: var(--ep-font-weight-medium, 600);
+          color: @text-color1;
+        }
+
+        .sub-label {
+          font-size: var(--ep-font-size-s, 0.75rem);
+          font-weight: var(--ep-font-weight-regular, 400);
+          color: @text-color2;
+        }
+      }
+    }
+  }
+
+  .layout1();
+}

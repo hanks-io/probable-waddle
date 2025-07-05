@@ -1,0 +1,104 @@
+ion-content {
+  --background: #262346;
+}
+
+@font-face {
+  font-family: 'MoneyFont';
+  src: url('@/assets/fonts/numbersAndLetters.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.invite-cpf-top-bg {
+  background: url('/images/inviteCpf/invite-cpf-style2-top-bg.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.invite-cpf-available {
+ .available-box {
+  height: 2.5rem;
+  background: linear-gradient(90deg, rgba(27, 16, 59, 0) 0%, #6D3FEB 50.5%, rgba(27, 16, 59, 0) 100%), 
+    linear-gradient(90deg, rgba(27, 16, 59, 0) 0%, #6D3FEB 50.5%, rgba(27, 16, 59, 0) 100%);
+    .available-merchantCy {
+      font-size: 1rem;
+      line-height: 2rem;
+      background: linear-gradient(180deg, #B296FF 0%, #8B33FF 100%);
+      font-weight: 500;
+    }
+
+    .available-money {
+      font-size: 2.5rem;
+      background: linear-gradient(180deg, #B296FF 0%, #8B33FF 100%);
+      font-size: 2.5rem;
+      font-weight: 900;
+    }
+
+    .available-merchantCy,
+    .available-money {
+      font-family: 'MoneyFont';
+      text-align: center;
+      -webkit-text-stroke-width: .0313rem;
+      -webkit-text-stroke-color: #c2b2fb;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-style: normal;
+      text-transform: uppercase;
+    }
+ }
+}
+
+ion-button.cpf-copy-button {
+  width: 20.5rem;
+  min-height: 0;
+  --background: linear-gradient(180deg, #A180FF 0%, #7041F3 100%);
+  --border-radius: .5rem;
+  --color: #fff;
+  font-size: 1rem;
+  --background-hover: none;
+  --background-focused: #9a82f8;
+  --background-activated: #9a82f8;
+}
+
+.invite-cpf-rule-title {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #BDB8E1;
+}
+
+.invite-cpf-rule-content {
+  min-height: 18.75rem;
+  background: linear-gradient(0deg, rgba(44, 41, 77, 0), rgba(44, 41, 77, 0)),
+  linear-gradient(180deg, rgba(161, 128, 255, 0.3) 0%, rgba(112, 65, 243, 0.3) 100%);
+  border-radius: .5rem;
+  color: #ABA7CC;
+  font-size: .75rem;
+  line-height: 1rem;
+  
+}
+
+.invite-cpf-footer {
+  bottom: 0;
+  padding: .9688rem .75rem;
+  background: #3B3466;
+  box-shadow: 0px 0.5px 0px 0px #2B4F14 inset;
+  ion-button.available-btn {
+    min-height: 0;
+    --background: linear-gradient(350.74deg, #7041F3 23.01%, #FFE69F 131.39%);
+    --border-radius: .5rem;
+    --color: #fff;
+    font-size: .875rem;
+    line-height: 1.3125rem;
+    --background-hover: none;
+    --background-focused:linear-gradient(350.74deg, #785aed 23.01%, #ceb8c3 131.39%);
+    --background-activated:linear-gradient(350.74deg, #785aed 23.01%, #ceb8c3 131.39%);
+  }
+
+  ion-button.disabled-btn {
+    --background: linear-gradient(180deg, #7c6c88 0%, #4934a1 100%);
+    --color: rgba(255,255,255,0.4);
+    --background-activated: none;
+    --background-focused: none;
+    --background-hover: none;
+  }
+}

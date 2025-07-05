@@ -1,0 +1,39 @@
+ion-item {
+  --min-height: 0;
+  --padding-end: 0;
+  --padding-top: .75rem;
+  --padding-bottom: .75rem;
+  --padding-start: 0;
+  --background: transparent;
+}
+
+ion-item::part(detail-icon) {
+  font-size: 0.875rem;
+  color: var(--color-text-100);
+}
+
+ion-item {
+  ion-icon {
+    color: var(--security-item-icon-color);
+  }
+  ion-label {
+    font-size: var(--font-size-12) !important;
+    line-height: 1.125rem;
+    margin: 0;
+  }
+  ion-label.item-name {
+    color: var(--color-text-40) ;
+    font-weight: var(--font-weight-medium) ;
+  }
+  ion-label.item-info {
+    color: var(--color-text-100);
+  }
+  ion-icon {
+    opacity: 0.4;
+  }
+}
+
+.card-bg-gradient {
+  border-radius: 0.5rem;
+  background: var(--my-card-bg-gradient);
+}

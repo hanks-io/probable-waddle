@@ -1,0 +1,79 @@
+
+html {
+  #tabbar-tabs-inicio-components-GameWrapper-index.layout();
+}
+
+.neo-blue {
+  #tabbar-tabs-inicio-components-GameWrapper-index.style();
+  .tabbar-tabs-inicio-components-GameWrapper-index {
+    padding: 0;
+
+    .card-container {
+      padding: 0 0.75rem .7813rem;
+    }
+  }
+}
+
+
+#tabbar-tabs-inicio-components-GameWrapper-index {
+  .style(
+    @bg1: var(--ep-color-background-fill-surface-raised-L1, #18254E);
+  ) {
+    .tabbar-tabs-inicio-components-GameWrapper-index {
+      background: @bg1;
+    }
+  }
+
+  .layout(
+    @bg1: transparent;
+  ) {
+    .tabbar-tabs-inicio-components-GameWrapper-index {
+      padding-inline: 0.9375rem;
+      margin-bottom: .5rem;
+      background: @bg1;
+
+      .aspect-ratio-card {
+        width: 100%;
+        aspect-ratio: 100 / 32.786;
+        border-radius: var(--ep-border-radius-surface-default, 0.875rem);
+        overflow: hidden;
+      }
+      &:has(.aspect-ratio-card) {
+        padding-bottom: 0.3125rem;
+      }
+
+      .card-container {
+        display: flex;
+        flex-flow: wrap;
+        gap: 0.75rem;
+      }
+
+      .layout1.bonus-pool-container {
+        display: flex;
+        flex-flow: wrap;
+        gap: 0.75rem;
+
+        .bonus-pool-container-top {
+          width: 100%;
+          display: flex;
+          gap: 0.75rem;
+
+          .bonus-pool-container-top-bonus-pool {
+            flex: 1;
+          }
+
+          .bonus-pool-container-card-container {
+            flex: 1;
+            display: flex;
+            flex-flow: wrap;
+            gap: 0.75rem;
+
+            .bonus-pool-container-card {
+              flex: 0 0 46.5%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

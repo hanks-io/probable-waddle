@@ -1,0 +1,119 @@
+#activity-sign-components-default-index {
+  .style(
+    @activity-sign-components-default-index-01: --color-bg-300;
+    @activity-sign-components-default-index-02: --theme-color-800;
+    @activity-sign-components-default-index-03: --text-color-white-100;
+    @activity-sign-components-default-index-04: --text-color-white-40;
+    @activity-sign-components-default-index-05: --color-bg-200;
+    @activity-sign-components-default-index-06: --color-bg-300;
+    @activity-sign-components-default-index-07: --text-color-white-40;
+    @activity-sign-components-default-index-08: --text-color-white-100;
+    @activity-sign-components-default-index-09: --theme-color-800;
+    @activity-sign-components-default-index-10: --text-color-white-40;
+    @activity-sign-components-default-index-11: --sign-default-extra-reward;
+    @activity-sign-components-default-index-12: --accent-color-green;
+    @activity-sign-components-default-index-13: --sing-default-available-before;
+    @activity-sign-components-default-index-14: --text-color-white-40;
+    @activity-sign-components-default-index-15: --color-bg-200;
+    @activity-sign-components-default-index-16: --sign-default-footer-border;
+    @activity-sign-components-default-index-17: --theme-color-800;
+    @activity-sign-components-default-index-18: --color-text-black-100;
+    @activity-sign-components-default-index-19: --button-right-bg-color-shade;
+    @activity-sign-components-default-index-20: --button-right-bg-color-tint;
+    @activity-sign-components-default-index-21: --button-right-bg-color-shade;
+    @activity-sign-components-default-index-22: --color-line;
+  ) {
+    ion-content {
+      --background: var(@activity-sign-components-default-index-01);
+    }
+
+    .item-money-text {
+      color: var(--ep-color-text-default)
+    }
+    
+    .default-sign-money,
+    .default-sign-day {
+      border-radius: .625rem;
+      font-size: .875rem;
+      font-weight: 500;
+      color: var(@activity-sign-components-default-index-02);
+    }
+    
+    .default-current-vip {
+      .vip-info {
+        font-size: .75rem;
+        font-weight: 500;
+        color: var(@activity-sign-components-default-index-03);
+        .vip-tips {
+          font-size: .625rem;
+          color: var(@activity-sign-components-default-index-04);
+        }
+      }
+    }
+    
+    .default-sign-date {
+      .date-box {
+        border-radius: .375rem;
+        background: var(@activity-sign-components-default-index-05);
+        border: 1px solid var(@activity-sign-components-default-index-22);
+        .date-item {
+          border-radius: .25rem;
+          background: var(@activity-sign-components-default-index-06);
+          .date-item-day {
+            font-size: .75rem;
+            color: var(@activity-sign-components-default-index-07);
+          }
+          .date-item-money {
+            font-size: .625rem;
+            font-weight: 500;
+            color: var(@activity-sign-components-default-index-08);
+            .date-item-money-icon {
+              font-size: 0.625rem;
+              color: var(@activity-sign-components-default-index-09);
+            }
+          }
+          .default-date-extra-reward {
+            font-size: .5rem;
+            color: var(@activity-sign-components-default-index-10);
+            .money {
+              font-weight: 500;
+              color: var(@activity-sign-components-default-index-11);
+            }
+          }
+        }
+    
+        .default-available-item1 {
+          border-bottom: 1px solid var(@activity-sign-components-default-index-12);
+        }
+    
+        .default-available-item2::before {
+          background: var(@activity-sign-components-default-index-13);
+        }
+      }
+    }
+    
+    .default-sign-rule {
+      .default-sign-rule-content {
+        font-size: .75rem;
+        color: var(@activity-sign-components-default-index-14);
+      }
+    }
+    
+    .default-footer-btn {
+      background: var(@activity-sign-components-default-index-15);
+      border-top: 1px solid var(@activity-sign-components-default-index-16);
+      ion-button.default-sign-available-btn {
+        font-size: .875rem;
+        font-weight: 700;
+        --border-radius: .25rem;
+        --background: var(@activity-sign-components-default-index-17);
+        --color: var(@activity-sign-components-default-index-18);
+        --background-focused: var(@activity-sign-components-default-index-19);
+        --background-hover: var(@activity-sign-components-default-index-20);
+        --background-activated: var(@activity-sign-components-default-index-21);
+      }
+    }
+  }
+}
+
+

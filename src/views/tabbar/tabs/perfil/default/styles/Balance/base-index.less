@@ -1,0 +1,26 @@
+.money-color {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    div {
+      position: relative;
+      .left{
+        margin-right: 0.5rem;
+        opacity: 0;
+      }
+      .right {
+        position: absolute;
+        inset: 0rem;
+      }
+    }
+    span {
+      margin-right: 0.75rem;
+    }
+    ion-icon {
+      font-size: 1.5rem;
+      transform: rotate(30deg);
+    }
+    ion-icon.animate-refresh {
+      animation: rotation 500ms infinite linear;
+    }
+  }

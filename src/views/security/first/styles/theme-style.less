@@ -1,0 +1,43 @@
+ion-content.common-ion-content {
+  --background: var(--ep-color-background-fill-body-default);
+}
+
+ion-item {
+  --min-height: 0;
+  --padding-end: 0;
+  --padding-top: .75rem;
+  --padding-bottom: .75rem;
+  --padding-start: 0;
+  --background: transparent;
+}
+
+ion-item::part(detail-icon) {
+  font-size: var(--ep-font-size-m);
+  color: var(--ep-color-icon-weaker);
+}
+
+ion-item {
+  ion-icon {
+    color: var(--ep-color-icon-weaker);
+  }
+  ion-label {
+    font-size: var(--ep-font-size-s) !important;
+    line-height: 1.125rem;
+    margin: 0;
+  }
+  ion-label.item-name {
+    color: var(--ep-color-text-default) ;
+    font-weight: var(--ep-font-weight-medium);
+  }
+  ion-label.item-info {
+    color: var(--ep-color-text-default);
+  }
+  ion-icon {
+    opacity: 1;
+  }
+}
+
+.card-bg-gradient {
+  border-radius: var(--ep-border-radius-l);
+  background: var(--ep-color-background-fill-surface-raised-L1);
+}

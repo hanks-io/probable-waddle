@@ -1,0 +1,53 @@
+#spread-default-components-agentBonusRate {
+  .style(
+    @default-components-agentBonusRate-01: --color-bg-200,
+    @default-components-agentBonusRate-02: --color-bg-200,
+    @default-components-agentBonusRate-03: --color-line,
+    @default-components-agentBonusRate-04: --theme-color-600,
+    @default-components-agentBonusRate-05: --color-text-white-100,
+    @default-components-agentBonusRate-06: --color-text-gray-200,
+    @default-components-agentBonusRate-07: --color-bg-1200,
+    @default-components-agentBonusRate-08: --color-bg-1200,
+    @default-components-agentBonusRate-09: --color-text-white-100,
+    @default-components-agentBonusRate-10: --color-text-gray-200,
+    @default-components-agentBonusRate-11: --accent-color-yellow,
+  ) {
+    .agent-bonus-rate {
+      background: var(@default-components-agentBonusRate-01);
+    }
+
+    ion-segment {
+      --background: var(@default-components-agentBonusRate-02);
+      border-bottom: 1px solid var(@default-components-agentBonusRate-03);
+    }
+
+    ion-segment-button::part(indicator-background) {
+      background: var(@default-components-agentBonusRate-04);
+    }
+
+    ion-label.selected-tab {
+      color: var(@default-components-agentBonusRate-05);
+    }
+    
+    ion-label.base-tab {
+      color: var(@default-components-agentBonusRate-06);
+    }
+
+    ion-item.odd {
+      --background: var(@default-components-agentBonusRate-07);
+    }
+
+    .rate-item-title {
+      background: var(@default-components-agentBonusRate-08);
+      color: var(@default-components-agentBonusRate-09);
+    }
+    
+    .table-content-text-color {
+      color: var(@default-components-agentBonusRate-10);
+    }
+    
+    .important-text {
+      color: var(@default-components-agentBonusRate-11);
+    }
+  }
+}

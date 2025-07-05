@@ -1,0 +1,152 @@
+html {
+  #tabbar-tabs-inicio-components-HeaderBar-components-assets-1-index.layout();
+}
+
+.first {
+  #tabbar-tabs-inicio-components-HeaderBar-components-assets-1-index.style(
+    @assets-bg: transparent;
+    @currency-color: var(--ep-color-text-default);
+    @currency-shadow: 0 0 0.625rem var(--ep-color-background-fill-glow-primary-opacity-100);
+    @number-color: var(--ep-color-text-default);
+    @number-shadow: 0 0 0.625rem var(--ep-color-background-fill-glow-primary-opacity-100);
+    @deposit-bg: var(--ep-color-background-fill-surface-raised-L2);
+    @deposit-color: var(--ep-color-icon-highlight);
+  );
+  .assets-box {
+
+    .deposit {
+      border: 0.0625rem solid var(--ep-color-border-highlight, #F5C84C);
+      box-shadow: 0 0 0.5563rem 0 var(--ep-color-background-fill-glow-secondary-opacity-100, #D3AF42) inset;
+    }
+  }
+
+}
+
+.mystlight-blue {
+  .assets-box {
+
+    .deposit {
+      box-shadow: none;
+    }
+  }
+}
+
+#tabbar-tabs-inicio-components-HeaderBar-components-assets-1-index {
+  .style(
+    @assets-bg: var(--ep-color-background-fill-surface-lowered);
+    @currency-color: var(--ep-color-text-warning);
+    @currency-shadow: none;
+    @number-color: var(--ep-color-text-default);
+    @number-shadow: none;
+    @wallet-bg: linear-gradient(180deg, #6A853A 0%, #98C24F 100%);
+    @wallet-color: #fff;
+    @deposit-bg: var(--ep-color-background-fill-active-primary);
+    @deposit-color: var(--ep-color-text-default);
+    @login-bg: transparent;
+    @login-color: var(--ep-color-text-default);
+    @register-bg: var(--ep-dynamic-primary);
+    @register-color: var(--ep-color-text-inverse);
+  ) {
+    .assets-box {
+      background: @assets-bg;
+
+      .currency {
+        color: @currency-color;
+        text-shadow: @currency-shadow;
+      }
+
+      .assets-box-number {
+        color: @number-color;
+        text-shadow: @number-shadow;
+      }
+
+      .wallet {
+        background: @wallet-bg;
+    
+        ion-icon {
+          color: @wallet-color;
+        }
+      }
+
+      .deposit {
+        --background: @deposit-bg;
+
+        .deposit-icon {
+          color: @deposit-color;
+        }
+      }
+    }
+  }
+
+  .layout(
+    @assets-bg: var(--ep-color-background-fill-surface-lowered);
+    @currency-color: var(--ep-color-text-warning);
+    @currency-shadow: none;
+    @number-color: var(--ep-color-text-default);
+    @number-shadow: none;
+    @wallet-bg: linear-gradient(180deg, #6A853A 0%, #98C24F 100%);
+    @wallet-color: #fff;
+    @deposit-bg: var(--ep-color-background-fill-active-primary);
+    @deposit-color: var(--ep-color-text-default);
+    @login-bg: transparent;
+    @login-color: var(--ep-color-text-default);
+    @register-bg: var(--ep-dynamic-primary);
+    @register-color: var(--ep-color-text-inverse);
+  ) {
+    .assets-box {
+      display: flex;
+      align-items: center;
+      padding: 0.125rem 0.125rem 0.125rem 0.5rem;
+      border: 0.0625rem solid transparent;
+      border-radius: 0.375rem;
+      background: @assets-bg;
+
+      .assets-img {
+        width: 1.25rem;
+        margin-inline-end: .3125rem;
+      }
+
+      .currency {
+        font-size: var(--ep-font-size-s, 0.75rem);
+        font-weight: var(--font-weight-bold, 700);
+        margin-right: 0.25rem;
+        color: @currency-color;
+        text-shadow: @currency-shadow;
+      }
+
+      .assets-box-number {
+        font-size: var(--ep-font-size-s, 0.75rem);
+        font-weight: var(--font-weight-bold, 700);
+        color: @number-color;
+        text-shadow: @number-shadow;
+      }
+
+      .wallet {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.25rem 0.625rem;
+        border-radius: 0.25rem;
+        margin-left: 0.375rem;
+        background: @wallet-bg;
+    
+        ion-icon {
+          font-size: 1.125rem;
+          color: @wallet-color;
+        }
+      }
+
+      .deposit {
+        margin-left: .375rem;
+        border-radius: var(--ep-border-radius-m, 0.375rem);
+        --background: @deposit-bg;
+
+        .deposit-icon {
+          font-size: 0.8438rem;
+          padding: 0.375rem 0.5rem;
+          color: @deposit-color;
+        }
+      }
+    }
+  }
+}

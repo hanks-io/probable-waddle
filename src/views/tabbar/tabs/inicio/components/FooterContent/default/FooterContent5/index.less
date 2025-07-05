@@ -1,0 +1,118 @@
+html {
+  #tabbar-tabs-inicio-components-FooterContent-default-FooterContent5-index.layout();
+}
+
+#tabbar-tabs-inicio-components-FooterContent-default-FooterContent5-index {
+
+  .layout(
+    @bg1: #38342E;
+    @bg2: #24221F;
+    @bg3: url('/images/intro.png') no-repeat center center / contain;
+    @text-color1: var(--text-color2);
+    @text-color2: #fff;
+    @text-color3: var(--text-color1);
+  ) {
+    .footer-container {
+      margin-top: 2.5rem;
+      
+      .logo-box {
+        display: flex;
+        flex-direction: column;
+        margin-block-end: 1.625rem;
+        position: relative;
+        z-index: 5;
+
+        .logo-box-inner {
+          height: 3.75rem;
+          padding-block: .75rem;
+          display: flex;
+          align-items: center;
+
+          .logo {
+            width: auto;
+            height: 100%;
+            max-width: 11.25rem;
+            object-fit: contain;
+            object-position: left;
+          }
+
+          .age {
+            height: 1.5rem;
+  
+            &::before {
+              content: '';
+              width: 0.0625rem;
+              height: 100%;
+              display: inline-block;
+              margin-inline: .75rem;
+              background-color: @bg1;
+            }
+  
+            ion-icon {
+              font-size: 1.5rem;
+            }
+          }
+        }
+
+        
+
+        .intro {
+          font-size: .75rem;
+          font-weight: 400;
+          color: @text-color1;
+        }
+      }
+
+      .content {
+        position: relative;
+        padding: 1.125rem 1.5rem 2.1875rem;
+        border-radius: 0.625rem;
+        background: @bg2;
+        color: @text-color1;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          transform: translateY(-70%);
+          width: 10.5rem;
+          height: 10.5rem;
+          background: @bg3;
+          z-index: 1;
+        }
+
+        .text {
+          font-size: 0.6875rem;
+          font-weight: 400;
+          line-height: 1.5;
+        }
+
+        .language-selection-box {
+          margin-block-start: 1.625rem;
+          background: @bg1;
+
+          :deep(.language-text) {
+            color: @text-color2;
+          }
+
+          :deep(.arrow-icon) {
+            background: @bg2;
+            color: @text-color3;
+          }
+        }
+
+        .social-content {
+          margin-block-start: 1.625rem;
+        }
+      }
+
+      .version {
+        margin-left: 0.5rem;
+        font-size: 0.625rem;
+        text-align: center;
+        color: @text-color1;
+      }
+    }
+  }
+}

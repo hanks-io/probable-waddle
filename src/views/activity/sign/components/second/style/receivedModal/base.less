@@ -1,0 +1,165 @@
+:global(ion-modal#receivedModal::part(content)) {
+  --height: 100%;
+  --max-width: 486px;
+}
+
+.received-model-img {
+  position: relative;
+}
+
+.received-model-img::before {
+  content: '';
+  z-index: 10;
+  position: absolute;
+  /* 绝对定位 */
+  top: 0;
+  /* 调整位置 */
+  left: -1.5rem;
+  /* 调整位置 */
+  width: 27.5rem;
+  height: 38.1rem;
+  background: url('/images/sign/received-modal-aperture-bg.png') no-repeat;
+  background-size: 100% 100%;
+  /* 适应伪元素大小 */
+}
+
+.ribbon-text {
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  line-height: 1.345rem;
+  font-weight: 700;
+  white-space: nowrap;
+  color: #fff;
+  text-shadow:
+    2px 2px 0px #651F21,
+    -2px -2px 0px #651F21,
+    2px -2px 0px #651F21,
+    -2px 2px 0px #651F21
+}
+
+.received-star1 {
+  bottom: 2.9375rem;
+  left: 4rem;
+}
+
+.received-star2 {
+  width: 1.4375rem;
+  height: 1.4375rem;
+  top: 11rem;
+  left: 4.8rem;
+}
+
+.received-star3,
+.received-star6,
+.received-star8,
+.received-star9 {
+  width: 1rem;
+  height: 1rem;
+}
+
+.received-star5,
+.received-star7 {
+  width: 1.4375rem;
+  width: 1.4375rem;
+}
+
+.received-star3 {
+  top: 16.4rem;
+  left: 1.5625rem;
+}
+
+.received-star4 {
+  right: 1.5rem;
+  top: 14.5rem;
+}
+
+.received-star5 {
+  right: 4rem;
+  bottom: 2.625rem;
+}
+
+.received-star6 {
+  left: 46%;
+  bottom: 17%;
+}
+
+.received-star7 {
+  top: 50%;
+  left: 37%;
+}
+
+.received-star8 {
+  top: 38%;
+  right: 35%;
+}
+
+.received-star9 {
+  bottom: 27%;
+  right: 30%;
+}
+
+.star-animation {
+  animation: twinkle 3s ease-in-out infinite;
+  /* 应用动画，5秒为一轮 */
+}
+
+.received-money-style02 {
+  width: 15.25rem;
+  height: 5.5rem;
+  background: url('@/assets/img/activity/sign/popup-btn-bg.svg') no-repeat;
+  margin: 1.266875rem auto 0;
+  background-position: center center;
+  text-align: center;
+  .received-money {
+    padding-top: .5625rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: var(--ep-font-weight-medium, 600);
+    background: linear-gradient(180deg, var(--ep-color-text-highlight, #FDE714) -9.75%, var(--ep-color-text-highlight-white, #FFF) 93.46%);
+
+    .received-addition {
+      font-weight: 500;
+    }
+  }
+
+  .received-extra {
+    font-size: var(--ep-font-size-l, 1rem);
+    line-height: 1.21rem;
+
+    color: var(--ep-color-text-success, --color-success);
+  }
+}
+
+.sign-btn {
+  width: 19.75rem;
+  height: 3.125rem;
+  margin: 2.3rem auto 0;
+  border-radius: var(--ep-border-radius-surface-small, .75rem);
+  background: linear-gradient(101deg, #FA565A 61.24%, #EA9D06 153.49%);
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.25) inset;
+  text-align: center;
+  line-height: 3.125rem;
+  color: var(--ep-color-text-highlight-white, #FFF);
+  font-size: var(--ep-font-size-m, 14px);
+  font-weight: var(--ep-font-weight-bold, 700);
+}
+
+@keyframes twinkle {
+
+  0%,
+  20% {
+    opacity: 1;
+    /* 完全可见 */
+  }
+
+  50% {
+    opacity: 0;
+    /* 隐藏 */
+  }
+
+  80%,
+  100% {
+    opacity: 1;
+    /* 完全可见 */
+  }
+}

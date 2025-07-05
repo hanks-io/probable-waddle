@@ -1,0 +1,99 @@
+.whitespace-pre-line {
+  line-height: 1.125rem;
+}
+
+table th,
+table td {
+  /* 设置边框 */
+  font-weight: normal;
+  width: 50%;
+}
+
+table th:first-child,
+table td:first-child {
+  border-left: none;
+}
+
+table th:last-child,
+table td:last-child {
+  border-right: none;
+}
+
+table thead tr:first-child th,
+table thead tr:first-child td {
+  border-top: none;
+}
+
+table tr:last-child th,
+table tr:last-child td {
+  border-bottom: none;
+}
+
+ion-item.submit {
+  --padding-start: 0;
+  --min-height: 40px;
+  --background: linear-gradient(0deg, #0167CA 0%, #38A8FA 100%);
+  --border-radius: 10px;
+  --inner-padding-end: 0;
+}
+
+ion-item.submit.unable {
+  --background: #3A3A3A;
+}
+
+ion-modal#modal-apply {
+  --width: 22.25rem;
+  --height: fit-content;
+  /* 高度由内容撑开 */
+  --border-radius: 1.25rem;
+}
+
+ion-modal#modal-apply::part(content) {
+  box-shadow: none !important;
+}
+
+ion-modal#modal-apply ion-input {
+  --background: #101629;
+  --border-radius: 10px;
+  --padding-start: 1rem !important;
+  --padding-end: 1rem !important;
+  min-height: 35.5px !important;
+  font-size: .875rem;
+}
+
+/* 设置输入框边框线(需使用全局样式深度渲染) */
+:global(ion-modal#modal-apply ion-input .input-wrapper.sc-ion-input-ios) {
+  border: 1px solid rgb(55 65 81);
+}
+
+ion-modal#modal-apply ion-item.input {
+  --background: transparent;
+  --padding-bottom: 0px;
+  --padding-end: 0;
+  --padding-start: 0;
+  --padding-top: 0;
+  --inner-padding-end: 0;
+  --inner-border-width: 0px;
+}
+
+@keyframes shiny {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(45deg);
+  }
+
+  80% {
+    opacity: 0.5;
+    transform: scale(0) rotate(45deg);
+  }
+
+  81% {
+    opacity: 1;
+    transform: scale(4) rotate(45deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(50) rotate(45deg);
+  }
+}

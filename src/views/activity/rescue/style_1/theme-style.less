@@ -1,0 +1,55 @@
+#activity-rescue-default-follow-index {
+  .style(
+    @rescue-default-index-01: linear-gradient(180.38deg, #4551DE 0.25rem, #111542 18.875rem),
+    @rescue-default-index-02: #5764FC,
+    @rescue-default-index-03: #95A9D3,
+    @rescue-default-index-04: linear-gradient(90deg, #4B62E0 0%, #1F6F8A 100%),
+    @rescue-default-index-05: #5764FC,
+    @rescue-default-index-06: linear-gradient(270.38deg, #111542 0.65%, #3768B9 49.64%, #111542 100%),
+    @rescue-default-index-07: #95A9D3,
+    @rescue-default-index-08: linear-gradient(90deg, #FDE064 0%, #26CC95 74.8%),
+    @rescue-default-index-09:  linear-gradient(180deg, #BE7DFF 0%, #28308C 100%),
+    @rescue-default-index-10:  #161C3F
+  ) {
+    .allBg {
+      background: @rescue-default-index-01;
+    }
+    .lossMess {
+      ion-col{
+        background: @rescue-default-index-10;
+      }
+      .rescue-ioncol-border {
+        border: 0.125rem solid  @rescue-default-index-02;
+      }
+    }
+    /* 表格外层容器 */
+    .rescueTable {
+      color: @rescue-default-index-03;
+      .table-body {
+        .item {
+          background: @rescue-default-index-04;
+        }
+      }
+    }
+    .desHeader {
+      ion-icon {
+        color: @rescue-default-index-05;
+      }
+    }
+    .desBottom {
+      /* 设置透明边框 */
+      border-image-source: @rescue-default-index-06;
+      color: @rescue-default-index-07;
+    }
+    .footer {
+     .btn {
+      background: @rescue-default-index-08 !important;
+     }
+    }
+    :deep(.countdown-wrap) { 
+      .item {
+        background: @rescue-default-index-09;
+      }
+    }
+  }
+}

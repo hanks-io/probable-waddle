@@ -1,0 +1,89 @@
+.blue-default {
+  #tabbar-tabs-inicio-components-Segment-default-index.style();
+}
+
+.green-default {
+  #tabbar-tabs-inicio-components-Segment-default-index.style(
+    @color-base: #AFC69F,
+    @color-secondary: #AFC69F,
+    @bg1: #2b4f14,
+    @bg2: #366718,
+    @bg3: #274116,
+  );
+}
+
+.amber-purple {
+  #tabbar-tabs-inicio-components-Segment-default-index.style(
+    @color-base: #bdb8e1,
+    @color-secondary: #bdb8e1,
+    @bg1: #262346,
+    @bg2: #3b3466,
+    @bg3: #2c294d,
+  );
+}
+
+#tabbar-tabs-inicio-components-Segment-default-index {
+  .style(
+    @color-base: #fff,
+    @color-secondary: #9ba7be,
+    @bg1: #131826,
+    @bg2: #343947,
+    @bg3: rgba(255, 0, 0, 0),
+  ) {
+    .tabbar-tabs-inicio-components-Segment-default-index {
+      padding-inline: 0.9375rem;
+
+      .wrapper {
+        width: 100%;
+        z-index: 10;
+        border-radius: 0.4375rem;
+        background-color: @bg1;
+
+        ion-segment {
+          /* 设置导航标签背景色 #101629 */
+          --background: transparent;
+
+          ion-segment-button {
+            /* 取消导航标签按钮默认外边距 */
+            margin-top: 0;
+            margin-bottom: 0;
+            --indicator-color: @bg2;
+
+            &.segment-button-disabled {
+              opacity: 1;
+            }
+
+            &.ios::part(indicator) {
+              /* 设置导航标签指示器样式 */
+              padding-inline: 0;
+            }
+
+            .type-img {
+              width: 2.25rem;
+              height: 2.25rem;
+              margin-top: 0.25rem;
+            }
+
+            .label {
+              /* 取消导航标签的标签与指示器之间的边距 */
+              text-transform: capitalize;
+              /* 首字母大写 */
+              margin-top: 0;
+              margin-bottom: 4px;
+              color: @color-secondary;
+            }
+
+            .active {
+              color: @color-base;
+            }
+          }
+        }
+      }
+
+      .float-wrapper {
+        border-radius: 0 0 0.4375rem 0.4375rem;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,25 @@
+#activity-wheel-default-modals-exchangeModal {
+  .style(
+    @wheel-modals-exchange-01: --color-bg-400,
+    @wheel-modals-exchange-02: --color-text-gray-200,
+    @wheel-modals-exchange-03: --color-border-600,
+    @wheel-modals-exchange-04: --color-text-white-100,
+  ) {
+    ion-modal#modal-exchange {
+      --background: var(--ep-color-background-fill-surface-raised-L2, var(@wheel-modals-exchange-01));
+    }
+    
+    ion-input { /* 输入框样式 */
+      --placeholder-color: var(--ep-color-text-weaker, var(@wheel-modals-exchange-02));
+    }
+    
+    :global(#modal-exchange ion-input .input-wrapper.sc-ion-input-ios) {
+      border: 0.125rem solid var(--ep-color-border-default, var(@wheel-modals-exchange-03));
+      background-color: var(--ep-color-background-fill-surface-lowered, #FEFEFE);
+    }
+    
+    .exchange-text-basic {
+      color: var(@wheel-modals-exchange-04);
+    }
+  }
+}

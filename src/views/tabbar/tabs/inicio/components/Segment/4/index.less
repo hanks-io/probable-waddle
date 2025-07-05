@@ -1,0 +1,92 @@
+.green-default {
+  #tabbar-tabs-inicio-components-Segment-default-Segment4-index.style();
+}
+
+.forest-green {
+  #tabbar-tabs-inicio-components-Segment-default-Segment4-index.style(
+    @bg1: linear-gradient(90deg, #00694A 0%, #00815D 50%, #00694A 100%);
+    @bg2: linear-gradient(90deg, #FFE700 0%, #FB0 96%);
+    @bg3: #94FF7F;
+    @shadow1: 0 0 0.25rem 0 #94FF7F;
+    @text-color1: #183009;
+    @text-color2: #fff;
+    @line-color: #F1F984;
+  );
+
+  ion-segment {
+      
+    &.ios {
+      ion-segment-button {
+
+        .lamp {
+          all: unset;
+        }
+      }
+    }
+  }
+}
+
+#tabbar-tabs-inicio-components-Segment-default-Segment4-index {
+  .style(
+    @bg1: #254112;
+    @bg2: radial-gradient(133.68% 133% at 10.61% -7.95%, #cfc959 0%, #646e21 47.17%, #254112 100%);
+    @bg3: #94FF7F;
+    @shadow1: 0 0 0.25rem 0 #94FF7F;
+    @text-color1: #fff;
+    @text-color2: #fff;
+    @line-color: #34571d;
+  ) {
+    ion-segment {
+      --background: transparent;
+      display: flex;
+      flex-direction: column;
+      gap: 0.625rem;
+      
+      &.ios {
+        ion-segment-button {
+          --border-radius: 0.375rem;
+          --background: @bg1;
+          --indicator-color: @bg2;
+          --color: @text-color2;
+          --color-checked: @text-color1;
+          --padding-start: 0;
+          --padding-end: 0;
+          --padding-top: .25rem;
+          --padding-bottom: .25rem;
+          text-transform: capitalize;
+          width: 4.875rem;
+          min-height: 4.875rem;
+          font-weight: 700;
+          font-size: 0.75rem;
+
+          &::part(indicator) {
+            padding-inline: 0;
+          }
+
+          .type-icon {
+            width: 2.25rem;
+            height: 2.25rem;
+          }
+      
+          .type-img {
+            width: 2.25rem;
+            height: 2.25rem;
+            display: block;
+            background-size: 800% 400%;
+          }
+
+          .lamp {
+            width: 0.125rem;
+            height: 0.5rem;
+            border-radius: 0.125rem;
+            background: @bg3;
+            box-shadow: @shadow1;
+            position: absolute;
+            top: 0.5rem;
+            left: 0.625rem;
+          }
+        }
+      }
+    }
+  }
+}

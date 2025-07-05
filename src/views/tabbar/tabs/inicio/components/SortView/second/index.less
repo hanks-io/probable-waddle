@@ -1,0 +1,51 @@
+.label {
+    color: var(--color-base);
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.bar {
+    background: var(--bg-inicio-SortView-bar);
+    color: var(--navigation-bar-color);
+
+    .bar-label {
+        color: var(--color-secondary);
+    }
+
+    .bar-total {
+        font-weight: 700;
+        color: var(--color-inicio-SortView-bar-total);
+    }
+}
+
+.arrow {
+    background: var(--bg-inicio-SortView-bar);
+
+    &.invalid {
+        color: var(--color-secondary);
+    }
+
+    &.active {
+        color: var(--color-base);
+    }
+}
+.logo {
+    color: var(--color-inicio-SortView-logo);
+}
+.amber-purple {
+    .logo {
+        display: flex;
+        margin-right: 0.1875rem;
+        width: 1.875rem;
+        height: 1.875rem;
+        font-size: 1.5rem;
+        border-width: 1px;
+        border-radius: 0.375rem;
+    }
+
+    .label {
+        font-size: 1rem;
+        line-height: 1.5;
+        text-transform: uppercase;
+    }
+}

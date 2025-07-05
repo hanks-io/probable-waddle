@@ -1,0 +1,32 @@
+html {
+  #tabbar-components-tabBar-components-imageWrap-index.layout();
+}
+
+
+#tabbar-components-tabBar-components-imageWrap-index {
+  .layout(
+    @bg1: linear-gradient(to bottom, transparent var(--gradient-height), var(--ep-color-background-fill-surface-raised-L2) var(--gradient-height));
+  ) {
+    .tab-bar {
+      --tab-bar-height: 3.5rem;
+      --tab-bar-top: 0;
+      --gradient-height: calc(var(--tab-bar-height) + var(--tab-bar-top) - 0.125rem);
+      width: 100%;
+      height: var(--tab-bar-height);
+      position: absolute;
+      bottom: -0.0625rem;
+      z-index: 10;
+      padding-top: var(--tab-bar-top);
+      --background: @bg1;
+
+      .inner-wrap {
+        width: 100%;
+        height: var(--tab-bar-height);
+        display: flex;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+}

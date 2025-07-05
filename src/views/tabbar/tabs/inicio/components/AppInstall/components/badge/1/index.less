@@ -1,0 +1,39 @@
+html {
+  #tabbar-tabs-inicio-components-AppInstall-components-badge-1-index();
+}
+
+
+
+
+
+
+#tabbar-tabs-inicio-components-AppInstall-components-badge-1-index {
+  .layout1(
+    @text-color: var(--ep-color-icon-brand-secondary);
+    @icon-color: var(--ep-color-icon-brand-secondary);
+  ) {
+    .layout1.badge-box {
+      margin-right: auto;
+      padding: 0.125rem 0.3125rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.125rem;
+      background: var(--ep-color-bg-brand-secondary);
+      border-radius: var(--ep-border-radius-xs, 0.125rem);
+      background: rgba(102, 186, 32, 0.30);
+
+      .icon {
+        font-size: 1rem;
+        color: @icon-color;
+      }
+
+      .label {
+        font-size: var(--ep-font-size-xs, 0.625rem);
+        font-weight: var(--ep-font-weight-medium, 600);
+        color: @text-color;
+      }
+    }
+  }
+
+  .layout1();
+}

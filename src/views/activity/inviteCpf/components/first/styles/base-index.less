@@ -1,0 +1,111 @@
+ion-content {
+  --background: #213b10;
+}
+
+@font-face {
+  font-family: 'MoneyFont';
+  src: url('@/assets/fonts/numbersAndLetters.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.invite-cpf-top-bg {
+  background: url('/images/inviteCpf/invite-cpf-style1-top-bg.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.invite-cpf-available {
+  position: relative;
+  width: 240px; /* 设置最小宽度 */
+  margin: -1.5625rem auto 0;   /* 居中元素 */
+  text-align: center; /* 可选，确保内容居中 */
+
+  .available-merchantCy {
+    font-size: 1rem;
+    line-height: 2rem;
+    background: linear-gradient(180deg, #50FE93 0%, #00A53F 100%);
+    font-weight: 500;
+  }
+
+  .available-money {
+    font-size: 2.5rem;
+    background: linear-gradient(180deg, #50FE93 0%, #00A53F 100%);
+    font-weight: 900;
+  }
+
+  .available-merchantCy,
+  .available-money {
+    font-family: 'MoneyFont';
+    text-align: center;
+    -webkit-text-stroke-width: .0313rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: normal;
+    text-transform: uppercase;
+    -webkit-text-stroke-color: #c4edc4;
+  }
+}
+
+.invite-cpf-available::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px; /* 设置边框的高度 */
+  background: linear-gradient(90deg, rgba(33, 59, 16, 0) 0%, #3FEB80 50.5%, rgba(33, 59, 16, 0) 100%);
+}
+
+ion-button.cpf-copy-button {
+  width: 20.5rem;
+  min-height: 0;
+  --background: linear-gradient(180deg, #FFC271 0%, #F2910D 100%);
+  --border-radius: .5rem;
+  --color: #fff;
+  font-size: 0.875rem;
+  --background-hover: #f2be75;
+  --background-focused: #ecb168;
+  --background-activated: #ecb168;
+}
+
+.invite-cpf-rule-title {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #AFC69F;
+}
+
+.invite-cpf-rule-content {
+  min-height: 18.75rem;
+  background: #183009;
+  border: 1px solid #34571D;
+  border-radius: .5rem;
+  color: #7E9071;
+  font-size: .75rem;
+  line-height: 1rem;
+}
+
+.invite-cpf-footer {
+  bottom: 0;
+  padding: .9688rem .75rem;
+  background: #2B4F14;
+  box-shadow: 0px 0.5px 0px 0px #2B4F14 inset;
+  ion-button.available-btn {
+    min-height: 0;
+    --background: linear-gradient(180deg, #13C96A 0%, #1D9554 100%);
+    --border-radius: .5rem;
+    --color: #fff;
+    font-size: .875rem;
+    line-height: 1.3125rem;
+    --background-hover: #5eb86c;
+    --background-focused: #6dc07a;
+    --background-activated: #6dc07a;
+  }
+  ion-button.disabled-btn {
+    --background: linear-gradient(180deg, #227F36 0%, #256C2E 100%);
+    --color: rgba(255,255,255,0.4);
+    --background-activated: none;
+    --background-focused: none;
+    --background-hover: none;
+  }
+}

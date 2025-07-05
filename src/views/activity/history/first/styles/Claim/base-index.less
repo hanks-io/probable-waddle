@@ -1,0 +1,68 @@
+.activity-claim-record {
+  background-color: var(--color-bg-300);
+}
+
+.select-box {
+  display: flex;
+  align-items: center;
+  border-radius: var(--rounded-small);
+  background: var(--spread-commission-select-box-bg);
+  ion-icon {
+    color: var(--color-report-select-icon);
+  }
+}
+
+.date-tips {
+  color: var(--my-card-detail-color);
+}
+
+.claim-record-reward-label {
+  color: var(--color-text-100);
+  font-weight: var(--font-weight-regular);
+}
+
+ion-grid.table-title-bg {
+  background: var(--color-bg-100);
+  border-radius: var(--rounded-middle) var(--rounded-middle) 0 0;
+}
+
+.table-item-color {
+  color: var(--my-card-detail-color) !important;
+}
+
+ion-grid ion-row.table-item-bg {
+  min-height: 2.625rem;
+}
+
+ion-grid ion-row.table-item-bg:nth-child(even) {
+  background: var(--color-bg-400);
+}
+
+ion-grid ion-row.table-item {
+  color: var(--color-text-80) !important;
+}
+
+ion-infinite-scroll-content { /* 设置触底加载更多样式 */
+  min-height: .625rem;
+  font-size: var(--font-size-12);
+  color: var(--color-text-40);
+}
+
+ion-popover {
+  left: 1.75rem;
+  --width: 7.5rem !important;
+  --backdrop-opacity: 0;
+  --box-shadow: none;
+}
+
+ion-icon {
+  transition: transform .1s linear;
+}
+
+ion-icon.on {
+  transform: rotate(180deg);
+}
+
+.empty-height {
+	height: calc(100% - 3.5rem);
+}

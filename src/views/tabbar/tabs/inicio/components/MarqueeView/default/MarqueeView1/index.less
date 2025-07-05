@@ -1,0 +1,114 @@
+.blue-default {
+  #tabbar-tabs-inicio-components-MarqueeView-default-index.style();
+
+  .v01 {
+    #tabbar-tabs-inicio-components-MarqueeView-default-index.style(
+      @text-color1: #BEBEBE;
+      @text-color2: #899FBE;
+      @--color-extra: #101629;
+    );
+  }
+}
+
+.green-default {
+  #tabbar-tabs-inicio-components-MarqueeView-default-index.style(
+    @text-color1: #AFC69F;
+    @text-color2: #AFC69F;
+    @--color-extra: #366718;
+    @--color-theme-main: #fff;
+    @--gradient-1: linear-gradient(90deg, #2D5714 46.36%, rgba(54, 103, 24, 0.40) 100%);
+    @--gradient-2: linear-gradient(270deg, #2D5714 46.36%, rgba(54, 103, 24, 0.40) 100%);
+  );
+}
+
+.amber-purple {
+  #tabbar-tabs-inicio-components-MarqueeView-default-index.style(
+    @text-color1: #BDB8E1;
+    @text-color2: #BDB8E1;
+    @--color-extra: #2C294D;
+    @--color-theme-main: #fff;
+    @--gradient-1: linear-gradient(90deg, #201D3B 46.36%, rgba(44, 41, 77, 0.40) 100%);
+    @--gradient-2: linear-gradient(270deg, #201D3B 46.36%, rgba(44, 41, 77, 0.40) 100%);
+  );
+}
+
+#tabbar-tabs-inicio-components-MarqueeView-default-index {
+
+  .style(
+    @text-color1: #fff;
+    @text-color2: #fff;
+    @--color-extra: #131826;
+    @--color-theme-main: #38A8FA;
+    @--gradient-1: linear-gradient(90deg, #131826 46.36%, rgba(28, 35, 52, 0) 100%);
+    @--gradient-2: linear-gradient(270deg, #131826 46.36%, rgba(28, 35, 52, 0) 100%);
+  ) {
+    .tabbar-tabs-inicio-components-MarqueeView-default-index {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-block: 0.75rem;
+      margin-inline: 0.9375rem;
+      height: 1.5rem;
+      border-radius: 0.25rem;
+      background: @--color-extra;
+  
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 2.5rem;
+        height: 100%;
+        border-radius: 0.25rem 0 0 0.25rem;
+        background: @--gradient-1;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        width: 2.5rem;
+        height: 100%;
+        border-radius: 0 0.25rem 0.25rem 0;
+        background: @--gradient-2;
+      }
+      .megaphone {
+        z-index: 4;
+        font-size: 1.25rem;
+        padding-inline-start: 0.5rem;
+        padding-inline-end: 0.3rem;
+        color: @text-color1;
+      }
+      .label {
+        z-index: 0;
+        color: @text-color2;
+      }
+      .badge {
+        z-index: 4;
+        position: relative;
+        padding-inline-end: 0.25rem;
+        ion-icon {
+          font-size: 1.25rem;
+          vertical-align: sub;
+          color: @--color-theme-main;
+        }
+        .dot {
+          position: absolute;
+          top: 0;
+          right: 0;
+          transform: translateX(-60%);
+          width: 0.75rem;
+          height: 0.75rem;
+          font-size: 0.5625rem;
+          line-height: 0.75rem;
+          border-radius: 50%;
+          color: #fff;
+          background-color: #FF0000;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

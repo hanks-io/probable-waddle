@@ -1,0 +1,102 @@
+#activity-inviteCpf-components-record-default-index {
+  .style(
+    @activity-inviteCpf-record-default-index01: --color-bg-300;
+    @activity-inviteCpf-record-default-index02: --color-bg-200;
+    @activity-inviteCpf-record-default-index03: --text-color-white-40;
+    @activity-inviteCpf-record-default-index04: --text-color-white-100;
+    @activity-inviteCpf-record-default-index05: --color-bg-200;
+    @activity-inviteCpf-record-default-index06: --text-color-white-80;
+    @activity-inviteCpf-record-default-index07: --line-color;
+    @activity-inviteCpf-record-default-index08: --color-bg-100;
+    @activity-inviteCpf-record-default-index09: --theme-color-800;
+    @activity-inviteCpf-record-default-index10: --accent-color-red;
+    @activity-inviteCpf-record-default-index11: --text-color-white-40;
+    @activity-inviteCpf-record-default-index12: --color-bg-100;
+    @activity-inviteCpf-record-default-index13: --text-color-white-80;
+    @activity-inviteCpf-record-default-index14: --color-bg-300;
+    @activity-inviteCpf-record-default-index15: --accent-color-orange;
+    @activity-inviteCpf-record-default-index16: --color-bg-300;
+    @activity-inviteCpf-record-default-index17: --color-bg-400;
+    @activity-inviteCpf-record-default-index18: --text-color-white-100;
+  ) {
+    ion-content {
+      --background: var(@activity-inviteCpf-record-default-index01);
+    }
+
+    .default-cpf-record-select-date {
+      .date-box {
+        font-size: .75rem;
+        background: var(@activity-inviteCpf-record-default-index02);
+        .select-tips {
+          font-weight: 500;
+          color: var(@activity-inviteCpf-record-default-index03);
+        }
+        .current-date {
+          font-weight: bold;
+          color: var(@activity-inviteCpf-record-default-index04);
+        }
+      }
+    }
+
+    ion-row.popover-select-box {
+      background: var(@activity-inviteCpf-record-default-index05);
+      ion-col.popover-select-item {
+        font-size: 0.75rem;
+        color: var(@activity-inviteCpf-record-default-index06);
+        .p-select-item {
+          border-radius: 0.25rem;
+          border: 1px solid var(@activity-inviteCpf-record-default-index07);
+        }
+      
+        .p-selected-col {
+          background: var(@activity-inviteCpf-record-default-index08);
+          color: var(@activity-inviteCpf-record-default-index09);
+        }
+      }
+    }
+
+    .default-record-select-time-tips {
+      font-size: 0.75rem;
+      color: var(@activity-inviteCpf-record-default-index10);
+    }
+
+    .default-table {
+      .default-table-title {
+        font-size: 0.75rem;
+        color: var(@activity-inviteCpf-record-default-index11);
+        --background: var(@activity-inviteCpf-record-default-index12);
+      }
+
+      .default-table-title ion-grid ion-row ion-col {
+        font-weight: 600;
+      }
+    
+      .default-table-list {
+        font-size: 0.75rem;
+        color: var(@activity-inviteCpf-record-default-index13);
+        --background: var(@activity-inviteCpf-record-default-index14);
+        .default-list-item-money {
+          font-weight: 700;
+          color: var(@activity-inviteCpf-record-default-index15);
+        }
+      }
+    
+      ion-item.default-table-list:nth-child(odd) {
+        --background: var(@activity-inviteCpf-record-default-index16);     // 奇数 
+      }
+    
+      ion-item.default-table-list:nth-child(even) {
+        --background: var(@activity-inviteCpf-record-default-index17);      // 偶数
+      }
+    }
+
+    .default-select-icon {
+      color: var(@activity-inviteCpf-record-default-index18);
+    }
+
+    ion-infinite-scroll-content.default-infinite-content {
+      font-size: .75rem;
+    }
+  } 
+}
+

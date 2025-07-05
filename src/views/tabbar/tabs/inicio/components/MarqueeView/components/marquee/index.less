@@ -1,0 +1,100 @@
+html {
+  #tabbar-tabs-inicio-components-MarqueeView-components-marquee-index.layout();
+}
+
+.neo-blue {
+  #tabbar-tabs-inicio-components-MarqueeView-components-marquee-index.style(
+    @bg1: var(--ep-dynamic-secondary);
+  );
+}
+
+
+#tabbar-tabs-inicio-components-MarqueeView-components-marquee-index {
+  .style(
+    @bg1: var(--ep-dynamic-tertiary-weak);
+    @text-color: var(--ep-color-text-highlight);
+    @gradient1: transparent;
+    @gradient2: transparent;
+    @icon-color1: #F7FB43;
+    @icon-color2: #fff;
+  ) {
+    .megaphone-wrapper {
+      background: @bg1;
+  
+      &::before {
+        background: @gradient1;
+      }
+
+      &::after {
+        background: @gradient2;
+      }
+
+      .megaphone {
+        color: @icon-color1;
+      }
+
+      .label {
+        color: var(--text-color, @text-color);
+      }
+    }
+  }
+
+  .layout(
+    @bg1: var(--ep-dynamic-tertiary-weak);
+    @text-color: var(--ep-color-text-highlight);
+    @gradient1: transparent;
+    @gradient2: transparent;
+    @icon-color1: #F7FB43;
+    @icon-color2: #fff;
+  ) {
+    .megaphone-wrapper {
+      flex: 1;
+      overflow: hidden;
+      height: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      border-radius: var(--ep-border-radius-surface-default, 0.875rem);
+      background: @bg1;
+  
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 2.5rem;
+        height: 100%;
+        background: @gradient1;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        width: 2.5rem;
+        height: 100%;
+        background: @gradient2;
+      }
+
+      .megaphone {
+        z-index: 4;
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 1.5rem;
+        margin-inline-start: 0.5rem;
+        margin-inline-end: .375rem;
+        color: @icon-color1;
+      }
+
+      .label {
+        flex: 1;
+        z-index: 0;
+        font-size: var(--ep-font-size-m, 0.875rem);
+        font-weight: var(--ep-font-weight-medium, 600);
+        color: var(--text-color, @text-color);
+      }
+    }
+  }
+}

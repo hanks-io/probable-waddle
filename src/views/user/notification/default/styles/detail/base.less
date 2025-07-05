@@ -1,0 +1,42 @@
+ion-header {
+  box-shadow: none;
+}
+
+ion-content {
+  --padding-start: var(--ion-padding, 1rem); 
+  --padding-end: var(--ion-padding, 1rem);
+  --padding-top: var(--ion-padding, 1rem);
+  --padding-bottom: var(--ion-padding, 1rem);
+  padding-inline-start: var(--ion-padding, 1rem);
+  padding-inline-end: var(--ion-padding, 1rem);
+  padding-top: var(--ion-padding, 1rem);
+  padding-bottom: var(--ion-padding, 1rem);
+  .detail-title {
+    margin-bottom: .3125rem;
+  }
+  .announcement-content {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+  }
+  .bottom {
+    text-align: right;
+    font-size: 0.875rem; 
+    line-height: 1.25rem;
+    margin-top: 2rem;
+  }
+}
+
+:deep(.announcement-content p img) {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.25rem;
+}
+
+/* 解决v-html显示富文本表格边框不显示 */
+:deep(table) {
+  border-collapse: collapse;
+  width: 100%;
+  th, td {
+    text-align: left;
+  }
+}

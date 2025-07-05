@@ -1,0 +1,95 @@
+html {
+  #tabbar-components-tabBar-components-bar-1-index.layout();
+}
+
+
+
+
+
+
+#tabbar-components-tabBar-components-bar-1-index {
+  .layout(
+    @bg: var(--ep-color-background-fill-glow-primary-opacity-100);
+    @text-color1: var(--ep-color-text-navigation-selected);
+    @text-color2: var(--ep-color-text-navigation-default);
+    @icon-color1: var(--ep-color-icon-brand-primary);
+    @icon-color2: var(--ep-color-text-navigation-default);
+  ) {
+    .tab-btn {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      .tab-label {
+        font-size: var(--ep-font-size-xs, 0.625rem);
+        font-weight: var(--ep-font-weight-regular, 400);
+        line-height: 1;
+        color: @text-color2;
+      }
+      .tab-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        color: @icon-color2;
+      }
+    }
+
+    .active-tab {
+      animation: buttonAnimation 500ms;
+      position: relative;
+
+      &::before {
+        content: '';
+        width: 60%;
+        height: 60%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: @bg;
+        opacity: 0.5;
+        filter: blur(1rem);
+      }
+
+      .tab-label {
+        font-weight: var(--ep-font-weight-bold, 700);
+        color: @text-color1;
+      }
+
+      .tab-icon {
+        color: @icon-color1;
+      }
+    }
+
+    .point-1 {
+      top: 0.625rem;
+      right: 1.5625rem;
+    }
+
+    .point-3 {
+      top: .6875rem;
+      right: 1.5625rem;
+    }
+
+    .point-4 {
+      top: 0.5rem;
+      right: 1.5625rem;
+    }
+
+    @keyframes buttonAnimation {
+      0% {
+        transform: scale(0);
+      }
+  
+      50% {
+        transform: scale(1.2);
+      }
+  
+      100% {
+        transform: scale(1);
+      }
+    }
+  }
+}

@@ -1,0 +1,168 @@
+html {
+  #tabbar-tabs-inicio-components-ToTopButton-index();
+}
+
+
+#tabbar-tabs-inicio-components-ToTopButton-index {
+
+  .layout1(
+    @text-color1: var(--ep-color-text-inverse);
+    @icon-color1: var(--ep-color-icon-brand-primary);
+    @toTop-bg: var(--ep-color-background-fill-surface-raised-L2);
+    @toTop-icon-bg: linear-gradient(0deg, #0167ca 0%, #38a8fa 100%);
+  ) {
+    .layout1.to-top-box {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      position: fixed;
+      z-index: 50;
+      right: 1.25rem;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      background: @toTop-bg;
+
+      .icon-wall {
+        width: 1.375rem;
+        height: 1.375rem;
+        font-size: 1.375rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+        
+        .to-top {
+          color: @icon-color1;
+        }
+      }
+  
+      .to-top-text {
+        font-size: 0.75rem;
+        font-weight: 500;
+        margin-bottom: 0.125rem;
+        color: @text-color1;
+      }
+    }
+  }
+
+  .layout2(
+    @text-color1: var(--ep-color-text-inverse);
+    @icon-color1: var(--ep-color-icon-brand-primary);
+    @toTop-bg: var(--ep-color-background-fill-surface-raised-L2);
+    @toTop-icon-bg: linear-gradient(0deg, #0167ca 0%, #38a8fa 100%);
+  ) {
+    .layout2.to-top-box {
+      width: 2.875rem;
+      height: 2.875rem;
+      font-size: 0.625rem;
+      border-radius: 0.3125rem;
+      position: fixed;
+      z-index: 50;
+      right: 1.25rem;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      background: @toTop-bg;
+
+      .icon-wall {
+        width: 1.375rem;
+        height: 1.375rem;
+        font-size: 1.375rem;
+        background: @toTop-icon-bg;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .icon {
+          color: @icon-color1;
+        }
+      }
+  
+      .to-top-text {
+        color: @text-color1;
+      }
+    }
+  }
+
+  .layout3(
+    @text-color1: var(--ep-color-text-inverse);
+    @icon-color1: var(--ep-color-icon-brand-primary);
+    @toTop-bg: var(--ep-color-background-fill-surface-raised-L2);
+    @line-color: #4C4943;
+    @toTop-icon-bg: linear-gradient(0deg, #0167ca 0%, #38a8fa 100%);
+    @shadow1: 0 0.125rem .4562rem -0.25rem rgba(238, 255, 0, 0.15) inset;
+  ) {
+    .layout3.to-top-box {
+      width: 3.25rem;
+      height: 3.25rem;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: .375rem;
+      position: fixed;
+      right: 1.25rem;
+      z-index: 50;
+      background: @toTop-bg;
+      border: 0.0625rem solid @line-color;
+      box-shadow: @shadow1;
+
+      .to-top {
+        font-size: 2.5rem;
+        color: @icon-color1;
+      }
+
+      .to-top-text {
+        font-size: 0.75rem;
+        font-weight: 500;
+        color: @text-color1;
+      }
+    }
+  }
+
+  .layout4(
+    @text-color1: var(--ep-color-text-inverse);
+    @icon-color1: var(--ep-color-icon-brand-primary);
+    @toTop-bg: var(--ep-color-background-fill-surface-raised-L2);
+    @line-color: #4C4943;
+    @toTop-icon-bg: linear-gradient(0deg, #0167ca 0%, #38a8fa 100%);
+    @shadow1: 0 0.125rem .4562rem -0.25rem rgba(238, 255, 0, 0.15) inset;
+  ) {
+    .layout4.to-top-box {
+      width: 2.75rem;
+      height: 2.75rem;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--ep-border-radius-xl, .25rem);
+      position: fixed;
+      right: 1.25rem;
+      z-index: 50;
+      background: @toTop-bg;
+      border: 0.0625rem solid @line-color;
+
+      .to-top {
+        font-size: 1.5rem;
+        margin-bottom: -0.3125rem;
+        color: @icon-color1;
+      }
+
+      .to-top-text {
+        font-size: var(--ep-font-size-xs, 0.75rem);
+        font-weight: var(--ep-font-weight-bold, 500);
+        color: @text-color1;
+      }
+    }
+  }
+
+
+  .layout1();
+  .layout2();
+  .layout3();
+  .layout4();
+}

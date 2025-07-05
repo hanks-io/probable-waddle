@@ -1,0 +1,125 @@
+#mlmAgent-components-commissionDetail-index {
+  .style(
+    @mlmAgent-components-commissionDetail-index-01: --mlm-agent-date-bg-color;
+    @mlmAgent-components-commissionDetail-index-02: --mlm-subdetail-item-name-color;
+    @mlmAgent-components-commissionDetail-index-03: --mlm-selected-text-color;
+    @mlmAgent-components-commissionDetail-index-04: --mlm-commission-detail-bgc;
+    @mlmAgent-components-commissionDetail-index-05: --mlm-commission-detail-tips-tc;
+    @mlmAgent-components-commissionDetail-index-06: --mlm-commission-detail-money-tc;
+    @mlmAgent-components-commissionDetail-index-07: --mlm-subdetail-item-name-color;
+    @mlmAgent-components-commissionDetail-index-08: --color-bg-commission-fourth;
+    @mlmAgent-components-commissionDetail-index-09: --color-line-default;
+    @mlmAgent-components-commissionDetail-index-10: --mlm-searchbar-icon-color;
+    @mlmAgent-components-commissionDetail-index-11: --mlm-subdetail-box-bgc;
+    @mlmAgent-components-commissionDetail-index-12: --mlm-subdetail-box-border-color;
+    @mlmAgent-components-commissionDetail-index-13: --mlm-subdetail-top-bgc;
+    @mlmAgent-components-commissionDetail-index-14: --mlm-subdetail-border-color;
+    @mlmAgent-components-commissionDetail-index-15: --mlm-subordinate-id-text-color;
+    @mlmAgent-components-commissionDetail-index-16: --mlm-subdetail-item-name-color;
+    @mlmAgent-components-commissionDetail-index-17: --color-text-100;
+    @mlmAgent-components-commissionDetail-index-18: --color-line-default;
+    @mlmAgent-components-commissionDetail-index-19: --mlm-subdetail-item-name-color;
+    @mlmAgent-components-commissionDetail-index-20: --color-line-default;
+    @mlmAgent-components-commissionDetail-index-21: --mlm-toolbar-bg-color;
+    @mlmAgent-components-commissionDetail-index-22: --color-bg-300;
+    @mlmAgent-components-commissionDetail-index-23: --color-primary-800;
+    @mlmAgent-components-commissionDetail-index-24: --agent-btn-color;
+    @mlmAgent-components-commissionDetail-index-25: --mlm-searchbar-enter-color;
+    @mlmAgent-components-commissionDetail-index-26: --mlm-searchbar-placeholder-color;
+    @mlmAgent-components-commissionDetail-index-27: --mlm-commission-detail-account-money-tc;
+  ) {
+    .commission-detail {
+      .commission-detail-time {
+        background-color: var(@mlmAgent-components-commissionDetail-index-01);
+        span {
+          color: var(@mlmAgent-components-commissionDetail-index-02);
+        }
+        .timeChoose {
+          color: var(@mlmAgent-components-commissionDetail-index-03);
+          ion-icon {
+            color: var(@mlmAgent-components-commissionDetail-index-02);
+          }
+        }
+      }
+      .card {
+        background-color: var(@mlmAgent-components-commissionDetail-index-04);
+        .Earn {
+          color: var(@mlmAgent-components-commissionDetail-index-05);
+        }
+        .money {
+          color: var(@mlmAgent-components-commissionDetail-index-06);
+        }
+      }
+      .filter {
+        color: var(@mlmAgent-components-commissionDetail-index-07);
+        background-color: var(@mlmAgent-components-commissionDetail-index-08);
+        border-color: var(@mlmAgent-components-commissionDetail-index-09);
+        ion-icon {
+          color: var(@mlmAgent-components-commissionDetail-index-10);
+        }
+      }
+      .perMes {
+        .perCard {
+          background-color: var(@mlmAgent-components-commissionDetail-index-11);
+          border: 0.0625rem solid var(@mlmAgent-components-commissionDetail-index-12);
+          .line {
+            box-shadow: 0 0.1875rem 0 0 var(@mlmAgent-components-commissionDetail-index-13) inset;
+          }
+          .perImg {
+            border-right: 0.0625rem solid var(@mlmAgent-components-commissionDetail-index-14);
+            .idMes {
+              .idNum {
+                color: var(@mlmAgent-components-commissionDetail-index-15);
+              }
+              ion-icon {
+                color: var(@mlmAgent-components-commissionDetail-index-16);
+              }
+            }
+          }
+          .mes {
+            .top {
+              color: var(@mlmAgent-components-commissionDetail-index-17);
+              .left {
+                .card-left-amount {
+                  color: var(@mlmAgent-components-commissionDetail-index-27);
+                }
+              }
+              .right {
+                border-left: 0.0625rem solid var(@mlmAgent-components-commissionDetail-index-18);
+              }
+            }
+            .bottom {
+              color: var(@mlmAgent-components-commissionDetail-index-19);
+              .right {
+                border-left: 0.0625rem solid var(@mlmAgent-components-commissionDetail-index-20);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    ion-toolbar {
+      --background: var(@mlmAgent-components-commissionDetail-index-21);
+    }
+    
+    ion-datetime {
+      --background: var(@mlmAgent-components-commissionDetail-index-22);
+      --wheel-highlight-background: var(@mlmAgent-components-commissionDetail-index-23);
+    }
+    
+    ion-datetime::part(calendar-day active) {
+      color: var(@mlmAgent-components-commissionDetail-index-24);
+      background: var(@mlmAgent-components-commissionDetail-index-23);
+    }
+    
+    ion-datetime::part(month-year-button) {
+      color: var(@mlmAgent-components-commissionDetail-index-23);
+    }
+    
+    ion-searchbar#search-agency {
+      color: var(@mlmAgent-components-commissionDetail-index-25);
+      --placeholder-color: var(@mlmAgent-components-commissionDetail-index-26);
+    }
+  }
+}

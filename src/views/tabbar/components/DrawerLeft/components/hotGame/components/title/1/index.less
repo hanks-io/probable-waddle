@@ -1,0 +1,47 @@
+html {
+  #tabbar-components-DrawerLeft-components-hotGame-components-title-1-index();
+}
+
+
+
+
+
+
+#tabbar-components-DrawerLeft-components-hotGame-components-title-1-index {
+  .layout1(
+    @text-color1: var(--ep-color-text-default),
+    @text-color2: var(--ep-color-text-weaker),
+  ) {
+    .layout1.hot-game-title {
+      display: flex;
+      flex-direction: column;
+      
+      .hot-game-icon-box {
+        display: flex;
+        align-items: center;
+        gap: .375rem;
+
+        .hot-game-icon {
+          width: 1.875rem;
+          height: 1.875rem;
+          margin-inline-start: -0.375rem;
+        }
+
+        .label {
+          font-size: var(--ep-font-size-m, 0.875rem);
+          font-weight:  var(--ep-font-weight-medium, 600);
+          color: @text-color1;
+        }
+      }
+
+      // 介绍
+      .hot-game-intro {
+        font-size: var(--ep-font-size-s, 0.75rem);
+        font-weight: var(--ep-font-weight-regular, 400);
+        color: @text-color2;
+      }
+    }
+  }
+
+  .layout1();
+}

@@ -1,0 +1,97 @@
+.green-default {
+  #tabbar-tabs-inicio-components-GameWrapper-Head-Head4-index.style();
+}
+
+.forest-green {
+  #tabbar-tabs-inicio-components-GameWrapper-Head-Head4-index.style(
+    @bg1: url('/svg/headerTextBgGreen02.svg') no-repeat 0 0 / 22.5rem 2.5625rem;
+    @bg2: #00563A;
+    @text-color1: #fff;
+    @text-color2: #AFC69F;
+  );
+}
+
+.amber-purple {
+  #tabbar-tabs-inicio-components-GameWrapper-Head-Head4-index.style(
+    @bg1: url('/svg/headerTextBgGreen03.svg') no-repeat 0 0 / 22.5rem 2.5625rem;
+    @bg2: var(--color-bg-200);
+    @text-color1: #BDB8E1;
+    @text-color2: #3B3466;
+    @text-color3: #686299;
+  );
+}
+
+.blue-default {
+  #tabbar-tabs-inicio-components-GameWrapper-Head-Head4-index.style(
+    @bg1: url('/svg/headerTextBgGreen04.svg') no-repeat 0 0 / 22.5rem 2.5625rem;
+    @bg2: #354165;
+    @text-color1: #fff;
+    @text-color2: #5A6892;
+    @text-color3: #1680DC;
+  );
+}
+
+#tabbar-tabs-inicio-components-GameWrapper-Head-Head4-index {
+  .style(
+    @bg1: url('/svg/headerTextBgGreen01.svg') no-repeat 0 0 / 22.5rem 2.5625rem;
+    @bg2: #366718;
+    @text-color1: #AFC69F;
+    @text-color2: #AFC69F;
+    @text-color3: #AFC69F;
+    @icon-color1: #AFC69F;
+  ) {
+    .headerBgImage {
+      display: flex;
+      align-items: center;
+      background: @bg1;
+      height: 2.5625rem;
+      margin-block-end: .875rem;
+
+      .logo-wall {
+        width: 2.625rem;
+        margin-inline-start: .1875rem;
+        margin-inline-end: .5rem;
+        font-size: 1.875rem;
+        line-height: 1;
+        display: flex;
+        justify-content: center;
+        color: @icon-color1;
+
+        .svg-container {
+          font-size: 1.875rem;
+          width: 1.875rem;
+          height: 1.875rem;
+        }
+      }
+
+      ion-label {
+        color: @text-color1;
+      }
+
+      .arrow-container {
+        margin-block-start: 0.625rem;
+        margin-inline-end: 0.6675rem;
+        line-height: 1;
+  
+        .left,
+        .right {
+          padding-inline: .25rem;
+          padding-block: .25rem;
+          border-radius: .1875rem;
+          font-size: 0.875rem;
+          color: @text-color3;
+          background-color: @bg2;
+
+          &.invalid {
+            pointer-events: none;
+            color: @text-color2;
+          }
+        }
+  
+        .right {
+          margin-inline-start: 0.3125rem;
+        }
+      }
+    }
+  }
+}

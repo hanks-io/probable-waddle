@@ -1,0 +1,56 @@
+html {
+  #tabbar-tabs-inicio-components-FooterContent-components-version-1-index();
+}
+
+.neo-blue {
+  #tabbar-tabs-inicio-components-FooterContent-components-version-1-index.style(
+    @text-color1: var(--ep-color-text-weaker);
+    @text-color2: var(--ep-color-text-weaker);
+  );
+}
+
+#tabbar-tabs-inicio-components-FooterContent-components-version-1-index {
+  .style(
+    @text-color1: var(--ep-color-text-default);
+    @text-color2: var(--ep-color-text-weaker);
+  ) {
+    .layout1.version-box {
+
+      .subtitle {
+        color: @text-color1;
+      }
+
+      .equipment-info {
+        color: @text-color2;
+      }
+    }
+  }
+
+  .layout1(
+    @text-color1: var(--ep-color-text-default);
+    @text-color2: var(--ep-color-text-weaker);
+  ) {
+    .layout1.version-box {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .subtitle {
+        font-size: var(--ep-font-size-s, 0.75rem);
+        font-weight: var(--ep-font-weight-regular, 400);
+        color: @text-color1;
+      }
+
+      .equipment-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: var(--ep-font-size-s, 0.75rem);
+        font-weight: var(--ep-font-weight-regular, 400);
+        color: @text-color2;
+      }
+    }
+  }
+
+  .layout1();
+}

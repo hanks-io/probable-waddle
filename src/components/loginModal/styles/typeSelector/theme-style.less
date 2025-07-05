@@ -1,0 +1,39 @@
+// 注册类型选择器样式
+#components-loginModal-components-typeSelector-index {
+  .style(
+    @--color-bg-300: var(--color-bg-300);
+    @--color-bg-100: var(--color-bg-100);
+    @--text-color-white-40: var(--text-color-white-40);
+    @--theme-color-800: var(--theme-color-800);
+    @--border-radius: var(--rounded-middle);
+    @--font-weight-bold: var(--font-weight-bold);
+    @--background-clip:var(--background-clip,border-box);
+    @--background:var(--background,transparent);
+  ) {
+
+    ion-segment-button {
+      --border-radius: @--border-radius;
+    }
+
+    ion-segment {
+      --background: @--color-bg-300;
+    }
+
+    ion-segment-button.ios::part(native) {
+      color: @--text-color-white-40;
+    }
+
+    ion-segment-button::part(indicator-background) {
+      background: @--color-bg-100
+    }
+
+    .segment-button-checked.ios {
+      ion-label {
+        color: @--theme-color-800;
+        font-weight: @--font-weight-bold;
+        background-clip: @--background-clip !important;
+        background: @--background;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+html {
+  #tabbar-tabs-inicio-components-HeaderBar-components-assets-2-index();
+}
+
+
+
+
+
+#tabbar-tabs-inicio-components-HeaderBar-components-assets-2-index {
+  .layout1(
+    @currency-color: var(--ep-color-text-default);
+    @number-color: var(--ep-color-text-default);
+    @sub-color: var(--ep-color-text-weaker);
+  ) {
+    .layout1.assets-box {
+      display: flex;
+      gap: 0.4375rem;
+
+      .assets-img {
+        order: var(--order-2, 2);
+        width: 0;
+
+        &.good-img {
+          width: 2.375rem;
+          height: 2.375rem;
+        }
+      }
+
+      .assets-box-info {
+        order: var(--order-1, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .assets-box-info-inner {
+          display: flex;
+          align-items: center;
+          font-size: var(--ep-font-size-m, 0.875rem);
+          font-weight: var(--ep-font-weight-bold, 700);
+          line-height: 1.5;
+
+          .currency {
+            margin-right: 0.125rem;
+            color: @currency-color;
+          }
+
+          .assets-box-number {
+            color: @number-color;
+          }
+        }
+
+        .assets-box-intro {
+          font-size: var(--ep-font-size-xs, 0.625rem);
+          font-weight: var(--ep-font-weight-regular, 400);
+          color: @sub-color;
+        }
+      }
+    }
+  }
+
+  .layout1();
+}

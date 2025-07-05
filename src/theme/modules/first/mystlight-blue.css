@@ -1,0 +1,213 @@
+.mystlight-blue {  
+  --ep-accent-blue: rgb(60, 104, 249);
+  --ep-accent-red: rgb(237, 44, 27);
+  --ep-accent-orange: rgb(250, 131, 19);
+  --ep-accent-green: rgb(43, 163, 19);
+  --ep-accent-yellow: rgb(254, 150, 59);
+  --ep-neutral-white-white-100: rgb(255, 255, 255);
+  --ep-neutral-white-white-90: rgba(255, 255, 255, 0.90);
+  --ep-neutral-white-white-80: rgba(255, 255, 255, 0.80);
+  --ep-neutral-white-white-70: rgba(255, 255, 255, 0.70);
+  --ep-neutral-white-white-60: rgba(255, 255, 255, 0.60);
+  --ep-neutral-white-white-50: rgba(255, 255, 255, 0.50);
+  --ep-neutral-white-white-40: rgba(255, 255, 255, 0.40);
+  --ep-neutral-white-white-30: rgba(255, 255, 255, 0.30);
+  --ep-neutral-white-white-20: rgba(255, 255, 255, 0.20);
+  --ep-neutral-white-white-10: rgba(255, 255, 255, 0.10);
+  --ep-neutral-black-black-100: rgb(73, 73, 73);
+  --ep-neutral-black-black-90: rgb(92, 92, 92);
+  --ep-neutral-black-black-80: rgb(132, 145, 166);
+  --ep-neutral-black-black-70: rgb(112, 134, 169);
+  --ep-neutral-black-black-60: rgb(115, 128, 148);
+  --ep-neutral-black-black-50: rgb(136, 147, 163);
+  --ep-neutral-black-black-40: rgb(141, 158, 185);
+  --ep-neutral-black-black-30: rgb(159, 177, 204);
+  --ep-neutral-black-black-20: rgb(169, 185, 210);
+  --ep-neutral-black-black-10: rgb(186, 195, 209);
+
+  --ep-values-2: .125rem;
+  --ep-values-4: .25rem;
+  --ep-values-6: .375rem;
+  --ep-values-8: .5rem;
+  --ep-values-10: .625rem;
+  --ep-values-12: .75rem;
+  --ep-values-14: .875rem;
+  --ep-values-16: 1rem;
+  --ep-values-18: 1.125rem;
+  --ep-values-20: 1.25rem;
+  --ep-values-24: 1.5rem;
+  --ep-values-32: 2rem;
+  --ep-values-36: 2.25rem;
+  --ep-values-70: 4.375rem;
+  --ep-values-200: 200;
+  --ep-values-400: 400;
+  --ep-values-600: 600;
+  --ep-values-700: 700;
+  --ep-values-900: 900;
+  --ep-values-infinity: 9999px;
+
+  --ep-primary-primary-900: rgb(19, 32, 118);
+  --ep-primary-primary-800: rgb(32, 49, 142);
+  --ep-primary-primary-700: rgb(51, 74, 177);
+  --ep-primary-primary-600: rgb(74, 102, 211);
+  --ep-primary-primary-500: rgb(102, 135, 246);
+  --ep-primary-primary-400: rgb(82, 132, 242);
+  --ep-primary-primary-300: rgb(163, 203, 255);
+  --ep-primary-primary-200: rgb(194, 212, 254);
+  --ep-primary-primary-100: rgb(232, 241, 255);
+  --ep-primary-primary-Opacity: rgba(102, 135, 246, 0.40);
+  --ep-secondary-secondary-900: rgb(122, 80, 39);
+  --ep-secondary-secondary-800: rgb(147, 109, 65);
+  --ep-secondary-secondary-700: rgb(183, 148, 103);
+  --ep-secondary-secondary-600: rgb(219, 191, 149);
+  --ep-secondary-secondary-500: rgb(255, 237, 205);
+  --ep-secondary-secondary-400: rgb(255, 242, 217);
+  --ep-secondary-secondary-300: rgb(255, 246, 225);
+  --ep-secondary-secondary-200: rgb(255, 250, 235);
+  --ep-secondary-secondary-100: rgb(255, 252, 245);
+  --ep-secondary-secondary-Opacity: rgba(255, 237, 205, 0.40);
+  --ep-tertiary-tertiary-900: rgb(61, 41, 122);
+  --ep-tertiary-tertiary-800: rgb(105, 76, 255);
+  --ep-tertiary-tertiary-700: rgb(133, 109, 183);
+  --ep-tertiary-tertiary-600: rgb(200, 193, 255);
+  --ep-tertiary-tertiary-500: rgb(233, 218, 255);
+  --ep-tertiary-tertiary-400: rgb(222, 224, 255);
+  --ep-tertiary-tertiary-300: rgb(235, 236, 255);
+  --ep-tertiary-tertiary-200: rgb(250, 254, 255);
+  --ep-tertiary-tertiary-100: rgb(251, 254, 255);
+  --ep-tertiary-tertiary-Opacity: rgba(233, 218, 255, 0.40);
+  --ep-inverse-inverse-900: rgb(46, 67, 229);
+  --ep-inverse-inverse-800: rgb(80, 100, 255);
+  --ep-inverse-inverse-700: rgb(109, 141, 183);
+  --ep-inverse-inverse-600: rgb(119, 137, 241);
+  --ep-inverse-inverse-500: rgb(142, 158, 255);
+  --ep-inverse-inverse-400: rgb(227, 243, 255);
+  --ep-inverse-inverse-300: rgb(232, 247, 255);
+  --ep-inverse-inverse-200: rgb(240, 250, 255);
+  --ep-inverse-inverse-100: rgb(247, 253, 255);
+  --ep-inverse-inverse-Opacity: rgba(218, 238, 255, 0.40);
+  --ep-neutral-gray-gray-L01: rgb(247, 249, 255);
+  --ep-neutral-gray-gray-L02: rgb(254, 254, 254);
+  --ep-neutral-gray-gray-L03: rgb(233, 241, 255);
+  --ep-neutral-gray-gray-L04: rgb(221, 232, 255);
+  --ep-neutral-gray-gray-L05: rgb(219, 228, 244);
+  --ep-neutral-gray-gray-L06: rgb(205, 216, 238);
+  --ep-neutral-gray-gray-L07: rgb(216, 222, 234);
+  --ep-neutral-gray-gray-L08: rgb(187, 203, 235);
+  --ep-neutral-gray-gray-L09: rgb(90, 174, 226);
+  --ep-neutral-gray-gray-L10: rgb(62, 111, 141);
+
+  --ep-default-font-family: 'Prompt', -apple-system, 'Roboto', sans-serif;
+
+  --ep-color-background-fill-body-default: var(--ep-neutral-gray-gray-L01);
+  --ep-color-background-fill-surface-raised-L1: var(--ep-neutral-gray-gray-L03);
+  --ep-color-background-fill-surface-raised-L2: var(--ep-neutral-gray-gray-L04);
+  --ep-color-background-fill-surface-lowered: var(--ep-neutral-gray-gray-L02);
+  --ep-color-background-fill-top-nav-primary: var(--ep-neutral-gray-gray-L03);
+  --ep-color-background-fill-top-nav-secondary: var(--ep-neutral-gray-gray-L03);
+  --ep-color-background-fill-foot-bar: var(--ep-neutral-gray-gray-L02);
+  --ep-color-background-fill-active-primary: var(--ep-primary-primary-500);
+  --ep-color-background-fill-active-active: var(--ep-primary-primary-600);
+  --ep-color-background-fill-active-disabled: var(--ep-primary-primary-300);
+  --ep-color-background-fill-tips: var(--ep-primary-primary-500);
+  --ep-color-background-fill-glow-primary-opacity-40: var(--ep-primary-primary-Opacity);
+  --ep-color-background-fill-glow-primary-opacity-100: var(--ep-primary-primary-500);
+  --ep-color-background-fill-glow-secondary-opacity-40: var(--ep-inverse-inverse-Opacity);
+  --ep-color-background-fill-glow-secondary-opacity-100: var(--ep-inverse-inverse-500);
+  --ep-color-background-fill-gradients-primary-a: var(--ep-primary-primary-300);
+  --ep-color-background-fill-gradients-primary-b: var(--ep-primary-primary-400);
+  --ep-color-background-fill-gradients-secondary-a: var(--ep-tertiary-tertiary-400);
+  --ep-color-background-fill-gradients-secondary-b: var(--ep-primary-primary-200);
+  --ep-color-background-fill-gradients-tertiary-a: var(--ep-tertiary-tertiary-800);
+  --ep-color-background-fill-gradients-tertiary-b: var(--ep-primary-primary-500);
+  --ep-color-background-fill-gradients-tertiary-weak-a: var(--ep-tertiary-tertiary-800);
+  --ep-color-background-fill-gradients-tertiary-weak-b: var(--ep-inverse-inverse-800);
+ 
+  --ep-color-border-default: var(--ep-neutral-gray-gray-L06);
+  --ep-color-border-brand: var(--ep-primary-primary-500);
+  --ep-color-border-selected: var(--ep-primary-primary-500);
+  --ep-color-border-danger: var(--ep-accent-red);
+  --ep-color-border-warning: var(--ep-accent-orange);
+  --ep-color-border-success: var(--ep-accent-green);
+  --ep-color-border-highlight: var(--ep-accent-yellow);
+  --ep-color-border-highlight-white: var(--ep-neutral-white-white-100);
+
+  --ep-color-text-brand-primary: var(--ep-primary-primary-500);
+  --ep-color-text-selected: var(--ep-primary-primary-500);
+  --ep-color-text-default: var(--ep-neutral-black-black-100);
+  --ep-color-text-weak: var(--ep-neutral-black-black-60);
+  --ep-color-text-weaker: var(--ep-neutral-black-black-40);
+  --ep-color-text-weakest: var(--ep-neutral-black-black-20);
+  --ep-color-text-inverse: var(--ep-neutral-white-white-100);
+  --ep-color-text-inverse-disabled: var(--ep-neutral-white-white-80);
+  --ep-color-text-danger: var(--ep-accent-red);
+  --ep-color-text-warning: var(--ep-accent-orange);
+  --ep-color-text-success: var(--ep-accent-green);
+  --ep-color-text-info: var(--ep-accent-blue);
+  --ep-color-text-highlight-white: var(--ep-neutral-white-white-100);
+  --ep-color-text-highlight-white-weak: var(--ep-neutral-white-white-60);
+  --ep-color-text-highlight-white-weaker: var(--ep-neutral-white-white-40);
+  --ep-color-text-highlight-white-weakest: var(--ep-neutral-white-white-20);
+  --ep-color-text-highlight: var(--ep-accent-yellow);
+  --ep-color-text-navigation-default: var(--ep-neutral-black-black-40);
+  --ep-color-text-navigation-selected: var(--ep-neutral-black-black-100);
+
+  --ep-color-icon-brand-primary: var(--ep-primary-primary-500);
+  --ep-color-icon-brand-secondary: var(--ep-inverse-inverse-500);
+  --ep-color-icon-selected: var(--ep-primary-primary-500);
+  --ep-color-icon-default: var(--ep-primary-primary-500);
+  --ep-color-icon-weaker: var(--ep-neutral-black-black-60);
+  --ep-color-icon-inverse: var(--ep-neutral-white-white-100);
+  --ep-color-icon-inverse-disabled: var(--ep-neutral-white-white-40);
+  --ep-color-icon-tips: var(--ep-accent-red);
+  --ep-color-icon-danger: var(--ep-accent-red);
+  --ep-color-icon-warning: var(--ep-accent-orange);
+  --ep-color-icon-success: var(--ep-accent-green);
+  --ep-color-icon-info: var(--ep-accent-blue);
+  --ep-color-icon-highlight-white: var(--ep-neutral-white-white-100);
+  --ep-color-icon-highlight: var(--ep-accent-yellow);
+  --ep-color-icon-navigation-default: var(--ep-neutral-black-black-40);
+  --ep-color-icon-navigation-selected: var(--ep-primary-primary-500);
+  
+  --ep-font-family: var(--ep-default-font-family);
+
+  --ep-font-size-xs: var(--ep-values-10);
+  --ep-font-size-s: var(--ep-values-12);
+  --ep-font-size-m: var(--ep-values-14);
+  --ep-font-size-l: var(--ep-values-16);
+  --ep-font-size-xl: var(--ep-values-18);
+  --ep-font-size-xxl: var(--ep-values-24);
+  --ep-font-size-xxxl: var(--ep-values-36);
+  --ep-font-size-xxxxl: var(--ep-values-70);
+
+  --ep-font-weight-light: var(--ep-values-200);
+  --ep-font-weight-regular: var(--ep-values-400);
+  --ep-font-weight-medium: var(--ep-values-600);
+  --ep-font-weight-bold: var(--ep-values-700);
+
+  --ep-border-radius-xs: var(--ep-values-2);
+  --ep-border-radius-s: var(--ep-values-4);
+  --ep-border-radius-m: var(--ep-values-6);
+  --ep-border-radius-l: var(--ep-values-8);
+  --ep-border-radius-xl: var(--ep-values-10);
+  --ep-border-radius-surface-small: var(--ep-values-12);
+  --ep-border-radius-surface-default: var(--ep-values-14);
+  --ep-border-radius-surface-large: var(--ep-values-20);
+  --ep-border-radius-infinity: var(--ep-values-infinity);
+
+  --ep-dynamic-primary: linear-gradient(90deg, var(--ep-color-background-fill-gradients-primary-a, #A3CBFF) -27.5%, var(--ep-color-background-fill-gradients-primary-b, #5284F2) 127.5%);
+  --ep-dynamic-secondary: linear-gradient(90deg, var(--ep-color-background-fill-gradients-secondary-a, #DEE0FF) -27.5%, var(--ep-color-background-fill-gradients-secondary-b, #C2D4FE) 127.5%);
+  --ep-dynamic-tertiary: linear-gradient(90deg, var(--ep-color-background-fill-gradients-tertiary-a, #694CFF) -27.5%, var(--ep-color-background-fill-gradients-tertiary-b, #6687F6) 127.5%);
+  --ep-dynamic-tertiary-weak: linear-gradient(270deg, var(--ep-color-background-fill-gradients-tertiary-weak-a, #694CFF) 0%, var(--ep-color-background-fill-gradients-tertiary-weak-b, #5064FF) 100%);
+
+  /* Ionic组件的默认字体 */
+  --ion-font-family: var(--ep-font-family);
+  /* 这个显示页面的背景色 */
+  --ion-background-color: var(--ep-color-background-fill-body-default);
+}
+  
+.mystlight-blue {
+  * {
+    font-family: var(--ep-font-family);
+  }
+}

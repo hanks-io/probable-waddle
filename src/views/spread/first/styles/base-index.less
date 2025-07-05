@@ -1,0 +1,55 @@
+ion-content {
+  --background: var(--color-bg-300);
+}
+
+.tab-box {
+  background: var(--color-bg-400);
+  border-bottom: 1px solid var(--color-line);
+}
+
+/* 设置导航标签布局方式 */
+ion-segment.md { 
+  display: flex;
+  justify-content: left;
+  margin-bottom: -1px; /* 设置导航标签底部边距 */
+}
+
+ion-segment-button.md::part(indicator) {  /* 设置指示器宽度 */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ion-segment-button.md::part(indicator-background) { /* 设置导航标签指示器的宽度 */
+  background:none;
+}
+
+ion-segment-button.md ion-button {  /* 取消导航标签的标签与指示器之间的边距 */
+  text-transform: none;             /* 取消自动字母大写 */
+  height: 2.625rem;
+  margin: 0;
+  --padding-top: 0px;
+  --padding-bottom: 5px;
+  --padding-start: 0;
+  --padding-end: 0;
+  min-width: 0;
+}
+
+ion-button.base-style {
+  --color: var(--my-card-detail-color);
+  font-size: var(--font-size-14);
+  white-space: nowrap;
+  padding: 0 1rem;
+}
+
+ion-button.select-style {
+  font-weight: bold;
+  white-space: nowrap;
+  --color: var(--color-primary-800);
+  background: var(--spread-segment-btn-bg);
+  border-radius: var(--rounded-small) var(--rounded-small) 0px 0px;
+  border-bottom: 1px solid var(--color-primary-800);
+}
+
+ion-segment-button::part(native) {
+  padding: 0;
+}

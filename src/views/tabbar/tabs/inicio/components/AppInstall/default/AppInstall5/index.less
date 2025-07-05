@@ -1,0 +1,92 @@
+html {
+  #tabbar-tabs-inicio-components-AppInstall-default-AppInstall5-index.layout();
+}
+
+#tabbar-tabs-inicio-components-AppInstall-default-AppInstall5-index {
+
+  .layout(
+    @bg1: linear-gradient(180deg, #38342E 4.76%, #24221F 100%);
+    @text-color1: #fff;
+    @text-color2: var(--text-color2);
+    @line-color: #4C4943;
+    @safe-color: var(--theme-color-800);
+  ) {
+    .app-install {
+      display: flex;
+      align-items: center;
+      margin-inline-end: 1rem;
+      margin-block-start: 3.625rem;
+
+      .showy {
+        width: 0;
+        height: 13.4063rem;
+
+        &.good-img {
+          position: relative;
+          flex-shrink: 0;
+          width: 6.4375rem;
+          margin-inline-end: -0.875rem;
+        }
+      }
+
+      &-content {
+        padding: 1.0625rem 1rem .875rem;
+        border-radius: 0.625rem;
+        border: 0.0625rem solid @line-color;
+
+        .title {
+          display: flex;
+          align-items: center;
+          font-size: 0.875rem;
+          font-weight: 500;
+          color: @text-color1;
+
+          .title-logo {
+            width: 1.25rem;
+            height: 1.25rem;
+            color: @safe-color;
+          }
+        }
+
+        .description {
+          margin-block-start: 0.625rem;
+          font-size: .75rem;
+          font-weight: 400;
+          color: @text-color2;
+        }
+
+        .btn-container {
+          margin-block-start: .875rem;
+          display: flex;
+          gap: 1rem;
+
+          .ios-btn, .android-btn {
+            flex: 1;
+            min-height: 2.625rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6.1875rem;
+            border: 0.0625rem solid @line-color;
+            background: @bg1;
+    
+            &:active {
+              transform: scale(0.95);
+            }
+
+            .logo {
+              font-size: 1.25rem;
+              margin-inline-end: .375rem;
+            }
+
+            .text {
+              font-size: 0.625rem;
+              font-weight: 700;
+              color: @text-color1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

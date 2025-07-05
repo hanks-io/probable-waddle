@@ -1,0 +1,36 @@
+html {
+  #tabbar-tabs-inicio-components-PartView-components-socialMedia-1-index.layout();
+}
+
+
+#tabbar-tabs-inicio-components-PartView-components-socialMedia-1-index {
+  .layout(
+    @social-bg: rgba(42, 171, 238, 0.2);
+  ) {
+    .social-box {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-flow: wrap;
+      gap: .75rem;
+    
+      .social-img {
+        flex-shrink: 0;
+        padding: 0.5rem;
+        background: @social-bg;
+        border-radius: 50%;
+        overflow: hidden;
+        object-fit: cover;
+
+        &::part(image) {
+          border-radius: 50%;
+        }
+        
+        &.good-img {
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+      }
+    }
+  }
+}

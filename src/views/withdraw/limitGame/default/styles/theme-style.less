@@ -1,0 +1,51 @@
+#withdraw-limitGame-default-index {
+    //局部作用域
+  
+    .style(
+      @index01: --color-bg-300,
+      @index02: --color-text-white-100,
+      @index03: --color-text-gray-200,
+      @index04: --color-bg-200,
+      @index05: --color-bg-100,
+      @index06: --theme-color-gradient-100,
+      @index07: --color-text-white-100,
+      @index08: --color-text-gray-200,
+      @index09: --theme-color-gradient-100,
+      @index10: --color-line
+    ) {
+        ion-toolbar.toolbar-search {
+            --background: var(@index01);
+            ion-label.selected {
+             color: var(@index02);
+            }
+            ion-label.unselected {
+             color: var(@index03);
+            }
+          }
+          
+          ion-toolbar.toolbar-search > ion-segment {
+            --background: var(@index04);
+          }
+          
+          ion-content div .side ion-segment-button.ios {
+            --background: var(@index05);
+            --indicator-color: var(@index06);
+          }
+          
+          ion-content div .side ion-segment-button.ios.segment-button-checked {
+            color: var(@index07);
+          }
+
+          ion-content#content .bottom ion-content.side ion-segment .text ion-label.unselected{
+            color: var(@index08);
+          }
+          
+          ion-toolbar ion-segment-button {
+            --indicator-color: var(@index09);
+          }
+          
+          div.line {
+            border-color: var(@index10);
+          }
+    }
+  }

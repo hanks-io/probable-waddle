@@ -1,0 +1,170 @@
+#mlmAgent-index {
+  .style(
+    @mlmAgent-index-01: --color-bg-200;
+    @mlmAgent-index-02: --text-color-white-100;
+    @mlmAgent-index-03: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(254, 184, 5, 0.154) 118.45%);
+    @mlmAgent-index-04: --color-text-40;
+    @mlmAgent-index-05: --color-text-80;
+    @mlmAgent-index-06: --color-text-40;
+    @mlmAgent-index-07: --color-text-100;
+    @mlmAgent-index-08: --theme-color-800;
+    @mlmAgent-index-10: rgba(255, 255, 255, 0.1);
+    @mlmAgent-index-11: --accent-color-blue;
+    @mlmAgent-index-12: --color-bg-200;
+    @mlmAgent-index-14: --accent-color-orange;
+    @mlmAgent-index-15: --color-text-100;
+    @mlmAgent-index-16: --color-bg-100;
+    @mlmAgent-index-17: --accent-color-blue;
+    @mlmAgent-index-18: --accent-color-blue;
+    @mlmAgent-index-19: --accent-color-green;
+    @mlmAgent-index-20: --accent-color-green;
+    @mlmAgent-index-21: --color-text-40;
+    @mlmAgent-index-22: --color-bg-100;
+    @mlmAgent-index-23: --color-text-40;
+    @mlmAgent-index-24: --color-text-100;
+    @mlmAgent-index-25: --color-bg-200;
+    @mlmAgent-index-26: --color-text-100;
+    @mlmAgent-index-27: --color-bg-300;
+    @mlmAgent-index-28: --color-text-40;
+    @mlmAgent-index-29: --color-text-100;
+    @mlmAgent-index-30: --text-color-white-40;
+    @mlmAgent-index-31: --accent-color-orange;
+    @mlmAgent-index-32: --color-text-80;
+    @mlmAgent-index-33: --text-color-white-40;
+    @mlmAgent-index-34: --color-bg-100;
+    @mlmAgent-index-35: --text-color-white-100;
+    @mlmAgent-index-36: --mlmagent-history-focused-bgc;
+    @mlmAgent-index-37: --mlmagent-history-hover-bgc;
+    @mlmAgent-index-38: --theme-color-800;
+    @mlmAgent-index-39: --color-text-secondary-1;
+    @mlmAgent-index-40: --mlm-agent-claim-hover-bgc;
+    @mlmAgent-index-41: --mlm-agent-claim-focused-bgc;
+    @mlmAgent-index-42: --color-primary-btn-disable;
+    @mlmAgent-index-43: --color-mlm-btn-text-disable;
+  ) {
+    ion-toolbar {
+      --background: var(@mlmAgent-index-01);
+      ion-icon{
+        color: var(@mlmAgent-index-02);
+      }
+    }
+
+    .agent-level {
+      background: @mlmAgent-index-03;
+      .agent-level-left {
+        color: var(@mlmAgent-index-04);
+
+        .level-tips {
+          color: var(@mlmAgent-index-05)
+        }
+      }
+      .agent-level-right {
+        color: var(@mlmAgent-index-06);
+        .top{
+          color: var(@mlmAgent-index-07);
+        }
+        .claim-commisson {
+          color: var(@mlmAgent-index-08);
+          .agent-money {
+            color: var(@mlmAgent-index-08);
+          }
+        }
+        .receive-rule {
+          .rule-btn {
+            background: @mlmAgent-index-10;
+            color: var(@mlmAgent-index-11);
+          }
+        }
+      }
+    }
+
+    .subordinate-info {
+      background: var(@mlmAgent-index-12);
+      // .left{
+      //   color: var(@mlmAgent-index-13);
+      // }
+      .dataItem-info{
+        .dataItem-title{
+          ion-icon {
+            color: var(@mlmAgent-index-14);
+          }
+        }
+        .num {
+          color: var(@mlmAgent-index-15);
+        }
+      }
+      .direct-title,
+      .team-title {
+        background: var(@mlmAgent-index-16);
+        color: var(@mlmAgent-index-17);
+        ion-icon {
+          color: var(@mlmAgent-index-18);
+        }
+      }
+      .team-title {
+        color: var(@mlmAgent-index-19);
+        ion-icon {
+          color: var(@mlmAgent-index-20);
+        }
+      }
+      .dataItem-title {
+        color: var(@mlmAgent-index-21);
+      }
+    }
+
+    .jump-item {
+      background: var(@mlmAgent-index-22);
+      color: var( @mlmAgent-index-23);
+      .text {
+        color: var(@mlmAgent-index-24);
+      }
+    }
+
+    .agent-info-datail {
+      background: var(@mlmAgent-index-25);
+      .header{
+        color: var(@mlmAgent-index-26);
+      }
+      .detail-item {
+        background: var(@mlmAgent-index-27);
+        color: var(@mlmAgent-index-28);
+        .count-info {
+          color: var(@mlmAgent-index-29);
+        }
+        .des {
+          color: var(@mlmAgent-index-30);
+          ion-icon{
+            color: var(@mlmAgent-index-31);
+          }
+        }
+      }
+      .my-agency {
+        color: var(@mlmAgent-index-32);
+      }
+      .agent-report-icon {
+        color: var(@mlmAgent-index-33);
+      }
+    }
+
+    ion-button.mlm-agent-btn {
+      --background: var(@mlmAgent-index-34);
+      --color: var(@mlmAgent-index-35);
+      --background-focused: var(@mlmAgent-index-36);
+      --background-hover: var(@mlmAgent-index-37);
+      --background-activated: var(@mlmAgent-index-36);
+    }
+
+    ion-button.claim-btn {
+      --background: var(@mlmAgent-index-38);
+      --color: var(@mlmAgent-index-39);
+      --background-hover: var(@mlmAgent-index-40);
+      --background-activated: var(@mlmAgent-index-41);
+      --background-focused: var(@mlmAgent-index-41);
+    }
+
+    ion-button.claim-dis {
+      --background: var(@mlmAgent-index-42);
+      --color: var(@mlmAgent-index-43);
+    }
+  }
+}

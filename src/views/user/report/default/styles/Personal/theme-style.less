@@ -1,0 +1,89 @@
+#tabbar-user-report-default-personal {
+    //局部作用域
+  
+    .style(
+      @Personal01: --color-text-white-100,
+      @Personal02: --color-text-gray-200,
+      @Personal03: --color-bg-200,
+      @Personal04: --accent-color-yellow,
+      @Personal05: --color-bg-50,
+      @Personal06: --color-line,
+      @Personal07: --accent-color-yellow,
+      @Personal08: --color-text-gray-200,
+      @Personal09: --color-text-gray-200,
+      @Personal10: --theme-color-gradient-100,
+      @Personal11: --color-text-white-100,
+      @Personal12: --color-text-gray-200,
+      @Personal13: --color-bg-200,
+      @Personal14: --color-text-white-100,
+      @Personal15: --color-text-gray-200,
+      @Personal16: --color-text-white-100,
+      @Personal17: --color-text-white-100,
+    ) {
+      .person {
+        .top{
+          .filter.selected {
+            border: 0.0625rem solid var(@Personal01);
+          }
+          .filter.personal-select-default {
+            border: 0.0625rem solid var(@Personal02);
+          }
+        }
+        .list{
+          .item {
+            background: var(@Personal03);
+            .num{
+                p.money-text {
+                  color: var(@Personal04)
+                }
+            }
+          }
+        }
+      }
+      
+      
+      ion-row.footer-count {
+        background: var(@Personal05);
+        box-shadow: 0rem 0.0313rem 0rem 0rem var(@Personal06) inset;
+        span.money-text {
+          color: var(@Personal07);
+        }
+      }
+      
+      ion-popover ion-row ion-col p.off {
+        color: var(@Personal08);
+        border-color: var(@Personal09);
+      } 
+      
+      ion-popover ion-row ion-col p.on {
+        background: var(@Personal10);
+        color: var(@Personal11);
+      }
+      
+      ion-icon.report-select-icon {
+        color: var(@Personal12);
+      }
+      
+      .report-select-row {
+        background: var(@Personal13);
+      }
+      
+      .recond-white-color {
+        color: var(@Personal14);
+      }
+      
+      .recond-minor-color {
+        color: var(@Personal15);
+      }
+      .person {
+        .top{
+          .filter.selected {
+            color: var(@Personal16);
+          }
+          .filter.unselected {
+            color: var(@Personal17);
+          }
+        }
+      }
+    }
+  }

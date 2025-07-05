@@ -1,0 +1,27 @@
+html {
+  #tabbar-tabs-inicio-components-MarqueeView-components-message-2-index.layout();
+}
+
+
+
+#tabbar-tabs-inicio-components-MarqueeView-components-message-2-index {
+  .layout(
+    @icon-color1: #000,
+  ) {
+    .badge {
+      z-index: 4;
+      position: relative;
+      padding-inline-end: 0.25rem;
+
+      .message {
+        font-size: 1.625rem;
+        vertical-align: sub;
+        color: @icon-color1;
+      }
+
+      .dot {
+        transform: translate(-5%, -15%);
+      }
+    }
+  }
+}

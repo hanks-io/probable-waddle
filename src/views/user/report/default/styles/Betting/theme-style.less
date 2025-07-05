@@ -1,0 +1,58 @@
+#tabbar-user-report-default-betting {
+    //局部作用域
+  
+    .style(
+      @Betting01: --color-text-white-100,
+      @Betting02: --color-text-white-100,
+      @Betting03: --color-text-gray-200,
+      @Betting04: --color-text-gray-200,
+      @Betting05: --color-text-gray-200,
+      @Betting06: --theme-color-gradient-100,
+      @Betting07: --color-text-white-100,
+      @Betting08: --color-text-gray-200,
+      @Betting09: --color-bg-200,
+      @Betting10: --color-text-white-100,
+      @Betting11: --color-text-gray-200
+    ) {
+        .bet {
+            .top{
+              .filter {
+                color: var(@Betting01);
+              }
+              .filter.selected {
+                border: 0.0625rem solid var(@Betting02);
+              }
+              .filter.betting-select-default {
+                border: 0.0625rem solid var(@Betting03);
+              }
+            }
+          }
+          ion-popover ion-row ion-col p.off {
+            color: var(@Betting04);
+            border-color: var(@Betting05);
+          }
+          
+          ion-popover ion-row ion-col p.on,
+          ion-popover ion-row ion-col div.on {
+            background: var(@Betting06);
+            color: var(@Betting07);
+          }
+          
+          
+          ion-icon.report-select-icon {
+            color: var(@Betting08);
+          }
+          
+          .report-select-row {
+            background: var(@Betting09);
+          }
+          
+          .recond-white-color {
+            color: var(@Betting10);
+          }
+          
+          .recond-minor-color {
+            color: var(@Betting11);
+          }
+    }
+  }

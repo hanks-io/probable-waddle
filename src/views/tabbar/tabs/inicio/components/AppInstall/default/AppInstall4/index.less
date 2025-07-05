@@ -1,0 +1,84 @@
+.blue-default {
+  .v01 {
+    #tabbar-tabs-inicio-components-AppInstall-default-AppInstall4-index.style();
+  }
+}
+
+#tabbar-tabs-inicio-components-AppInstall-default-AppInstall4-index {
+
+  .style(
+    @bg1: url('/svg/ios-bg1.svg');
+    @bg2: url('/svg/android-bg1.svg');
+    @text-color1: #AECED0;
+    @text-color2: #86888D;
+  ) {
+    .app-install {
+      position: relative;
+      margin-inline: 0.9375rem;
+      margin-block-start: 1.25rem;
+    
+      .ios-btn, .android-btn {
+        width: 12.125rem;
+        height: 3.75rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &:active {
+          transform: scale(0.95);
+        }
+    
+        .info {
+          display: flex;
+          flex-direction: column;
+    
+          .title {
+            color: @text-color1;
+            font-size: 0.875rem;
+            font-weight: 500;
+          }
+    
+          .sub {
+            color: @text-color2;
+            font-size: 0.625rem;
+            font-weight: 400;
+          }
+        }
+      }
+    
+      .ios-btn {
+        background-image: @bg1;
+
+        .info {
+          margin-left: 0.625rem;
+        }
+    
+        .logo {
+          margin-inline-start: -1.875rem;
+          font-size: 1.9375rem;
+        }
+      }
+    
+      .android-btn {
+        background-image: @bg2;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        .info {
+          align-items: flex-end;
+          margin-inline-end: 0.625rem;
+          padding-inline-start: 0.625rem;
+        }
+    
+        .logo {
+          font-size: 2.25rem;
+          margin-inline-end: -0.9375rem;
+        }
+      }
+    }
+  }
+}

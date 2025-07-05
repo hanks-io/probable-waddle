@@ -1,0 +1,192 @@
+html {
+  #tabbar-tabs-inicio-components-Segment-default-Segment5-index.layout2();
+}
+
+.blue-default {
+  .v01 {
+    #tabbar-tabs-inicio-components-Segment-default-Segment5-index.layout1();
+  }
+}
+
+#tabbar-tabs-inicio-components-Segment-default-Segment5-index {
+
+  .layout1(
+
+  ) {
+    .wrapper {
+      display: flex;
+      background: #090F1F;
+      padding-inline: 0.9375rem;
+      padding-block: 0.25rem;
+
+      ion-segment {
+        --background: transparent;
+
+        &.ios {
+
+          ion-segment-button {
+            --border-radius: 1.25rem;
+            // --background: #254112;
+            --indicator-color: linear-gradient(0deg, #0167CA -13.77%, #38A8FA 102.34%);
+            --color: #BCBCBC;
+            --color-checked: #fff;
+            --padding-start: 0.625rem;
+            --padding-end: 0.625rem;
+            --padding-top: .25rem;
+            --padding-bottom: .25rem;
+            text-transform: capitalize;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 400;
+            height: min-content;
+
+            &::part(native) {
+              flex-direction: row;
+            }
+
+            .type-img {
+              font-size: 1rem;
+              margin-inline-end: 0.3125rem;
+            }
+
+            .label {
+              line-height: 1;
+            }
+
+            &.segment-button-checked {
+              font-weight: 700;
+            }
+          }
+          
+          
+        }
+      }
+
+      ion-button {
+
+        &.unset-btn {
+          --padding-top: 0;
+          --padding-bottom: 0;
+          --padding-start: 0;
+          --padding-end: 0;
+          min-width: min-content;
+          min-height: min-content;
+        }
+
+        &.search {
+          position: relative;
+          padding-left: 0.25rem;
+          margin: 0;
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 2.5rem;
+            height: 100%;
+            background: linear-gradient(90deg, transparent 0%, rgb(9, 15, 31) 50%);
+          }
+
+          .search-icon {
+            color: #fff;
+            font-size: 1.375rem;
+          }
+        }
+      }
+    }
+  }
+
+  .layout2(
+    @bg1: var(--color-bg-300);
+    @btn-bg: var(--color-bg-100);
+    @text-color1: var(--color-text-100);
+    @text-color2: var(--color-text-200);
+    @icon-color: var(--theme-color-800);
+    @shadow1: linear-gradient(90deg, color-mix(in srgb, var(--color-bg-300) 40%, transparent) 0%, var(--color-bg-300) 40%);
+  ) {
+    .wrapper {
+      display: flex;
+      background: @bg1;
+      padding-inline: 0.9375rem;
+      padding-block: 0.25rem;
+
+      ion-segment {
+        --background: transparent;
+        gap: 0.625rem;
+
+        &.ios {
+
+          ion-segment-button {
+            --padding-start: 0.875rem;
+            --padding-end: 0.875rem;
+            --padding-top: 0.8125rem;
+            --padding-bottom: 0.8125rem;
+            --border-radius: 2.125rem;
+            text-transform: capitalize;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 0.875rem;
+            font-weight: 500;
+            height: min-content;
+            --color: @text-color2;
+            --color-checked: @text-color1;
+            --background: @btn-bg;
+            --indicator-color: linear-gradient(0deg, #0167CA -13.77%, #38A8FA 102.34%);
+
+
+            &::part(native) {
+              flex-direction: row;
+            }
+
+            .type-img {
+              font-size: 1rem;
+              margin-inline-end: 0.3125rem;
+            }
+
+            .label {
+              line-height: 1;
+            }
+         
+          }
+          
+        }
+      }
+
+      ion-button {
+
+        &.unset-btn {
+          --padding-top: 0;
+          --padding-bottom: 0;
+          --padding-start: 0;
+          --padding-end: 0;
+          min-width: min-content;
+          min-height: min-content;
+        }
+
+        &.search {
+          position: relative;
+          padding-left: 1.0625rem;
+          margin: 0;
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 3.625rem;
+            height: 100%;
+            background: @shadow1;
+          }
+
+          .search-icon {
+            color: @icon-color;
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}

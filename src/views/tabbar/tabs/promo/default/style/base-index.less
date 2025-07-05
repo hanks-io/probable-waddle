@@ -1,0 +1,75 @@
+ion-toolbar ion-segment.md {
+  /* 设置导航标签布局方式 */
+  display: flex;
+  justify-content: left;
+  padding: 0 .625rem;
+}
+
+ion-toolbar ion-segment-button.md::part(native) {
+  /* 设置导航标签的宽度 */
+  --padding-start: .625rem;
+  --padding-end: .625rem;
+}
+
+ion-toolbar ion-segment-button.md::part(indicator) {
+  /* 设置指示器宽度 */
+  /* width: 40%; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ion-toolbar ion-segment-button.md::part(indicator-background) {
+  height: .125rem;
+}
+
+ion-toolbar ion-segment-button.md ion-label {
+  /* 取消导航标签的标签与指示器之间的边距 */
+  margin-top: 0;
+  margin-bottom: 0;
+  text-transform: none;
+}
+
+ion-content.side {
+  --padding-start: .875rem;
+  --padding-top: .625rem;
+  max-width: 5.3125rem;
+}
+
+ion-content.side ion-segment-button.ios {
+  --padding-start: 0;
+  --padding-end: 0;
+  --padding-top: 2px;
+  --padding-bottom: 2px;
+  margin-top: 0;
+  margin-bottom: 6px;
+  text-transform: capitalize;
+  min-width: 0;
+  min-height: 3.5rem;
+}
+
+ion-content#main {
+  --padding-start: 15px;
+  --padding-end: 15px;
+  --padding-top: 10px;
+}
+
+ion-content#main ion-item {
+  --background: transparent;
+  --inner-padding-end: 0px;
+  --border-radius: 10px;
+  --padding-start: 15px;
+  --padding-end: 15px;
+  --padding-top: 0;
+  --padding-bottom: 0;
+  --inner-border-width: 0px;
+  --min-height: 7.5rem;
+  --height: 7.5rem;
+  --max-height: 7.5rem;
+}
+
+ion-item::part(native) {
+  /* 插槽slot内容样式 */
+  padding-inline-end: 0px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}

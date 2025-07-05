@@ -1,0 +1,43 @@
+html {
+  #tabbar-tabs-inicio-components-FooterContent-components-introduction-1-index();
+}
+
+
+html.neo-blue {
+  #tabbar-tabs-inicio-components-FooterContent-components-introduction-1-index.style(
+    @text-color1: var(--ep-color-text-weak);
+  );
+}
+
+
+#tabbar-tabs-inicio-components-FooterContent-components-introduction-1-index {
+  .style(
+    @text-color1: var(--ep-color-text-weaker);
+  ) {
+    .content {
+
+      .content-item {
+        color: @text-color1;
+      }
+    }
+  }
+
+  .layout1(
+    @text-color1: var(--ep-color-text-weaker);
+  ) {
+    .layout1.content {
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+
+      .content-item {
+        font-size: var(--ep-font-size-s, 0.75rem);
+        line-height: 1.5;
+        font-weight: var(--ep-font-weight-regular, 400);
+        color: @text-color1;
+      }
+    }
+  }
+
+  .layout1();
+}

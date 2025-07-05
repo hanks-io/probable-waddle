@@ -1,0 +1,24 @@
+html {
+  #tabbar-components-DrawerLeft-components-activityList-layout.layout();
+}
+
+#tabbar-components-DrawerLeft-components-activityList-layout {
+  .style(
+    @bg: transparent;
+  ) {
+    .activity-list {
+      background: @bg;
+    }
+  }
+
+  .layout(
+    @bg: transparent;
+  ) {
+    .activity-list {
+      display: flex;
+      flex-flow: row wrap;
+      gap: 0.75rem;
+      background: @bg;
+    }
+  }
+}

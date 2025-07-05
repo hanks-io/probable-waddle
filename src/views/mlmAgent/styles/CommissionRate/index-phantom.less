@@ -1,0 +1,170 @@
+.top-img {
+  height: 11.0131rem;
+  background: url('/first/agent/commission-rate.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.level {
+  margin-left: 0.375rem;
+  margin-top: -1rem;
+}
+
+.commission-rate-mes {
+  padding-top: 0.6875rem;
+  padding-bottom: 2.25rem;
+}
+
+.current-level {
+  transform: translate(-50%,-50%);
+}
+
+ion-segment.level-agent-se {
+  .item {
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+    .current-level {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 2.070625rem;
+      height: 2.070625rem;
+    }
+  }
+}
+
+ion-segment-button.level-agent {
+  --background-checked: none ;
+  --background-focused: none ;
+  --background-hover: none ;
+  --indicator-box-shadow: none;
+  --indicator-transform: none;
+  --indicator-transition: none;
+  font-size: var(--ep-font-size-s);
+  line-height: 1.125rem;
+  margin-right: .625rem;
+  text-transform: none;
+}
+
+ion-segment-button.level-agent::part(native) {
+  padding: 0;
+}
+
+ion-segment-button.level-agent.md::part(indicator-background) {
+  background: none;
+  height: 0;
+}
+
+.rate-info {
+  padding: .5rem .625rem;
+  border-radius: var(--ep-border-radius-m);
+  .icon {
+    display: flex;
+    align-items: center;
+    span {
+      font-weight:var(--ep-font-weight-bold);
+      font-size: var(--ep-font-size-m);
+      line-height: 1.3125rem;
+    }
+  }
+  .rate-title {
+    margin-left: 0.5625rem;
+    margin-top: 0.699375rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--ep-font-size-s);
+    line-height: 1.125rem;
+  }
+  .rate-box {
+    margin-top: 0.449375rem;
+    .rate-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: var(--ep-font-size-s);
+      line-height: 1.125rem;
+    }
+  }
+  .rate-footer-tips {
+    margin-bottom: 1.555625rem;
+    text-align: center;
+    font-size: var(--ep-font-size-s);
+    line-height: 1.125rem;
+  }
+}
+
+.rate-box {
+  border-radius: var(--ep-border-radius-m);
+  .rate-item {
+    padding: 1.125rem 1.875rem;
+    .rate-item-left {
+      font-weight: var(--ep-font-weight-medium);
+    }
+    .rate-item-right {
+      text-align: center;
+      min-width: 3.125rem;
+      font-weight:var(--ep-font-weight-bold);
+    }
+  }
+  .rate-item:last-child {
+    border-bottom: none !important;
+  }
+}
+
+.game-type {
+  padding-top: 0.625rem;
+}
+
+ion-button.base-style {
+  font-size: var(--ep-font-size-m);
+}
+
+ion-button.select-style {
+  font-weight: bold;
+}
+
+/* 设置导航标签布局方式 */
+ion-segment.game-type-se.md { 
+  display: flex;
+  justify-content: left;
+}
+
+ion-segment-button.game-type-btn.md::part(indicator) {  /* 设置指示器宽度 */
+  margin-left: auto;
+  margin-right: auto;
+}
+ion-segment-button.game-type-btn.md {  /* 设置指示器宽度 */
+  min-height: 0rem;
+}
+
+ion-segment-button.game-type-btn.md::part(indicator-background) { /* 设置导航标签指示器的宽度 */
+  height: .0625rem;
+}
+
+ion-segment-button.second-game-type::part(indicator-background) {
+  height: .125rem !important;
+}
+
+ion-segment-button.game-type-btn.md ion-button {  /* 取消导航标签的标签与指示器之间的边距 */
+  text-transform: none;             /* 取消自动字母大写 */
+  height: 2.625rem;
+  margin: 0;
+  --padding-top: 0rem;
+  --padding-bottom: 0.3125rem;
+  --padding-start: 0;
+  --padding-end: 0;
+  min-width: 0;
+}
+
+.amber-purple body div#app ion-router-outlet > div.ion-page::after,
+.amber-purple body div#app ion-router-outlet > div.ion-page::before {
+  width: 0;
+  height: 0;
+}
+
+.auroral-yellow {
+  ion-toolbar{
+    --border-width:0rem;
+  }
+}

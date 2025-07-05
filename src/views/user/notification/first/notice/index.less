@@ -1,0 +1,32 @@
+
+#notice-index {
+  .style(
+    @msg-icon-bg: var(--ep-color-background-fill-surface-raised-L2, var(--color-bg-400));
+    @msg-icon-c1: var(--ep-color-icon-tips, var(--theme-color-800));
+    @read-icon-c1: var(--ep-color-icon-brand-primary);
+  ) {
+
+    .msg-content {
+      .icon-msg-wrap {
+        width: 2.25rem;
+        height: 2.25rem;
+        border-radius: 1.125rem;
+        background: @msg-icon-bg;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .msg-icon {
+        color: @msg-icon-c1;
+        width: 1.125rem;
+        height: 1.125rem;
+      }
+    }
+
+    .read-icon {
+      color: @read-icon-c1;
+    }
+
+  }
+}

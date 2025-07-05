@@ -1,0 +1,110 @@
+#tabbar-tabs-perfil-default-index {
+    //局部作用域
+  
+    .style(
+      @perfil01: --color-border-600,
+      @perfil02: --theme-color-gradient-200,
+      @perfil03: --theme-color-gradient-300,
+      @perfil04: --color-text-white-100,
+      @perfil05: --color-text-white-100,
+      @perfil06: --color-text-white-100,
+      @perfil07: --color-text-gray-300,
+      @perfil08: --color-bg-600,
+      @perfil09: --color-text-white-100,
+      @perfil10: --color-text-gray-100,
+      @perfil11: --my-chevron-forward-color,
+      @perfil12: --my-enter-withdraw-text-color,
+      @perfil13: --money-text-color,
+      @perfil14: --color-text-white-100,
+      @perfil15: var(--theme-color-500),
+      @perfil16: --color-text-white-100,
+    ) {
+        ion-content{
+            .user {
+              .top{
+                .email{
+                  .email-icon{
+                    color: @perfil15;
+                  }
+                }
+              }
+
+             .bottom {
+              ion-col {
+                div.left{
+                  background: var(@perfil01);
+                }
+                div.right{
+                  background: var(@perfil02);
+                  color: var(@perfil16);
+                  .enter-withdraw-text {
+                    color: var(@perfil16);
+                  }
+                }
+              }
+             }
+            }
+          }
+          
+          .card-bg-gradient {
+            background: var(@perfil03);
+          }
+          
+          .user-base-color {
+            color: var(@perfil04);
+          }
+          
+          .user-base-color ion-icon {
+            color: var(@perfil05);
+          }
+          
+          .user-id,
+          .user-account {
+            color: var(@perfil06);
+          }
+          
+          ion-icon.chevron-forward {
+            color: var(@perfil07);
+          }
+          
+          ion-progress-bar {
+            --background: var(@perfil08);
+          }
+          
+          .progress-text {
+            color: var(@perfil09);
+          }
+          
+          .invite-text {
+            color: var(@perfil10);
+          }
+          
+          
+          ion-item::part(detail-icon) {
+            color: var(@perfil11);
+          }
+          
+          .enter-withdraw-text {
+            color: var(@perfil12);
+          }
+          
+          .important-text {
+            color: var(@perfil13);
+          }
+          ion-content{
+            .vip {
+              .bottom{
+                .line {
+                  .right {
+                    .progress{
+                      div {
+                        color: var(@perfil14);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+    }
+  }

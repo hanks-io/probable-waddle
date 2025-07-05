@@ -1,0 +1,28 @@
+html {
+  #tabbar-components-DrawerLeft-components-gameList-categories-1-index.layout();
+}
+
+
+#tabbar-components-DrawerLeft-components-gameList-categories-1-index {
+  .layout (
+    @text-color1: #fff;
+    @text-color2: green;
+  ) {
+    .categories-item {
+      padding: 0.625rem 0.875rem;
+      display: flex;
+      align-items: center;
+      gap: 0.625rem;
+
+      &-icon {
+        font-size: 1.5rem;
+        color: @text-color1;
+      }
+
+      &-label {
+        font-size: 0.875rem;
+        color: @text-color2;
+      }
+    }
+  }
+}

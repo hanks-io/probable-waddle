@@ -1,0 +1,48 @@
+#activity-redeem-default-index {
+  .style(
+    @redeem-default-index-01: --color-text-white-40,
+    @redeem-default-index-02: --color-text-white-100,
+    @redeem-default-index-03: --theme-color-gradient-100,
+    @redeem-default-index-04: --theme-color-gradient-100,
+    @redeem-default-index-05: --color-text-white-100,
+    @redeem-default-index-06: --color-text-white-100,
+    @redeem-default-index-07: --color-border-600,
+    @redeem-default-index-08: --color-text-white-100,
+    @redeem-default-index-09: --text-color-white-40,
+    @redeem-default-index-10: null,
+  ) {
+    ion-input {
+      --placeholder-color: var(@redeem-default-index-01);
+    }
+    
+    ion-input{
+      --color: var(@redeem-default-index-02);
+    }
+    
+    .inputBg {
+      background: var(@redeem-default-index-10);
+    }
+    .redemption {
+      --background: var(@redeem-default-index-03);
+      --background-activated: var(@redeem-default-index-04);
+      --color: var(@redeem-default-index-05);
+      color: var(@redeem-default-index-05);
+    }
+    
+    .redeem-input-tips {
+      color: var(@redeem-default-index-06);
+    }
+    
+    .redeem-input-box {
+      border: 1px solid var(@redeem-default-index-07);
+    }
+    
+    .redeem-btn-text-color {
+      color: var(@redeem-default-index-08);
+    }
+    
+    .redeem-description {
+      color: var(@redeem-default-index-09);
+    }
+  }
+}

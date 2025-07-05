@@ -1,0 +1,55 @@
+ion-modal {
+  --width: fit-content;
+  --height: fit-content;
+  background: var(--color-bg-mask-black);
+}
+
+.logout-modal {
+  min-height: 10rem;
+  border-radius: var(--ep-border-radius-xl);
+  padding: 1.0625rem .875rem .875rem;
+}
+
+.logout-modal-title {
+  font-size: var(--ep-font-size-xl);
+  font-weight: var(--ep-font-weight-bold);
+  text-align: center;
+  line-height: 1.6875rem;
+  margin-bottom: 1.7188rem;
+}
+
+.logout-modal-message {
+  font-size: var(--ep-font-size-m);
+  font-weight: var(--ep-font-weight-regular);
+  text-align: center;
+  line-height: 1.3125rem;
+  margin-bottom: 2.0313rem;
+}
+
+.logout-modal-btn {
+  display: flex;
+  align-items: center;
+}
+
+ion-button.logout-modal-btn-left,
+ion-button.logout-modal-btn-right {
+  font-size: var(--ep-font-size-m);
+  font-weight: var(--ep-font-weight-bold);
+  --border-radius: var(--ep-border-radius-m);
+  min-width: 9.4375rem;
+  min-height: 0;
+  height: 3.0625rem;
+}
+
+ion-button.logout-modal-btn-left {
+  margin-right: 0.625rem;
+  --background-hover: none;
+  --background-focused: none;
+  --background-activated: none;
+}
+
+ion-button.logout-modal-btn-right {
+  --background-hover: none;
+  --background-focused: none;
+  --background-activated: none;
+}

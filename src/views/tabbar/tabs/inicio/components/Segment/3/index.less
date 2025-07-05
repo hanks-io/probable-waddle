@@ -1,0 +1,294 @@
+.green-default {
+  #tabbar-tabs-inicio-components-Segment-default-Segment3-index.style();
+}
+
+.forest-green {
+  #tabbar-tabs-inicio-components-Segment-default-Segment3-index.style(
+    @bg1: #004d37;
+    @bg2: none;
+    @bg3: linear-gradient(90deg, #00694A 0%, #00815D 50%, #00694A 100%);
+    @bg4: linear-gradient(90deg, #FFE700 0%, #FB0 96%);
+    @text-color1: #7E9071;
+    @text-color2: #183009;
+    @filter: none;
+  );
+}
+
+.amber-purple {
+  #tabbar-tabs-inicio-components-Segment-default-Segment3-index.style(
+    @bg1: #2C294D;
+    @bg2: none;
+    @bg3: #3C3467;
+    @bg4: radial-gradient(108% 100.4% at 10.61% -7.95%, #A779AE 0%, #262346 100%);
+    @bg5: #fff;
+    @text-color1: #BDB8E1;
+    @text-color2: #BDB8E1;
+    @line-color1: #7041F3;
+  );
+
+  .segment-container-bg {
+    margin-block-end: .3125rem;
+
+    .segment-container {
+      padding: .5rem .9375rem .75rem;
+
+      ion-segment {
+        padding: .0625rem;
+
+        .btn-wall {
+          position: relative;
+
+          &:has(.active)::before {
+            content: '';
+            position: absolute;
+            top: -0.0625rem;
+            left: -0.0625rem;
+            right: -0.0625rem;
+            bottom: -0.0625rem;
+            background: radial-gradient(circle at 0% 0%, #F5C84C 0%, #7041F3 100%);
+            z-index: -1; /* 确保伪元素在元素的后面 */
+            border-radius: 0.2594rem;
+          }
+        }
+
+        &.ios {
+          ion-segment-button {
+
+            &.active {
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.blue-default {
+  #tabbar-tabs-inicio-components-Segment-default-Segment3-index.style(
+    @bg1: #1A223A;
+    @bg2: none;
+    @bg3: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.06) 100%);
+    @bg4: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.06) 100%), radial-gradient(92.73% 100.4% at 10.61% -7.95%, #5B6DA2 0%, #1B233B 100%);
+    @bg5: #B7C9FF;
+    @text-color1: var(--text-color2);
+    @text-color2: var(--text-color2);
+    @line-color1: #2173C0;
+  );
+
+  .segment-container-bg {
+    margin-block: .3125rem;
+
+    .segment-container {
+      padding: .5rem .9375rem .75rem;
+
+      ion-segment {
+        padding: .0625rem;
+
+        .btn-wall {
+          position: relative;
+
+          &:has(.active)::before {
+            content: '';
+            position: absolute;
+            top: -0.0625rem;
+            left: -0.0625rem;
+            right: -0.0625rem;
+            bottom: -0.0625rem;
+            background: linear-gradient(to right, #2173C0 0%, #75FFFA 50%, #2173C0 100%);
+            z-index: -1; /* 确保伪元素在元素的后面 */
+            border-radius: 0.2594rem;
+          }
+        }
+
+        &.ios {
+          ion-segment-button {
+
+            &.active {
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.auroral-yellow {
+  #tabbar-tabs-inicio-components-Segment-default-Segment3-index.style(
+    @bg1: #171616;
+    @bg2: none;
+    @bg3: #131313;
+    @bg4: linear-gradient(180deg, #38342E 4.76%, #24221F 100%);
+    @bg5: none;
+    @text-color1: var(--text-color2);
+    @text-color2: #fff;
+    @line-color1: #4C4943;
+    @filter: none;
+  );
+  .segment-container-bg {
+
+    .segment-container {
+      padding: 0.5rem 0.9375rem 1rem;
+      
+      ion-segment { /* 设置导航标签背景色 #101629 */
+
+        &.ios {
+
+          ion-segment-button { /* 取消导航标签按钮默认外边距 */ 
+            width: 4.125rem;
+            height: calc(100% - 0.125rem);
+            border-radius: .375rem;
+            border: 0.0625rem solid #4C4943;
+
+            &.segment-button-disabled {
+              opacity: 1;
+            }
+
+            .bug {
+              display: none;
+            }
+            
+            .label-wall {
+              width: 100%;
+
+              .label-icon {
+                display: none;
+              }
+
+              .label-text {
+                font-size: 0.75rem;
+                font-weight: 500;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+#tabbar-tabs-inicio-components-Segment-default-Segment3-index {
+  .style(
+    @bg1: linear-gradient(180deg, #213B10 93.33%, rgba(33, 59, 16, 0) 100%);
+    @bg2: url("/icons/texture_bg.png");
+    @bg3: radial-gradient(88.81% 88.81% at 10.61% -7.95%, #254112 0%, #254112 100%);
+    @bg4: radial-gradient(88.81% 88.81% at 10.61% -7.95%, #5E7C24 0%, #254112 100%);
+    @bg5: #94FF7F;
+    @text-color1: #afc69f;
+    @text-color2: #afc69f;
+    @line-color1: #34571D;
+    @filter: grayscale(1);
+  ) {
+    .segment-container-bg {
+      background: @bg1;
+
+      .segment-container {
+        padding: .8125rem .9375rem .9375rem;
+        
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          opacity: 0.5; /* 调整背景图片的透明度 */
+          z-index: -1; /* 使伪元素在内容后面 */
+          /* 内容样式 */
+          background-image: @bg2;
+          /* 设置背景图像(需要先将--background变量设置透明) */
+          background-size: 5rem;
+          /* 设置背景图像块的大小为100px x 100px */
+          background-repeat: repeat;
+          /* 设置背景图像平铺 */
+        }
+
+        ion-segment { /* 设置导航标签背景色 #101629 */
+          --background: transparent;
+          height: 4.125rem;
+          border-radius: 0.2594rem;
+          display: flex;
+          gap: 0.75rem;
+
+          &.ios {
+            ion-segment-button { /* 取消导航标签按钮默认外边距 */ 
+              --padding-start: 0;
+              --padding-end: 0;
+              width: 3.375rem;
+              min-width: 3.375rem;
+              height: 100%;
+              background: @bg3;
+              margin-top: 0;
+              margin-bottom: 0;
+              border-radius: 0.2594rem;
+              z-index: 5;
+              color: @text-color1;
+
+              &::part(indicator) { /* 设置导航标签指示器样式 */
+                padding-inline: 0;
+              }
+
+              &::part(indicator-background) { /* 设置导航标签指示器背景色 #1C2334 */
+                background: transparent;
+              }
+
+              &.segment-button-disabled {
+                opacity: 1;
+              }
+
+              .type-img {
+                filter: @filter;
+                width: 2.8556rem;
+                height: 2.8556rem;
+                display: block;
+                background-size: 800% 400%;
+              }
+            
+              .type-icon {
+                width: 2.8556rem;
+                height: 2.8556rem;
+              }
+
+              .bug {
+                width: 0.3463rem;
+                height: 0.125rem;
+                border-radius: 0.125rem;
+                background: @bg5;
+                box-shadow: 0 0 0.25rem 0 @bg5;
+                position: absolute;
+                top: 0.3306rem;
+                left: -0.5rem;
+              }
+
+              &.active { /* 设置选中动画 */
+                // animation: fadeToTransparent 600ms linear forwards;
+                background: @bg4;
+                border: 0.0625rem solid @line-color1;
+                color:  @text-color2;
+                
+                .type-img {
+                  filter: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @keyframes fadeToTransparent {
+      from {
+        --background-checked: var(--home-fadeToTransparent-form-color);
+      }
+      
+      to {
+        --background-checked: var(--home-fadeToTransparent-to-color);
+      }
+    }
+  }
+}

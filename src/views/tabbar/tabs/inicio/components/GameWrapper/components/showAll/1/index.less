@@ -1,0 +1,60 @@
+html {
+  #tabbar-tabs-inicio-components-GameWrapper-components-showAll-1-index();
+}
+
+.auroral-yellow {
+
+  .more {
+    background: #24221F;
+    padding-block: 1.25rem .75rem;
+    border-radius: 0 0 0.625rem 0.625rem;
+  }
+}
+
+
+
+
+
+#tabbar-tabs-inicio-components-GameWrapper-components-showAll-1-index {
+  .layout1(
+    @text-color1: #566488;
+    @text-color2: #1680DC;
+  ) {
+    .layout1.more {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-block-start: 0.9375rem;
+      padding-block-end: 1.625rem;
+      text-transform: capitalize;
+      font-size: 0.75rem;
+      line-height: 1.5;
+
+      .label {
+        color: @text-color1;
+        font-weight: 400;
+      }
+
+      .btn {
+        color: @text-color2;
+
+        .btn-label {
+          font-weight: 600;
+        }
+
+        .btn-icon {
+          margin-inline-start: 0.1875rem;
+          vertical-align: middle;
+          transform: rotateX(0deg);
+          transition: transform 0.3s ease;
+        }
+        
+        .active {
+          transform: rotateX(180deg);
+        }
+      }
+    }
+  }
+
+  .layout1();
+}

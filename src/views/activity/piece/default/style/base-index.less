@@ -1,0 +1,398 @@
+.wheel-box {
+  background: url('/images/activity/share_bg.webp') no-repeat;
+  background-size: 100%;
+  background-position: 0 .75rem;
+}
+
+.aperture {
+  animation: apertureAnimation 20s linear infinite;
+}
+
+.wheel-light {
+  animation-name: lightAnimation;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  pointer-events: none;
+}
+
+
+.wheel-start {
+  pointer-events: none;
+}
+
+.wheel-start .button {
+  background: url('/images/activity/share_start.webp');
+  background-size: 100%;
+}
+
+.wheel-start .button.on {
+  animation: buttonAnimation 250ms;
+}
+
+ion-segment {
+  display: flex;
+  justify-content: left;
+}
+
+ion-segment-button.segment-button-disabled {
+  opacity: 1;
+}
+
+ion-segment-button.ios {
+  --border-radius: .375rem;
+  --background: transparent;
+  --color: #FFF;
+  --indicator-color: transparent;
+  --indicator-box-shadow: none;
+  --padding-start: 0;
+  --padding-end: 0;
+  --padding-top: 0;
+  --padding-bottom: 0;
+  text-transform: capitalize;
+  min-width: 2.25rem;
+  min-height: 5.5rem;
+  max-height: 5.5rem;
+  margin: 0 0.1875rem;
+  margin-top: 0;
+}
+
+ion-item.submit {
+  --padding-start: 0;
+  --min-height: 40px;
+  --background: #66D73E;
+  --border-radius: 10px;
+  --inner-padding-end: .25rem;
+}
+
+ion-modal#modal-help,
+ion-modal#modal-piece,
+ion-modal#modal-prize {
+  --width: 22.25rem;
+  --height: fit-content;
+  /* 高度由内容撑开 */
+  --border-radius: 1.25rem;
+}
+
+ion-row.shiny,
+ion-button.pop.shiny {
+  position: relative;
+  overflow: hidden;
+}
+
+.turntable-shiny {
+  position: relative;
+  overflow: hidden;
+}
+
+ion-row.shiny::before,
+ion-item.pop.shiny::before {
+  content: '';
+  animation: shiny 6s ease-in-out infinite;
+  background: white;
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: -180px;
+  width: 20px;
+  z-index: 100
+}
+
+ion-item.pop.shiny::before {
+  width: 30px !important;
+}
+
+.turntable-shiny::before {
+  content: '';
+  animation: turntableShiny 6s ease-in-out infinite;
+  background: #fff;
+  display: inline-block;
+  height: 3.3rem;
+  left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 3.3rem;
+  z-index: 100000;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+ion-modal#modal-share {
+  --background: transparent;
+}
+
+div.scroll-box {
+  animation: scrollAnimation linear infinite;
+  animation-fill-mode: both;
+
+}
+
+ion-checkbox {
+  --size: 0.9375rem;
+  --checkbox-background-checked: #66D73E;
+  --checkbox-background: #EAEDF6;
+  --border-color: #EAEDF6;
+  --checkmark-color: #fff;
+  --checkmark-width: 4px;
+  --border-radius: 4px;
+  margin-inline-end: 0;
+}
+
+ion-checkbox::part(container) {
+  padding: 0.25rem;
+  border-radius: 50%;
+  border: none;
+}
+
+ion-item ion-button {
+  --ripple-color: transparent;
+  /* 取消按钮点击动效 */
+}
+
+.winning-box {
+  animation: blink 1s infinite;
+}
+
+.winning-arc {
+  margin-left: .375rem;
+  width: 5.5rem;
+  height: 2.5rem;
+  border: solid .25rem;
+  border-color: white;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-radius: 50%/1.1rem 1.1rem 0 0;
+  background-color: transparent;
+}
+
+.winning-left {
+  transform: rotate(22deg) translate3d(-.625rem, -2.375rem, 0);
+  transform-origin: bottom;
+}
+
+.winning-right {
+  transform: rotate(-22deg) translate3d(2.375rem, -7rem, 0);
+  transform-origin: bottom;
+}
+
+.finger {
+	width: 6rem;
+	height: 6rem;
+   margin: auto;
+	z-index: 900;
+	transform: translate(32px, 26px);
+  opacity: 0;
+  @apply absolute top-0 bottom-0 left-0 right-0;
+}
+
+.fingerAnimation {
+	animation: fingerTranslate 6s ease-in-out infinite;
+	animation-play-state: v-bind("animationPlayState");
+}
+
+.zoom {
+  opacity: 0;
+  animation: zoom 6s ease-in-out infinite;
+  z-index: 1000;
+  animation-play-state: v-bind("animationPlayState");
+}
+
+@keyframes fingerTranslate {
+	0% {
+		opacity: 0;
+		transform: translate(1000px, 800px)
+	}
+
+	25% {
+		opacity: 0.2;
+		transform: translate(18.75rem, 18.75rem)
+	}
+
+	70% {
+		opacity: 1;
+		transform: translate(2rem, 1.625rem);
+	}
+
+
+	80% {
+		opacity: 1;
+		transform: translate(2rem, 1.625rem) scale(90%);
+	}
+
+
+	90% {
+		opacity: 1;
+		transform: translate(2rem, 1.625rem) scale(110%);
+	}
+
+	100% {
+		opacity: 0.5;
+		transform: translate(2rem, 1.625rem) scale(100%);
+
+	}
+}
+
+@keyframes zoom {
+  0% {
+    opacity: 0;
+
+  }
+
+  70% {
+    opacity: 0;
+
+  }
+
+  80% {
+    opacity: 0.4;
+    transform: scale(120%);
+  }
+
+
+  90% {
+    opacity: 0.6;
+    transform: scale(130%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(135%);
+  }
+}
+
+@keyframes buttonAnimation {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes apertureAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes lightAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  49.99% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(22.5deg);
+  }
+
+  99.99% {
+    transform: rotate(22.5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes scrollAnimation {
+
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  99.99% {
+    transform: translate3d(0, -20%, 0);
+  }
+}
+
+@keyframes turntableShiny {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 0.3;
+    transform: scale(0.5);
+  }
+
+  81% {
+    opacity: 0.6;
+    transform: scale(0.8);
+
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+@keyframes shiny {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(45deg);
+  }
+
+  80% {
+    opacity: 0.5;
+    transform: scale(1) rotate(45deg);
+  }
+
+  81% {
+    opacity: 1;
+    transform: scale(3) rotate(45deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(50) rotate(45deg);
+  }
+}
+
+@keyframes blink {
+
+  /* 光标闪烁 */
+  0% {
+    opacity: 1;
+  }
+
+  49% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.hide-scrollbar {
+  overflow: auto; /* 允许滚动 */
+  -ms-overflow-style: none; /* IE和Edge隐藏滚动条 */
+  scrollbar-width: none; /* Firefox隐藏滚动条 */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari和Opera隐藏滚动条 */
+}

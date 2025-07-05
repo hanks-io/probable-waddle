@@ -1,0 +1,25 @@
+#withdraw-subView-default-index {
+    //局部作用域
+  
+    .style(
+      @subView01: --color-text-white-100,
+      @subView02: --color-text-gray-200,
+      @subView03: --theme-color-gradient-100,
+    ) {
+        ion-toolbar.top {
+            .btn-center{
+              ion-label.selected {
+               color: var(@subView01);
+              }
+              ion-label.unselected {
+               color: var(@subView02);
+              }
+            }
+          }
+          
+          ion-toolbar ion-segment-button.md::part(indicator-background) {
+            /* 设置导航标签指示器的宽度 */
+            background: var(@subView03);
+          }
+    }
+  }

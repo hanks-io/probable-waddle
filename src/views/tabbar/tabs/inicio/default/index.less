@@ -1,0 +1,432 @@
+.blue-default {
+  #tabbar-tabs-inicio-default-index.style();
+
+  .v01 {
+    #tabbar-tabs-inicio-default-index.blue-default();
+  }
+
+  .home-type-Platform {
+    &.v02 {
+      #tabbar-tabs-inicio-default-index.style(
+        @bg2: none;
+      );
+      #tabbar-tabs-inicio-default-index.green-theme.base();
+      #tabbar-tabs-inicio-default-index.green-theme.v01();
+      #tabbar-tabs-inicio-default-index.theme.base();
+
+    }
+  }
+  
+}
+
+.green-default {
+  .v01 {
+    #tabbar-tabs-inicio-default-index.green-theme.base();
+    #tabbar-tabs-inicio-default-index.green-theme.v01();
+  }
+
+  .v02 {
+    #tabbar-tabs-inicio-default-index.style(
+      @bg1: #213b10;
+      @bg2: none;
+      @line-color1: #34571D;
+    );
+    #tabbar-tabs-inicio-default-index.green-theme.base();
+    #tabbar-tabs-inicio-default-index.green-theme.v02();
+  }
+
+  #tabbar-tabs-inicio-default-index.style(
+    @bg1: #213b10;
+    @bg2: none;
+  );
+}
+
+
+.forest-green {
+  .v01 {
+    #tabbar-tabs-inicio-default-index.style(
+      @bg1: #004d37;
+      @bg2: url('/images/inicio-bg.png');
+    );
+    #tabbar-tabs-inicio-default-index.green-theme.base();
+    #tabbar-tabs-inicio-default-index.green-theme.v01();
+    #tabbar-tabs-inicio-default-index.theme.base();
+  }
+  .v02 {
+    #tabbar-tabs-inicio-default-index.style(
+      @bg1: #004d37;
+      @bg2: url('/images/inicio-bg.png');
+      @line-color1: #009F76;
+    );
+    #tabbar-tabs-inicio-default-index.green-theme.base();
+    #tabbar-tabs-inicio-default-index.green-theme.v02();
+    #tabbar-tabs-inicio-default-index.theme.base();
+    
+  }
+}
+
+.amber-purple {
+  #tabbar-tabs-inicio-default-index.style(
+    @bg1: #262346;
+    @bg2: none;
+  );
+
+  .home-type-Platform {
+    &.v01 {
+      #tabbar-tabs-inicio-default-index.green-theme.base();
+      #tabbar-tabs-inicio-default-index.green-theme.v01();
+      #tabbar-tabs-inicio-default-index.theme.base();
+    }
+  }
+}
+
+.auroral-yellow {
+  #tabbar-tabs-inicio-default-index.style(
+    @bg1: #171616;
+    @bg2: none;
+  );
+
+  @container-width: calc(100% - 1.875rem);
+  #inicio {
+    .main-content {
+      .order-container {
+        display: flex;
+        flex-flow: wrap;
+
+        .swiper-c {
+          order: 1;
+          width: 100%;
+          height: 11.25rem;
+          margin-block-start: .875rem;
+        }
+
+        .activity-c {
+          order: 3;
+          width: 100%;
+          margin-block-start: .6875rem;
+
+          :deep(ion-segment) {
+            height: 4.375rem;
+            gap: .75rem;
+
+            ion-segment-button {
+              width: 7rem;
+              border-radius: 0.375rem;
+              --border-radius: 0.375rem;
+            }
+          }
+        }
+
+        .marquee-c {
+          order: 5;
+          width: @container-width;
+        }
+
+        .bonus-pool-c {
+          order: 7;
+        }
+        .segment-c {
+          order: 9;
+          width: 100%;
+        }
+        .game-c {
+          order: 11;
+          width: 100%;
+
+          .platform-game-c {
+            display: flex;
+            flex-direction: column;
+
+            .game-wrapper-c {
+
+              &:first-child {
+                :deep(.game-head) {
+                  margin-block-start: .3125rem;
+                }
+              }
+            }
+
+            .bonus-pool-c {
+              order: 1;
+            }
+          }
+        }
+        .app-install-c {
+          order: 13;
+          width: 100%;
+        }
+        .apart-view-c {
+          order: 15;
+          width: 100%;
+
+          :deep(.social-box) {
+            display: none;
+          }
+        }
+
+        .footer-content-c {
+          order: 19;
+          width: @container-width;
+          margin-inline: 0.9375rem;
+        }
+        .platform-pool {
+          order: 21;
+        }
+      }
+    }
+  }
+}
+
+
+#tabbar-tabs-inicio-default-index {
+
+  .style(
+    @bg1: #090f1f;
+    @bg2: url("/icons/texture_bg.png");
+    @line-color1: none;
+  ) {
+    #inicio {
+      background: @bg1;
+
+      .main-content {
+        /* 内容样式 */
+        --background: transparent;
+        position: relative;
+      
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          opacity: 0.5;
+          /* 调整背景图片的透明度 */
+          z-index: -1;
+          /* 使伪元素在内容后面 */
+          /* 内容样式 */
+          background-image: @bg2;
+          /* 设置背景图像(需要先将--background变量设置透明) */
+          background-size: 5rem;
+          /* 设置背景图像块的大小为100px x 100px */
+          background-repeat: repeat;
+          /* 设置背景图像平铺 */
+        }
+
+        .order-container {
+          .swiper-c {
+            margin-block-start: 0.9375rem;
+            margin-inline: 0.9375rem;
+          }
+          .segment-c {
+            top: 0;
+            z-index: 10;
+          }
+          .game-wrapper-c {
+            border-color: @line-color1;
+          }
+          .apart-view-c {
+
+            :deep(.payment-box) {
+              margin-inline: .9375rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .theme() {
+    .base() {
+      #inicio {
+
+        .main-content {
+
+          &::before {
+            opacity: 0.8;
+            background-size: unset;
+          }
+        }
+      }
+    }
+  }
+  
+  .green-theme() {
+    .base() {
+      #inicio {
+
+        .main-content {
+
+          .order-container {
+            display: flex;
+            flex-flow: wrap;
+    
+            .swiper-c {
+              width: 14.375rem;
+              height: 14.375rem;
+              margin: 0;
+              margin-block-start: 0.625rem;
+              margin-inline-start: .9375rem;
+            }
+    
+            .activity-c {
+              flex: 1;
+              width: 7.5rem;
+              height: 14.375rem;
+              margin-block-start: 0.625rem;
+              margin-inline-start: 0.625rem;
+              margin-inline-end: .9375rem;
+            }
+    
+            .marquee-c {
+              width: 100%;
+              margin-inline: unset;
+              margin-block-start: .9375rem;
+              padding-inline-start: 1.4375rem;
+              padding-inline-end: 1.9375rem;
+            }
+    
+            .game-c {
+
+              .platform-game-c {
+                display: flex;
+                flex-direction: column;
+
+                .bonus-pool-c {
+                  order: 1;
+                }
+              }
+            }
+    
+            // 共享的order样式
+            .app-install-c { order: 2; }
+            .apart-view-c { order: 1; }
+            .game-class-c { order: 3; }
+            .footer-content-c { order: 4; }
+            .platform-pool { order: 1; }
+          }
+        }
+      }
+    }
+
+    .v01() {
+      #inicio {
+        
+        .main-content {
+
+          .order-container {
+
+            .segment-c {
+              width: 100%;
+            }
+
+            .game-c {
+              width: 100%;
+            }
+
+          }
+        }
+      }
+    }
+
+    .v02() {
+      #inicio {
+        .main-content {
+          .order-container {
+            .marquee-c {
+              margin-bottom: 1rem;
+            }
+      
+            .segment-c {
+              width: 4.875rem;
+              height: 37.5rem;
+              margin-left: 0.9375rem;
+              margin-right: 0.8125rem;
+              overflow-y: auto;
+              &::-webkit-scrollbar {
+                display: none; /* 对于Webkit浏览器 */
+              }
+              -ms-overflow-style: none;  /* IE和Edge */
+              scrollbar-width: none;  /* Firefox */
+            }
+  
+            .game-c {
+              width: calc(100% - 6.625rem);
+              .game-wrapper-c {
+                padding: 0;
+                width: calc(100% - 0.9375rem);
+                padding-block-end: 1.125rem;
+                
+                &:not(:last-child) {
+                  border-bottom-width: 0.0625rem;
+                  border-bottom-style: solid;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .blue-default() {
+    @container-width: calc(100% - 1.875rem);
+    #inicio {
+      .main-content {
+        .order-container {
+          display: flex;
+          flex-flow: wrap;
+          .swiper-c {
+            order: 3;
+            width: 100%;
+            height: 11.25rem;
+          }
+          .activity-c {
+            order: 5;
+            width: 100%;
+          }
+          .marquee-c {
+            order: 7;
+            width: @container-width;
+          }
+          .bonus-pool-c {
+            order: 9;
+          }
+          .segment-c {
+            order: 1;
+            width: 100%;
+          }
+          .game-c {
+            order: 11;
+            width: 100%;
+            .platform-game-c {
+              display: flex;
+              flex-direction: column;
+              .bonus-pool-c {
+                order: 1;
+              }
+            }
+          }
+          .app-install-c {
+            order: 13;
+            width: 100%;
+          }
+          .apart-view-c {
+            order: 15;
+          }
+          .game-class-c {
+            order: 17;
+          }
+          .footer-content-c {
+            order: 19;
+            width: @container-width;
+            margin-inline: 0.9375rem;
+          }
+          .platform-pool {
+            order: 21;
+          }
+        }
+      }
+    }
+  }
+}

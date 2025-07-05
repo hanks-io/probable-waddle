@@ -1,0 +1,115 @@
+.green-default {
+  #tabbar-MainPage-components-Tabs-Tabs6-index.style();
+}
+
+.forest-green {
+  #tabbar-MainPage-components-Tabs-Tabs6-index.style(
+    @text-color1: #183009;
+    @text-color2: #50B388;
+    @bg1: var(--color-bg-400);
+    @bg2: url('/svg/tabbar/masking2.svg') no-repeat center / 100% 100%;
+  );
+}
+
+.amber-purple {
+  #tabbar-MainPage-components-Tabs-Tabs6-index.style(
+    @text-color1: #fff;
+    @text-color2: #BDB8E1;
+    @bg1: #2C274D;
+    @bg2: url('/svg/tabbar/masking3.svg') no-repeat center / 100% 100%;
+  );
+}
+
+.blue-default {
+  #tabbar-MainPage-components-Tabs-Tabs6-index.style(
+    @text-color1: #1680DC;
+    @text-color2: rgba(255, 255, 255, 0.4);
+    @bg1: #182344;
+    @bg2: url('/svg/tabbar/masking4.svg') no-repeat center / 100% 100%;
+  );
+}
+
+#tabbar-MainPage-components-Tabs-Tabs6-index {
+
+  .style(
+    @text-color1: #FBED3C;
+    @text-color2: #7e9071;
+    @bg1: #2b4f14;
+    @bg2: url('/svg/tabbar/masking1.svg') no-repeat center / 100% 100%;
+  ) {
+    .tab-bar {
+      --background: @bg1;
+      width: 100%;
+      position: absolute;
+      bottom: -0.0625rem;
+      height: 3.5rem;
+      .inner-wrap {
+        width: 100%;
+        display: flex;
+  
+        .tab-btn {
+          height: 2.875rem;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+          .tab-text {
+            font-size: 0.625rem;
+            font-weight: 400;
+            line-height: 1;
+          }
+          .tab-img {
+            font-size: 1.875rem;
+          }
+          .tab-img,
+          .tab-text {
+            color: @text-color2;
+          }
+        }
+        .active-tab {
+          animation: buttonAnimation 500ms;
+          .tab-img,
+          .tab-text {
+            color: @text-color1;
+          }
+          .tab-text {
+            font-size: .5625rem;
+          }
+          .active-block {
+            position: absolute;
+            width: 2.875rem;
+            height: 2.875rem;
+            background: @bg2;
+            border-radius: 0.4375rem;
+            z-index: -1;
+          }
+        }
+
+        .point-1 {
+          top: .1875rem;
+          right: 1.5rem;
+        }
+
+        .point-4 {
+          top: .1875rem;
+          right: 1.75rem;
+        }
+      }
+    }
+  }
+
+  @keyframes buttonAnimation {
+    0% {
+      transform: scale(0);
+    }
+
+    50% {
+      transform: scale(1.2);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+}

@@ -1,0 +1,58 @@
+html {
+  #tabbar-tabs-inicio-components-PartView-default-PartView5-index.layout();
+}
+
+#tabbar-tabs-inicio-components-PartView-default-PartView5-index {
+
+  .layout(
+    @bg1: #131313;
+    @social-bg: rgba(42, 171, 238, 0.2);
+  ) {
+    .part-container {
+      display: flex;
+      justify-content: center;
+      flex-flow: wrap;
+
+      .social-box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-flow: wrap;
+        gap: .75rem;
+
+        .social-img {
+
+          &.good-img {
+            width: 2.5rem;
+            height: 2.5rem;
+            padding: 0.5rem;
+            background: @social-bg;
+            border-radius: 50%;
+            overflow: hidden;
+            object-fit: cover;
+          }
+        }
+      }
+
+      
+  
+      .partner-img {
+        margin-block-start: 2.6875rem;
+
+        &.good-img {
+          width: 22.5rem;
+        }
+      }
+
+      .payment-img {
+        padding: 1.5rem .9375rem;
+        margin-block-start: 2.5rem;
+        background: @bg1;
+        
+        &.good-img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

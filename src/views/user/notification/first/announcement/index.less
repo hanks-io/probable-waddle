@@ -1,0 +1,74 @@
+// 公告页面样式 mixin
+#announcement-index {
+  .style(
+    @anno-filter: blur(2.484375rem);
+    @anno-bg-color: var(--ep-color-background-fill-glow-secondary-opacity-40);
+    @msg-icon-bg: var(--ep-color-background-fill-surface-raised-L2, var(--color-bg-400));
+    @msg-icon-c1: var(--ep-color-icon-default, var(--theme-color-800));
+    @read-icon-c1: var(--ep-color-icon-brand-primary);
+    @msg-top: -7.5rem;
+    @msg-right: -1.75rem;
+    @msg-bg: var(--ep-color-background-fill-surface-raised-L1, var(--color-bg-200));
+  ) {
+    .announcement-msg {
+      position: relative;
+      padding: .75rem;
+      font-size: .625rem;
+      line-height: .9375rem;
+      color: var(--color-text-40);
+      margin-bottom: .625rem;
+      border-radius: 0.375rem;
+      overflow: hidden;
+      background: @msg-bg;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: @msg-top;
+        right: @msg-right;
+        width: 6.625rem;
+        height: 6.625rem;
+        background: @anno-bg-color;
+        filter: @anno-filter;
+      }
+    }
+
+    .msg-content {
+      margin-bottom: 0.75rem;
+      z-index: 30;
+      display: flex;
+      align-items: center;
+
+      .icon-msg-wrap {
+        width: 2.25rem;
+        height: 2.25rem;
+        min-width: 2.25rem;
+        min-height: 2.25rem;
+        border-radius: 1.125rem;
+        background: @msg-icon-bg;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .msg-icon {
+        color: @msg-icon-c1;
+        width: 1.125rem;
+        height: 1.125rem;
+      }
+    }
+
+    .read-icon {
+      color: @read-icon-c1;
+    }
+
+    .item-top-tips {
+      margin-left: 0.75rem;
+      width: 100%;
+
+      .item-title {
+        color: var(--ep-color-text-weak);
+      }
+    }
+  }
+}

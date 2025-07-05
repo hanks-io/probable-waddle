@@ -1,0 +1,40 @@
+html {
+  #tabbar-tabs-inicio-components-CustomerServiceButton-Button3-index.layout();
+}
+
+
+#tabbar-tabs-inicio-components-CustomerServiceButton-Button3-index {
+
+  .layout(
+    @support-bg: linear-gradient(327deg, #FEB805 12.46%, #F5BB78 87.98%);
+  ) {
+    .support {
+      width: 3.375rem;
+      height: 3.375rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      left: 1rem;
+      z-index: 50;
+      border-radius: 50%;
+      background: @support-bg;
+
+      .support-img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .dot {
+        position: absolute;
+        top: 0.1rem;
+        right: 0.3rem;
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background: #ff0000;
+        outline: .1563rem solid rgba(255, 255, 255, 0.4);
+      }
+    }
+  }
+}

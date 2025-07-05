@@ -1,0 +1,136 @@
+html {
+  #tabbar-tabs-inicio-components-HeaderBar-components-assets-2-index.layout();
+}
+
+
+
+
+
+#tabbar-tabs-inicio-components-HeaderBar-components-assets-2-index {
+  .layout(
+    @assets-bg: var(--ep-color-background-fill-surface-lowered);
+    @currency-color: var(--ep-color-text-default);
+    @currency-shadow: none;
+    @number-color: var(--ep-color-text-default);
+    @number-shadow: none;
+    @deposit-bg: var(--ep-color-background-fill-surface-raised-L2);
+    @deposit-color: var(--ep-color-text-highlight);
+    @login-bg: var(--ep-dynamic-secondary);
+    @login-color: var(--ep-color-text-default);
+    @register-bg: var(--ep-dynamic-primary);
+    @register-color: var(--ep-color-text-inverse);
+    @shadow1: 0 0 0.625rem var(--ep-color-background-fill-glow-primary-opacity-100);
+    @shadow2: 0 -0.0625rem 0 0 var(--ep-color-border-highlight) inset;
+    @intro-color: var(--ep-dynamic-primary);
+  ) {
+    .assets-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .assets-box-inner {
+        display: flex;
+
+        .assets-img {
+          width: 0;
+
+          &.good-img {
+            width: 2.375rem;
+            height: 2.375rem;
+            margin-inline: 0.4375rem 0.25rem;
+          }
+        }
+
+        .assets-box-info {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          text-shadow: @shadow1;
+
+          .assets-box-info-inner {
+            display: flex;
+            align-items: center;
+            font-size: var(--ep-font-size-m, 0.875rem);
+            font-weight: var(--ep-font-weight-bold, 700);
+            font-style: italic;
+            line-height: 1.5;
+
+            .currency {
+              margin-right: 0.125rem;
+              color: @currency-color;
+            }
+
+            .assets-box-number {
+              color: @number-color;
+            }
+          }
+
+          .assets-box-intro {
+            font-size: var(--ep-font-size-xs, 0.625rem);
+            font-weight: var(--ep-font-weight-regular, 400);
+            background: @intro-color;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+      }
+    
+      .deposit {
+        --border-radius: .375rem;
+        --padding-top: .5313rem;
+        --padding-bottom: .5313rem;
+        --padding-start: .625rem;
+        --padding-end: .625rem;
+        
+        &::part(native) {
+          font-size: var(--ep-font-size-s, 0.75rem);
+          font-weight: var(--ep-font-weight-medium, 600);
+          color: @deposit-color;
+          background: @deposit-bg;
+          box-shadow: @shadow2;
+        }
+      }
+    }
+
+    .primaryBtn {
+      display: flex;
+      align-items: center;
+
+      .login {
+        --padding-top: .625rem;
+        --padding-bottom: .625rem;
+        --padding-start: 0.625rem;
+        --padding-end: 0.625rem;
+        font-size: var(--ep-font-size-m, 0.875rem);
+        font-weight: var(--font-weight-bold, 700);
+        --border-radius: var(--ep-border-radius-m, 0.375rem);
+
+        &::part(native) {
+          background: @login-bg;
+          color: @login-color;
+        }
+      }
+
+      .register-btn-warper {
+        margin-left: 0.5rem;
+
+        :deep(.register) {
+          width: 100%;
+          --padding-top: .625rem;
+          --padding-bottom: .625rem;
+          --padding-start: 0.625rem;
+          --padding-end: 0.625rem;
+          font-size: var(--ep-font-size-m, 0.875rem);
+          font-weight: var(--font-weight-bold, 700);
+          --border-radius: var(--ep-border-radius-m, 0.375rem);
+  
+          &::part(native) {
+            background: @register-bg;
+            color: @register-color;
+          }
+        }
+      }
+    }
+  }
+}

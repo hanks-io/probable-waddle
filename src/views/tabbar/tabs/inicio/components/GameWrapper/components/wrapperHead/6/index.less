@@ -1,0 +1,90 @@
+.blue-default {
+  .v01 {
+    #tabbar-tabs-inicio-components-GameWrapper-Head-Head6-index.style();
+  }
+}
+
+#tabbar-tabs-inicio-components-GameWrapper-Head-Head6-index {
+
+  .style(
+    @text-color1: #fff;
+    @text-color2: #899FBE;
+    @text-color3: #fff;
+    @text-color4: #9BA7BE;
+    @bg1: linear-gradient(180deg, rgba(18, 31, 65, 0.00) 0%, #121F41 100%);
+    @bg2: linear-gradient(to right, #01559B 0%, #001D35 100%);
+    @bg3: #192037;
+    @bg4: #191E2D;
+  ) {
+    .game-head {
+      display: flex;
+      align-items: center;
+      margin-block: 0.9375rem 0.625rem;
+    
+      .logo-c {
+        position: relative;
+        padding-block: 0.375rem;
+        padding-inline-end: 0.375rem;
+        display: flex;
+        align-items: center;
+        // text-transform: uppercase;
+        background: @bg1;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          display: block;
+          width: 100%;
+          height: 0.125rem;
+          background: @bg2;
+        }
+    
+        .logo {
+          font-size: 1.5rem;
+          margin-inline-end: 0.375rem;
+          color: @text-color1;
+        }
+
+        .logo1 {
+          color: @text-color2;
+        }
+
+        .label {
+          font-size: 1rem;
+          font-weight: 600;
+          color: @text-color2;
+        }
+
+        .total {
+          color: @text-color3;
+          --background: @bg3;
+          font-size: 0.625rem;
+          font-weight: 400;
+          margin-inline-start: 0.625rem;
+        }
+      }
+
+      .arrow-container {
+        display: flex;
+        align-items: center;
+        margin-inline-start: auto;
+  
+        .left,
+        .right {
+          padding-inline: 0.375rem;
+          padding-block: 0.375rem;
+          border-radius: 50%;
+          font-size: 0.875rem;
+          background-color: @bg4;
+          color: @text-color4;
+        }
+  
+        .right {
+          margin-inline-start: 0.3125rem;
+        }
+      }
+    }
+  }
+}

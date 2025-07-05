@@ -1,0 +1,52 @@
+#mlmAgent-components-agentLevelInfo-index {
+  .style(
+    @mlmAgent-components-agentLevelInfo-index-01: --mlm-toolbar-bg-color;
+    @mlmAgent-components-agentLevelInfo-index-02: --mlm-agent-level-item-bgc;
+    @mlmAgent-components-agentLevelInfo-index-03: --mlm-agent-my-agency-textc;
+    @mlmAgent-components-agentLevelInfo-index-04: --color-bg-300;
+    @mlmAgent-components-agentLevelInfo-index-05: --color-line;
+    @mlmAgent-components-agentLevelInfo-index-06: --color-text-40;
+    @mlmAgent-components-agentLevelInfo-index-07: --mlm-agent-my-agency-textc;
+    @mlmAgent-components-agentLevelInfo-index-08: --mlm-rate-item-right-text-color;
+    @mlmAgent-components-agentLevelInfo-index-09: --mlm-description-content-title-color;
+    @mlmAgent-components-agentLevelInfo-index-10: --mlm-agent-report-icon-color;
+    @mlmAgent-components-agentLevelInfo-index-11: --mlm-agent-report-icon-color;
+  ) {
+    ion-toolbar {
+      --background: var(@mlmAgent-components-agentLevelInfo-index-01);
+    }
+
+    .agent-level-item {
+      background-color: var(@mlmAgent-components-agentLevelInfo-index-02);
+      .level-tips {
+        color: var(@mlmAgent-components-agentLevelInfo-index-03);
+      }
+    }
+
+    .item-level-bottom {
+      background: var(@mlmAgent-components-agentLevelInfo-index-04);
+      .level-item {
+        border-bottom: 0.0625rem solid var(@mlmAgent-components-agentLevelInfo-index-05);
+        color: var(@mlmAgent-components-agentLevelInfo-index-06);
+      }
+      .level-item-left {
+        color: var(@mlmAgent-components-agentLevelInfo-index-07);
+      }
+      .level-item-right {
+        color:  var(@mlmAgent-components-agentLevelInfo-index-08);
+      }
+    }
+
+    .agent-description {
+      .title {
+        color: var(@mlmAgent-components-agentLevelInfo-index-09);
+      }
+      .description-content {
+        color: var(@mlmAgent-components-agentLevelInfo-index-10);
+        .point {
+          background: var(@mlmAgent-components-agentLevelInfo-index-11);
+        }
+      }
+    }
+  }
+}

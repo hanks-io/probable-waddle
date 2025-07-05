@@ -1,0 +1,63 @@
+#activity-rebate-default-index {
+  .style(
+    @rebate-default-index-01: --color-bg-200,
+    @rebate-default-index-02: --color-text-white-100,
+    @rebate-default-index-03: --color-bg-100,
+    @rebate-default-index-04: --theme-color-gradient-200,
+    @rebate-default-index-05: --color-text-white-100,
+    @rebate-default-index-06: --color-btn-gradient-claimUnable,
+    @rebate-default-index-07: --color-text-white-100,
+    @rebate-default-index-08: --theme-color-gradient-400,
+    @rebate-default-index-09: --color-text-white-100,
+    @rebate-default-index-10: --color-text-white-100,
+    @rebate-default-index-11: --accent-color-yellow,
+    @rebate-default-index-12: --accent-color-yellow,
+    @rebate-default-index-13: --color-text-gray-200,
+    @rebate-default-index-14: null,
+  ) {
+    ion-segment {
+      --background: var(@rebate-default-index-01);
+    }
+    
+    ion-segment-button.segment {
+      --color-checked: var(@rebate-default-index-02);
+    }
+    
+    ion-segment-button.ios {
+      --indicator-color: var(@rebate-default-index-03);
+      --background: var(@rebate-default-index-14);
+    }
+    
+    ion-segment-button.ios.claim {
+      --background: var(@rebate-default-index-04);
+      --color: var(@rebate-default-index-05);
+    }
+    
+    ion-segment-button.ios.claim.on {
+      background: var(@rebate-default-index-06);
+      color: var(@rebate-default-index-07);
+    }
+    
+    ion-segment-button.ios.history {
+      --background: var(@rebate-default-index-08);
+      --color: var(@rebate-default-index-09);
+      color: var(@rebate-default-index-09);
+    }
+
+    .rebate-available-label {
+      color: var(@rebate-default-index-10);
+    }
+    
+    .rebate-available {
+      color: var(@rebate-default-index-11);
+    }
+    
+    .rebate-activity-rules {
+      color: var(@rebate-default-index-12);
+    }
+    
+    .rebate-side-check {
+      color: var(@rebate-default-index-13);
+    }
+  }
+}

@@ -1,0 +1,74 @@
+ion-content {
+    --padding-start: var(--ion-padding, 1rem);
+    --padding-end: var(--ion-padding, 1rem);
+    --padding-top: var(--ion-padding, 1rem);
+    --padding-bottom: var(--ion-padding, 1rem);
+    padding-inline-start: var(--ion-padding, 1rem);
+    padding-inline-end: var(--ion-padding, 1rem);
+    padding-top: var(--ion-padding, 1rem);
+    padding-bottom: var(--ion-padding, 1rem);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.625rem;
+      .detail-text{
+        width: 12.5rem;
+        line-height: .875rem;
+        .currency{
+          color: var(--color-currency);
+        }
+      }
+      .select {
+        min-width: 7.625rem;
+        width: 7.625rem;
+        ion-select {
+          font-size: 0.75rem;
+          ion-select-option {
+            font-size: 0.75rem;
+          }
+        }
+      }
+    }
+    .empty {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .empty-bg-img {
+        width: 7.5rem;
+        height: 7.5rem;
+        margin-top: 8.5rem;
+      }
+    }
+  }
+  ion-select {
+    --padding-start: 0.875rem;
+    --padding-end: 0.625rem;
+    --border-radius: 0.625rem;
+    --border-width: 0.0625rem;
+    min-height: 1.625rem;
+  }
+  
+  .item {
+    padding: 0.625rem;
+    border-radius: 0.375rem;
+    height: 4.375rem;
+    margin-bottom: 0.625rem;
+    .top {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.875rem; 
+      line-height: 1.25rem;
+    }
+    .label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.75rem; 
+      line-height: 1rem;
+      margin-top: 0.75rem; 
+    }
+  }
+  

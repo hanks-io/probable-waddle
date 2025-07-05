@@ -1,0 +1,112 @@
+#spread-default-components-referralInfo {
+  .style(
+    @default-components-referralInfo-01: --color-bg-200,
+    @default-components-referralInfo-02: --color-bg-200,
+    @default-components-referralInfo-03: --color-line,
+    @default-components-referralInfo-04: --text-color-white-40,
+    @default-components-referralInfo-05: --rounded-small,
+    @default-components-referralInfo-06: --color-text-gray-200,
+    @default-components-referralInfo-07: --color-text-white-100,
+    @default-components-referralInfo-08: --accent-color-orange-1,
+    @default-components-referralInfo-09: --color-bg-200,
+    @default-components-referralInfo-10: --agent-claim-bgc,
+    @default-components-referralInfo-11: --agent-history-bgc,
+    @default-components-referralInfo-12: --agent-disabled-btn-bgc,
+    @default-components-referralInfo-13: --color-text-white-100,
+    @default-components-referralInfo-14: --color-text-white-100,
+    @default-components-referralInfo-15: --color-text-gray-300,
+    @default-components-referralInfo-16: --color-border-600,
+    @default-components-referralInfo-17: --theme-color-500,
+    @default-components-referralInfo-18: --color-line,
+    @default-components-referralInfo-19: --color-text-white-100,
+    @default-components-referralInfo-20: --color-text-gray-300,
+    @default-components-referralInfo-21: --theme-color-500,
+    @default-components-referralInfo-22: --color-text-white-100,
+  ) {
+    .agent-share-info {
+      background: var(@default-components-referralInfo-01);
+    }
+
+    .card {
+      background: var(@default-components-referralInfo-02);
+    }
+
+    .receive-rule {
+      border-bottom: 1px solid var(@default-components-referralInfo-03);
+      .text {
+        .hint {
+          color: var(@default-components-referralInfo-04);
+        }
+      }
+
+      .rule-btn {
+        border-radius: var(@default-components-referralInfo-05);
+      }
+    }
+
+    ion-item::part(detail-icon) {
+      color: var(@default-components-referralInfo-06);
+    }
+
+    ion-note {
+      --color: var(@default-components-referralInfo-07);
+    }
+
+    ion-note.cash {
+      --color: var(@default-components-referralInfo-08);
+    }
+    
+    ion-toolbar.agent-info {
+      --ion-toolbar-background: var(@default-components-referralInfo-09);
+    }
+
+    ion-button.claim::part(native) {
+      background: var(@default-components-referralInfo-10);
+    }
+
+    ion-button.history::part(native) {
+      background: var(@default-components-referralInfo-11);
+      color: var(@default-components-referralInfo-22);
+    }
+
+    ion-button.on::part(native) {
+      background: var(@default-components-referralInfo-12);
+      color: var(@default-components-referralInfo-13);
+      --background-activated: none;
+      --background-focused: none;
+      --background-hover: none;
+    }
+
+    .agent-white-text-color {
+      color: var(@default-components-referralInfo-14);
+    }
+    
+    .agent-minor-text-color {
+      color: var(@default-components-referralInfo-15);
+    }
+    
+    .referral-tips {
+      border-bottom: 1px solid var(@default-components-referralInfo-16);
+    }
+    
+    .save-qrcode-btn {
+      background: var(@default-components-referralInfo-17);
+    }
+    
+    .agent-share-link {
+      border: 1px solid var(@default-components-referralInfo-18);
+    }
+    
+    .agent-share-icon-color {
+      color: var(@default-components-referralInfo-19);
+    }
+    
+    .text-color {
+      color: var(@default-components-referralInfo-20);
+    }
+
+    ion-note.more {
+      --color: var(@default-components-referralInfo-21);
+    }
+  }
+}

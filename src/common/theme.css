@@ -1,0 +1,279 @@
+.color-primary-600 {
+  color: var(--color-primary-600);
+}
+.color-primary-700 {
+  color: var(--color-primary-700);
+}
+.color-primary-800 {
+  color: var(--color-primary-800);
+}
+.color-primary-900 {
+  color: var(--color-primary-900);
+}
+/** bg **/
+.bg-100 {
+  background-color: var(--color-bg-100);
+}
+.bg-200 {
+  background-color: var(--color-bg-200);
+}
+.bg-300 {
+  background-color: var(--color-bg-300);
+}
+.bg-400 {
+  background-color: var(--color-bg-400);
+}
+.bg-primary-700 {
+  background-color: var(--color-primary-700);
+}
+.bg-primary-800 {
+  background-color: var(--color-primary-800);
+}
+.bg-warning {
+  background-color: var(--color-warning);
+}
+.bg-link {
+  background-color: var(--color-link);
+}
+.bg-danger {
+  background-color: var(--color-danger);
+}
+/** 文本颜色 **/
+.color-text-100 {
+  color: var(--color-text-100);
+}
+.color-text-80 {
+  color: var(--color-text-80);
+}
+.color-text-50 {
+  color: var(--color-text-50);
+}
+.color-text-40 {
+  color: var(--color-text-40);
+}
+.color-text-20 {
+  color: var(--color-text-20);
+}
+/** 货币文本颜色 **/
+.color-text-currency {
+  color: var(--color-currency);
+}
+/** warning **/
+.color-warning {
+  color: var(--color-warning);
+}
+/** danger **/
+.color-danger {
+  color: var(--color-danger);
+}
+/** danger **/
+.color-link {
+  color: var(--color-link);
+}
+/**分割线/边框**/
+.color-line {
+  color: var(--color-line);
+}
+.color-border {
+  border: 1px solid var(--color-border);
+}
+.font-weight-bold {
+  font-weight: var(--font-weight-bold);
+}
+.font-weight-medium {
+  font-weight: var(--font-weight-medium);
+}
+.font-weight-regular {
+  font-weight: var(--font-weight-regular);
+}
+/**   border-radius  尺寸 **/
+.rounded-small {
+  border-radius: var(--rounded-small);
+}
+.rounded-small-b {
+  border-radius: 0 0 var(--rounded-small) var(--rounded-small);
+}
+.rounded-middle {
+  border-radius: var(--rounded-middle);
+}
+.rounded-middle-b {
+  border-radius: 0 0 var(--rounded-middle) var(--rounded-middle);
+}
+.rounded-large {
+  border-radius: var(--rounded-large);
+}
+.rounded-middle-t {
+  border-radius: var(--rounded-middle) var(--rounded-middle) 0 0;
+}
+.rounded-large-b {
+  border-radius: 0 0 var(--rounded-large) var(--rounded-large);
+}
+.btn-primary-active {
+  background: var(--color-primary-btn-active);
+}
+.btn-primary-active {
+  background: var(--color-primary-btn-active);
+}
+.btn-primary-active {
+  background: var(--color-primary-btn-active);
+}
+.btn-primary-disable {
+  background: var(--color-primary-btn-disable);
+}
+.btn-primary-load {
+  background: var(--color-primary-btn-load);
+}
+/**
+   *less 混入函数
+   */
+.flexBox {
+  display: flex;
+  align-items: center;
+}
+.flex-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.flex-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-evenly {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.flex-column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.minimum-text-white {
+  color: var(--color-text-40);
+  font-size: var(--font-size-10);
+  line-height: 0.9375rem;
+}
+.small-text-white {
+  color: var(--color-text-40);
+  font-size: var(--font-size-12);
+  line-height: 1.125rem;
+}
+.middle-text-white {
+  font-size: var(--font-size-14);
+  color: var(--color-text-100);
+  line-height: 1.3125rem;
+}
+.height-text-white {
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.5rem;
+}
+.report-recoed-item {
+  padding: 0.625rem;
+  background: var(--report-record-item-bg);
+  border-radius: var(--report-record-item-radius);
+}
+.report-selected {
+  font-size: var(--font-size-12);
+  line-height: 1.125rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-report-selected);
+  white-space: nowrap;
+}
+.report-select-item {
+  border: 1px solid var(--report-select-item-border-color);
+  background: var(--report-select-item-bg);
+  color: var(--report-select-item-color);
+  font-weight: var(--font-weight-medium);
+}
+.report-selected-item {
+  border: none;
+  background: var(--report-selected-item-bg);
+  color: var(--report-selected-item-color);
+  border-radius: var(--rounded-small);
+  font-weight: var(--font-weight-bold);
+}
+.record-selecet-item {
+  border: none;
+  background: var(--activity-record-select-item-bg);
+  color: var(--activity-record-select-item-color);
+  font-weight: var(--font-weight-medium);
+}
+.record-seleceted-item {
+  border: none;
+  background: var(--activity-record-selected-item-bg);
+  color: var(--color-activity-selected);
+  font-weight: var(--font-weight-bold);
+}
+.button-bg-left-color {
+  --background-hover-opacity: 1;
+  --background-focused-opacity: 1;
+  --background-activated-opacity: 1;
+  --background-hover: var(--button-left-bg-color-tint);
+  --background-focused: var(--button-left-bg-color-shade);
+  --background-activated: var(--button-left-bg-color-shade);
+}
+.button-bg-right-color {
+  --background-focused-opacity: 1;
+  --background-hover-opacity: 0.8;
+  --background-activated-opacity: 1;
+  --background-focused: var(--button-right-bg-color-shade);
+  --background-hover: var(--button-right-bg-color-tint);
+  --background-activated: var(--button-right-bg-color-shade);
+}
+.fitst-red-point {
+  width: 0.625rem;
+  height: 0.625rem;
+}
+.default-report-select-border {
+  border: 1px solid var(--report-select-border-color);
+  color: var(--report-selected-text-color);
+}
+.default-report-selected-border {
+  border: 1px solid var(--report-selected-border-color);
+  color: var(--report-selected-text-color);
+}
+.default-report-recond-item {
+  background: var(--report-recond-item-bg-color);
+}
+.money-text {
+  color: var(--money-text-color);
+}
+.mlm-selected {
+  color: var(--mlm-selected-text-color);
+}
+.mlm-selected-item {
+  color: var(--mlm-selected-text-color);
+}
+ion-button.arrow-left-btn {
+  --padding-top: 0.1875rem;
+  --padding-bottom: 0.1875rem;
+  --background: transparent;
+  --background-activated: transparent;
+  --background-hover: transparent;
+  --background-focused: transparent;
+  --box-shadow: none;
+  min-height: 0;
+}
+ion-button.arrow-left-btn::part(native) {
+  --padding-start: 0.125rem;
+  --padding-end: 0.25rem;
+  background: transparent;
+}

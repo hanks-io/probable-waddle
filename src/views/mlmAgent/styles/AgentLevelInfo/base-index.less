@@ -1,0 +1,99 @@
+.top-img {
+  height: 12.8125rem;
+  background: url(/first/agent/agent-level.png) no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.agent-level-main {
+  padding: 0 0.75rem 0.875rem;
+  z-index: 10;
+  margin-top: -3.375rem;
+  z-index: 20;
+}
+
+.agent-level-item {
+  min-height: 7.125rem;
+  padding: 0.75rem 0.6875rem;
+  border-radius: 0.375rem;
+  margin-bottom: 1.5rem;
+  .level-tips {
+    padding-top: 1.25rem;
+    margin-left: 1rem;
+  }
+  .item-level-bottom {
+    margin-top: 1.25rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+.agent-level-item.lase-item {
+  margin-bottom: 1.3125rem;
+}
+
+.item-level-border {
+  width: 2.828125rem;
+  height: 2.828125rem;
+  .current-level {
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2.070625rem;
+    height: 2.070625rem;
+  }
+}
+
+.item-level-bottom {
+  border-radius: 0.375rem;
+  .level-item {
+    padding: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+  }
+  .level-item-left {
+    font-weight: 400;
+  }
+  .level-item-right {
+    font-weight: 600;
+  }
+  .level-item:last-child {
+    border-bottom: none !important;
+  }
+}
+
+.agent-description {
+  .title {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    font-weight: 500;
+  }
+  .description-content {
+    padding: 0.625rem 1.375rem 0.625rem 0.625rem;
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    display: flex;
+    .point {
+      width: 0.375rem;
+      height: 0.1875rem;
+      margin-top: 0.4rem;
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.amber-purple body div#app ion-router-outlet > div.ion-page::after,
+.amber-purple body div#app ion-router-outlet > div.ion-page::before {
+  width: 0;
+  height: 0;
+}
+
+.auroral-yellow {
+  ion-toolbar{
+    --border-width:0rem;
+  }
+}

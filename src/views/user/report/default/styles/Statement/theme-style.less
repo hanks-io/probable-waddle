@@ -1,0 +1,80 @@
+#tabbar-user-report-default-statement {
+    //局部作用域
+  
+    .style(
+      @Statement01: --color-text-white-100,
+      @Statement02: --color-text-white-100,
+      @Statement03: --color-text-gray-200,
+      @Statement04: --color-text-white-100,
+      @Statement05: --color-bg-200,
+      @Statement06: --accent-color-orange-1,
+      @Statement07: --color-bg-50,
+      @Statement08: --color-text-gray-100,
+      @Statement09: --color-text-gray-200,
+      @Statement10: --color-text-gray-200,
+      @Statement11: --theme-color-gradient-100,
+      @Statement12: --color-text-white-100,
+      @Statement13: --color-text-gray-200,
+      @Statement14: --color-bg-200,
+      @Statement15: --color-text-white-100,
+      @Statement16: --color-text-gray-200
+    ) {
+      .statement {
+        .top{
+          .filter.selected {
+            border: 0.0625rem solid var(@Statement01);
+            color: var(@Statement02);
+          }
+          .filter.statement-select-default {
+            border: 0.0625rem solid var(@Statement03);
+            color: var(@Statement04);
+          }
+        }
+        .list{
+          .item {
+            background: var(@Statement05);
+            .num{
+              p.money-text {
+                 color: var(@Statement06);
+              }
+            }
+          }
+        }
+      }
+      
+      
+      ion-row.footer-count {
+        background: var(@Statement07);
+      }
+      
+      .content-flex {
+        color: var(@Statement08);
+      }
+      
+      ion-popover ion-row ion-col p.off {
+        color: var(@Statement09);
+        border-color: var(@Statement10);
+      }
+      
+      ion-popover ion-row ion-col p.on {
+        background: var(@Statement11);
+        color: var(@Statement12);
+      }
+      
+      ion-icon.report-select-icon {
+        color: var(@Statement13);
+      }
+      
+      .report-select-row {
+        background: var(@Statement14);
+      }
+      
+      .recond-white-color {
+        color: var(@Statement15);
+      }
+      
+      .recond-minor-color {
+        color: var(@Statement16);
+      }
+    }
+  }

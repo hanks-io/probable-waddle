@@ -1,0 +1,35 @@
+html {
+  #tabbar-tabs-inicio-components-ToTopButton-Button3-index.layout();
+}
+
+#tabbar-tabs-inicio-components-ToTopButton-Button3-index {
+
+  .layout(
+    @text-color1: #fff;
+    @icon-color1: var(--text-color1);
+    @toTop-bg: #38342E;
+    @line-color: #4C4943;
+    @toTop-icon-bg: linear-gradient(0deg, #0167ca 0%, #38a8fa 100%);
+    @shadow1: 0 0.125rem .4562rem -0.25rem rgba(238, 255, 0, 0.15) inset;
+  ) {
+    .to-top-box {
+      width: 3.25rem;
+      height: 3.25rem;
+      border-radius: .375rem;
+      position: fixed;
+      z-index: 50;
+      right: 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: @toTop-bg;
+      border: 0.0625rem solid @line-color;
+      box-shadow: @shadow1;
+
+      .icon {
+        font-size: 2.5rem;
+        color: @icon-color1;
+      }
+    }
+  }
+}

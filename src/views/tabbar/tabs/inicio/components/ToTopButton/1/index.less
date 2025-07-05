@@ -1,0 +1,66 @@
+.blue-default {
+  #tabbar-tabs-inicio-components-ToTopButton-Button1-index.style();
+}
+
+.green-default {
+  #tabbar-tabs-inicio-components-ToTopButton-Button1-index.style(
+    @text-color1: #afc69f;
+    @icon-color1: #fff;
+    @toTop-bg: #2b4f14;
+    @toTop-icon-bg: linear-gradient(180deg, #13c96a 0%, #1d9554 100%);
+  );
+}
+
+.amber-purple {
+  #tabbar-tabs-inicio-components-ToTopButton-Button1-index.style(
+    @text-color1: #BDB8E1;
+    @icon-color1: #fff;
+    @toTop-bg: #3b3466;
+    @toTop-icon-bg: #7041F3;
+  );
+}
+
+
+#tabbar-tabs-inicio-components-ToTopButton-Button1-index {
+
+  .style(
+    @text-color1: #fff;
+    @icon-color1: #fff;
+    @toTop-bg: #191e2d;
+    @toTop-icon-bg: linear-gradient(0deg, #0167ca 0%, #38a8fa 100%);
+  ) {
+    .to-top-box {
+      width: 2.875rem;
+      height: 2.875rem;
+      font-size: 0.625rem;
+      border-radius: 0.3125rem;
+      position: fixed;
+      z-index: 50;
+      right: 1.25rem;
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-end;
+      align-items: center;
+      background: @toTop-bg;
+
+      .icon-wall {
+        width: 1.375rem;
+        height: 1.375rem;
+        font-size: 1.375rem;
+        background: @toTop-icon-bg;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .icon {
+          color: @icon-color1;
+        }
+      }
+  
+      .to-top-text {
+        color: @text-color1;
+      }
+    }
+  }
+}

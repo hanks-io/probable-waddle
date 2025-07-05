@@ -1,0 +1,41 @@
+// 登录
+#components-loginModal-components-login-index {
+  .style(
+    @--register-text-color: var(--accent-color-blue);
+    @--remember-account-text-color: #a0a6b0;
+    @--title-text-color: var(--color-text-100);
+    @--color-text-40: var(--color-text-40);
+    @--font-weight-bold: var(--font-weight-bold);
+    @--font-weight-regular: var(--font-weight-regular);
+  ) {
+
+    .title {
+      font-weight: @--font-weight-bold;
+      color: @--title-text-color;  
+    }
+
+    .register-hint {
+      font-weight: @--font-weight-regular;
+      color: @--color-text-40;
+    }
+
+    .register-text {
+      font-weight: @--font-weight-bold;
+      color: @--register-text-color;
+    }
+
+    .remember-account {
+      color: @--remember-account-text-color;
+      .text-warpper {
+        font-weight: @--font-weight-regular;
+        color: @--color-text-40;
+      }
+      ion-checkbox {
+        --checkbox-background-checked: var(--ep-color-icon-brand-primary, var(--color-checkbox-bg));
+      }
+      ion-checkbox::part(container) {
+        border: 1px solid var(--ep-color-icon-brand-primary, var(--color-checkbox-border));
+      }
+    }
+  }
+}

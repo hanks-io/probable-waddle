@@ -1,0 +1,117 @@
+.agent-bonus-rate-wrap {
+  width: 22.5rem;
+  margin: 0 auto;
+  border-radius: .625rem;
+  background: #101629;
+}
+
+.nav {
+  height: 2.25rem;
+  font-size: .75rem;
+  border-radius: .3125rem, .3125rem, 0, 0;
+  border-bottom: 1px solid #6D788E;
+}
+
+.flexBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 21.25rem;
+  margin: 0 auto;
+}
+
+.nav li {
+  color: #6D788E;
+  line-height: 2.23rem;
+}
+
+.nav .active {
+  color: #fff;
+  font-weight: 400;
+  padding: 0 0.5rem;
+  border-bottom: 2px solid #38A8FA;
+}
+
+.content-title {
+  margin-top: 0.5rem;
+}
+
+.content-title li {
+  background: #151C2F;
+  line-height: 1rem;
+}
+
+.content-box {
+  width: 6.875rem;
+  height: 2.5rem;
+  font-size: .75rem;
+  flex-grow: 1;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.content {
+  min-height: 41.875rem;
+  border-radius: 0, 0, .3125rem, .3125rem;
+}
+
+
+.content li .item:nth-last-child(1) {
+  color: #FBA531 !important;
+}
+
+.content li:nth-child(2n) {
+  background: #151C2F !important;
+}
+
+ion-segment-button {
+  /* 设置导航标签元素样式) */
+  --padding-start: 0;
+  --padding-end: 0;
+  text-transform: capitalize;
+  /* 文本每个单词头部自动大写*/
+  min-width: 0;
+  min-height: 0;
+  /* 与ion-segment设置最小高度才能真正取消标签与指示器之间的边距 */
+  margin-right: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ion-segment-button ion-button {
+  /* 取消导航标签的标签与指示器之间的边距 */
+  min-width: 0;
+}
+
+ion-segment-button ion-label {
+  font-size: .75rem !important;
+  /* 自定义颜色需要设置优先级,或使用行内样式 */
+  margin-top: .375rem;
+  margin-bottom: .375rem;
+}
+
+ion-content {
+  /* 滚动内容 */
+  --background: transperent;
+  /* width: 21.25rem;
+  margin: 0 auto; */
+}
+
+ion-item {
+  --background: transparent;
+  --padding-start: 0;
+  --padding-end: 0;
+  --inner-padding-end: 0;
+  --inner-border-width: 0px
+}
+
+ion-grid {
+  --ion-grid-padding: 0;
+}
+
+ion-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

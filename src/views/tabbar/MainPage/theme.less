@@ -1,0 +1,157 @@
+#app {
+    /** 
+        main:主要--theme-color,base:常规,secondary:次要,extra:辅助,accent:定义--theme-color
+        color:字体颜色
+        gradient:渐变色
+        bg:背景色
+    */
+    --color-accent: #fff;
+    --color-main: var(--theme-color-800, #fff);
+    --color-base: #fff;
+    --color-secondary: #566488;
+    --color-extra: var(--color-text-white-100, #566488);
+    --color-theme-main: var(--theme-color-700, #38a8fa);
+    --color-theme-base: var(--theme-color-800, #38a8fa);
+    --color-theme-secondary: var(--theme-color-900, #38a8fa);
+    --color-theme-extra: var(--theme-color-500, var(--theme-color-600), #38a8fa);
+    --gradient-blue1: linear-gradient(to bottom, #38a8fa, #0167ca);
+    --gradient-blue2: linear-gradient(0deg, #0167CA -13.77%, #38A8FA 102.34%);
+    --gradient-blue-gray1: linear-gradient(90deg, #131826 46.36%, rgba(28, 35, 52, 0) 100%);
+    --gradient-blue-gray2: linear-gradient(270deg, #131826 46.36%, rgba(28, 35, 52, 0) 100%);
+    --gradient-green-green-1: linear-gradient(to bottom, #13C96A, #1D9554);
+
+    /* main */
+    --bg-main-tabs: var(--color-bg-100);
+    --color-main-tabs-btn-active: #fff;
+    --color-main-tabs-flexible: #94FF7F;
+    --bg-main-underline: #94FF7F;
+
+    /* main组件Announcement */
+    --bg-main-announcement: var(--color-bg-300);
+
+    /* main组件DrawerLeft */
+    --bg-main-drawer-left: var(--color-bg-300, #090F1F);
+    --bg-main-drawer-left-card: var(--color-bg-200, #1C2334);
+    
+    /* main/inicio */
+    --bg-inicio-watermark: var(--color-bg-200);
+    --bg-inicio-float-btn1: var(--theme-color-gradient-100, var(--gradient-blue1));
+    --bg-inicio-float-btn2: var(--color-bg-100, #090f1f);
+    --bg-inicio-float-btn2-icon: var(--theme-color-gradient-100, var(--gradient-blue1));
+
+    /* inicio组件PwaView */
+    --bg-inicio-PwaView-toolbar: var(--color-bg-200);
+    --bg-inicio-PwaView-toolbar-install: linear-gradient(0deg, #0167CA -13.77%, #38A8FA 102.34%);
+    --color-inicio-PwaView-toolbar-install: #fff;
+
+    /* inicio组件marquee */
+    --bg-inicio-marquee: var(--color-bg-50, #131826);
+    --bg-inicio-marquee-icon1: var(--gradient-green1, var(--gradient-blue-gray1));
+    --color-inicio-marquee-icon2: #38A8FA;
+    --bg-inicio-marquee-icon2: var(--gradient-green2, var(--gradient-blue-gray2));
+    
+    /* inicio组件HeaderBar */
+    --bg-inicio-HeaderBar-btn-login: linear-gradient(0deg, #0167CA -13.77%, #38A8FA 102.34%);
+    --color-inicio-HeaderBar-btn-login: #fff;
+    --bg-inicio-HeaderBar-btn-register: var(--gradient-green-green-1);
+    --color-inicio-HeaderBar-btn-register: #fff;
+    --bg-inicio-HeaderBar-assets: transparent;
+    --color-inicio-HeaderBar-assets-prefix: var(--accent-color-orange-2);
+    --bg-inicio-HeaderBar-assets-icon: var(--gradient-green-green-1);
+    --color-inicio-HeaderBar-assets-icon: var(--color-bg-100);
+    --bg-inicio-HeaderBar-btn: var(--color-bg-100);
+
+    /* inicio组件SortView */
+    --color-inicio-SortView-logo: var(--color-theme-base);
+    --bg-inicio-SortView-bar: var(--color-bg-200);
+    --color-inicio-SortView-bar-total: var(--color-base);
+
+    /* game/search */
+    --bg-game-search-searchbar: var(--ion-background-color);
+    --bg-game-search-tabs-btn-index: var(--color-theme-base, #1c2334);
+    --color-game-search-tabs-btn-active: var(--color-secondary);
+    --color-game-search-tabs-icon-active: var(--color-theme-base);
+
+    /* game/category */
+    --bg-game-category-toolbar: var(--color-bg-300, #090F1F);
+    --color-game-category-tabs-btn-active: var(--color-base);
+    --bg-game-category-tabs-btn-active: var(--color-theme-base, var(--gradient-blue2));
+}
+
+.blue-default {
+    #app {
+        --bg-game-search-tabs-btn-index: #38a8fa;
+        --color-inicio-HeaderBar-assets-prefix: #FBA531;
+        --bg-inicio-HeaderBar-btn: transparent;
+        --color-inicio-HeaderBar-assets-icon: #fff;
+        --color-game-search-tabs-btn-active: #fff;
+        --bg-inicio-PwaView-toolbar: linear-gradient(90deg, #202940 0%, #131A2C 100%);
+    }
+    .home-type-Platform {
+        #app {
+            --bg-inicio-PwaView-toolbar: linear-gradient(90deg, #44645A 0%, #3A1A5D 100%);
+            --color-bar-bg: #154084;
+        }
+    }
+}
+
+.green-default #app {
+    --color-base: var(--color-text-gray-100);
+    --color-secondary: var(--color-text-gray-200);
+    --color-inicio-marquee-icon2: #fff;
+    --color-main-tabs-btn-active: var(--accent-color-yellow);
+    --bg-game-category-tabs-btn-active: var(--color-bg-100);
+    --bg-inicio-HeaderBar-btn-login: var(--theme-color-gradient-100);
+    --bg-inicio-HeaderBar-btn-register: var(--theme-color-gradient-200);
+    --color-inicio-HeaderBar-assets-prefix: #FBA531;
+    --bg-inicio-HeaderBar-assets-icon: var(--theme-color-gradient-200);
+    --color-inicio-HeaderBar-assets-icon: #fff;
+    --color-game-search-tabs-icon-active: #fff;
+    --bg-inicio-PwaView-toolbar: var(--theme-color-gradient-300);
+    --bg-inicio-PwaView-toolbar-install: var(--theme-color-gradient-200);
+    --color-inicio-PwaView-toolbar-install: var(--color-bg-400);
+}
+
+.yellow-dark #app{
+    --color-secondary: var(--text-color-white-40);
+    --color-base: var(--text-color-white-100);
+    --color-inicio-SortView-bar-total: var(--color-theme-base);
+    --color-game-search-tabs-btn-active: var(--color-base);
+}
+.green-dark #app{
+    --color-secondary: var(--text-color-white-40);
+    --color-base: var(--text-color-white-100);
+    --color-inicio-SortView-bar-total: var(--color-theme-base);
+    --color-game-search-tabs-btn-active: var(--color-base);
+}
+.purple-light #app {
+    --color-secondary: var(--text-color-black-80);
+    --color-base: var(--text-color-black-100);
+    --color-game-category-tabs-btn-active: #fff;
+    --color-inicio-SortView-bar-total: var(--color-theme-base);
+}
+
+.amber-purple #app {
+    --gradient-yellow-purple: linear-gradient(5deg, #F0BF4A 20.82%, #8D36D1 112.62%);
+    --gradient-green-blue: linear-gradient(2deg, #3BDF86 23.05%, #2376A4 98.19%);
+    --gradient-green-green: linear-gradient(180deg, #64C536 0%, #15C18D 100%);
+    --color-base: var(--text-color-light-purple-1-100);
+    --color-secondary: var(--text-color-light-purple-2-100);
+    --bg-game-search-tabs-btn-index: var(--gradients-indicatorLine);
+    --color-game-search-tabs-btn-active: var(--color-base);
+    --bg-game-search-searchbar: transparent;
+    --bg-inicio-HeaderBar-btn-login: var(--gradient-green-blue);
+    --bg-inicio-HeaderBar-btn-register: var(--gradient-yellow-purple);
+    --bg-inicio-float-btn1: var(--gradient-green-green);
+    --color-inicio-SortView-logo: var(--accent-color-orange);
+    --bg-inicio-HeaderBar-assets-icon: var(--accent-color-yellow);
+    --color-inicio-HeaderBar-assets-prefix: var(--accent-color-orange);
+    --bg-inicio-HeaderBar-assets: linear-gradient(to right, var(--color-bg-100), var(--color-bg-100)),var(--gradients-orange-purple);
+    .border-gradient {
+        background: var(--bg-inicio-HeaderBar-assets);
+        border-style: solid;
+        border-color: transparent;
+        background-clip: padding-box, border-box;
+        background-origin: padding-box, border-box;
+    }
+}

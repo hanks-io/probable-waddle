@@ -1,0 +1,52 @@
+.agent-bonus-rate-info {
+  font-size: var(--ep-font-size-s);
+  line-height: 1.125rem;
+  background: var(--ep-color-background-fill-body-default);
+}
+
+ion-segment {
+  border-bottom: 1px solid var(--ep-color-border-default);
+}
+ion-segment-button ion-label {
+  font-size: var(--ep-font-size-s) !important;
+}
+
+ion-segment-button.md::part(indicator-background) { /* 设置导航标签指示器的宽度 */
+  background: var(--ep-color-background-fill-active-active);
+}
+
+ion-label.selected-item {
+  color: var(--ep-color-text-selected);
+}
+
+ion-label.select-item {
+  color: var(--ep-color-text-weaker);
+}
+
+ion-item.spread-table-title {
+  font-size: var(--ep-font-size-s);
+  line-height: 1.125rem;
+  color: var(--ep-color-text-weaker);
+  --background: var(--ep-color-background-fill-surface-raised-L2);
+  border-radius: var(--ep-border-radius-s);
+  font-weight: var(--ep-font-weight-bold);
+}
+
+ion-item.spread-table-item {
+  font-size: var(--ep-font-size-s);
+  line-height: 1.125rem;
+  color: var(--ep-color-text-weaker);
+}
+
+ion-item.odd {
+  --background: var(--ep-color-background-fill-surface-lowered);
+  border-radius: var(--ep-border-radius-s);
+}
+
+ion-col {
+  color: var(--ep-color-text-weaker);
+}
+
+ion-col.spread-bonus-rate-amount {
+  color: var(--ep-color-text-warning);
+}

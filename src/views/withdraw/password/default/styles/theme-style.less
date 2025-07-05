@@ -1,0 +1,28 @@
+#withdraw-password-default-index {
+    //局部作用域
+  
+    .style(
+      @index01: --theme-color-gradient-100,
+      @index02: --theme-color-gradient-100,
+      @index03: --theme-color-700,
+      @color:--color-text-white-100,
+      @tipColor: --color-text-gray-200,
+      @headerColor: --color-text-100,
+    ) {
+      .header{
+        color: var(@headerColor);
+      }
+      .label{
+        color: var(@tipColor);
+      }
+        ion-button.confirm {
+          --background: var(@index01);
+          --background-activated: var(@index02);
+          --color: var(@color);
+        }
+          
+        ion-spinner {
+          --color: var(@index02);
+        }
+    }
+  }

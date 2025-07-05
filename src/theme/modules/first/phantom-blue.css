@@ -1,0 +1,228 @@
+.phantom-blue {
+  --ep-default-font-family: 'Prompt', -apple-system, 'Roboto', sans-serif;
+
+  --ep-values-2: .125rem;
+  --ep-values-4: .25rem;
+  --ep-values-6: .375rem;
+  --ep-values-8: .5rem;
+  --ep-values-10: .625rem;
+  --ep-values-12: .75rem;
+  --ep-values-14: .875rem;
+  --ep-values-16: 1rem;
+  --ep-values-18: 1.125rem;
+  --ep-values-20: 1.25rem;
+  --ep-values-22: 1.375rem;
+  --ep-values-24: 1.5rem;
+  --ep-values-36: 2.25rem;
+  --ep-values-infinity: 624.9375rem;
+
+  --ep-values-200: 200;
+  --ep-values-400: 400;
+  --ep-values-600: 600;
+  --ep-values-700: 700;
+  --ep-values-900: 900;
+
+  --ep-accent-blue: #5C82F5;
+  --ep-accent-red: #E64021;
+  --ep-accent-orange: #FC974C;
+  --ep-accent-green: #53C154;
+  --ep-accent-yellow: #F5C84C;
+
+  --ep-neutral-white-white-100: rgba(255, 255, 255, 1);
+  --ep-neutral-white-white-90: rgba(255, 255, 255, 0.9);
+  --ep-neutral-white-white-80: rgba(255, 255, 255, 0.8);
+  --ep-neutral-white-white-70: rgba(255, 255, 255, 0.7);
+  --ep-neutral-white-white-60: rgba(255, 255, 255, 0.6);
+  --ep-neutral-white-white-50: rgba(255, 255, 255, 0.5);
+  --ep-neutral-white-white-40: rgba(255, 255, 255, 0.4);
+  --ep-neutral-white-white-30: rgba(255, 255, 255, 0.3);
+  --ep-neutral-white-white-20: rgba(255, 255, 255, 0.2);
+  --ep-neutral-white-white-10: rgba(255, 255, 255, 0.1);
+
+
+  --ep-neutral-black-black-100: rgba(0, 0, 0, 1);
+  --ep-neutral-black-black-90: rgba(0, 0, 0, 0.9);
+  --ep-neutral-black-black-80: rgba(0, 0, 0, 0.8);
+  --ep-neutral-black-black-70: rgba(0, 0, 0, 0.7);
+  --ep-neutral-black-black-60: rgba(0, 0, 0, 0.6);
+  --ep-neutral-black-black-50: rgba(0, 0, 0, 0.5);
+  --ep-neutral-black-black-40: rgba(0, 0, 0, 0.4);
+  --ep-neutral-black-black-30: rgba(0, 0, 0, 0.3);
+  --ep-neutral-black-black-20: rgba(0, 0, 0, 0.2);
+  --ep-neutral-black-black-10: rgba(0, 0, 0, 0.1);
+
+
+
+  --ep-primary-primary-900: rgba(24, 59, 95, 1);
+  --ep-primary-primary-800: rgba(32, 77, 125, 1);
+  --ep-primary-primary-700: rgba(41, 99, 161, 1);
+  --ep-primary-primary-600: rgba(53, 127, 207, 1);
+  --ep-primary-primary-500: rgba(58, 142, 227, 1);
+  --ep-primary-primary-400: rgba(97, 163, 233, 1);
+  --ep-primary-primary-300: rgba(123, 178, 236, 1);
+  --ep-primary-primary-200: rgba(164, 202, 242, 1);
+  --ep-primary-primary-100: rgba(194, 219, 246, 1);
+  --ep-primary-primary-Opacity: rgba(58, 140, 227, 0.4);
+
+
+
+  --ep-secondary-secondary-900: rgba(35, 88, 36, 1);
+  --ep-secondary-secondary-800: rgba(38, 111, 39, 1);
+  --ep-secondary-secondary-700: rgba(45, 140, 46, 1);
+  --ep-secondary-secondary-600: rgba(60, 171, 62, 1);
+  --ep-secondary-secondary-500: rgba(83, 193, 84, 1);
+  --ep-secondary-secondary-400: rgba(101, 217, 102, 1);
+  --ep-secondary-secondary-300: rgba(151, 222, 152, 1);
+  --ep-secondary-secondary-200: rgba(197, 237, 197, 1);
+  --ep-secondary-secondary-100: rgba(225, 247, 225, 1);
+  --ep-secondary-secondary-Opacity: rgba(83, 193, 84, 0.4);
+
+
+  --ep-tertiary-tertiary-900: rgba(7, 71, 115, 1);
+  --ep-tertiary-tertiary-800: rgba(1, 86, 139, 1);
+  --ep-tertiary-tertiary-700: rgba(0, 100, 169, 1);
+  --ep-tertiary-tertiary-600: rgba(0, 127, 209, 1);
+  --ep-tertiary-tertiary-500: rgba(12, 168, 252, 1);
+  --ep-tertiary-tertiary-400: rgba(46, 185, 255, 1);
+  --ep-tertiary-tertiary-300: rgba(119, 208, 255, 1);
+  --ep-tertiary-tertiary-200: rgba(183, 228, 255, 1);
+  --ep-tertiary-tertiary-100: rgba(222, 241, 255, 1);
+  --ep-tertiary-tertiary-Opacity: rgba(12, 168, 252, 0.4);
+
+
+
+  --ep-inverse-inverse-900: rgba(87, 26, 38, 1);
+  --ep-inverse-inverse-800: rgba(114, 35, 50, 1);
+  --ep-inverse-inverse-700: rgba(147, 45, 65, 1);
+  --ep-inverse-inverse-600: rgba(188, 57, 83, 1);
+  --ep-inverse-inverse-500: rgba(207, 63, 91, 1);
+  --ep-inverse-inverse-400: rgba(217, 101, 124, 1);
+  --ep-inverse-inverse-300: rgba(223, 126, 145, 1);
+  --ep-inverse-inverse-200: rgba(233, 167, 180, 1);
+  --ep-inverse-inverse-100: rgba(240, 195, 204, 1);
+  --ep-inverse-inverse-Opacity: rgba(207, 63, 91, 0.4);
+
+
+
+  --ep-neutral-gray-gray-L01: rgba(10, 11, 18, 1);
+  --ep-neutral-gray-gray-L02: rgba(16, 18, 29, 1);
+  --ep-neutral-gray-gray-L03: rgba(20, 24, 37, 1);
+  --ep-neutral-gray-gray-L04: rgba(26, 31, 48, 1);
+  --ep-neutral-gray-gray-L05: rgba(36, 43, 66, 1);
+  --ep-neutral-gray-gray-L06: rgba(72, 87, 134, 1);
+  --ep-neutral-gray-gray-L07: rgba(95, 111, 162, 1);
+  --ep-neutral-gray-gray-L08: rgba(126, 138, 179, 1);
+  --ep-neutral-gray-gray-L09: rgba(192, 197, 216, 1);
+  --ep-neutral-gray-gray-L10: rgba(223, 226, 236, 1);
+
+
+  /* h5 实际用到的变量值 */
+  --ep-font-family: var(--ep-default-font-family);
+
+  --ep-font-size-xs: var(--ep-values-10);
+  --ep-font-size-s: var(--ep-values-12);
+  --ep-font-size-m: var(--ep-values-14);
+  --ep-font-size-l: var(--ep-values-16);
+  --ep-font-size-xl: var(--ep-values-18);
+  --ep-font-size-xxl: var(--ep-values-24);
+  --ep-font-size-xxxl: var(--ep-values-36); 
+ 
+  --ep-font-weight-light: var(--ep-values-200);
+  --ep-font-weight-regular: var(--ep-values-400);
+  --ep-font-weight-medium: var(--ep-values-600);
+  --ep-font-weight-bold: var(--ep-values-700);
+
+  --ep-border-radius-xs: var(--ep-values-2);
+  --ep-border-radius-s: var(--ep-values-4);
+  --ep-border-radius-m: var(--ep-values-6);
+  --ep-border-radius-l: var(--ep-values-8);
+  --ep-border-radius-xl: var(--ep-values-10);
+  --ep-border-radius-surface-small: var(--ep-values-12);
+  --ep-border-radius-surface-default: var(--ep-values-14);
+  --ep-border-radius-surface-large: var(--ep-values-20);
+  --ep-border-radius-infinity: var(--ep-values-infinity);
+
+  --ep-color-background-fill-body-default: var(--ep-neutral-gray-gray-L02);
+  --ep-color-background-fill-surface-raised-L1: var(--ep-neutral-gray-gray-L03);
+  --ep-color-background-fill-surface-raised-L2: var(--ep-neutral-gray-gray-L04);
+  --ep-color-background-fill-surface-lowered: var(--ep-neutral-gray-gray-L01);
+  --ep-color-background-fill-top-nav-primary: var(--ep-neutral-gray-gray-L03);
+  --ep-color-background-fill-top-nav-secondary: var(--ep-neutral-gray-gray-L03);
+  --ep-color-background-fill-foot-bar: var(--ep-neutral-gray-gray-L02);
+  --ep-color-background-fill-active-primary: var(--ep-primary-primary-500);
+  --ep-color-background-fill-active-active: var(--ep-primary-primary-600);
+  --ep-color-background-fill-active-disabled: var(--ep-primary-primary-900);
+  --ep-color-background-fill-tips: var(--ep-primary-primary-500);
+  --ep-color-background-fill-glow-primary-opacity-40: var(--ep-primary-primary-Opacity);
+  --ep-color-background-fill-glow-primary-opacity-100: var(--ep-primary-primary-500);
+  --ep-color-background-fill-glow-secondary-opacity-40: var(--ep-inverse-inverse-Opacity);
+  --ep-color-background-fill-glow-secondary-opacity-100: var(--ep-inverse-inverse-500);
+  --ep-color-background-fill-gradients-primary-a: var(--ep-primary-primary-500);
+  --ep-color-background-fill-gradients-primary-b: var(--ep-inverse-inverse-500);
+  --ep-color-background-fill-gradients-secondary-a: var(--ep-neutral-gray-gray-L04);
+  --ep-color-background-fill-gradients-secondary-b: var(--ep-primary-primary-900);
+  --ep-color-background-fill-gradients-tertiary-a: var(--ep-primary-primary-600);
+  --ep-color-background-fill-gradients-tertiary-b: var(--ep-secondary-secondary-700);
+  --ep-color-background-fill-gradients-tertiary-weak-a: var(--ep-neutral-gray-gray-L04);
+  --ep-color-background-fill-gradients-tertiary-weak-b: var(--ep-primary-primary-900);
+
+  --ep-color-border-default: var(--ep-neutral-gray-gray-L05);
+  --ep-color-border-brand: var(--ep-primary-primary-500);
+  --ep-color-border-selected: var(--ep-primary-primary-500);
+  --ep-color-border-danger: var(--ep-accent-red);
+  --ep-color-border-warning: var(--ep-accent-orange);
+  --ep-color-border-success: var(--ep-accent-green);
+  --ep-color-border-highlight: var(--ep-accent-yellow);
+  --ep-color-border-highlight-white: var(--ep-neutral-white-white-100);
+
+  --ep-color-text-brand-primary: var(--ep-primary-primary-500);
+  --ep-color-text-selected: var(--ep-primary-primary-500);
+  --ep-color-text-default: var(--ep-neutral-white-white-100);
+  --ep-color-text-weak: var(--ep-neutral-white-white-60);
+  --ep-color-text-weaker: var(--ep-neutral-white-white-40);
+  --ep-color-text-weakest: var(--ep-neutral-white-white-20);
+  --ep-color-text-inverse: var(--ep-neutral-white-white-100);
+  --ep-color-text-inverse-disabled: var(--ep-neutral-white-white-40);
+  --ep-color-text-danger: var(--ep-accent-red);
+  --ep-color-text-warning: var(--ep-accent-orange);
+  --ep-color-text-success: var(--ep-accent-green);
+  --ep-color-text-info: var(--ep-accent-blue);
+  --ep-color-text-highlight: var(--ep-accent-yellow);
+  --ep-color-text-highlight-white: var(--ep-neutral-white-white-100);
+  --ep-color-text-highlight-white-weak: var(--ep-neutral-white-white-60);
+  --ep-color-text-highlight-white-weaker: var(--ep-neutral-white-white-40);
+  --ep-color-text-highlight-white-weakest: var(--ep-neutral-white-white-20);
+  --ep-color-text-navigation-default: var(--ep-neutral-white-white-40);
+  --ep-color-text-navigation-selected: var(--ep-neutral-white-white-100);
+
+  --ep-color-icon-brand-primary: var(--ep-primary-primary-500);
+  --ep-color-icon-brand-secondary: var(--ep-inverse-inverse-500);
+  --ep-color-icon-selected: var(--ep-primary-primary-500);
+  --ep-color-icon-default: var(--ep-neutral-white-white-100);
+  --ep-color-icon-weaker: var(--ep-neutral-white-white-40);
+  --ep-color-icon-inverse: var(--ep-neutral-white-white-100);
+  --ep-color-icon-inverse-disabled: var(--ep-neutral-white-white-40);
+  --ep-color-icon-tips: var(--ep-accent-red);
+  --ep-color-icon-danger: var(--ep-accent-red);
+  --ep-color-icon-warning: var(--ep-accent-orange);
+  --ep-color-icon-success: var(--ep-accent-green);
+  --ep-color-icon-info: var(--ep-accent-blue);
+  --ep-color-icon-highlight: var(--ep-accent-yellow);
+  --ep-color-icon-highlight-white: var(--ep-neutral-white-white-100);
+  --ep-color-icon-navigation-default: var(--ep-neutral-white-white-40);
+  --ep-color-icon-navigation-selected: var(--ep-primary-primary-500);
+
+  --ep-dynamic-primary: linear-gradient(90deg, var(--ep-color-background-fill-gradients-primary-a, #3A8EE3) -27.5%, var(--ep-color-background-fill-gradients-primary-b, #CF3F5B) 127.5%);
+  --ep-dynamic-secondary: linear-gradient(90deg, var(--ep-color-background-fill-gradients-secondary-a, #3A8EE3) -27.5%, var(--ep-color-background-fill-gradients-secondary-b, #CF3F5B) 127.5%);
+  --ep-dynamic-tertiary: linear-gradient(90deg, var(--ep-color-background-fill-gradients-tertiary-a, #3A8EE3) -27.5%, var(--ep-color-background-fill-gradients-tertiary-b, #CF3F5B) 127.5%);
+  --ep-dynamic-tertiary-weak: linear-gradient(90deg, var(--ep-color-background-fill-gradients-tertiary-weak-a, #1A1F30) 0%, var(--ep-color-background-fill-gradients-tertiary-weak-b, #183B5F) 100%);
+
+  /* Ionic组件的默认字体 */
+  --ion-font-family: var(--ep-font-family);
+}
+
+.phantom-blue {
+  * {
+    font-family: var(--ep-font-family);
+  }
+}

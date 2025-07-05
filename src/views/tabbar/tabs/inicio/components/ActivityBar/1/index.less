@@ -1,0 +1,66 @@
+html {
+
+  #tabbar-tabs-inicio-components-ActivityBar-1-index();
+}
+
+
+
+
+#tabbar-tabs-inicio-components-ActivityBar-1-index {
+
+  .layout1(
+
+  ) {
+    .wrapper {
+      --activity-width-1: 11rem;
+      --activity-height-1: 6.75rem;
+      --activity-width-2: 11.0625rem;
+      --activity-height-2: 3.125rem;
+      --activity-width-3: 11.0625rem;
+      --activity-height-3: 3.125rem;
+      display: flex;
+      flex-flow: wrap;
+      justify-content: space-between;
+      position: relative;
+
+      .item-image {
+        width: 0;
+        height: 0;
+        border-radius: var(--ep-border-radius-surface-default, 0.875rem);
+        overflow: hidden;
+        object-fit: fill;
+
+      }
+
+      .item-0 {
+
+        &.good-img, &.error-img {
+          width: var(--activity-width-1);
+          height: var(--activity-height-1);
+        }
+      }
+
+      .item-1 {
+
+        &.good-img, &.error-img {
+          width: var(--activity-width-2);
+          height: var(--activity-height-2);
+        }
+      }
+
+      .item-2 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        &.good-img, &.error-img {
+          width: var(--activity-width-3);
+          height: var(--activity-height-3);
+        }
+      }
+    }
+  }
+
+
+  .layout1();
+}

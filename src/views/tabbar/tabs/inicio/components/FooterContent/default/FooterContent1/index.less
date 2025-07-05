@@ -1,0 +1,80 @@
+.blue-default {
+  #tabbar-tabs-inicio-components-FooterContent-default-index.style();
+}
+
+.green-default {
+  #tabbar-tabs-inicio-components-FooterContent-default-index.style(
+    @line-color: #34571D,
+    @text-color1: #AFC69F,
+    @text-color2: #7E9071,
+  );
+}
+
+.amber-purple {
+  #tabbar-tabs-inicio-components-FooterContent-default-index.style(
+    @text-color1: #BDB8E1,
+    @text-color2: #686299,
+    @line-color: #5F588C,
+  );
+}
+
+#tabbar-tabs-inicio-components-FooterContent-default-index {
+  .style(
+    @line-color: #1a233e,
+    @text-color1: #616d93,
+    @text-color2: #616d93,
+  ) {
+    .tabbar-tabs-inicio-components-FooterContent-default-index {
+      padding-inline: 0.9375rem;
+  
+      .divider {
+        height: 1px;
+        width: 22.5rem;
+        margin-block: 0.9375rem;
+        background-color: @line-color;
+      }
+  
+      .footer-container {
+        .title {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          font-size: 1rem;
+          line-height: 1.5;
+          font-weight: bold;
+          color: @text-color1;
+        }
+        .content {
+          margin: 0.625rem 0 0.875rem;
+          color: @text-color2;
+  
+          .text {
+            font-size: 0.6875rem;
+            line-height: 1.5;
+          }
+        }
+  
+        .intro {
+          font-size: 0.6875rem;
+          line-height: 1.5;
+          margin-bottom: 1.25rem;
+          text-align: center;
+          color: @text-color1;
+          .text {
+            font-weight: 800;
+            font-size: 0.875rem;
+            color: @text-color1;
+          }
+  
+          .version {
+            margin-left: 0.5rem;
+            font-size: 0.625rem;
+            text-align: center;
+            color: @text-color2;
+          }
+        }
+      }
+    }
+  }
+}

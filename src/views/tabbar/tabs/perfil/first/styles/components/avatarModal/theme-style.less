@@ -1,0 +1,55 @@
+.text-base {
+  color: var(--ep-color-text-default);
+}
+
+.avatar-main {
+  background: var(--ep-color-background-fill-body-default);
+  .avatar-title {
+    font-weight: var(--ep-font-weight-medium);
+    color: var(--ep-color-text-default);
+  }
+  .avatar-close-icon {
+    font-size: var(--ep-font-size-l);
+    color: var(--ep-color-icon-default);
+  }
+  .avatar-tab {
+    font-size: var(--ep-font-size-m);
+    background: var(--ep-color-background-fill-surface-raised-L2);
+    ion-col {
+      span {
+        font-size: var(--ep-font-size-s);
+        line-height: 1.3125rem;
+      }
+      color: var(--ep-color-text-weaker);
+    }
+    ion-col.select-female-border {
+      color: var(--ep-color-icon-selected);
+      border-bottom: .125rem solid var(--ep-color-border-selected);
+      span {
+        font-weight: var(--ep-font-weight-bold);
+      }
+    }
+    ion-icon.user-avatar-gender-icon {
+      font-size: var(--ep-values-22);
+    }
+  }
+}
+
+ion-toolbar {
+  --background: var(--ep-color-background-fill-surface-raised-L1);
+  ion-title {
+    font-weight: var(--ep-font-weight-medium);
+  }
+}
+
+ion-button.submit {
+  --background: var(--ep-dynamic-primary);
+  --color: var(--ep-color-text-inverse);
+  --border-radius: var(--ep-border-radius-s);
+  font-weight: var(--ep-font-weight-bold);
+}
+
+ion-button.submit::part(native) {
+  font-size: var(--ep-font-size-m);
+  line-height: 1.3125rem;
+}

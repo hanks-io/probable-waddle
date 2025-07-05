@@ -1,0 +1,42 @@
+html {
+  #tabbar-components-DrawerLeft-components-backHeader-1-index.layout1();
+}
+
+
+
+
+
+#tabbar-components-DrawerLeft-components-backHeader-1-index {
+  .layout1(
+    @bg: var(--ep-color-background-fill-body-default);
+    @close-bg: var(--ep-color-background-fill-surface-raised-L2);
+    @close-color: var(--ep-color-icon-default);
+  ) {
+    .header-logo {
+      --background: @bg;
+
+      ion-menu-toggle {
+        display: flex;
+        align-items: center;
+      }
+
+      .close {
+        font-size: var(--ep-font-size-s, 0.75rem);
+        padding: 0.625rem;
+        border-radius: var(--ep-border-radius-xl, 0.625rem);
+        background: @close-bg;
+        color: @close-color;
+      }
+  
+      .logo {
+        height: 1.75rem;
+      }
+    }
+  }
+
+  .layout2(
+
+  ) {
+   
+  }
+}

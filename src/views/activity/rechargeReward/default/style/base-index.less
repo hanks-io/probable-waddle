@@ -1,0 +1,20 @@
+.apply {
+  --color: white;
+  width: 280px;
+  height: 40px;
+}
+
+/* 解决v-html显示富文本表格边框不显示 */
+:deep(table) {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+:deep(th), :deep(td) {
+  /* padding: 8px; */
+  text-align: left;
+}
+
+:deep(table), :deep(th), :deep(td) {
+    border: 1px solid var(--line-color);
+}

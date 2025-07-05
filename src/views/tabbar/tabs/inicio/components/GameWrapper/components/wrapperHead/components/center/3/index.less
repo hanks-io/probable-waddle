@@ -1,0 +1,38 @@
+html {
+  #tabbar-tabs-inicio-components-GameWrapper-components-wrapperHead-components-center-3-index.layout();
+}
+
+
+
+
+#tabbar-tabs-inicio-components-GameWrapper-components-wrapperHead-components-center-3-index {
+  .layout(
+    @text-color1: var(--ep-color-text-default);
+    @text-color2: var(--ep-color-text-brand-primary);
+    @bg: linear-gradient(90deg, var(--ep-color-background-fill-surface-raised-L2) 0%, var(--ep-color-background-fill-active-disabled) 100%);
+    @shadow: 0.0625rem 0 0 0 var(--ep-color-background-fill-glow-primary-opacity-100) inset;
+  ) {
+    .total {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .label {
+        font-size: var(--ep-font-size-s, 0.75rem);
+        font-weight: var(--ep-font-weight-medium, 600);
+        color: @text-color1;
+      }
+
+      .number {
+        font-size: var(--ep-font-size-s, 0.75rem);
+        font-weight: var(--ep-font-weight-bold, 700);
+        padding: 0.125rem 0.625rem;
+        border-radius: var(--ep-border-radius-infinity, 0.625rem);
+        margin-left: 0.375rem;
+        background: @bg;
+        color: @text-color2;
+        box-shadow: @shadow;
+      }
+    }
+  }
+}

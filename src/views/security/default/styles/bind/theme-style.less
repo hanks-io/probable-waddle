@@ -1,0 +1,25 @@
+#security-default-bind {
+    //局部作用域
+  
+    .style(
+      @Bind01: --color-bg-200,
+      @Bind02: --color-text-gray-300,
+      @Bind03: --color-text-white-100,
+      @Bind04: --theme-color-gradient-100,
+      @Bind05: --color-text-white-100,
+    ) {
+      ion-input {
+        --background: var(@Bind01);
+        --placeholder-color: var(@Bind02);
+      }
+      
+      .bind-white-color {
+        color: var(@Bind03);
+      }
+      
+      ion-button.submit-btn {
+        --background: var(@Bind04);
+          color: var(@Bind05);
+      }
+    }
+  }

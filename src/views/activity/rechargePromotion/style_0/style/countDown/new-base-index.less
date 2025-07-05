@@ -1,0 +1,30 @@
+.count-down-item {
+  background: linear-gradient(90deg, var(--ep-color-background-fill-gradients-tertiary-a) -27.5%, var(--ep-color-background-fill-gradients-tertiary-b) 127.5%);
+  border-radius: var(--ep-border-radius-m);
+  .count-down-item-content {
+    color: var(--ep-color-text-inverse);
+    .count-down-value {
+      font-size: var(--ep-font-size-m);
+      line-height: 100%;   
+      font-weight: var(--ep-font-weight-bold);
+    }
+    .count-down-name {
+      font-size: var(--ep-font-size-xs);
+    }
+  }
+
+  .count-down-footer-line {
+    background: var(--ep-color-text-success);
+  }
+}
+
+.over-count-down {
+  background: var(--ep-dynamic-secondary);
+  .count-down-item-content {
+    color: var(--ep-color-text-weak);
+  }
+
+  .count-down-footer-line {
+    background: var(--ep-color-text-weak);
+  }
+}

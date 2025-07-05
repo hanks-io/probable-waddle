@@ -1,0 +1,53 @@
+ion-toolbar.toolbar-info {
+  --padding-start: .625rem;
+  --padding-end: .625rem;
+  --padding-top: .625rem;
+  --padding-bottom: .625rem;
+}
+
+ion-content#main::part(background) {
+  border-radius: .375rem;
+}
+
+/* 顶部切换栏 */
+ion-segment {
+  --background: transparent;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: auto;
+}
+
+ion-segment-button {
+  height: 1.875rem;
+  font-size: 0.7rem;
+  text-transform: none;
+  /* 选中状态下的指示器颜色 */
+  --transition: none;
+  --indicator-transition: none;
+  --indicator-transform: none;
+}
+
+.btn-wrap {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn-item-wrap{
+  position: relative;
+  margin-right: .625rem;
+  width: 100%;
+  flex: 1;
+}
+
+ion-segment-button:last-child {
+  margin: 0;
+}
+
+ion-segment-button.ios::part(indicator) {
+  padding: 0;
+}
+
+ion-label {
+  margin: 0;
+  z-index: 998;
+}
+

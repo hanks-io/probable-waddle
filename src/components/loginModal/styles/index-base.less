@@ -1,0 +1,69 @@
+// 登录注册主页公用样式
+
+:global(ion-modal#login-modal::part(content)) {
+  --height: 100%;
+  --width: 100%;
+  --max-width: 486px;
+  backdrop-filter: blur(4.45px);
+}
+
+.warpper {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 6.06rem;
+  padding: 0 1rem;
+
+  .header-content {
+    width: 100%;
+    padding-top: 0.75rem;
+    .flex-between();
+  }
+}
+
+.logo {
+  max-width: 7.5rem;
+  height: 1.75rem;
+}
+
+.btn-close {
+  display: inline-block;
+  width: 1.875rem;
+  height: 1.875rem;
+  font-size: 0.75rem;
+  border-radius: 50%;
+  .flex-center();
+}
+
+.content {
+  width: 100%;
+  height: calc(100% - 6.06rem);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  border-radius: 1.25rem 1.25rem 0 0;
+  
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.forget-title {
+  font-size: 1.125rem;
+}
+
+.forget-tips {
+  font-size: 0.75rem;
+}
+
+.footer {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: 1.38rem;
+}

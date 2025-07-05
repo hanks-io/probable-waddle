@@ -1,0 +1,54 @@
+html {
+  #tabbar-tabs-inicio-components-PartView-components-socialMedia-2-index.layout();
+}
+
+
+#tabbar-tabs-inicio-components-PartView-components-socialMedia-2-index {
+  .layout(
+    @text-color1: #fff,
+    @text-color2: #fff,
+    @social-bg: rgba(42, 171, 238, 0.2),
+  ) {
+    .social-media {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: @text-color1;
+      }
+
+      .subtitle {
+        margin-top: 0.625rem;
+        font-size: 0.75rem;
+        font-weight: 400;
+        color: @text-color2;
+      }
+
+      .social-box {
+        margin-top: 1.6875rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-flow: wrap;
+        gap: .75rem;
+      
+        .social-img {
+          flex-shrink: 0;
+          
+          &.good-img {
+            width: 2.5rem;
+            height: 2.5rem;
+            padding: 0.5rem;
+            background: @social-bg;
+            border-radius: 50%;
+            overflow: hidden;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}

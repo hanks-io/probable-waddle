@@ -1,0 +1,74 @@
+#withdraw-subView-default-Record {
+    //局部作用域
+  
+    .style(
+      @Record01: --color-text-white-100,
+      @Record02: --color-text-white-100,
+      @Record03: --color-text-gray-100,
+      @Record04: --color-text-white-100,
+      @Record05: --color-text-gray-100,
+      @Record06: --color-bg-200,
+      @Record07: --color-text-white-100,
+      @Record08: --color-text-gray-300,
+      @Record09: --color-bg-200,
+      @Record10: --color-text-gray-100,
+      @Record11: --color-text-gray-200,
+      @Record12: --color-line,
+      @Record13: --theme-color-gradient-100,
+      @Record14: --color-text-white-100,
+      @Record15: --color-text-gray-200,
+      @Record16: --color-bg-200
+    ) {
+      ion-content {
+        .header {
+          .filter {
+            .time.selected {
+              border: 0.0625rem solid var(@Record01);
+              color: var(@Record02);
+            }
+            .time.unselected {
+              border: 0.0625rem solid var(@Record03);
+              color: var(@Record04);
+            }
+            .num {
+              color: var(@Record05);
+            }
+          }
+        }
+      }
+      
+      ion-modal#modal-detail div.content {
+        background: var(@Record06);
+        color: var(@Record07);
+      }
+      
+      .property {
+        color: var(@Record08);
+      }
+      
+      .item {
+        background: var(@Record09);
+        .top {
+          color: var(@Record10);
+        }
+      }
+      
+      ion-popover ion-row ion-col p {
+        color: var(@Record11);
+        border-color: var(@Record12);
+      }
+      
+      ion-popover ion-row ion-col p.on {
+        background: var(@Record13);
+        color: var(@Record14);
+      }
+      
+      ion-icon.report-select-icon {
+        color: var(@Record15);
+      }
+      
+      .report-select-row {
+        background: var(@Record16);
+      }
+    }
+  }

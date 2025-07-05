@@ -1,0 +1,25 @@
+#activity-custom-default-index {
+  .style(
+    @custom-default-index-01: --theme-color-gradient-100,
+    @custom-default-index-02: --theme-color-gradient-100,
+    @custom-default-index-03: --border-radius,
+    @custom-default-index-04: --line-color,
+    @custom-default-index-05: --color-text-gray-200,
+    @custom-default-index-06: --color-text-white-100,
+  ) {
+    .apply {
+      --background: var(@custom-default-index-01);
+      --background-activated: var(@custom-default-index-02);
+      --color: var(@custom-default-index-06);
+      border-radius: var(@custom-default-index-03);
+    }
+    
+    :deep(table), :deep(th), :deep(td) {
+      border: 1px solid var(@custom-default-index-04);
+    }
+    
+    .custom-text-second {
+      color: var(@custom-default-index-05);
+    }
+  }
+}

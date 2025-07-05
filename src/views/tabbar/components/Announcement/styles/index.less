@@ -1,0 +1,235 @@
+// 弹窗公告样式
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+
+  .announcement-wrapper {
+    display: flex;
+  }
+
+  .announcement-wrapper.top {
+    flex-direction: column;
+  }
+
+  .announcement-wrapper.bottom {
+    flex-direction: column-reverse;
+  }
+
+  .content {
+    width: 21.875rem;
+    height: fit-content;
+    height: 23.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--color-line);
+    overflow: hidden;
+    background-size: cover;
+    background-color: var(--color-bg-300);
+
+    div {
+      overflow-y: auto;
+      font-size: 0.8125rem;
+
+    }
+
+    div.text {
+      width: 100%;
+      color: var(--color-text-80);
+    }
+  }
+
+  .empty-tab .content {
+    border-radius: var(--rounded-middle);
+  }
+
+  .content.bottom {
+    border-radius: var(--rounded-middle) var(--rounded-middle) 0 0;
+    border-bottom-width: 0 !important;
+  }
+
+  .content.top {
+    border-radius: 0 0 var(--rounded-middle) var(--rounded-middle);
+    border-top-width: 0 !important;
+  }
+
+  .content.text {
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-top: 1rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .check-box {
+    background: var(--color-bg-300);
+    color: var(--color-base);
+    padding-left: 0.75rem;
+    height: 2.25rem;
+    border: 1px solid var(--color-line);
+    border-radius: 0.3125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    p {
+      line-height: 2.25rem;
+      padding-left: 0.625rem;
+      padding-right: 0.75rem;
+    }
+
+    ion-checkbox {
+      --checkbox-background-checked: var(--color-checkbox-bg);
+    }
+  }
+
+  ion-icon {
+    font-size: 1.5rem;
+    border-radius: 9999px;
+    border: 1px solid;
+  }
+}
+
+ion-toolbar {
+  --background: transparent;
+  --min-height: 3rem;
+  --color: var(--color-base)
+}
+
+ion-title {
+  height: fit-content;
+  padding-inline-start: 1.5rem;
+  padding-inline-end: 1.5rem;
+  --padding-top: 0;
+  --padding-bottom: 0;
+}
+
+div {
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.new-skin-symbol {
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+
+    .announcement-wrapper {
+      display: flex;
+    }
+
+    .announcement-wrapper.top {
+      flex-direction: column;
+    }
+
+    .announcement-wrapper.bottom {
+      flex-direction: column-reverse;
+    }
+
+    .content {
+      width: 21.875rem;
+      height: fit-content;
+      height: 23.75rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid var(--ep-color-border-default);
+      border-radius: var(--ep-border-radius-xl, .625rem);
+      overflow: hidden;
+      background-size: cover;
+      background-color: var(--ep-color-background-fill-body-default);
+
+      div {
+        overflow-y: auto;
+        font-size: var(--ep-font-size-s, 12px);
+      }
+
+      div.text {
+        width: 100%;
+        color: var(--ep-color-text-default);
+      }
+    }
+
+    .content.text {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 1rem;
+      padding-bottom: 1.25rem;
+    }
+
+    .content.bottom {
+      border-radius: var(--ep-border-radius-m) var(--ep-border-radius-m) 0 0;
+      border-bottom-width: 0 !important;
+    }
+
+    .content.top {
+      border-radius: 0 0 var(--ep-border-radius-m) var(--ep-border-radius-m);
+      border-top-width: 0 !important;
+    }
+
+    .check-box {
+      background: var(--ep-color-background-fill-body-default);
+      color: var(--ep-color-text-default);
+      padding-left: 0.75rem;
+      height: 2.25rem;
+      border: 1px solid var(--ep-color-border-default);
+      border-radius: var(--ep-border-radius-s, .25rem);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: var(--ep-font-size-s, 0.75rem);
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+
+      p {
+        line-height: 2.25rem;
+        padding-left: 0.625rem;
+        padding-right: 0.75rem;
+      }
+
+      ion-checkbox {
+        --border-color: var(--ep-color-icon-brand-primary);
+        --checkbox-background: var(--ep-color-background-fill-surface-raised-L1);
+        --checkbox-background-checked: var(--ep-color-icon-brand-primary);
+        --border-radius: var(--ep-border-radius-s, .25rem);
+        --border-width: 1px;
+      }
+
+      ion-checkbox::part(container) {
+
+        border: 1px solid var(--ep-color-icon-brand-primary);
+      }
+    }
+
+    ion-icon.close {
+      font-size: var(--ep-font-size-xxl, 1.5rem);
+      border-radius: 50%;
+      border: 1px solid;
+      color: var(--ep-color-icon-default);
+    }
+  }
+
+  ion-toolbar {
+    --background: transparent;
+    --min-height: 3rem;
+    --color: var(--ep-color-text-default)
+  }
+}

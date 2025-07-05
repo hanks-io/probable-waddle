@@ -1,0 +1,18 @@
+<svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Promo&#195;&#167;&#195;&#163;o=on">
+<g id="Group">
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M15.4902 6.83527C15.4902 7.38755 15.0425 7.83527 14.4902 7.83527H5.49023C4.93795 7.83527 4.49023 7.38755 4.49023 6.83527V6.81812C4.49023 5.71355 5.38566 4.81812 6.49023 4.81812H13.4902C14.5948 4.81812 15.4902 5.71355 15.4902 6.81812V6.83527ZM4.49023 9.99152C4.49023 9.43923 4.93795 8.99152 5.49023 8.99152H19.4902C20.5948 8.99152 21.4902 9.88695 21.4902 10.9915V11.7493C21.4902 12.3016 21.0425 12.7493 20.4902 12.7493H18.1152C17.002 12.7493 16.0996 13.6518 16.0996 14.765C16.0996 15.8782 17.002 16.7806 18.1152 16.7806H20.4902C21.0425 16.7806 21.4902 17.2283 21.4902 17.7806V18.6165C21.4902 19.7211 20.5948 20.6165 19.4902 20.6165H6.49023C5.38566 20.6165 4.49023 19.7211 4.49023 18.6165V9.99152Z" fill="url(#paint0_linear_27_759)"/>
+<circle id="Ellipse 1" cx="18.2012" cy="14.804" r="0.648438" fill="url(#paint1_linear_27_759)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_27_759" x1="12.9902" y1="4.81812" x2="12.9902" y2="20.6165" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#E4DCF4"/>
+</linearGradient>
+<linearGradient id="paint1_linear_27_759" x1="18.2012" y1="14.1555" x2="18.2012" y2="15.4524" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#E4DCF4"/>
+</linearGradient>
+</defs>
+</svg>

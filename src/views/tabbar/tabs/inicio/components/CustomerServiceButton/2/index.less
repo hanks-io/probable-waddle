@@ -1,0 +1,49 @@
+.blue-default {
+  #tabbar-tabs-inicio-components-CustomerServiceButton-Button2-index.style();
+}
+
+.green-default {
+  #tabbar-tabs-inicio-components-CustomerServiceButton-Button2-index.style(
+    @support-bg: linear-gradient(180deg, #13c96a 0%, #1d9554 100%);
+  );
+}
+
+.amber-purple {
+  #tabbar-tabs-inicio-components-CustomerServiceButton-Button2-index.style(
+    @support-bg: linear-gradient(270deg, #7041F3 0%, #F5C84C 130.92%);
+  );
+}
+
+
+#tabbar-tabs-inicio-components-CustomerServiceButton-Button2-index {
+
+  .style(
+    @support-bg: linear-gradient(180deg, #001D32 0%, #013C79 100%);
+    @shadow1: 0px -2px 0px 0px #006AF9 inset;
+  ) {
+    .support {
+      width: 2.25rem;
+      height: 2.25rem;
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      left: 1rem;
+      z-index: 50;
+      border-radius: 0.625rem;
+      background: @support-bg;
+      box-shadow: @shadow1;
+
+      .dot {
+        position: absolute;
+        top: 0.5rem;
+        left: 1.5625rem;
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background: #ff0000;
+      }
+    }
+  }
+}

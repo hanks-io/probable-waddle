@@ -1,0 +1,59 @@
+.small-text-white {
+  color: var(--ep-color-text-weaker);
+  font-size: var(--ep-font-size-s);
+  line-height: 1.125rem;
+}
+
+.middle-text-white {
+  font-size: var(--ep-font-size-m);
+  color: var(--ep-color-text-default);
+  line-height: 1.3125rem;
+}
+
+.font-weight-medium {
+  font-weight: var(--ep-font-weight-medium);
+}
+
+.online-service ion-button,
+.service-item ion-button {
+  --border-radius: var(--ep-border-radius-s);
+  font-weight: var(--ep-font-weight-bold);
+  --color: var(--ep-color-text-brand-primary);
+  --background: var(--ep-color-background-fill-surface-raised-L2);
+  --background-focused: var(--ep-color-background-fill-surface-raised-L2);
+  --background-hover: var(--ep-color-background-fill-surface-raised-L2);
+  --background-activated: var(--ep-color-background-fill-surface-raised-L2);
+}
+
+.online-service {
+  .online-info { 
+    font-size: var(--ep-font-size-l);
+    line-height: 1.5rem;
+    font-weight: var(--ep-font-weight-medium);
+    color: var(--ep-color-text-default);
+    .online-date {
+      color: var(--ep-color-text-warning);
+    }
+  }
+}
+
+.online-service ion-button::part(native) {
+  font-size: var(--ep-font-size-s);
+}
+
+.service-item {
+  border-radius: var(--ep-border-radius-m);
+  background: var(--ep-color-background-fill-surface-raised-L1);
+}
+
+.service-item ion-button::part(native) {
+  font-size: var(--ep-font-size-s);
+}
+
+.small-text-white {
+  color: var(--ep-color-text-weaker);
+}
+
+.skin-tips-color {
+  color: var(--ep-color-text-weak);
+}

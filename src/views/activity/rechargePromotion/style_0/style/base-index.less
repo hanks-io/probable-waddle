@@ -1,0 +1,131 @@
+ion-content {
+  font-family: 'Prompt' !important;
+}
+
+.top-content {
+  height: 23.75rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  .date-content {
+    padding: 1rem 0 0 1.0625rem;
+    .reward-time {
+      font-size: 2.25rem;
+      line-height: 2.25rem;
+      font-weight: 900;
+      -webkit-text-stroke-width: .1313rem;
+      background-clip: text !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent;
+      font-style: normal;
+    }
+  }
+}
+
+.count-down-tips {
+  height: 2.5rem;
+  width: 12rem;
+  font-size: .75rem;
+  line-height: 100%;
+  font-weight: 400;
+}
+
+.date-week {
+  padding: .5rem 0 .875rem;
+  border-radius: .9375rem;
+  .week-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .week-tips {
+    font-size: .75rem;
+  }
+}
+
+.amber-purple-date-week {
+  border: none !important;
+}
+
+.amber-purple-date-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: .125rem;
+  border-radius: .9375rem;
+  background: linear-gradient(270deg, #7041F3 0%, #F5C84C 130.92%);
+  z-index: -1;
+}
+
+.amber-purple-date-box::before {
+  content: '';
+  position: absolute;
+  inset: .125rem;
+  background: linear-gradient(180deg, #5A5499 0%, #4D4884 96.53%);
+  border-radius: .9375rem;
+}
+
+.recharge-promotion-content {
+  padding: 0 .9375rem 1.125rem;
+  margin-top: -4.75rem;
+  .recharge-rule-content {
+    padding: .9375rem .75rem 1.25rem;
+    border-radius: .875rem;
+    .recharge-item {
+      border-radius: .375rem;
+      overflow: hidden;
+      margin-bottom: .625rem;
+      .recharge-item-top {
+        .recharge-info {
+          .recharge-info-left,
+          .recharge-info-right {
+            font-size: .75rem;
+            font-weight: 400;
+            .total-amount {
+              font-size: .875rem;
+            }
+          }
+        }
+        .outer-recharge-btn {
+          display: inline-block;
+          padding: 1px;
+          border-radius: .375rem;
+        }
+
+        .recharge-btn {
+          min-width: 6.5rem;
+          font-size: .75rem;
+          font-weight: 400;
+          border-radius: .375rem;
+        }
+      }
+
+      .recharge-item-footer {
+        font-size: .75rem;
+        font-weight: 500;
+        background: rgba(255, 255, 255, 0.1);
+        color: rgba(166, 176, 214, 0.5);
+      }
+    }
+
+    .activity-rule-title {
+      font-size: 1rem;
+      line-height: 150%;
+      font-weight: 600;
+    }
+
+    .mineral-rule-icon {
+      width: .8547rem;
+      height: .5516rem;
+    }
+
+    .recharge-promotion-rule {
+      padding: .9375rem .6875rem 0 .9375rem;
+      .recharge-promotion-rule-contents {
+        font-size: 0.75rem;
+        line-height: 150%;
+      }
+    }
+  }
+}

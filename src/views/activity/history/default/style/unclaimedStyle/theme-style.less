@@ -1,0 +1,62 @@
+#activity-history-default-unclaimed {
+  .style(
+    @history-default-unclaimed-01: --color-bg-200,
+    @history-default-unclaimed-02: --theme-color-gradient-200,
+    @history-default-unclaimed-03: --activity-unclaim-shade-bg-color,
+    @history-default-unclaimed-04: --activity-unclaim-shade-bg-color,
+    @history-default-unclaimed-05: --activity-unclaim-tint-bg-color,
+    @history-default-unclaimed-06: --color-btn-gradient-claimUnable,
+    @history-default-unclaimed-07: --color-text-white-100,
+    @history-default-unclaimed-08: --text-color-white-40,
+    @history-default-unclaimed-09: --color-text-white-100,
+    @history-default-unclaimed-10: --color-text-white-100,
+    @history-default-unclaimed-11: --text-color-white-40,
+    @history-default-unclaimed-12: --accent-color-yellow,
+    @history-default-unclaimed-13: --color-text-white-100,
+    @history-default-unclaimed-14: -color-text-white-100,
+  ) {
+    ion-row.odd {
+      background-color: var(@history-default-unclaimed-01);
+    }
+    
+    ion-button {
+      --background: var(@history-default-unclaimed-02);
+      --background-activated: var(@history-default-unclaimed-03);
+      --background-focused: var(@history-default-unclaimed-04);
+      --background-hover: var(@history-default-unclaimed-05);
+      color: var(@history-default-unclaimed-14);
+    }
+    
+    ion-button.unable {
+      --background: var(@history-default-unclaimed-06);
+      color: var(@history-default-unclaimed-07);
+      --background-activated: none;
+      --background-focused: none;
+      --background-hover: none;
+    }
+    
+    :deep(ion-infinite-scroll) .infinite-scroll-content-ios .infinite-loading-text {
+     color: var(@history-default-unclaimed-08);
+    }
+    
+    .unclaim-reward-label {
+      color: var(@history-default-unclaimed-09);
+    }
+    
+    .default-unclaim-table-color {
+      color: var(@history-default-unclaimed-10);
+    }
+    
+    .unclaim-empty-text-color {
+      color: var(@history-default-unclaimed-11);
+    }
+    
+    .unclaim-emphasize-color {
+      color: var(@history-default-unclaimed-12);
+    }
+    
+    .receive-box {
+      color: var(@history-default-unclaimed-13);
+    }
+  }
+}

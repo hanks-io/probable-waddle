@@ -1,0 +1,459 @@
+.forest-green body div#app {
+  /* 主题色 */
+  --theme-color-500: #004D37;
+  --theme-color-600: #004D37;
+  --theme-color-700: #004D37;
+  --theme-color-800: #17B663;
+  --theme-color-800-2: #17B663;
+  --theme-color-900: #004D37;
+  --theme-color-gradient-100: linear-gradient(180deg, #13c96a 0%, #1d9554 100%);
+  --theme-color-gradient-200: linear-gradient(180deg, #ffc271 0%, #f2910d 100%);
+  --theme-color-gradient-300: linear-gradient(90deg, #04952f 0%, #0049a0 100%);
+  --theme-color-gradient-400: linear-gradient(180deg, #7F7B35 0%, #7C6E1A 100%);
+  --theme-color-gradient-500: linear-gradient(180deg, #227F36 0%, #256C2E 100%);
+
+  --gradient-green1: linear-gradient(90deg, rgba(54, 103, 24, 1) 46.36%, rgba(54, 103, 24, 0.4) 100%);
+  --gradient-green2: linear-gradient(270deg, rgba(54, 103, 24, 1) 46.36%, rgba(54, 103, 24, 0.4) 100%);
+  /* 背景色 */
+  --color-bg-50: #006849;
+  --color-bg-100: #006849;
+  --color-bg-200: #00563A;
+  --color-bg-300: #004D37;
+  --color-bg-400: #00422F;
+  --color-bg-gradient-100: linear-gradient(0deg, #213b10 85%, #366718 100%);
+  
+  /* 文本颜色 */
+  --color-text-white-100: #fff;
+  --color-text-white-40: rgba(255,255,255,0.4);
+  --color-text-white-80: rgba(255,255,255,0.8);
+  --color-text-gray-100: #fff;
+  --color-text-gray-200: #50B388;
+  --color-text-gray-300: #6D6D6D;
+  --color-text-gray-700: #50B388;
+  
+  --color-text-100: var(--color-text-gray-100);
+  --color-text-80: var(--color-text-gray-100);
+  
+  --color-text-100: var(--color-text-gray-100);
+  --color-text-40: var(--color-text-gray-200);
+  --color-border-input-prefix: rgba(255, 255, 255, 0.2);
+  --rounded-small: 0.25rem;
+	--rounded-middle: 0.375rem;
+  --rounded-large: 0.625rem;
+  --font-weight-bold: 700;
+	--font-weight-medium: 500;
+	--font-weight-regular: 400;
+  --tab-bg-color:var(--theme-color-gradient-100);
+  --color-link: #009F76;
+  --color-primary-btn-disable: var(--theme-color-gradient-500);
+  --color-primary-btn-text-disable: var(--color-text-40);
+  --color-button-bg-gray: rgba(255,255,255,0.2);
+   	/** danger **/
+	--color-danger: #E64021;
+
+  --color-primary-800: var(--theme-color-gradient-100);
+  --accent-color-orange: #DF8644;
+  --accent-color-orange-1: #FBA531;
+    /** warning **/
+    --color-warning: var(--accent-color-orange-1);
+  --text-color-white-100: rgba(255,255,255,1);
+  --text-color-white-80: rgba(255,255,255,0.8);
+  --text-color-white-40: rgba(255,255,255,0.4);
+
+  --color-warning: var(--accent-color-orange-1);
+
+    	/** success **/
+	--color-success: #27D48B;
+  --color-warning: #fbed3c;
+  --color-currency: var(--accent-color-orange-1);
+  /* 描边&线 */
+  --color-line: #009F76;
+  --line-color: #009F76;
+  --color-border: #009F76;
+  --color-border-600: #009F76;
+
+  /* 阴影 */
+  --drop-shadow-submit: 0 4px 15px rgba(71, 229, 32, 0.25);
+
+  /* 着重色 */
+  --accent-color-yellow: #fbed3c;
+  --accent-color-blue: #1680DC;
+  --accent-color-white: #fff;
+  --accent-color-red: #e64021;
+	--accent-color-green: #53c154;
+
+  --text-color1: #fff;
+  --text-color2: #50B388;
+
+  --color-btn-bg-active-r: linear-gradient(270deg, #04615E 0.14%, #113C3F 99.86%);
+
+    /* PWA底部弹窗 */
+	--pwa-dialog-bg: var(--color-text-white-100);
+
+  /* ionic组件样式 */
+  --ion-text-color: var(--color-text-gray-100);
+  --ion-color-primary: var(--color-line);
+  --ion-background-color: var(--color-bg-300);
+  --ion-tab-bar-background: var(--color-bg-100);
+  --ion-item-border-color: var(--color-line);
+  --ion-item-background: var(--color-bg-200);
+  --ion-toolbar-color: var(--color-text-gray-100);
+
+  --ion-color-tertiary: var(--theme-color-800);
+  --ion-color-tertiary-contrast: var(--color-text-white-100);
+  --ion-color-tertiary-shade: #3ea147;
+  --ion-color-tertiary-tint: var(--theme-color-900);
+
+  /* 导航栏背景色 */
+  --color-bar-bg: var(--color-bg-100);
+  /* 卡片元素背景色 */
+  --color-bg-card: var(--color-bg-400);
+  /* 选项按钮基础背景色 */
+  --color-bg-option-basic: var(--color-bg-200);
+  /* 选项按钮金额背景色 */
+  --color-bg-option-amount: var(--color-bg-100);
+  /* 选项按钮选中背景色 */
+  --color-bg-option-active: var(--color-bg-400);
+  /* 选项按钮选中背景色(渐变) */
+  --color-bg-option-gradient: var(--theme-color-gradient-100);
+  /* 输入框背景色 */
+  --color-bg-input: var(--color-bg-400);
+  /* 支付密码输入框元素背景色 */
+  --color-bg-payment-item: var(--color-bg-200);
+  /* 登录弹窗背景色 */
+  --color-bg-modal-login: var(--color-bg-gradient-100);
+  /* 退出登录弹窗背景色 */
+  --color-bg-modal-logout: var(--color-bg-300);
+  /* 支付密码输入弹窗 */
+  --color-bg-modal-payment: var(--color-bg-400);
+  /* 自定义对话框取消按钮背景色 */
+  --color-bg-btn-popup-cancel: var(--theme-color-gradient-100);
+  /* 底部安装应用弹窗背景图 */
+  --color-bg-modal-footer-pwa: var(--accent-color-white);
+  /* 复选框选中颜色 */
+  --color-checkbox-bg: var(--theme-color-gradient-100);
+  /* 标题文本基础颜色 */
+  --color-text-title-basic: var(--color-text-gray-100);
+  /* 推荐好友说明标题文本颜色 */
+  --color-text-title-label-agency: var(--color-text-gray-100);
+  /* 提示信息文本颜色 */
+  --color-text-tips: var(--color-text-gray-200);
+  /* 提示信息文本醒目颜色 */
+  --color-text-tips-marked: var(--accent-color-blue);
+  /* 金额文本醒目颜色 */
+  --color-text-amount-marked: var(--accent-color-yellow);
+  /* 跳转链接颜色 */
+  --color-text-href: var(--accent-color-blue);
+  /* 跳转链接推荐好友详情颜色 */
+  --color-text-href-agency-detail: var(--color-text-gray-100);
+  /* 标签文本基础颜色 */
+  --color-text-label-basic: var(--color-text-gray-100);
+  /* 文本主要颜色 */
+  --color-text-basic: var(--color-text-gray-100);
+  /* 文本次要颜色 */
+  --color-text-second: var(--color-text-gray-200);
+  /* 页面底部规则叙述文字颜色 */
+  --color-text-rule: var(--color-text-second);
+  /* 全网中奖记录上方标题未选中文字颜色 */
+  --color-text-wheelBottomUnchecked: var(--color-text-gray-100);
+  /* 救援金表格标头文字颜色 */
+  --color-text-rewardThead: var(--color-text-basic);
+  /* 救援金今日盈亏次要文字颜色 */
+  --color-text-todaySecond: var(--color-text-second);
+  /* 文本被选中颜色 */
+  --color-text-checked: var(--color-text-gray-100);
+  /* 文本被加重颜色 */
+  --color-text-emphasis: var(--accent-color-yellow);
+  /* 文本未被选中颜色 */
+  --color-text-unChecked: var(--color-text-gray-200);
+  /* 不受主题影响白色文字颜色 */
+  --color-text-unThemeWhite: var(--color-text-white-100);
+  /* 底部升级安装弹窗文本颜色 */
+  --color-text-modal-footer-pwa: var(--color-text-gray-300);
+  /* 选择器下方横线渐变色 */
+  --color-line-gradient: var(--theme-color-gradient-100);
+  /* 按钮主要背景渐变色 */
+  --color-btn-gradient-basic: var(--theme-color-gradient-100);
+  /* 按钮主要背景渐变色 */
+  --color-btn-gradient-second: var(--theme-color-gradient-200);
+  /* vip底部按钮渐变色 */
+  --color-btn-gradient-vip: var(--color-btn-gradient-second);
+  /* footer底部按钮渐变色 */
+  --color-btn-gradient-footer: var(--color-btn-gradient-second);
+  /* history按钮渐变色 */
+  --color-btn-gradient-history: var(--color-btn-gradient-basic);
+  /* footer底部按钮黄色禁用渐变色 */
+  --color-btn-gradient-footerUnable: var(--theme-color-gradient-400);
+  /* claim按钮禁用渐变色 */
+  --color-btn-gradient-claimUnable: var(--theme-color-gradient-400);
+  /* claim按钮渐变色 */
+  --color-btn-gradient-claim: var(--theme-color-gradient-200);
+  /* footer底部按钮黄色禁用文字颜色 */
+  --color-text-footerUnable: var(--color-text-white-40);
+  /* mineral底部按钮渐变色 */
+  --color-btn-gradient-mineral: var(--color-btn-gradient-second);
+  /* 一级背景色 */
+  --color-bg-first: var(--color-bg-300);
+  /* 二级背景色 */
+  --color-bg-second: var(--color-bg-200);
+  /* 三级级背景色 */
+  --color-bg-third: var(--color-bg-100);
+  /* 标签文本参数项颜色 */
+  --color-text-label-property: var(--color-text-gray-200);
+  /* 推荐好友说明标签文本值的颜色 */
+  --color-text-label-value-agency: var(--accent-color-yellow);
+  /* 推荐好友分享链接文本颜色 */
+  --color-text-link-agency: var(--color-text-gray-200);
+  /* 文本未聚焦颜色 */
+  --color-text-blur: var(--color-text-gray-200);
+  /* 按钮文本基础颜色 */
+  --color-text-btn-basic: var(--color-text-white-100);
+  /* 选项按钮文本基础颜色 */
+  --color-text-option-basic: var(--color-text-gray-200);
+  /* 选项按钮文本选中颜色 */
+  --color-text-option-active: var(--color-text-gray-100);
+  /* 输入框输入文本颜色 */
+  --color-text-input-basic: var(--color-text-white-100);
+  /* 输入框占位文本颜色 */
+  --color-text-input-placeholder: var(--color-text-gray-200);
+  /* 输入框边框基础颜色 */
+  --color-border-input-basic: var(--color-line);
+  /* 按钮边框基础颜色 */
+  --color-border-btn-basic: var(--color-line);
+  /* 按钮边框醒目颜色 */
+  --color-border-btn-marked: var(--color-line);
+  /* 选项按钮边框基础颜色 */
+  --color-border-option-basic: var(--color-line);
+  /* 选项按钮边框选中颜色 */
+  --color-border-option-active: var(--theme-color-500);
+  /* 选择器边框基础颜色 */
+  --color-border-select: var(--color-text-gray-100);
+  /* 自定义对话框确认按钮边框颜色 */
+  --color-border-popup-confirm: var(--theme-color-800);
+  /* 密码输入框聚焦颜色 */
+  --color-focus: var(--theme-color-900);
+  /* 提示框背景色 */
+  --color-bg-toast: var(--color-bg-400);
+  /* 搜索页tab默认字体色 */
+  --color-segment-md: var(--color-text-gray-200);
+  /* 搜索页tab下划线 */
+  --color-segment-md-indicator: var(--theme-color-800);
+  /* 搜索页头部字体 */
+  --color-toolbar-text: var(--color-text-gray-100);
+  /* 搜索页tab背景色 */
+  --color-bg-tab-on: var(--color-bg-100);
+  /* 搜索页侧边tab背景色 */
+  --color-bg-segment-ios: var(--color-bg-100);
+  --color-bg-segment-ios-indicator: var(--theme-color-gradient-100);
+  --color-bg-progressier-operation: var(--color-text-white-100);
+  --color-button-bg-update: var(--theme-color-gradient-200);
+  --color-button-bg-update1: var(--theme-color-gradient-200);
+  --color-bd-button-update1: transparent;
+  --color-text-button-update1: var(--color-text-white-100);
+  /* 登陆后的弹窗 */
+  --color-card-bg-300: var(--color-bg-300);
+  /* 登陆后的弹窗title */
+  --color-card-title: var(--color-text-gray-100);
+  /* 登陆后的弹窗文本 */
+  --color-card-text: var(--color-text-gray-200);
+  /* 首页语言选择弹窗 */
+  --color-language-text: var(--color-text-gray-100);
+  --color-language-text1: var(--color-text-gray-100);
+  /* 底部导航栏图标颜色 */
+  --color-tab-tab-active: var(--accent-color-yellow);
+  --color-tab-tab-blur: var(--color-text-gray-200);
+  /* 推荐好友链接复制图标颜色 */
+  --color-icon-copy-agency-link: var(--color-text-gray-200);
+  /* 平台图标选中颜色 */
+  --color-icon-platform-active: var(--color-text-white-100);
+  /* 平台图标热门分类颜色 */
+  --color-icon-platform-sort: var(--ion-color-primary);
+  /* 平台图标返水列表颜色 */
+  --color-icon-platform-rebate: var(--color-text-white-40);
+  /* 平台图标卡片logo颜色 */
+  --color-icon-platform-card: var(--color-text-white-80);
+
+  /* 活动页面 */
+  /* 活动 神秘彩金 奖励item背景色 */
+  --color-mystery-item-bg: var(--color-bg-400);
+  /* 活动 页脚领取按钮区域背景色 */
+	--color-activity-footer-bg: var(--color-bg-200);
+
+  /* 我的页面 */
+  --my-chevron-forward-color: var(--color-text-gray-200);
+  --my-enter-withdraw-text-color: var(--color-text-white-100);
+  /* 消息中心 */
+  --service-customer-btn-hover-bgc: #58aa67;
+  --service-customer-btn-focused-bgc: #68b374;
+  --notice-read-all-btn-hover-bgc: #496831;
+  --notice-read-all-btn-focused-bgc: #4c6b32;
+  /* 报表 */
+  --report-select-border-color: var(--color-line);
+  --report-selected-border-color: var(--color-line);
+  --report-selected-text-color: var(--color-text-gray-100);
+  --report-select-icon-color: var(--color-text-gray-200);
+  --report-recond-item-bg-color: var(--color-bg-200);
+  /* 安全中心 */
+  --verify-input-bg-color: var(--color-bg-400);
+  --verify-input-bg-color-old: var(--color-bg-400);
+  --verift-input-placeholder-color: var(--color-text-gray-200);
+  --verify-eye-icon-text-color: var(--color-text-gray-200);
+  --verify-submit-btn-bg-color: var(--theme-color-gradient-100);
+  --color-redeem-input-bg: var(--theme-color-500);
+  /* 推广中心 */
+  --ion-color-step-150: var(--color-line);
+  --agent-datetime-select-text-color: var(--color-text-gray-100);
+  --agent-ion-datetime-calendar-day-bgc: var(--color-bg-50);
+  --ion-color-light-rgb: var(--color-bg-200);
+  --ion-color-step-300: var(--color-text-gray-200);
+  --agent-ion-color-primary: var(--color-text-gray-100);
+  --agent-history-bgc: linear-gradient(180deg, #FFC271 0%, #F2910D 100%);
+  --agent-claim-bgc: linear-gradient(180deg, #13C96A 0%, #1D9554 100%);
+  --agent-disabled-btn-bgc: linear-gradient(180deg, #227F36 0%, #256C2E 100%);
+  --agent-performance-detail-toolbar-bgc: var(--color-bg-100);
+  --agent-performance-detail-item-bgc: var(--color-bg-200);
+  --money-text-color: var(--accent-color-yellow);
+
+  /* 多级分销代理中心 */
+  --mlm-toolbar-bg-color: var(--color-bg-200);
+  --mlm-leaderbord-icon-color: var(--color-text-white-100);
+	--mlm-agent-level-bg: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(254, 184, 5, 0.15) 118.45%);
+	--mlm-level-tips-text-color: var(--color-text-80);
+  --mlm-agent-history-bgc: linear-gradient(180deg, #13C96A 0%, #1D9554 100%);
+  --mlmagent-history-hover-bgc: #5aab68;
+  --mlmagent-history-focused-bgc: #69b475;
+	--mlm-agent-claim-hover-bgc: #dfa44f;
+	--mlm-agent-claim-focused-bgc: #edb36b;
+  --mlm-agent-claim-bg-color: linear-gradient(180deg, #FFC271 0%, #F2910D 100%);
+	--mlm-agent-claim-text-color: var(--text-color-white-100);
+	--mlm-agent-claim-commisson-textc: var(--accent-color-orange-1);
+  --mlm-direct-team-btn-bgc: var(--color-bg-100);
+	--mlm-agent-direct-icon-text-color: #6691D5;
+  --mlm-agent-direct-text-color: #6691D5;
+  --mlm-agent-team-text-color: #53C154;
+	--mlm-agent-team-icon-text-color: #53C154;
+	--mlm-agent-info-detail-bgc: var(--color-bg-200);
+	--mlm-agent-my-agency-textc: var(--color-text-gray-100);
+	--mlm-agent-report-icon-color: var(--color-text-40);
+	--mlm-agent-jump-item-bgc: var(--color-bg-100);
+	--mlm-agent-rate-info-bgc: var(--color-bg-200);
+	--mlm-agent-rate-box-bgc: var(--color-bg-300);
+	--mlm-agent-rate-item-right-textc: var(--accent-color-orange);
+	--mlm-agent-level-item-bgc: var(--color-bg-200);
+	--mlm-agent-rule-item-count-textc: rgba(255,255,255,0.2);
+	--mlm-invitation-csut-color: var(--text-color-white-100);
+	--mlm-selected-text-color: var(--color-text-100);
+	--mlm-select-icon-text-color: var(--color-text-40);
+	--mlm-searchbar-placeholder-color: var(--text-color-white-40);
+	--mlm-searchbar-icon-color: var(--color-text-40);
+	--mlm-subdetail-top-bgc: rgba(189, 254, 5, 0.40);
+	--mlm-subdetail-border-color: var(--color-line);
+	--mlm-subdetail-box-bgc: var(--color-bg-200);
+	--mlm-subdetail-box-border-color: var(--color-line);
+	--mlm-subdetail-item-name-color: var(--color-text-40);
+	--mlm-color-text-basic: var(--color-text-100);
+	--mlm-agent-date-bg-color: var(--color-bg-200);
+	--mlm-commission-detail-bgc: var(--color-bg-100);
+	--mlm-commission-detail-tips-tc: var(--color-text-80);
+	--mlm-commission-detail-money-tc: var(--accent-color-orange-1);
+	--mlm-commission-detail-account-money-tc: var(--accent-color-orange-1);
+	--mlm-leader-bord-top-bgc: rgba(254, 229, 5, 0.15);
+	--mlm-bord-tab-item-border-color: var(--line-color);
+	--mlm-bord-tab-item-selected-bgc: linear-gradient(180deg, #13C96A 0%, #1D9554 100%);
+	--mlm-bord-tab-item-selected-tc: var(--text-color-white-100);
+	--mlm-bord-tab-item-select-tc: var(--color-text-80);
+	--mlm-bord-tab-item-select-bgc: transparent;
+	--mlm-bord-userid-text-color: var(--color-text-80);
+	--mlm-bord-item-bgc: var(--color-bg-200);
+	--mlm-agent-bord-currency-tc: var(--accent-color-orange);
+  --mlm-agent-home-invite-btn-color: linear-gradient(180deg, #13C96A 0%, #1D9554 100%);
+	--mlm-segment-select-text-color: var(--color-text-gray-200);
+  --mlm-segment-selected-text-color: var(--color-text-gray-100);
+  --mlm-segment-indicator-bg-color: #17B663;
+  --mlm-rate-item-right-text-color: var(--accent-color-orange-1);
+  --mlm-board-tab-border-color: var(--color-line);
+  --mlm-leader-bord-money-text-color: var(--accent-color-orange-1);
+  --mlm-invitation-footer-bg-color: var(--color-bg-100);
+  --mlm-invitation-cust-btn-text-color: var(--text-color-white-80);
+  --mlm-rate-level-agent-segment-select-color: var(--color-text-gray-200);
+  --color-mlm-btn-bg-disable: linear-gradient(180deg, #7F7B35 0%, #7C6E1A 100%);
+  --color-mlm-btn-text-disable: rgba(255,255,255,0.4);
+  --mlm-agent-left-btn-text-color: var(--text-color-white-100);
+  --mlm-agent-home-money-icon-color: var(--accent-color-orange);
+  --mlm-level-agent-selected-text-color: var(--color-primary-800);
+  --mlm-level-info-tips-color: var(--color-text-gray-200);
+  --mlm-description-content-title-color: var(--color-text-80);
+  --mlm-rules-content-text-color: var(--color-text-80);
+  --mlm-subordinate-money-text-color: var(--accent-color-orange-1);
+  --mlm-subordinate-id-text-color: var(--color-text-80);
+  --mlm-invitation-qr-code-bg: var(--color-text-white-100);
+  --mlm-commission-rate-game-type-bg: var(--color-bg-300);
+  --mlm-searchbar-enter-color: var(--color-text-white-100);
+
+  /* first系列推广中心/报表 */
+  --my-card-detail-color: var(--color-text-40);
+  --activity-record-selected-item-bg: var(--color-bg-100);
+  --activity-record-select-item-bg: var(--color-bg-200);
+  --activity-record-select-item-color: var(--color-text-40);
+  --empty-icon-color: var(--color-bg-100);
+  --color-text-empty: var(--color-text-gray-200);
+
+  /* 推广中心 可领取按钮颜色 */
+	--agent-btn-color: #FFF;
+	/* 搜索框默认浅白色线 */
+	--color-line-default: var(--line-color);
+	/* 佣金下级数据,佣金详情页面 一级背景色 */
+	--color-bg-commission-first: var(--color-bg-200);
+	/* 佣金下级数据,佣金详情页面 二级背景色 */
+	--color-bg-commission-second: var(--color-bg-200);
+	/* 佣金下级数据,佣金详情页面 三级背景色 */
+	--color-bg-commission-third: var(--color-bg-300);
+	/* 佣金下级数据,佣金详情页面 四级背景色 */
+	--color-bg-commission-fourth: var(--color-bg-200);
+	/* 佣金下级数据,佣金详情页面 主要白色文字颜色 */
+	--color-text-basic: var(--color-text-100);
+	/* 佣金下级数据,佣金详情页面 次要白色文字颜色 */
+	--color-text-second: var(--color-text-40);
+	/* 佣金下级数据,佣金详情页面 三级白色文字颜色  用户ID*/
+	--color-text-third: var(--color-text-80);
+	/* 佣金下级数据,佣金详情页面 文字橙色着重色 */
+	--color-text-orange-emphasis: var(--accent-color-orange);
+	/* 佣金下级数据,佣金详情页面 文字黄色着重色 */
+	--color-text-yellow-emphasis: var(--theme-color-800);
+  /* 邀请链接 复制链接按钮 按钮背景色 */
+  --color-bg-yellow-btn-emphasis: linear-gradient(180deg, #13C96A 0%, #1D9554 100%);
+  /* 邀请链接 复制链接按钮 文字颜色 */
+  --color-text-yellowBtn-active: var(--color-text-white-100);
+
+  /* 文字粗细 */
+  --font-weight-bold: 700;
+
+  /* 布局样式 */
+  /* 选项按钮选中边框线宽度 */
+  --border-width-option-action: 0px;
+
+  /* 游戏分类搜索框 */
+	--game-searchbar-bg-color: var(--color-bg-400);
+	--game-searchbar-placeholder-color: var(--color-text-gray-200);
+  --game-searchbar-border-color: 0 0 0 1px var(--line-color), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  /* 首页-游戏分类列表 */
+  --home-fadeToTransparent-form-color: var(--color-bg-50);
+  --home-fadeToTransparent-to-color: var(--color-bg-200);
+  /* 首页-导航栏 金额显示颜色 */
+  --home-currency-text-color: var(--accent-color-yellow);
+  /* 活动-未领取按钮 */
+  --activity-unclaim-tint-bg-color: #eaa958;
+  --activity-unclaim-shade-bg-color: #ecb167;
+  /* ion-input-输入框光标颜色 */
+  --input-highlight-color: #17B663;
+  /* 红包雨-样式1 背景色 */
+  --mineral-style1-toobar-bg: #0E1420;
+	/* CPF邀请活动 */
+  --invite-cpf-reward-amount-text-color: var(--color-text-white-80);
+  --invite-cpf-footer-top-line: var(--color-link);
+  /* sign 活动 跟随皮肤 */
+  --sign-default-day-text-color: #FEB805;
+  --sign-default-extra-reward: #47DD2F;
+  --sing-default-available-before: #35CD1E;
+  --sign-default-unmetReceiveModal-bg: #000000;
+}

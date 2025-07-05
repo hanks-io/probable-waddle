@@ -1,0 +1,178 @@
+.small-text-white {
+  color: var(--ep-color-text-weaker);
+  font-size: var(--ep-font-size-s);
+  line-height: 1.125rem;
+}
+
+.middle-text-white {
+  font-size: var(--ep-font-size-m);
+  color: var(--ep-color-text-default);
+  line-height: 1.3125rem;
+}
+
+.height-text-white {
+  font-size: var(--ep-font-size-l);
+  font-weight: var(--ep-font-weight-bold);
+  line-height: 1.5rem;
+}
+
+.font-weight-medium {
+  font-weight: var(--ep-font-weight-medium);
+}
+
+.font-weight-bold {
+  font-weight: var(--ep-font-weight-bold);
+}
+
+.user-base-info {
+  background-color: var(--ep-color-background-fill-surface-raised-L1);
+  .user-info {
+    .copy-icon {
+      color: var(--ep-color-icon-brand-primary);
+    }
+  }
+  .balance-info {
+    border-bottom: 1px solid var(--ep-color-border-default);
+    .balances,
+    .discount {
+      position: relative;
+      overflow: hidden;
+      background: none;
+      font-size: var(--ep-font-size-xs);
+      .title-color {
+        color: var(--ep-color-text-weaker);
+      }
+      .money-color {
+        color: var(--ep-color-text-default);
+      }
+    }
+
+    .balances::before,
+    .discount::before {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      width: 100.58px;
+      height: 35px;
+      top: 40px;
+      left: 32px;
+      background: var(--ep-color-background-fill-glow-primary-opacity-40);
+      filter: blur(24px);
+      z-index: -1;
+    }
+  }
+  .recharge-withdraw {
+    .recharge-info, 
+    .withdraw-info {
+      background: var(--ep-color-background-fill-surface-raised-L2);
+      box-shadow: 0px -26px 20px -24px var(--ep-color-background-fill-glow-secondary-opacity-40) inset;
+      color: var(--ep-color-text-default);
+      ion-icon {
+        color: var(--ep-color-icon-brand-primary);
+      }
+    }
+  }
+}
+
+.skin-purple {
+  color: var(--ep-color-text-highlight-white);
+}
+
+ion-content {
+  --background: var(--ep-color-background-fill-body-default);
+}
+
+.user-tab-info {
+  background: var(--ep-color-background-fill-body-default);
+}
+
+.card-bg-gradient {
+  border-radius: var(--ep-border-radius-m);
+  background: var(--ep-color-background-fill-surface-raised-L1);
+  .customer-icon {
+    color: var(--ep-color-icon-brand-primary);
+  }
+}
+
+.navigation-item {
+  font-size: var(--ep-font-size-s);
+  font-weight: var(--ep-font-weight-medium);
+  color: var(--ep-color-text-default);
+}
+
+.invite-item {
+  font-size: var(--ep-font-size-xs);
+  color: var(--ep-color-text-weaker);
+}
+
+.red-points {
+  font-size: var(--ep-font-size-s);
+  color: var(--ep-color-text-highlight-white);
+  background: var(--ep-color-icon-tips);
+}
+
+.my-vip {
+ .vip-detail {
+   .to-icon {
+     color: var(--ep-color-icon-default);
+   }
+ }
+}
+
+.need-recharge,
+.need-bets {
+  font-size: var(--ep-font-size-xs);
+  color: var(--ep-color-text-weakest);
+  p {
+    background: var(--ep-color-text-weakest);
+  }
+}
+
+.current-recharge {
+  color: var(--ep-color-text-warning);
+}
+
+.next-current-vip-level {
+  font-size: var(--ep-font-size-xs);
+  color: var(--ep-color-text-highlight-white);
+}
+
+ion-progress-bar {
+  --background: var(--ep-color-text-weakest);
+  --progress-background: #188707;
+}
+
+ion-item::part(detail-icon) {
+  font-size: var(--ep-font-size-m);
+  color: var(--ep-color-icon-weaker);
+}
+
+.current-language {
+  color: var(--ep-color-text-default);
+  .flag-rounded {
+    font-size: var(--ep-font-size-l);
+    border-radius: var(--ep-border-radius-surface-small);
+  }
+}
+
+.user-id {
+  color: var(--ep-color-text-weaker)
+}
+
+.vip-text-40 {
+  color: var(--ep-color-text-weaker);
+}
+
+.vip-info-max {
+  color: var(--ep-color-text-highlight-white);
+  font-size: var(--ep-font-size-xs, .625rem);
+}
+
+.card-icon-color {
+  color: var(--ep-color-icon-weaker);
+}
+
+.max-level {
+  font-size: var(--ep-font-size-s);
+  line-height: 1.125rem;
+}

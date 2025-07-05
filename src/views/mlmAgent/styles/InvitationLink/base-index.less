@@ -1,0 +1,81 @@
+.link{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  .swiperBg{
+    min-height: 30.0538rem;
+    .item{
+      img {
+        border-radius: 0.8438rem;
+        width: 22.5rem;
+        height: 30.0538rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .qrCode{
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 1.0906rem;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 0.335rem;
+        display: flex;
+      }
+    }
+  }
+  .btn{
+    flex: 1;
+    margin-top: 1.0969rem;
+    padding-bottom: 2rem;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+    padding-top: 1.985rem;
+    .top{
+      text-align: center;
+      font-size: 0.875rem;
+      line-height: 1.3125rem;
+      font-weight: 700;
+    }
+  }
+}
+
+.invitation-copy-btn {
+  border-radius: 0.25rem;
+  margin-top: 1.265rem;
+  width: 22.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.875rem;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+}
+
+.invitation-else-btn{
+  width: 22.875rem;
+  height: 2.875rem;
+  margin-top: 1.265rem;
+}
+
+.invitation-cust-btn {
+  border-radius: 0.25rem;
+  margin-top: 1.25rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  ion-icon {
+    font-size: 1.5rem;
+    margin-right: 0.7475rem;
+  }
+}
+
+.amber-purple body div#app ion-router-outlet > div.ion-page::after,
+.amber-purple body div#app ion-router-outlet > div.ion-page::before {
+  width: 0;
+  height: 0;
+}

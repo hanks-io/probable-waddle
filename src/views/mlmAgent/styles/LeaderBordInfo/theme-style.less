@@ -1,0 +1,79 @@
+#mlmAgent-components-leaderBordInfo-index {
+  .style(
+    @mlmAgent-components-leaderBordInfo-index-01: --mlm-toolbar-bg-color;
+    @mlmAgent-components-leaderBordInfo-index-02: --mlm-leader-bord-top-bgc;
+    @mlmAgent-components-leaderBordInfo-index-03: --mlm-board-tab-border-color;
+    @mlmAgent-components-leaderBordInfo-index-04: --mlm-bord-tab-item-select-tc;
+    @mlmAgent-components-leaderBordInfo-index-05: --mlm-bord-tab-item-select-bgc;
+    @mlmAgent-components-leaderBordInfo-index-06: --mlm-bord-tab-item-selected-bgc;
+    @mlmAgent-components-leaderBordInfo-index-07: --mlm-bord-tab-item-selected-tc;
+    @mlmAgent-components-leaderBordInfo-index-08: --mlm-leader-bord-money-text-color;
+    @mlmAgent-components-leaderBordInfo-index-09: --mlm-bord-userid-text-color;
+    @mlmAgent-components-leaderBordInfo-index-10: --mlm-leader-bord-money-text-color;
+    @mlmAgent-components-leaderBordInfo-index-11: --mlm-bord-item-bgc;
+    @mlmAgent-components-leaderBordInfo-index-12: --mlm-subdetail-item-name-color;
+    @mlmAgent-components-leaderBordInfo-index-13: --mlm-bord-userid-text-color;
+    @mlmAgent-components-leaderBordInfo-index-14: --color-bg-100;
+    @mlmAgent-components-leaderBordInfo-index-15: --mlm-bord-userid-text-color;
+    @mlmAgent-components-leaderBordInfo-index-16: --mlm-leader-bord-money-text-color;
+    @mlmAgent-components-leaderBordInfo-index-17: --mlm-subdetail-item-name-color;
+    @mlmAgent-components-leaderBordInfo-index-18: --mlm-board-tab-border-color;
+  ) {
+    ion-toolbar {
+      --background: var(@mlmAgent-components-leaderBordInfo-index-01);
+    }
+
+    .leader-board-top-bg {
+      background: linear-gradient(180deg, var(@mlmAgent-components-leaderBordInfo-index-02) 0%, rgba(0, 0, 0, 0) 87.94%);
+    }
+    
+    .leader-board-tab {
+      .tab-item {
+        border: 0.0625rem solid var(@mlmAgent-components-leaderBordInfo-index-03);
+        color: var(@mlmAgent-components-leaderBordInfo-index-04);
+        background: var(@mlmAgent-components-leaderBordInfo-index-05);
+      }
+      .selected-board {
+        background: var(@mlmAgent-components-leaderBordInfo-index-06);
+        color: var(@mlmAgent-components-leaderBordInfo-index-07);
+        border: 0.0625rem solid var(@mlmAgent-components-leaderBordInfo-index-18);
+      }
+    }
+
+    .top-three-box .top-board-item .middle-text-white ion-icon {
+      color: var(@mlmAgent-components-leaderBordInfo-index-08);
+    }
+    
+    .user-phone {
+      color: var(@mlmAgent-components-leaderBordInfo-index-09);
+    }
+    
+    .middle-text-white {
+      color: var(@mlmAgent-components-leaderBordInfo-index-10);
+    }
+    
+    .board-item {
+      background: var(@mlmAgent-components-leaderBordInfo-index-11);
+      .rank-board {
+        color: var(@mlmAgent-components-leaderBordInfo-index-12);
+      }
+      .userInfo-board {
+        color: var(@mlmAgent-components-leaderBordInfo-index-13);
+        .user {
+          background-color: var(@mlmAgent-components-leaderBordInfo-index-14);
+        }
+      }
+    
+      .comission-board {
+        color: var(@mlmAgent-components-leaderBordInfo-index-15);
+        ion-icon {
+          color: var(@mlmAgent-components-leaderBordInfo-index-16);
+        }
+      }
+    }
+    
+    .board-table-title {
+      color: var(@mlmAgent-components-leaderBordInfo-index-17);
+    }
+  }
+}

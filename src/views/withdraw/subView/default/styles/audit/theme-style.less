@@ -1,0 +1,42 @@
+#withdraw-subView-default-audit {
+    //局部作用域
+  
+    .style(
+      @Audit01: --color-text-white-100,
+      @Audit02: --color-text-white-100,
+      @Audit03: --color-bg-200,
+      @Audit04: --color-text-white-100,
+      @Audit05: --color-bg-200,
+      @Audit06: --color-text-gray-100,
+      @Audit07: --color-text-gray-300
+    ) {
+        .header{
+            ion-label {
+              color: var(@Audit01);
+            }
+          }
+          
+          ion-select {
+            --border-color: var(@Audit02);
+            --highlight-color-valid:red;
+          }
+          
+          :global(.item-radio-checked.sc-ion-select-popover-md) {
+              --background: var(@Audit03);
+          }
+      
+          :global(.sc-ion-select-popover-md) {
+              color: var(@Audit04);
+          }
+          .item {
+            background: var(@Audit05);
+            .top {
+              color: var(@Audit06);
+            }
+          }
+          
+          div.label {
+            color: var(@Audit07);
+          }
+    }
+  }

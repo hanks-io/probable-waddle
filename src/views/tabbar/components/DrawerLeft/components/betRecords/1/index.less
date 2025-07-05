@@ -1,0 +1,130 @@
+html {
+  #tabbar-components-DrawerLeft-components-betRecords-1-index.layout();
+}
+
+.forest-green {
+  #tabbar-components-DrawerLeft-components-betRecords-1-index.style(
+    @bg1: url('/images/betBg2.jpg') no-repeat 7.5rem top / auto 100%;
+    @bg3: radial-gradient(50% 130% at 96% 100%, rgba(0, 77, 55,0.3) 0%, rgb(0, 77, 55) 100%);
+    @text-color1: var(--text-color1);
+    @text-color2: #EEF93B;
+    @line-color1: #009F76;
+  );
+}
+
+.amber-purple {
+  #tabbar-components-DrawerLeft-components-betRecords-1-index.style(
+    @bg1: url('/images/betBg2.jpg') no-repeat 7.5rem top / auto 100%;
+    @bg2: #2C294D;
+    @bg3: radial-gradient(50% 130% at 96% 100%, rgba(44, 41, 77, 0.4) 0%, #262346 100%);
+    @text-color1: var(--text-color1);
+    @text-color2: #17B663;
+    @line-color1: #3B3466;
+  );
+}
+
+
+.blue-default {
+  #tabbar-components-DrawerLeft-components-betRecords-1-index.style(
+    @bg1: url('/images/betBg2.jpg') no-repeat 7.5rem top / auto 100%;
+    @bg3: radial-gradient(50% 130% at 96% 100%, rgba(21, 25, 32, 0.4) 0%, #141B24 100%);
+    @text-color1: var(--text-color1);
+    @text-color2: #17B663;
+    @line-color1: #2F3B4D;
+  );
+}
+
+
+#tabbar-components-DrawerLeft-components-betRecords-1-index {
+  .style(
+    @bg1: url('/images/betBg.jpg') no-repeat left center /cover;
+    @bg2: #183009;
+    @bg3: none;
+    @text-color1: #AFC69F;
+    @text-color2: #17B663;
+    @line-color1: #34571D;
+  ) {
+    ion-menu-toggle {
+      &.records {
+        border-top: 0.0625rem solid @line-color1;
+        border-bottom: 0.0625rem solid @line-color1;
+        background: @bg3;
+
+        &::before {
+          background: @bg1;
+        }
+
+        .img-wall {
+          border: 0.0625rem solid @line-color1;
+          background: @bg2;
+        }
+
+        .label {
+          color: @text-color1;
+        }
+
+        .label-sub {
+          color: @text-color2;
+        }
+      }
+    }
+  }
+
+  .layout(
+    @bg1: url('/images/betBg.jpg') no-repeat left center /cover;
+    @bg2: #183009;
+    @bg3: none;
+    @text-color1: #AFC69F;
+    @text-color2: #17B663;
+    @line-color1: #34571D;
+  ) {
+    ion-menu-toggle {
+      &.records {
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-size: 0.875rem;
+        font-weight: 400;
+        margin-inline: .9375rem;
+        padding: 1.0625rem 0 1.0625rem .5625rem;
+        border-top: 0.0625rem solid @line-color1;
+        border-bottom: 0.0625rem solid @line-color1;
+        background: @bg3;
+
+        &::before {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          background: @bg1;
+          background-blend-mode: overlay;
+        }
+
+        .img-wall {
+          width: 2.875rem;
+          height: 2.875rem;
+          margin-inline-end: 0.6875rem;
+          border-radius: 0.3125rem;
+          border: 0.0625rem solid @line-color1;
+          background: @bg2;
+        }
+
+        .label {
+          font-size: 0.875rem;
+          font-weight: 400;
+          color: @text-color1;
+        }
+
+        .label-sub {
+          font-size: 0.875rem;
+          font-weight: 700;
+          color: @text-color2;
+        }
+      }
+    }
+  }
+}

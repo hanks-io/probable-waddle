@@ -1,0 +1,56 @@
+#security-default-verify {
+    //局部作用域
+  
+    .style(
+      @Verify01: --color-text-gray-400,
+      @Verify02: --color-bg-200,
+      @Verify03: --color-text-gray-300,
+      @Verify04: --theme-color-gradient-100,
+      @Verify05: --theme-color-gradient-100,
+      @Verify06: --color-text-white-100,
+      @Verify07: --color-text-gray-200,
+      @Verify08: --color-text-gray-200,
+      @Verify09: --theme-color-gradient-100,
+      @Verify10: --color-text-white-100,
+    ) {
+        .ion-padding {
+            form {
+              .item {
+                color: var(@Verify01);
+              }
+            }
+          }
+          
+          ion-input {
+            --background: var(@Verify02);
+            --placeholder-color: var(@Verify03);
+          }
+          
+          ion-item.submit {
+            --background: var(@Verify04);
+            ion-button {
+            color: var(@Verify10);
+            }
+          }
+          
+          ion-button.verify {
+            --background: var(@Verify05);
+          }
+          
+          .verify-white-color {
+            color: var(@Verify06);
+          }
+          
+          .verify-minor-color {
+            color: var(@Verify07);
+          }
+          
+          .verify-eye-color {
+            color: var(@Verify08);
+          }
+          
+          ion-button.submit-btn {
+            --background: var(@Verify09);
+          }
+    }
+  }

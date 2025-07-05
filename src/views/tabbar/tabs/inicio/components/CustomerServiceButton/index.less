@@ -1,0 +1,122 @@
+html {
+  #tabbar-tabs-inicio-components-CustomerServiceButton-index();
+}
+
+
+
+
+
+#tabbar-tabs-inicio-components-CustomerServiceButton-index {
+  .layout1(
+    @support-bg: var(--ep-dynamic-primary);
+    @icon-color: var(--ep-color-icon-inverse);
+  ) {
+    .layout1.support {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      left: 1rem;
+      z-index: 50;
+      background: @support-bg;
+
+      .support-icon {
+        font-size: 2rem;
+        color: @icon-color;
+      }
+
+      .dot {
+        position: absolute;
+        top: 0.5rem;
+        left: 1.5625rem;
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background: #ff0000;
+      }
+    }
+  }
+
+  .layout2(
+    @support-bg: var(--ep-dynamic-primary);
+    @icon-color: var(--ep-color-icon-inverse);
+    @shadow1: 0 -0.125rem 0 0 #006AF9 inset;
+  ) {
+    .layout2.support {
+      width: 2.25rem;
+      height: 2.25rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      left: 1rem;
+      z-index: 50;
+      border-radius: 0.625rem;
+      background: @support-bg;
+      box-shadow: @shadow1;
+
+      .support-icon {
+        font-size: 1.5rem;
+        color: @icon-color;
+      }
+
+      .dot {
+        position: absolute;
+        top: 0.5rem;
+        left: 1.5625rem;
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background: #ff0000;
+      }
+    }
+  }
+
+  .layout3(
+    @support-bg: var(--ep-dynamic-primary);
+    @icon-color: var(--ep-color-icon-inverse);
+  ) {
+    .layout3.support {
+      width: 3.375rem;
+      height: 3.375rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      left: 1rem;
+      z-index: 50;
+      border-radius: 50%;
+      background: @support-bg;
+
+      .support-img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .support-icon {
+        width: 80%;
+        height: 80%;
+        color: @icon-color;
+      }
+
+      .dot {
+        position: absolute;
+        top: 0.1rem;
+        right: 0.3rem;
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background: #ff0000;
+        outline: .1563rem solid rgba(255, 255, 255, 0.4);
+      }
+    }
+  }
+
+
+  .layout1();
+  .layout2();
+  .layout3();
+}

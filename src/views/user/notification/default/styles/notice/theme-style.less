@@ -1,0 +1,37 @@
+#user-notification-default-notice-index {
+  .style(
+    @notification-default-notice-index-01: --color-bg-50,
+    @notification-default-notice-index-02: --color-text-white-100,
+    @notification-default-notice-index-03: --notice-read-all-btn-focused-bgc,
+    @notification-default-notice-index-04: --notice-read-all-btn-hover-bgc,
+    @notification-default-notice-index-05: --notice-read-all-btn-focused-bgc,
+    @notification-default-notice-index-06: --color-bg-200,
+    @notification-default-notice-index-07: --color-text-gray-200,
+    @notification-default-notice-index-08: --color-text-white-100,
+    @notification-default-notice-index-09: --color-text-gray-200,
+  ) {
+    ion-button.read-all-btn {
+      --background: var(@notification-default-notice-index-01);
+      --color: var(@notification-default-notice-index-02);
+      --background-focused: var(@notification-default-notice-index-03);
+      --background-hover: var(@notification-default-notice-index-04);
+      --background-activated: var(@notification-default-notice-index-05);
+    }
+      
+    .notice-item {
+      background: var(@notification-default-notice-index-06);
+    }
+      
+    .notice-item-date {
+      color: var(@notification-default-notice-index-07);
+    }
+      
+    .notice-item-title {
+      color: var(@notification-default-notice-index-08);
+    }
+      
+    .notice-item-content {
+      color: var(@notification-default-notice-index-09);
+    }
+  }
+}

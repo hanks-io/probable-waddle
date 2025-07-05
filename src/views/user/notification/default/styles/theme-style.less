@@ -1,0 +1,30 @@
+#user-notification-default-index {
+  .style(
+    @notification-default-index-01: --color-bg-300,
+    @notification-default-index-02: --color-line,
+    @notification-default-index-03: --color-text-gray-200,
+    @notification-default-index-04: --color-text-white-100,
+    @notification-default-index-05: --theme-color-600,
+  ) {
+    .tab-box {
+      background: var(@notification-default-index-01);
+    }
+    
+    ion-segment.md { /* 设置导航标签布局方式 */
+      border-bottom: 0.0625rem solid var(@notification-default-index-02);
+    }
+    
+    ion-button.base-tab {
+      --color: var(@notification-default-index-03);
+    }
+    
+    ion-button.selected-tab {
+      --color: var(@notification-default-index-04);
+    }
+    
+    ion-segment-button.md::part(indicator-background) { /* 设置导航标签指示器的宽度 */
+      background: var(@notification-default-index-05);
+    }
+    
+  }
+}

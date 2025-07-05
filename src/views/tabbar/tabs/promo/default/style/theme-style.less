@@ -1,0 +1,37 @@
+#tabbar-tabs-promo-default-index {
+  .style(
+    @--text-color-active: --color-text-white-100,
+    @--text-color-inactive: --color-text-gray-200,
+    @--gradient-segment-button-bg: --theme-color-gradient-100,
+    @--bg-color-segment: --color-bg-200,
+    @--indicator-color-segment: --color-bg-100,
+    @--indicator-text-color-segment: --color-text-white-100,
+    @--text-color-promo-unchecked: --color-text-gray-200
+  ) {
+    ion-label.active {
+      color: var(@--text-color-active)
+    }
+    
+    ion-label.inactive {
+      color: var(@--text-color-inactive)
+    }
+    
+    ion-toolbar ion-segment-button.md::part(indicator-background) {
+      /* 设置导航标签指示器的宽度 */
+      background: var(@--gradient-segment-button-bg);
+    }
+    
+    ion-content.side ion-segment {
+      --background: var(@--bg-color-segment);
+    }
+    
+    ion-content.side ion-segment-button.ios {
+      --indicator-color: var(@--indicator-color-segment);
+      --color-checked:var(@--indicator-text-color-segment);
+    }
+    
+    .promo-text-unChecked {
+      color: var(@--text-color-promo-unchecked);
+    }
+  }
+}

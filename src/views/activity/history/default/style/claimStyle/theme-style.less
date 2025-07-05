@@ -1,0 +1,78 @@
+#activity-history-default-claim {
+  .style(
+    @history-default-claim-01: --color-bg-200,
+    @history-default-claim-02: --color-bg-200,
+    @history-default-claim-03: --theme-color-gradient-100,
+    @history-default-claim-04: --color-text-white-100,
+    @history-default-claim-05: --text-color-white-40,
+    @history-default-claim-06: --color-text-white-100,
+    @history-default-claim-07: --text-color-white-40,
+    @history-default-claim-08: --color-text-white-100,
+    @history-default-claim-09: --text-color-white-40,
+    @history-default-claim-10: --color-border-600,
+    @history-default-claim-11: --color-text-gray-200,
+    @history-default-claim-12: --color-text-white-100,
+    @history-default-claim-13: --accent-color-yellow,
+    @history-default-claim-14: --color-text-white-100,
+    @history-default-claim-15: --accent-color-yellow,
+    @history-default-claim-16: --text-color-white-40,
+  ) {
+    ion-row.odd {
+      background-color: var(@history-default-claim-01);
+    }
+    
+    ion-popover {
+      --background: var(@history-default-claim-02);
+    }
+    
+    ion-popover ion-row ion-col p.on {
+      background: var(@history-default-claim-03);
+      color: var(@history-default-claim-04);
+    }
+    
+    :deep(ion-infinite-scroll) .infinite-scroll-content-ios .infinite-loading-text{
+     color: var(@history-default-claim-05);
+    }
+    
+    .selected-date-border {
+      border-color: var(@history-default-claim-06);
+    }
+    
+    .select-date-border {
+      border-color: var(@history-default-claim-07);
+    }
+    
+    .select-date-text-color {
+      color: var(@history-default-claim-08);
+    }
+    
+    .select-date-icon-color {
+      color: var(@history-default-claim-09);
+    }
+    
+    .select-popover-on {
+      border: 1px solid var(@history-default-claim-10);
+      color: var(@history-default-claim-11);
+    }
+    
+    .reward-label {
+      color: var(@history-default-claim-12);
+    }
+    
+    .reward-money {
+      color: var(@history-default-claim-13);
+    }
+    
+    .default-claim-table-color {
+      color: var(@history-default-claim-14);
+    }
+    
+    .default-claim-table-emphasize {
+      color: var(@history-default-claim-15);
+    }
+    
+    .claim-empty-text-color {
+      color: var(@history-default-claim-16);
+    }
+  }
+}

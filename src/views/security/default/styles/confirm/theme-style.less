@@ -1,0 +1,35 @@
+#security-default-confirm {
+    //局部作用域
+  
+    .style(
+      @Confirm01: --color-bg-200,
+      @Confirm02: --color-text-gray-300,
+      @Confirm03: --color-text-white-100,
+      @Confirm04: --color-text-gray-200,
+      @Confirm05: --color-text-gray-200,
+      @Confirm06: --theme-color-gradient-100,
+      @Confirm07: --color-text-white-100,
+    ) {
+      ion-input {
+        --background: var(@Confirm01);
+        --placeholder-color: var(@Confirm02);
+      }
+      
+      .confirm-white-color {
+        color: var(@Confirm03)
+      }
+      
+      .confirm-eye-color {
+        color: var(@Confirm04);
+      }
+      
+      .confirm-asset-text-color {
+        color: var(@Confirm05);
+      }
+      
+      ion-button.submit-btn {
+        --background: var(@Confirm06);
+        color: var(@Confirm07);
+      }
+    }
+  }

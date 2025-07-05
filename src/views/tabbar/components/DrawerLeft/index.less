@@ -1,0 +1,37 @@
+html {
+  #tabbar-components-DrawerLeft-index.layout();
+}
+
+
+
+
+
+#tabbar-components-DrawerLeft-index {
+  .layout(
+    @bg: var(--ep-color-background-fill-body-default);
+  ) {
+    ion-menu {
+      --background: @bg;
+
+      &::part(container) {
+        border-radius: 0 var(--ep-border-radius-surface-large, 1.25rem) var(--ep-border-radius-surface-large, 1.25rem) 0;
+      }
+
+      ion-header {
+        background: @bg;
+
+        ion-toolbar {
+          --background: @bg;
+        }
+      }
+
+      ion-content {
+        --background: @bg;
+      }
+
+      footer {
+        --background: @bg;
+      }
+    }
+  }
+}

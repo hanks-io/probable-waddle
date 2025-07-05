@@ -1,0 +1,33 @@
+#security-default-index {
+    //局部作用域
+  
+    .style(
+      @Index01: --color-line,
+      @Index02: --color-text-white-100,
+      @Index03: --color-bg-200,
+      @Index04: --color-text-white-100,
+      @Index05: --color-text-white-100,
+      @Index06: --color-text-gray-300,
+    ) {
+        ion-item {
+            --border-color: var(@Index01);
+            --color: var(@Index02);
+          }
+          
+          .security-item {
+            background: var(@Index03);
+          }
+          
+          .security-white-color {
+            color: var(@Index04);
+          }
+          
+          ion-icon.security-item-right-color {
+            color: var(@Index05);
+          }
+          
+          ion-label.security-item-right-color {
+            color: var(@Index06);
+          }
+    }
+  }

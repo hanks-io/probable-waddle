@@ -1,0 +1,58 @@
+.recharge-bank-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 2.875rem;
+  border-radius: .375rem;
+  .selected-bank-icon {
+    border-radius: 50%;
+  }
+}
+
+.recharge-bank-select {
+  ion-icon.reverse-icon {
+    transition: transform .1s linear;
+    transform: rotate(180deg);
+  }
+}
+
+.bank-select-info {
+  .bank-type {
+    font-size: .875rem;
+    line-height: 1rem;
+  }
+
+  .bank-name {
+    font-size: .75rem;
+    line-height: .75rem;
+  }
+}
+
+.select-bank-list {
+  padding: .75rem .5625rem;
+  max-height: 12.5rem;
+  overflow-y: auto;
+  border-radius: .375rem;
+}
+
+.select-bank-item {
+  display: flex;
+  align-items: center;
+  padding: 0 .875rem;
+  height: 2.875rem;
+  border-radius: .375rem;
+}
+
+.select-bank-item:last-child {
+  margin-bottom: 0;
+}
+
+ion-input.bank-search-input {
+  min-height: 0;
+  height: 2.875rem;
+  --border-radius: .25rem;
+}
+
+ion-popover::part(backdrop) {
+  opacity: 0 !important;
+}

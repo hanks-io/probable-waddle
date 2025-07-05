@@ -1,0 +1,102 @@
+ion-content  {
+	font-family: SF Pro,Roboto,sans-serif;
+	--background: #090f1f;
+	.des {
+		font-family: 'SF Pro Text', sans-serif;
+		.title-text {
+			color: #7F8EB3;
+			font-weight: 500;
+		}
+		.item {
+			background: #303850CC;
+			color: #B5E9FF;
+		}
+	}
+	.des .item:nth-child(1){
+		font-weight: 600;
+		font-size: 1rem;
+
+	}
+	.des .item:nth-child(2){
+		font-weight: 700;
+		font-size: 2rem;
+		.textCoin {
+			font-weight: 400;
+			font-size: 1rem;
+			color: #465375;
+			margin-right: 0.3125rem;
+		}
+	}
+	.ruleHeader {
+		background: linear-gradient(360deg, #465375 0%, #B5E9FF 100%);
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-weight: 700;
+		font-size: 1rem;
+		margin-bottom: 0.75rem;
+	}
+	.textRule {
+		font-family: 'SF Pro Text', sans-serif;
+	}
+	.ruleItem {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		line-height: 1.25rem;
+		padding-left: 0.4375rem;
+		.dot{
+			width: 0.625rem;
+		}
+		.ruleDes {
+			flex: 1;
+		}
+	}
+	.ruleItem:nth-last-child(1){
+		margin-bottom: 0;
+	}
+
+}
+
+ion-content .banner {
+	width: 100%;
+	height: 15rem;
+	position: relative;
+	background: url('/svg/activity/appreciationFollow_bg.png') no-repeat;
+	background-size: cover;
+}
+.banner .boardBox {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #3C2C62;
+    border-radius: 6.25rem;
+}
+.banner .timeBoard {
+	width: 15.5rem;
+	height: 4.5rem;
+	border-radius: 6.25rem;
+	display: flex;
+	// justify-content:  ;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	background: url('/svg/activity/appreciationFollow_board.png') no-repeat;
+    background-size: 14.5rem 3.5rem; 
+    background-position: 0.5rem 0.5rem; 
+	padding-bottom: 0.25rem;
+
+}
+.banner .timeBoard p:nth-child(1){
+	background: linear-gradient(180deg, #DCA8FF 0%, #AD33FF 100%);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+    margin-top: 1rem;
+}
+.banner .timeBoard p:nth-child(2){
+	background: linear-gradient(180deg, #DCA8FF 0%, #89C4FF 100%);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	line-height: 1.5rem;
+	margin-bottom: 0.3125rem;
+}

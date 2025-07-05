@@ -1,0 +1,36 @@
+#user-notification-default-detail-index {
+  .style(
+    @notification-default-detail-index-01: --text-color-white-40,
+    @notification-default-detail-index-02: --color-text-gray-300,
+    @notification-default-detail-index-03: --color-text-white-100,
+    @notification-default-detail-index-04: --color-text-gray-200,
+    @notification-default-detail-index-05: --color-border,
+    @notification-default-detail-index-06: --color-border,
+  ) {
+    ion-content {
+      .announcement-content {
+        color: var(@notification-default-detail-index-01);
+      }
+    
+      .bottom {
+        color: var(@notification-default-detail-index-02);
+      }
+    }
+    
+    .detail-title {
+      color: var(@notification-default-detail-index-03);
+    }
+    
+    .detail-content {
+      color: var(@notification-default-detail-index-04);
+    }
+      
+    /* 解决v-html显示富文本表格边框不显示 */
+    :deep(table) {
+      border: 0.0625rem solid var(@notification-default-detail-index-05);
+      th, td {
+        border: 0.0625rem solid var(@notification-default-detail-index-06);
+      }
+    }
+  }
+}

@@ -1,0 +1,198 @@
+ion-content {
+  --background: linear-gradient(180deg, #0B2946 20.7%, #254D2B 100%);
+}
+
+.sign-title {
+  font-size: 2rem;
+  line-height: 1.345rem;
+  font-weight: 900;
+  background: linear-gradient(90deg, #4692FE 3.6%, #0FB97A 100%);
+}
+
+.sign-info {
+  width: 14.5219rem;
+  height: 4.125rem;
+  padding: .75rem 0 .75rem .875rem;
+  background: url('/images/sign/sign-info-bg.png') no-repeat;
+  background-size: 100% 100%;
+  .current-level {
+    font-size: .75rem;
+    line-height: 1.125rem;
+    font-weight: 700;
+    color: rgba(255,255,255,0.8);
+  }
+}
+
+.sign-top {
+  height: 13.3644rem;
+  position: relative;
+  background: url('/images/sign/treasure-chest-base.png') no-repeat;
+  background-size: 100% 100%;
+  background-position-y: 50%;
+}
+
+.treasure-chest {
+  width: 5.92625rem;
+  height: 5.92625rem;
+  position: absolute;
+  top: 2rem;
+  right: 2.5rem;
+  z-index: 15;
+  // animation: shake 2s ease infinite;
+}
+
+.colorful-halo {
+  width: 11.7131rem;
+  height: 10.9987rem;
+  position: absolute;
+  top: 0;
+  right: -0.625rem;
+  z-index: 10;
+}
+
+.sign-main {
+  padding: 0 .625rem 5.25rem .875rem;
+  margin-top: -1.5625rem;
+  .sing-date {
+    flex-wrap: wrap;
+    .date-days {
+      width: 4rem;
+      height: 5.375rem;
+      margin: 0 0.7rem 0.75rem 0;
+      background: #1C4384;
+      padding: 0.25rem 0.1138rem 0;
+      border-radius: .3794rem;
+      .gold-box {
+        background: #F4E5A4;
+        border-radius: .455rem;
+      }
+
+    }
+    .date-days:nth-child(5),
+    .date-days:nth-child(5n) {
+      margin-right: 0;
+    }
+  }
+
+  .sing-explanation {
+    margin-top: .8125rem;
+    padding: .8506rem .625rem 0 0;
+    color: rgba(255,255,255,0.4);
+    font-size: .75rem;
+    line-height: 1.125rem;
+    .explanation-title {
+      font-weight: 500;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.white-text-04 {
+  color: rgba(255,255,255,0.4);
+  line-height: 1.125rem;
+}
+
+.text-important {
+  color: #DF8644;
+}
+
+.item-day {
+  font-size: .75rem;
+  line-height: 1.125rem;
+  font-weight: 900;
+}
+
+.item-money {
+  font-size: .45rem;
+  line-height: .75rem;
+  font-weight: 900;
+  transform: translateX(-50%);
+  background: linear-gradient(180deg, #CA503D 0%, #856D26 100%);
+}
+
+.item-day {
+  height: calc(100% - 3.6412rem);
+  color: #F0E7A7;
+}
+
+.sign-checked {
+  background: #00000099;
+  border-radius: .3794rem;
+  img {
+    top: 1rem;
+    left: 1.125rem;
+  }
+}
+
+.sign-extra-reward {
+  padding: 0.125rem 0.33rem;
+  white-space: nowrap;
+  min-width: 3.1425rem;
+  background: linear-gradient(180deg, #A1CA3D 0%, #74C72A 100%);
+  border: 1px solid #577725;
+  transform: translateX(-50%);
+  border-radius: 1.25rem;
+  color: #f1ebb3;
+  font-size: .5rem;
+  line-height: .625rem;
+}
+
+.show-extra-text {
+  padding: 0.125rem 0.125rem;
+}
+
+.sign-footer-btn {
+  bottom: 0;
+  background: #193422;
+  padding: .9794rem .875rem;
+  border-top: 1px solid #285336;
+}
+
+ion-button.sign-yellow-btn {
+  --border-radius: .375rem;
+  --color: #854A08;
+  --background: linear-gradient(0deg, #EEAC00 -40760%, #F4C200 -37160.32%, #F8DB00 -32323.25%, #F0B200 -29511%);
+  --box-shadow: 0 .25rem 0 #965A17; /* 添加底部阴影 */
+}
+
+.claimed-item {
+  background: #3a471c;
+  color: #9E9A7A;
+  z-index: 40;
+}
+
+.available-item {
+  background: linear-gradient(180deg, #FFBB3D 0%, #74C72A 100%);
+  color: #f7f2c6;
+}
+
+@keyframes shake {
+  0% {}
+
+  30% {
+    scale: 1.1;
+    transform: rotate(0deg);
+  }
+
+  40% {
+    transform: rotate(-15deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  60% {
+    transform: rotate(-15deg);
+  }
+
+  70% {
+    transform: rotate(0deg);
+    scale: 1.1;
+  }
+
+  100% {
+    scale: 1;
+  }
+}

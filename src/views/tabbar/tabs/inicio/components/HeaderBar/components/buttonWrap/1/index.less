@@ -1,0 +1,116 @@
+html {
+  #tabbar-tabs-inicio-components-HeaderBar-components-buttonWrap-index();
+}
+
+
+
+
+#tabbar-tabs-inicio-components-HeaderBar-components-buttonWrap-index {
+  .layout1(
+    @login-bg: var(--ep-dynamic-secondary);
+    @login-color: var(--ep-color-text-default);
+    @register-bg: var(--ep-dynamic-primary);
+    @register-color: var(--ep-color-text-inverse);
+  ) {
+    .layout1.button-box {
+      display: flex;
+      align-items: center;
+
+      .login {
+        flex: 1;
+        --padding-top: .625rem;
+        --padding-bottom: .625rem;
+        --padding-start: 0.625rem;
+        --padding-end: 0.625rem;
+        --border-radius: var(--ep-border-radius-m, 0.375rem);
+        font-size: var(--ep-font-size-m, 0.875rem);
+        font-weight: var(--font-weight-bold, 700);
+        --border-style: solid;
+        --border-width: 0.0625rem;
+
+        &::part(native) {
+          background: @login-bg;
+          color: @login-color;
+        }
+      }
+
+      .register-btn-warper {
+        flex: 1;
+        margin-left: 0.5rem;
+
+        :deep(.register) {
+          width: 100%;
+          --padding-top: .625rem;
+          --padding-bottom: .625rem;
+          --padding-start: 0.625rem;
+          --padding-end: 0.625rem;
+          --border-radius: var(--ep-border-radius-m, 0.375rem);
+          font-size: var(--ep-font-size-m, 0.875rem);
+          font-weight: var(--font-weight-bold, 700);
+          --border-style: solid;
+          --border-width: 0.0625rem;
+  
+          &::part(native) {
+            background: @register-bg;
+            color: @register-color;
+          }
+        }
+      }
+    }
+  }
+
+  .layout2(
+    @login-bg: var(--ep-dynamic-primary);
+    @login-color: var(--ep-color-text-default);
+    @register-bg: var(--ep-dynamic-tertiary);
+    @register-color: var(--ep-color-text-inverse);
+  ) {
+    .layout2.button-box {
+      display: flex;
+      align-items: center;
+      gap: 0.625rem;
+
+      .login {
+        flex: 1;
+        --padding-top: 0.5625rem;
+        --padding-bottom: 0.5625rem;
+        --padding-start: 0.625rem;
+        --padding-end: 0.625rem;
+        --border-radius: var(--ep-border-radius-infinity, 9999px);
+        font-size: var(--ep-font-size-m, 0.875rem);
+        font-weight: var(--ep-font-weight-medium, 600);
+        min-width: 5.625rem;
+
+        &::part(native) {
+          background: @login-bg;
+          color: @login-color;
+        }
+      }
+
+      .register-btn-warper {
+        flex: 1;
+
+        :deep(.register) {
+          flex: 1;
+          width: 100%;
+          min-width: 5.625rem;
+          --padding-top: 0.5625rem;
+          --padding-bottom: 0.5625rem;
+          --padding-start: 0.625rem;
+          --padding-end: 0.625rem;
+          --border-radius: var(--ep-border-radius-infinity, 9999px);
+          font-size: var(--ep-font-size-m, 0.875rem);
+          font-weight: var(--ep-font-weight-medium, 600);
+
+          &::part(native) {
+            background: @register-bg;
+            color: @register-color;
+          }
+        }
+      }
+    }
+  }
+
+  .layout1();
+  .layout2();
+}

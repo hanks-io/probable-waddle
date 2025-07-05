@@ -1,0 +1,29 @@
+#activity-comp-default-footer-index {
+  .style(
+    @comp-default-footer-index-01: --color-bg-100,
+    @comp-default-footer-index-02: --color-border,
+    @comp-default-footer-index-03: --color-btn-gradient-footerUnable,
+    @comp-default-footer-index-04: --color-text-white-100,
+    @comp-default-footer-index-05: --color-text-white-100,
+  ) {
+    .footer {
+      background-color: var(@comp-default-footer-index-01);
+      box-shadow: 0px 0.5px 0px 0px var(@comp-default-footer-index-02) inset;
+      :slotted(.unable) {
+        background: var(@comp-default-footer-index-03);
+        color: var(@comp-default-footer-index-04);
+      }
+
+      :slotted(.enable) {
+        background: var(--color-btn-gradient-footer);
+        color: var(@comp-default-footer-index-05);
+      }
+  
+      :slotted(.active) {
+        background: var(--color-btn-gradient-footer);
+        color: var(@comp-default-footer-index-05);
+        box-shadow: 0px 4px 15px 0px #208BE540;
+      }
+    }
+  }
+}

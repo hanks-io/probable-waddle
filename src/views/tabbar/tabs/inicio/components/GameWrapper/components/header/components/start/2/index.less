@@ -1,0 +1,40 @@
+html {
+  #tabbar-tabs-inicio-components-GameWrapper-components-head-components-start-2-index();
+}
+
+
+
+
+
+
+
+#tabbar-tabs-inicio-components-GameWrapper-components-head-components-start-2-index {
+  .layout(
+    @text-color: var(--ep-color-text-default);
+    @icon-color1: var(--ep-color-icon-brand-primary, #FEB805);
+    @icon-color2: var(--ep-color-icon-danger, #E64021);
+  ) {
+    .logo-c {
+      display: flex;
+      align-items: center;
+
+      .logo {
+        font-size: 2rem;
+        margin-right: 0.5rem;
+        color: @icon-color1;
+      }
+
+      .hot-logo {
+        color: @icon-color2;
+      }
+
+      .label {
+        font-size: var(--ep-font-size-xl, 1.125rem);
+        font-weight: var(--ep-font-weight-medium, 600);
+        color: @text-color;
+      }
+    }
+  }
+
+  .layout();
+}

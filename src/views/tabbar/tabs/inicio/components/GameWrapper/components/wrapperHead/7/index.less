@@ -1,0 +1,89 @@
+* {
+  #tabbar-tabs-inicio-components-GameWrapper-Head-Head7-index.layout();
+}
+
+
+#tabbar-tabs-inicio-components-GameWrapper-Head-Head7-index {
+
+  .layout(
+    @text-color1: #fff;
+    @text-color2: #fff;
+    @text-color3: #23DB8C;
+    @text-color4: var(--text-color2);
+    @bg1: transparent;
+    @bg2: rgba(35, 219, 140, 0.20);
+    @line-color: #4C4943;
+  ) {
+    .game-head {
+      display: flex;
+      align-items: center;
+      background: url('/images/gameWrapperHead.jpg') no-repeat 0 0 / 23.125rem 2.625rem;
+      height: 2.625rem;
+      margin-block-start: 1.875rem;
+      margin-inline: 0.625rem;
+      border-radius: 0.75rem 0.9375rem 0 0;
+      padding-inline-start: .5rem;
+      padding-inline-end: .625rem;
+
+      .logo-c {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        .logo {
+          width: 1.875rem;
+          height: 1.875rem;
+          margin-inline-end: .25rem;
+          color: @text-color1;
+        }
+
+        .label {
+          font-size: 0.875rem;
+          font-weight: 700;
+          color: @text-color2;
+        }
+
+        .total {
+          --padding-start: .5625rem;
+          --padding-end: .5625rem;
+          --padding-top: .25rem;
+          --padding-bottom: .25rem;
+          color: @text-color3;
+          --background: @bg2;
+          font-size: .75rem;
+          font-weight: 500;
+          line-height: 1;
+          margin-inline-start: .4375rem;
+          border-radius: 6.1875rem;
+          border: 0.0625rem solid @text-color3;
+        }
+      }
+
+      .arrow-container {
+        display: flex;
+        align-items: center;
+        margin-inline-start: auto;
+  
+        .left,
+        .right {
+          width: 1.625rem;
+          height: 1.625rem;
+          border-radius: .4688rem;
+          font-size: 0.875rem;
+          background-color: @bg1;
+          color: @text-color1;
+          border: 0.0625rem solid @line-color;
+
+          &.invalid {
+            pointer-events: none;
+            color: @text-color4;
+          }
+        }
+  
+        .right {
+          margin-inline-start: 0.3125rem;
+        }
+      }
+    }
+  }
+}

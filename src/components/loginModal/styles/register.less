@@ -1,0 +1,90 @@
+
+form p.title {
+  color: var(--color-text-title-basic);
+}
+
+ion-item {
+  --background: transparent;
+  --padding-bottom: 0px;
+  --padding-end: 0;
+  --padding-start: 0;
+  --padding-top: 0;
+  --inner-padding-end: 0;
+  --inner-border-width: 0px;
+}
+
+ion-item.sc-ion-input-ios-h:not(.item-label):not(.item-has-modern-input),
+ion-item:not(.item-label):not(.item-has-modern-input) .sc-ion-input-ios-h {
+  --padding-start: 10px;
+  /* ion-input左内边距(ion-item内ion-input默认取消左内边距) */
+}
+
+ion-input {
+  /* 输入框样式 */
+  --placeholder-color: var(--color-text-input-placeholder);
+  --placeholder-opacity: 1;
+  --padding-bottom: 0px;
+  --padding-start: 10px;
+  --padding-top: 0px;
+  --border-width: 0px;
+  --border-radius: 10px;
+  font-size: 0.75rem;
+}
+
+:global(#login-modal ion-input .input-wrapper.sc-ion-input-ios) {
+  border: 1px solid var(--line-color);
+}
+
+ion-item.submit {
+  --min-height: 0;
+  --background: var(--theme-color-gradient-100);
+  --border-radius: 10px;
+  --tw-drop-shadow: drop-shadow(var(--drop-shadow-submit));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+ion-item.submit ion-button {
+  min-height: 40px;
+  color: var(--color-text-btn-basic);
+}
+
+ion-button.verify {
+  --background: var(--color-checkbox-bg);
+  --border-radius: 10px;
+}
+
+ion-button.verify.on {
+  --background: #626262;
+  --padding-start: 20px;
+  --padding-end: 20px;
+}
+
+p.label,
+div.label {
+  color: var(--color-text-label-basic);
+}
+
+.btn-loading:after {
+  content: "";
+  animation: dotAnimate 2s infinite;
+}
+
+@keyframes dotAnimate {
+
+  0%,
+  100% {
+    content: "";
+  }
+
+  25% {
+    content: ".";
+  }
+
+  50% {
+    content: "..";
+  }
+
+  75% {
+    content: "...";
+  }
+}

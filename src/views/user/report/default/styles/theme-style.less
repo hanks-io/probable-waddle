@@ -1,0 +1,31 @@
+#tabbar-user-report-default-index {
+    //局部作用域
+  
+    .style(
+      @Report01: --color-bg-300,
+      @Report02: --color-text-gray-200,
+      @Report03: --color-text-white-100,
+      @Report04: --color-line,
+      @Report05: --theme-color-600,
+    ) {
+        .tab-box {
+            background: var(@Report01);
+          }
+          
+          ion-button.base-tab {
+            --color: var(@Report02);
+          }
+          
+          ion-button.selected-tab {
+            --color: var(@Report03);
+          }
+          
+          ion-segment.md { /* 设置导航标签布局方式 */
+            border-bottom: 0.0625rem solid var(@Report04);
+          }
+          
+          ion-segment-button.md::part(indicator-background) { /* 设置导航标签指示器的宽度 */
+            background: var(@Report05);
+          }
+    }
+  }

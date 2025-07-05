@@ -1,0 +1,40 @@
+html {
+  #tabbar-tabs-inicio-components-MarqueeView-components-message-3-index.layout();
+}
+
+
+
+
+#tabbar-tabs-inicio-components-MarqueeView-components-message-3-index {
+  .layout(
+    @bg1: #fff;
+    @icon-color1: #000;
+  ) {
+    .badge {
+      z-index: 4;
+      width: 1.375rem;
+      height: 1.3125rem;
+      padding: .375rem;
+      margin-inline-start: .25rem;
+      margin-inline-end: .4375rem;
+      border-radius: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background: @bg1;
+
+      .message {
+        position: absolute;
+        font-size: .6875rem;
+        color: @icon-color1;
+      }
+
+      .dot {
+        top: -0.25rem;
+        right: -0.3125rem;
+        text-align: center;
+      }
+    }
+  }
+}

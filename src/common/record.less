@@ -1,0 +1,63 @@
+@import url('./theme.less');
+
+
+
+
+.header-title {
+  text-align: right;
+  line-height: 1.125rem;
+  margin: .8125rem 0 .75rem;
+  .dynamic-font(@color: --color-text-100, @fontWeight: --font-weight-bold);
+
+  .total-money {
+    .dynamic-font(@color: --color-primary-800, @fontWeight: --font-weight-bold)
+  }
+
+}
+
+.record-wrap {
+  // height: 5.625rem;
+  width: 22.875rem;
+  .bg-200();
+  .rounded-middle();
+  margin-bottom: 1rem;
+  padding: .5625rem;
+  box-sizing: border-box;
+
+  .top {
+    .dynamic-font(@fontSize: --font-size-14, @fontWeight: --font-weight-medium);
+    margin-bottom: 1rem;
+    line-height: 1.3125rem;
+  }
+
+  .middle,
+  .bottom {
+    .dynamic-font(@color: --color-text-40);
+    line-height: 18px;
+  }
+
+  ion-icon.copy {
+    .dynamic-font(@color: --color-text-40, @fontSize: --font-size-18);
+    vertical-align: top;
+    margin-left: .1875rem;
+  }
+
+}
+
+.scheme-light {
+  .record-wrap {
+
+
+
+
+    .middle,
+    .bottom,
+    ion-icon.copy {
+      color: var(--color-text-80);
+    }
+
+
+
+  }
+
+}

@@ -1,0 +1,124 @@
+// 签到奖励 跟随皮肤
+#activity-levelSignIn-default-index {
+  .style(
+    @activity-levelSignIn-default-index-01: ~"linear-gradient(180deg, #FFE299 0%, #E47E2B 100%), linear-gradient(180deg, #C09977 0%, #C09977 100%)";
+    @activity-levelSignIn-default-index-02: #254112;
+    @activity-levelSignIn-default-index-03: #AFC69F;
+    @activity-levelSignIn-default-index-04: #2B4F14;
+    @activity-levelSignIn-default-index-05: #FBED3C;
+    @activity-levelSignIn-default-index-06: #7E9071;
+    @activity-levelSignIn-default-index-07: linear-gradient(180deg, #FFC271 0%, #F2910D 100%);
+    @activity-levelSignIn-default-index-08: 'banner01';
+    @activity-levelSignIn-default-index-09: rgba(255, 255, 255, 0.50);
+    @activity-levelSignIn-default-index-10: rgba(255, 255, 255, 0.70);
+    @activity-levelSignIn-default-index-11: #213B10;
+    @activity-levelSignIn-default-index-12: #AFC69F;
+    @activity-levelSignIn-default-index-13: #2B4F14;
+    @activity-levelSignIn-default-index-14: #7E9071;
+  ) {
+
+    ion-content {
+      --background: var(--ep-color-background-fill-body-default, @activity-levelSignIn-default-index-11);
+    }
+
+    .banner {
+      width: 100%;
+      height: 12.6875rem;
+      background: url('@/assets/img/activity/levelSignIn/@{activity-levelSignIn-default-index-08}.png') no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .level-progress {
+      .icon-item {
+        .level-icons.checked {
+          background: var(--ep-dynamic-primary, @activity-levelSignIn-default-index-01);
+        }
+        .level-icons.unchecked {
+          background: var(--ep-color-background-fill-surface-raised-L2, @activity-levelSignIn-default-index-02);
+        }
+        p {
+          color: var(--ep-color-text-weak, @activity-levelSignIn-default-index-03);
+        }
+      }
+    }
+
+    .progress-container {    
+      .progress-bar {
+        --color-stop: 0%;
+        background: linear-gradient(to right, var(--ep-color-text-weak, @activity-levelSignIn-default-index-03) var(--color-stop), var(--ep-color-background-fill-surface-raised-L2, @activity-levelSignIn-default-index-04) var(--color-stop));
+      }
+    
+      .progress-mark {
+        .mark-item {
+          p.done {
+            color: var(--ep-color-text-weak, @activity-levelSignIn-default-index-03);
+          }
+          p.undone {
+            color: var(--ep-color-text-weakest, @activity-levelSignIn-default-index-06);
+          }
+        }
+      }
+    }
+
+    .bet-info {
+      background-color: var(--ep-color-background-fill-surface-raised-L2, @activity-levelSignIn-default-index-13);
+      .bet-amount {
+        color: var(--ep-color-text-warning, @activity-levelSignIn-default-index-05);
+      }
+      .bet-text {
+        color: var(--ep-color-text-weakest, @activity-levelSignIn-default-index-14);
+      }
+    }
+
+    .reward-info {
+      // background: @activity-levelSignIn-default-index-04;
+    
+      .title {
+        background-color: var(--ep-color-background-fill-surface-raised-L2, @activity-levelSignIn-default-index-13);
+        color: var(--ep-color-text-weak, @activity-levelSignIn-default-index-12);
+      }
+    
+      .item {
+        .day-text {
+          color: var(--ep-color-text-weak, @activity-levelSignIn-default-index-12);
+        }
+    
+        .amount {
+          color: var(--ep-color-text-warning, @activity-levelSignIn-default-index-05);
+          .units {
+            color: var(--ep-color-text-weakest, @activity-levelSignIn-default-index-06);
+          }
+        }
+    
+        .button-wrapper {
+          .button.canDo {
+            background: var(--ep-dynamic-primary, @activity-levelSignIn-default-index-07);
+          }
+          .button.done {
+            background: var(--ep-dynamic-primary, @activity-levelSignIn-default-index-07);
+          }
+          p {
+            color: var(--ep-color-text-weak, @activity-levelSignIn-default-index-12);
+          }
+        }
+      }
+    
+      .item:nth-child(odd) {
+        background: var(--ep-color-background-fill-surface-lowered, @activity-levelSignIn-default-index-04);
+      }
+    
+      .item:nth-child(even) {
+        background: var(--ep-color-background-fill-surface-raised-L1, @activity-levelSignIn-default-index-02);
+      }
+    }
+
+    .rules {
+      color: var(--ep-color-text-weaker, @activity-levelSignIn-default-index-09);
+    
+      .rule-title {
+        color: var(--ep-color-text-default, @activity-levelSignIn-default-index-10);
+      }
+    }
+  }
+}

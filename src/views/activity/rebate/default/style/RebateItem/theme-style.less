@@ -1,0 +1,59 @@
+#activity-rebate-default-components-RebateItem {
+  .style(
+    @rebate-default-rebateItem-01: --color-bg-200,
+    @rebate-default-rebateItem-02: --color-text-white-100,
+    @rebate-default-rebateItem-03: --color-bg-100,
+    @rebate-default-rebateItem-04: --theme-color-gradient-400,
+    @rebate-default-rebateItem-05: --color-text-white-100,
+    @rebate-default-rebateItem-06: --color-text-gray-200,
+    @rebate-default-rebateItem-07: --color-text-white-100,
+    @rebate-default-rebateItem-08: --color-text-gray-200,
+    @rebate-default-rebateItem-09: --color-text-white-100,
+    @rebate-default-rebateItem-10: --accent-color-yellow,
+    @rebate-default-rebateItem-11: --color-text-white-100,
+  ) {
+    ion-item.rebate {
+      --background: var(@rebate-default-rebateItem-01);
+    }
+    
+    ion-item::part(detail-icon) {
+      color: var(@rebate-default-rebateItem-02);
+    }
+    
+    ion-progress-bar {
+      --background: var(@rebate-default-rebateItem-03);
+    }
+    
+    ion-progress-bar::part(progress) {
+      background: var(@rebate-default-rebateItem-04);
+    }
+    
+    div ion-icon.logo {
+      color: var(@rebate-default-rebateItem-05);
+    }
+    
+    .rebate-item-agent34 {
+      color: var(@rebate-default-rebateItem-06);
+    }
+    
+    .rebate-item-validBet {
+      color: var(@rebate-default-rebateItem-07);
+    }
+    
+    .rebate-ratio {
+      color: var(@rebate-default-rebateItem-08);
+    }
+    
+    .rebate-item-rate {
+      color: var(@rebate-default-rebateItem-09);
+    }
+    
+    .rebate-item-available-rate {
+      color: var(@rebate-default-rebateItem-10);
+    }
+    
+    .rebate-item-next-rate {
+      color: var(@rebate-default-rebateItem-11);
+    }
+  }
+}

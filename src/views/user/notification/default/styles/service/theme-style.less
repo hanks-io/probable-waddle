@@ -1,0 +1,48 @@
+#user-notification-default-service-index {
+  .style(
+    @notification-default-service-index-01: --color-bg-200,
+    @notification-default-service-index-02: --color-bg-200,
+    @notification-default-service-index-03: --theme-color-gradient-100,
+    @notification-default-service-index-04: --service-customer-btn-focused-bgc,
+    @notification-default-service-index-05: --theme-color-gradient-100,
+    @notification-default-service-index-06: --service-customer-btn-focused-bgc,
+    @notification-default-service-index-07: --color-text-white-100,
+    @notification-default-service-index-08: --color-text-gray-300,
+    @notification-default-service-index-09: --color-text-white-100,
+    @notification-default-service-index-10: --color-text-gray-200,
+    @notification-default-service-index-11: --color-text-white-100,
+  ) {
+    .board {
+      background-color: var(@notification-default-service-index-01);
+    }
+
+    .service-item {
+      background-color: var(@notification-default-service-index-02);
+    }
+
+    .online-service ion-button, 
+    .service-item ion-button {
+      --color: var(@notification-default-service-index-11);
+      --background: var(@notification-default-service-index-03);
+      --background-focused: var(@notification-default-service-index-04);
+      --background-hover: var(@notification-default-service-index-05);
+      --background-activated: var(@notification-default-service-index-06);
+    }
+
+    .online-text {
+      color: var(@notification-default-service-index-07);
+    }
+
+    .cust-service-tips {
+      color: var(@notification-default-service-index-08);
+    }
+
+    .item-nickname {
+      color: var(@notification-default-service-index-09);
+    }
+
+    .item-account {
+      color: var(@notification-default-service-index-10);
+    }
+  }
+}
